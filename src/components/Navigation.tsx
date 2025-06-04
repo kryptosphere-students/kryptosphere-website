@@ -16,9 +16,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 bg-white/95 backdrop-blur-lg rounded-2xl px-8 py-4 shadow-lg border border-slate-200/50">
+    <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 bg-slate-800/80 backdrop-blur-lg rounded-2xl px-8 py-4 shadow-lg border border-slate-700/50">
       <div className="flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-slate-900">
+        <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
           Kryptosphere
         </Link>
         
@@ -28,7 +28,7 @@ const Navigation = () => {
             <Link
               key={item.path}
               to={item.path}
-              className="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              className="text-slate-300 hover:text-blue-400 transition-colors duration-200 font-medium"
             >
               {item.name}
             </Link>
@@ -37,7 +37,7 @@ const Navigation = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+          className="md:hidden p-2 rounded-lg hover:bg-slate-700 transition-colors text-slate-300"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -46,12 +46,12 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-lg rounded-2xl shadow-lg border border-slate-200/50 p-6">
+        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-slate-800/95 backdrop-blur-lg rounded-2xl shadow-lg border border-slate-700/50 p-6">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className="block py-3 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              className="block py-3 text-slate-300 hover:text-blue-400 transition-colors duration-200 font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
