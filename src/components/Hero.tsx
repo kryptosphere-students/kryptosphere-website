@@ -1,57 +1,60 @@
 
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-purple-400/20 to-blue-400/20 rounded-full blur-3xl"></div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-20">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-white"></div>
+      <div className="absolute inset-0" style={{
+        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0)',
+        backgroundSize: '24px 24px'
+      }}></div>
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
+        <div className="mb-8">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-slate-900 tracking-tight">
             Kryptosphere
-          </span>
-        </h1>
+          </h1>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-2xl md:text-3xl text-slate-600 font-light mb-8">
+            Blockchain Club
+          </p>
+        </div>
         
-        <p className="text-xl md:text-2xl text-gray-600 mb-4 font-light">
-          Blockchain Club
-        </p>
-        
-        <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-          L'association étudiante dédiée à l'exploration et à l'innovation dans l'univers blockchain. 
-          Rejoignez notre communauté passionnée pour découvrir les technologies de demain.
+        <p className="text-xl text-slate-700 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+          L'association étudiante de référence dans l'exploration des technologies blockchain. 
+          Rejoignez notre communauté pour découvrir et construire l'avenir décentralisé.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 flex items-center gap-2 group">
             Rejoindre l'association
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200">
-            Découvrir nos événements
+          <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition-all duration-200">
+            Nos événements
           </button>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-slate-200">
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
-            <div className="text-gray-600">Membres</div>
+            <div className="text-4xl font-bold text-slate-900 mb-2">200+</div>
+            <div className="text-slate-600 text-sm uppercase tracking-wide">Membres</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
-            <div className="text-gray-600">Événements</div>
+            <div className="text-4xl font-bold text-slate-900 mb-2">50+</div>
+            <div className="text-slate-600 text-sm uppercase tracking-wide">Événements</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">10+</div>
-            <div className="text-gray-600">Antennes</div>
+            <div className="text-4xl font-bold text-slate-900 mb-2">10+</div>
+            <div className="text-slate-600 text-sm uppercase tracking-wide">Antennes</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">3</div>
-            <div className="text-gray-600">Ans d'existence</div>
+            <div className="text-4xl font-bold text-slate-900 mb-2">3</div>
+            <div className="text-slate-600 text-sm uppercase tracking-wide">Ans</div>
           </div>
         </div>
       </div>
