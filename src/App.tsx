@@ -12,6 +12,7 @@ import Publications from "./pages/Publications";
 import Donation from "./pages/Donation";
 import Events from "./pages/Events";
 import Antennes from "./pages/Antennes";
+import AntenneDetail from "./pages/AntenneDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/bureau" element={<Bureau />} />
             <Route path="/association" element={<Association />} />
             <Route path="/antennes" element={<Antennes />} />
+            <Route path="/antennes/:id" element={<AntenneDetail />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/donation" element={<Donation />} />
             <Route path="/events" element={<Events />} />

@@ -52,7 +52,10 @@ const translations = {
     'association.title': 'Association',
     'branches.title': 'Nos Antennes',
     'publications.page.title': 'Publications',
-    'donation.title': 'Faire une donation'
+    'donation.title': 'Faire une donation',
+
+    // General
+    'language': 'fr'
   },
   en: {
     // Navigation
@@ -96,7 +99,10 @@ const translations = {
     'association.title': 'Association',
     'branches.title': 'Our Branches',
     'publications.page.title': 'Publications',
-    'donation.title': 'Make a donation'
+    'donation.title': 'Make a donation',
+
+    // General
+    'language': 'en'
   }
 };
 
