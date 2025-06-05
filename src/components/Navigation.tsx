@@ -2,21 +2,22 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState('fr');
+  const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
   const navItems = [
-    { name: language === 'fr' ? 'Accueil' : 'Home', path: '/' },
-    { name: language === 'fr' ? 'Bureau' : 'Board', path: '/bureau' },
-    { name: 'Association', path: '/association' },
-    { name: language === 'fr' ? 'Antennes' : 'Branches', path: '/antennes' },
-    { name: language === 'fr' ? 'Événements' : 'Events', path: '/events' },
-    { name: 'Publications', path: '/publications' },
-    { name: language === 'fr' ? 'Faire une donation' : 'Donate', path: '/donation' }
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.board'), path: '/bureau' },
+    { name: t('nav.association'), path: '/association' },
+    { name: t('nav.branches'), path: '/antennes' },
+    { name: t('nav.events'), path: '/events' },
+    { name: t('nav.publications'), path: '/publications' },
+    { name: t('nav.donate'), path: '/donation' }
   ];
 
   const toggleLanguage = () => {
