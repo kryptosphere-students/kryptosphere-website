@@ -2,17 +2,19 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
-import AboutSection from '../components/AboutSection';
+import StatsSection from '../components/StatsSection';
 import SponsorsSection from '../components/SponsorsSection';
+import PublicationsSection from '../components/PublicationsSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <Navigation />
       <Hero />
-      <AboutSection />
+      <StatsSection />
       <SponsorsSection />
+      <PublicationsSection />
       <Footer />
     </div>
   );
