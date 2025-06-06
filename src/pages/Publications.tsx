@@ -1,42 +1,43 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Calendar, Download, Eye, FileText } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Publications = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const { t } = useLanguage();
 
   const publications = [
     {
       id: 1,
-      title: "KryptoPaper Edition 25",
-      date: "JANVIER 2025",
+      title: t('publication.kryptopaper25.title'),
+      date: t('publication.kryptopaper25.date'),
       category: "kryptopaper",
-      description: "Analyse des tendances blockchain 2025 et perspectives d'avenir",
+      description: t('publication.kryptopaper25.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "15 min"
+      readTime: t('publication.kryptopaper25.readTime')
     },
     {
       id: 2,
-      title: "Guide DeFi pour débutants",
-      date: "DÉCEMBRE 2024",
+      title: t('publication.defi.title'),
+      date: t('publication.defi.date'),
       category: "guide",
-      description: "Introduction complète à la finance décentralisée",
+      description: t('publication.defi.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "20 min"
+      readTime: t('publication.defi.readTime')
     },
     {
       id: 3,
-      title: "Rapport annuel 2024",
-      date: "DÉCEMBRE 2024",
+      title: t('publication.report2024.title'),
+      date: t('publication.report2024.date'),
       category: "rapport",
-      description: "Bilan des activités et accomplissements de l'année",
+      description: t('publication.report2024.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "30 min"
+      readTime: t('publication.report2024.readTime')
     },
     {
       id: 4,
@@ -71,11 +72,11 @@ const Publications = () => {
   ];
 
   const categories = [
-    { id: 'all', name: 'Toutes', count: publications.length },
-    { id: 'kryptopaper', name: 'KryptoPaper', count: publications.filter(p => p.category === 'kryptopaper').length },
-    { id: 'guide', name: 'Guides', count: publications.filter(p => p.category === 'guide').length },
-    { id: 'rapport', name: 'Rapports', count: publications.filter(p => p.category === 'rapport').length },
-    { id: 'etude', name: 'Études', count: publications.filter(p => p.category === 'etude').length }
+    { id: 'all', name: t('publications.all'), count: publications.length },
+    { id: 'kryptopaper', name: t('publications.kryptopaper'), count: publications.filter(p => p.category === 'kryptopaper').length },
+    { id: 'guide', name: t('publications.guides'), count: publications.filter(p => p.category === 'guide').length },
+    { id: 'rapport', name: t('publications.reports'), count: publications.filter(p => p.category === 'rapport').length },
+    { id: 'etude', name: t('publications.studies'), count: publications.filter(p => p.category === 'etude').length }
   ];
 
   const filteredPublications = selectedCategory === 'all' 
@@ -91,17 +92,16 @@ const Publications = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <FileText className="w-4 h-4" />
-            Ressources et contenus éducatifs
+            {t('publications.resourcesTag')}
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            Publications
+            {t('publications.page.title')}
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Découvrez nos analyses, guides et rapports sur l'écosystème blockchain. 
-            Des ressources créées par et pour la communauté étudiante.
+            {t('publications.page.subtitle')}
           </p>
         </div>
       </section>
@@ -185,18 +185,18 @@ const Publications = () => {
       <section className="py-16 px-6 border-t border-slate-700/50">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-12 border border-slate-700/50">
-            <h2 className="text-4xl font-bold mb-6 text-white">Restez informé</h2>
+            <h2 className="text-4xl font-bold mb-6 text-white">{t('publications.newsletter.title')}</h2>
             <p className="text-xl mb-8 text-slate-300">
-              Recevez nos dernières publications directement dans votre boîte mail.
+              {t('publications.newsletter.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Votre email"
+                placeholder={t('publications.newsletter.placeholder')}
                 className="flex-1 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
               />
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300">
-                S'abonner
+                {t('publications.newsletter.subscribe')}
               </button>
             </div>
           </div>

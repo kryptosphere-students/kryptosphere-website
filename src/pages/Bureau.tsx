@@ -1,11 +1,12 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Users, Calendar } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Bureau = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
+  const { t } = useLanguage();
 
   const bureauData = {
     '2025': [
@@ -83,17 +84,16 @@ const Bureau = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <Users className="w-4 h-4" />
-            L'équipe qui fait vivre Kryptosphere
+            {t('board.teamTag')}
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            Notre Bureau
+            {t('board.title')}
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Découvrez les passionnés qui font vivre Kryptosphere au quotidien. 
-            Une équipe diverse et motivée, unie par la vision d'un avenir blockchain.
+            {t('board.subtitle')}
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ const Bureau = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center items-center gap-4 mb-12">
             <Calendar className="w-5 h-5 text-blue-400" />
-            <span className="text-slate-300 mr-4">Année :</span>
+            <span className="text-slate-300 mr-4">{t('board.year')}</span>
             <div className="flex gap-2">
               {years.map((year) => (
                 <button

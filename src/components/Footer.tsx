@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
@@ -27,8 +28,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed max-w-md">
-              L'association étudiante de référence dans l'univers blockchain. 
-              Rejoignez-nous pour explorer les technologies de demain.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-6 text-lg text-white">Navigation</h4>
+            <h4 className="font-semibold mb-6 text-lg text-white">{t('footer.navigation')}</h4>
             <ul className="space-y-3 text-slate-400">
               <li><Link to="/" className="hover:text-blue-400 transition-colors duration-200">{t('nav.home')}</Link></li>
               <li><Link to="/bureau" className="hover:text-blue-400 transition-colors duration-200">{t('nav.board')}</Link></li>
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center text-slate-400">
-          <p>&copy; 2024 Kryptosphere. Tous droits réservés.</p>
+          <p>&copy; {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

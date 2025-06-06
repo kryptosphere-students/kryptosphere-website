@@ -3,62 +3,65 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Calendar, Target, Users, Award } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Association = () => {
+  const { t } = useLanguage();
+
   const timeline = [
     {
       year: '2017',
-      title: 'Création de Kryptosphere',
-      description: 'Fondation de l\'association par des étudiants passionnés de blockchain',
-      achievements: ['Première antenne à Lyon', '10 membres fondateurs']
+      title: t('timeline.2017.title'),
+      description: t('timeline.2017.description'),
+      achievements: t('timeline.2017.achievements')
     },
     {
       year: '2018',
-      title: 'Expansion nationale',
-      description: 'Ouverture des premières antennes en région parisienne',
-      achievements: ['3 antennes actives', '50+ membres', 'Premier hackathon blockchain']
+      title: t('timeline.2018.title'),
+      description: t('timeline.2018.description'),
+      achievements: t('timeline.2018.achievements')
     },
     {
       year: '2019',
-      title: 'Reconnaissance académique',
-      description: 'Partenariats avec les grandes écoles et universités',
-      achievements: ['10 antennes', '200+ membres', 'Premier KryptoPaper']
+      title: t('timeline.2019.title'),
+      description: t('timeline.2019.description'),
+      achievements: t('timeline.2019.achievements')
     },
     {
       year: '2020',
-      title: 'Transformation digitale',
-      description: 'Adaptation aux nouveaux modes de communication',
-      achievements: ['Événements virtuels', '15 antennes', '400+ membres']
+      title: t('timeline.2020.title'),
+      description: t('timeline.2020.description'),
+      achievements: t('timeline.2020.achievements')
     },
     {
       year: '2021',
-      title: 'Expansion européenne',
-      description: 'Ouverture des premières antennes en Europe',
-      achievements: ['Londres', 'Bruxelles', '600+ membres']
+      title: t('timeline.2021.title'),
+      description: t('timeline.2021.description'),
+      achievements: t('timeline.2021.achievements')
     },
     {
       year: '2022',
-      title: 'Innovation pédagogique',
-      description: 'Lancement de programmes de formation avancés',
-      achievements: ['Programmes certifiants', '20+ antennes', '700+ membres']
+      title: t('timeline.2022.title'),
+      description: t('timeline.2022.description'),
+      achievements: t('timeline.2022.achievements')
     },
     {
       year: '2023',
-      title: 'Leadership européen',
-      description: 'Reconnaissance comme référence européenne',
-      achievements: ['800+ membres', '22+ établissements', '3 pays']
+      title: t('timeline.2023.title'),
+      description: t('timeline.2023.description'),
+      achievements: t('timeline.2023.achievements')
     },
     {
       year: '2024',
-      title: 'Consolidation',
-      description: 'Renforcement des partenariats et de l\'écosystème',
-      achievements: ['Nouveaux sponsors', 'Expansion continue']
+      title: t('timeline.2024.title'),
+      description: t('timeline.2024.description'),
+      achievements: t('timeline.2024.achievements')
     },
     {
       year: '2025',
-      title: 'Nouveaux horizons',
-      description: 'Vision futuriste et technologies émergentes',
-      achievements: ['Intelligence Artificielle', 'Web3', 'Métaverse']
+      title: t('timeline.2025.title'),
+      description: t('timeline.2025.description'),
+      achievements: t('timeline.2025.achievements')
     }
   ];
 
@@ -71,17 +74,16 @@ const Association = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <Target className="w-4 h-4" />
-            Notre histoire et notre mission
+            {t('association.historyTag')}
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            L'Association
+            {t('association.title')}
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Depuis 2017, Kryptosphere s'impose comme la référence européenne dans l'écosystème blockchain étudiant. 
-            Découvrez notre histoire, nos valeurs et notre vision pour l'avenir.
+            {t('association.subtitle')}
           </p>
         </div>
       </section>
@@ -92,25 +94,25 @@ const Association = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50">
               <Target className="w-12 h-12 text-blue-400 mb-6" />
-              <h3 className="text-2xl font-bold text-white mb-4">Notre Mission</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('association.mission')}</h3>
               <p className="text-slate-300 leading-relaxed">
-                Démocratiser l'accès aux technologies blockchain et former la prochaine génération d'innovateurs.
+                {t('association.missionText')}
               </p>
             </div>
             
             <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50">
               <Users className="w-12 h-12 text-purple-400 mb-6" />
-              <h3 className="text-2xl font-bold text-white mb-4">Nos Valeurs</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('association.values')}</h3>
               <p className="text-slate-300 leading-relaxed">
-                Innovation, partage de connaissances, collaboration et excellence académique au service de la communauté.
+                {t('association.valuesText')}
               </p>
             </div>
             
             <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50">
               <Award className="w-12 h-12 text-cyan-400 mb-6" />
-              <h3 className="text-2xl font-bold text-white mb-4">Notre Vision</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">{t('association.vision')}</h3>
               <p className="text-slate-300 leading-relaxed">
-                Être le pont entre l'innovation blockchain et l'enseignement supérieur en Europe.
+                {t('association.visionText')}
               </p>
             </div>
           </div>
@@ -121,7 +123,7 @@ const Association = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">
-            Notre Parcours
+            {t('association.journey')}
           </h2>
           
           <div className="relative">

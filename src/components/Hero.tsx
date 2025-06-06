@@ -32,6 +32,15 @@ const Hero = () => {
       {/* Navigation spacing */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 pt-20">
         <div className="mb-16">
+          {/* Logo Kryptosphere au-dessus du titre */}
+          <div className="mb-12 flex justify-center">
+            <img 
+              src="/lovable-uploads/365c0231-8bce-48ea-82d5-3f9468c95d85.png" 
+              alt="Kryptosphere Logo"
+              className="h-32 w-auto opacity-90"
+            />
+          </div>
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-white leading-tight">
             {t('hero.title')}<br />
             {t('hero.title2')} <span className="text-blue-400">{t('hero.title3')}</span> {t('hero.title4')}
