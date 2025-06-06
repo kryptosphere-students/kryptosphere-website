@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { MapPin, Users, Mail, Phone, ExternalLink } from 'lucide-react';
+import AntennesMap from '../components/AntennesMap';
+import { Users, Mail, Phone, ExternalLink } from 'lucide-react';
 
 const Antennes = () => {
   const [selectedAntenne, setSelectedAntenne] = useState<string | null>(null);
@@ -81,6 +82,10 @@ const Antennes = () => {
     }
   ];
 
+  const handleAntenneSelect = (antenneId: string) => {
+    setSelectedAntenne(antenneId);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <Navigation />
@@ -97,39 +102,28 @@ const Antennes = () => {
             </p>
           </div>
 
-          {/* Interactive Map Placeholder */}
-          <div className="relative bg-slate-800 rounded-2xl overflow-hidden mb-16 h-96">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-slate-400">
-                <MapPin size={48} className="mx-auto mb-4 text-blue-400" />
-                <p className="text-lg">Carte interactive des antennes</p>
-                <p className="text-sm">Cliquez sur une ville pour en savoir plus</p>
-              </div>
-            </div>
-            
-            {/* Map markers */}
-            {antennes.map((antenne) => (
-              <button
-                key={antenne.id}
-                className="absolute w-4 h-4 bg-blue-500 rounded-full border-2 border-white hover:scale-125 transition-transform cursor-pointer"
-                style={{
-                  left: `${(antenne.coordinates.lng + 10) * 8}%`,
-                  top: `${(55 - antenne.coordinates.lat) * 1.8}%`
-                }}
-                onClick={() => setSelectedAntenne(antenne.id)}
-                title={antenne.name}
-              />
-            ))}
+          {/* Interactive Map */}
+          <div className="mb-16">
+            <AntennesMap 
+              antennes={antennes} 
+              onAntenneSelect={handleAntenneSelect}
+            />
             
             {selectedAntenne && (
-              <div className="absolute bottom-4 left-4 bg-slate-900/90 backdrop-blur-sm rounded-lg p-4 text-white max-w-sm">
+              <div className="mt-4 bg-slate-800/90 backdrop-blur-sm rounded-lg p-6 text-white max-w-md mx-auto">
                 {(() => {
                   const antenne = antennes.find(a => a.id === selectedAntenne);
                   return antenne ? (
-                    <div>
-                      <h3 className="font-bold text-lg text-blue-400">{antenne.name}</h3>
-                      <p className="text-sm text-slate-300 mb-2">{antenne.school}</p>
-                      <p className="text-sm">{antenne.description}</p>
+                    <div className="text-center">
+                      <h3 className="font-bold text-xl text-blue-400 mb-2">{antenne.name}</h3>
+                      <p className="text-slate-300 mb-2">{antenne.school}</p>
+                      <p className="text-sm text-slate-400">{antenne.description}</p>
+                      <Link 
+                        to={`/antennes/${antenne.id}`}
+                        className="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                      >
+                        Découvrir l'antenne
+                      </Link>
                     </div>
                   ) : null;
                 })()}
