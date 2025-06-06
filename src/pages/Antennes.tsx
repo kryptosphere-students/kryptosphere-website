@@ -103,7 +103,7 @@ const Antennes = () => {
           </div>
 
           {/* Interactive Map */}
-          <div className="mb-16 z-0">
+          <div className="mb-16">
             <AntennesMap 
               antennes={antennes} 
               onAntenneSelect={handleAntenneSelect}
