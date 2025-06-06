@@ -18,9 +18,9 @@ const Antennes = () => {
       city: t('cities.paris'),
       country: t('countries.france'),
       coordinates: { lat: 48.8566, lng: 2.3522 },
-      school: 'HEC Paris',
+      school: 'ESSEC Paris',
       description: t('branches.parisDescription'),
-      image: '/placeholder.svg',
+      image: '/antennes/EssecBig.png',
       contact: {
         email: 'paris@kryptosphere.org',
         phone: '+33 1 23 45 67 89'
@@ -144,14 +144,21 @@ const Antennes = () => {
                 to={`/antennes/${antenne.id}`}
                 className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-slate-700/50 transition-all duration-300 group"
               >
-                <div className="aspect-video bg-gradient-to-br from-blue-600 to-purple-700 relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <h3 className="text-2xl font-bold">{antenne.name}</h3>
-                      <p className="text-blue-200">{antenne.country}</p>
-                    </div>
-                  </div>
-                </div>
+<div className="aspect-video relative rounded-xl overflow-hidden">
+  <img
+    src={antenne.image}
+    alt={antenne.name}
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="text-center text-white z-10">
+      <h3 className="text-2xl font-bold">{antenne.name}</h3>
+      <p className="text-blue-200">{antenne.country}</p>
+    </div>
+  </div>
+</div>
+
                 <div className="p-6">
                   <h4 className="text-xl font-semibold text-white mb-2">{antenne.school}</h4>
                   <p className="text-slate-300 text-sm mb-4">{antenne.description}</p>

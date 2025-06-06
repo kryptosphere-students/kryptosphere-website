@@ -18,11 +18,11 @@ const AntenneDetail = () => {
       city: t('cities.paris'),
       coordinates: { lat: 48.8566, lng: 2.3522 },
       country: t('countries.france'),
-      school: 'HEC Paris',
+      school: 'ESSEC Paris',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
       description: t('branches.parisDescription'),
       descriptionEn: t('branches.parisDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1502602898536-47ad22581b52?q=80&w=2000',
+      heroImage: '/antennes/EssecFont.png',
       contact: {
         email: 'paris@kryptosphere.org',
         phone: '+33 1 23 45 67 89',
