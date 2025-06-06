@@ -1,55 +1,44 @@
-
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-interface Antenne {
-  id: string;
-  name: string;
-  school: string;
-  description: string;
-  coordinates: { lat: number; lng: number };
-}
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
-interface AntennesMapProps {
-  antennes: Antenne[];
-  onAntenneSelect?: (antenneId: string) => void;
-}
+const AntennesMap = ({ antennes, onAntenneSelect }) => {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+  if (!isClient) return null;
 
-const AntennesMap: React.FC<AntennesMapProps> = ({ antennes, onAntenneSelect }) => {
   return (
     <div className="h-96 rounded-2xl overflow-hidden">
       <MapContainer
-        center={[48.8566, 2.3522]} // Centré sur Paris
+        center={[48.8566, 2.3522]}
         zoom={5}
-        scrollWheelZoom={true}
-        className="h-full w-full z-0"
-        style={{ height: '100%', width: '100%' }}
+        className="h-full w-full"
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          attribution='&copy; <a href="https://carto.com/">CARTO</a>'
         />
-        {antennes.map((antenne) => (
+        {antennes.map((a) => (
           <Marker
-            key={antenne.id}
-            position={[antenne.coordinates.lat, antenne.coordinates.lng]}
+            key={a.id}
+            position={[a.coordinates.lat, a.coordinates.lng]}
             eventHandlers={{
-              click: () => {
-                if (onAntenneSelect) {
-                  onAntenneSelect(antenne.id);
-                }
-              }
+              click: () => onAntenneSelect?.(a.id),
             }}
           >
             <Popup>
-              <div className="text-center">
-                <strong className="text-blue-600">{antenne.name}</strong><br />
-                <span className="text-slate-600">{antenne.school}</span><br />
-                <span className="text-sm text-slate-500">{antenne.description}</span>
-              </div>
+              <strong>{a.name}</strong><br />
+              {a.school}<br />
+              {a.description}
             </Popup>
           </Marker>
         ))}
