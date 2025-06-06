@@ -91,7 +91,7 @@ const Antennes = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <Navigation />
-      
+
       {/* Hero Section with Map */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
@@ -99,21 +99,21 @@ const Antennes = () => {
             <MapPin className="w-4 h-4 text-blue-400" />
             {t('branches.presenceTag')}
           </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              {t('branches.title')}
-            </h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            {t('branches.title')}
+          </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              {t('branches.subtitle')}
-            </p>
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            {t('branches.subtitle')}
+          </p>
 
           {/* Interactive Map */}
-          <div className="mb-16">
-            <AntennesMap 
-              antennes={antennes} 
+          <div className="mt-20 mb-16">
+            <AntennesMap
+              antennes={antennes}
               onAntenneSelect={handleAntenneSelect}
             />
-            
+
             {selectedAntenne && (
               <div className="mt-4 bg-slate-800/90 backdrop-blur-sm rounded-lg p-6 text-white max-w-md mx-auto">
                 {(() => {
@@ -123,7 +123,7 @@ const Antennes = () => {
                       <h3 className="font-bold text-xl text-blue-400 mb-2">{antenne.name}</h3>
                       <p className="text-slate-300 mb-2">{antenne.school}</p>
                       <p className="text-sm text-slate-400">{antenne.description}</p>
-                      <Link 
+                      <Link
                         to={`/antennes/${antenne.id}`}
                         className="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                       >
@@ -144,20 +144,20 @@ const Antennes = () => {
                 to={`/antennes/${antenne.id}`}
                 className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-slate-700/50 transition-all duration-300 group"
               >
-<div className="aspect-video relative rounded-xl overflow-hidden">
-  <img
-    src={antenne.image}
-    alt={antenne.name}
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-black/50" />
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div className="text-center text-white z-10">
-      <h3 className="text-2xl font-bold">{antenne.name}</h3>
-      <p className="text-blue-200">{antenne.country}</p>
-    </div>
-  </div>
-</div>
+                <div className="aspect-video relative rounded-xl overflow-hidden">
+                  <img
+                    src={antenne.image}
+                    alt={antenne.name}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center text-white z-10">
+                      <h3 className="text-2xl font-bold">{antenne.name}</h3>
+                      <p className="text-blue-200">{antenne.country}</p>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="p-6">
                   <h4 className="text-xl font-semibold text-white mb-2">{antenne.school}</h4>
