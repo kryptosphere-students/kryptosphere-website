@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -41,33 +42,33 @@ const Publications = () => {
     },
     {
       id: 4,
-      title: "KryptoPaper Edition 24",
-      date: "OCTOBRE 2024",
+      title: t('publication.kryptopaper24.title'),
+      date: t('publication.kryptopaper24.date'),
       category: "kryptopaper",
-      description: "Spécial NFTs et métaverse",
+      description: t('publication.kryptopaper24.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "18 min"
+      readTime: t('publication.kryptopaper24.readTime')
     },
     {
       id: 5,
-      title: "Étude: Blockchain dans l'éducation",
-      date: "SEPTEMBRE 2024",
+      title: t('publication.blockchain.title'),
+      date: t('publication.blockchain.date'),
       category: "etude",
-      description: "Impact des technologies blockchain sur l'enseignement supérieur",
+      description: t('publication.blockchain.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "25 min"
+      readTime: t('publication.blockchain.readTime')
     },
     {
       id: 6,
-      title: "Guide Smart Contracts",
-      date: "AOÛT 2024",
+      title: t('publication.smartcontracts.title'),
+      date: t('publication.smartcontracts.date'),
       category: "guide",
-      description: "Développement et déploiement de smart contracts",
+      description: t('publication.smartcontracts.description'),
       image: "/placeholder.svg",
       downloadUrl: "#",
-      readTime: "35 min"
+      readTime: t('publication.smartcontracts.readTime')
     }
   ];
 
@@ -167,11 +168,11 @@ const Publications = () => {
                   <div className="flex gap-3">
                     <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
                       <Eye className="w-4 h-4" />
-                      Lire
+                      {t('publications.read')}
                     </button>
                     <button className="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2">
                       <Download className="w-4 h-4" />
-                      PDF
+                      {t('publications.pdf')}
                     </button>
                   </div>
                 </div>

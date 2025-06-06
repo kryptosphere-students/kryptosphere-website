@@ -1,32 +1,35 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const PublicationsSection = () => {
+  const { t } = useLanguage();
+
   const publications = [
     {
-      title: "KryptoPaper Edition 20",
-      date: "AVRIL 2024",
+      title: t('publication.kryptopaper25.title'),
+      date: t('publication.kryptopaper25.date'),
       image: "/placeholder.svg",
-      category: "RÉDACTION"
+      category: t('publications.kryptopaper')
     },
     {
-      title: "KryptoPaper Edition 20", 
-      date: "AVRIL 2024",
+      title: t('publication.defi.title'),
+      date: t('publication.defi.date'),
       image: "/placeholder.svg",
-      category: "RÉDACTION"
+      category: t('publications.guides')
     },
     {
-      title: "KryptoPaper Edition 20",
-      date: "AVRIL 2024", 
+      title: t('publication.report2024.title'),
+      date: t('publication.report2024.date'),
       image: "/placeholder.svg",
-      category: "RÉDACTION"
+      category: t('publications.reports')
     },
     {
-      title: "KryptoPaper Edition 20",
-      date: "AVRIL 2024",
-      image: "/placeholder.svg", 
-      category: "RÉDACTION"
+      title: t('publication.kryptopaper24.title'),
+      date: t('publication.kryptopaper24.date'),
+      image: "/placeholder.svg",
+      category: t('publications.kryptopaper')
     }
   ];
 
@@ -35,10 +38,10 @@ const PublicationsSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Nos dernières publications
+            {t('publications.title')}
           </h2>
           <button className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
-            Tout voir
+            {t('publications.viewAll')}
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

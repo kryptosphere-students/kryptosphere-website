@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -11,64 +12,64 @@ const Bureau = () => {
   const bureauData = {
     '2025': [
       {
-        name: "Prénom Nom",
-        role: "Président",
-        description: "Étudiant en informatique passionné par les technologies blockchain et l'innovation.",
+        name: t('board.member1.name'),
+        role: t('board.member1.role'),
+        description: t('board.member1.description'),
         image: "/placeholder.svg",
-        school: "École d'ingénieurs"
+        school: t('board.member1.school')
       },
       {
-        name: "Prénom Nom",
-        role: "Vice-Président",
-        description: "Expert en cryptomonnaies et développement de smart contracts.",
+        name: t('board.member2.name'),
+        role: t('board.member2.role'),
+        description: t('board.member2.description'),
         image: "/placeholder.svg",
-        school: "École de commerce"
+        school: t('board.member2.school')
       },
       {
-        name: "Prénom Nom",
-        role: "Trésorier",
-        description: "Spécialiste en finance décentralisée (DeFi) et gestion de projets.",
+        name: t('board.member3.name'),
+        role: t('board.member3.role'),
+        description: t('board.member3.description'),
         image: "/placeholder.svg",
-        school: "Université"
+        school: t('board.member3.school')
       },
       {
-        name: "Prénom Nom",
-        role: "Secrétaire",
-        description: "Responsable communication et organisation d'événements.",
+        name: t('board.member4.name'),
+        role: t('board.member4.role'),
+        description: t('board.member4.description'),
         image: "/placeholder.svg",
-        school: "École d'informatique"
+        school: t('board.member4.school')
       },
       {
-        name: "Prénom Nom",
-        role: "Responsable Technique",
-        description: "Développeur blockchain et architecte de solutions décentralisées.",
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
         image: "/placeholder.svg",
-        school: "École d'ingénieurs"
+        school: t('board.member5.school')
       },
       {
-        name: "Prénom Nom",
-        role: "Responsable Partenariats",
-        description: "Expert en relations entreprises et développement de partenariats.",
+        name: t('board.member6.name'),
+        role: t('board.member6.role'),
+        description: t('board.member6.description'),
         image: "/placeholder.svg",
-        school: "École de commerce"
+        school: t('board.member6.school')
       }
     ],
     '2024': [
       {
-        name: "Ancien Président",
-        role: "Président",
-        description: "Ancien président qui a mené l'association vers de nouveaux horizons.",
+        name: t('board.former.president'),
+        role: t('board.member1.role'),
+        description: t('board.former.description'),
         image: "/placeholder.svg",
-        school: "École d'ingénieurs"
+        school: t('board.member1.school')
       }
     ],
     '2023': [
       {
-        name: "Ancien Président 2023",
-        role: "Président",
-        description: "Leadership exceptionnel durant l'année 2023.",
+        name: t('board.former.president') + " 2023",
+        role: t('board.member1.role'),
+        description: t('board.former.description2023'),
         image: "/placeholder.svg",
-        school: "Université"
+        school: t('board.member3.school')
       }
     ]
   };

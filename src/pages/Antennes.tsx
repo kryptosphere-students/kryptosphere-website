@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
@@ -13,12 +14,12 @@ const Antennes = () => {
   const antennes = [
     {
       id: 'paris',
-      name: 'Paris',
-      city: 'Paris',
-      country: 'France',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
       coordinates: { lat: 48.8566, lng: 2.3522 },
       school: 'HEC Paris',
-      description: 'Notre antenne parisienne, au cœur de l\'écosystème blockchain français.',
+      description: t('branches.parisDescription'),
       image: '/placeholder.svg',
       contact: {
         email: 'paris@kryptosphere.org',
@@ -27,12 +28,12 @@ const Antennes = () => {
     },
     {
       id: 'nantes',
-      name: 'Nantes',
-      city: 'Nantes',
-      country: 'France',
+      name: t('cities.nantes'),
+      city: t('cities.nantes'),
+      country: t('countries.france'),
       coordinates: { lat: 47.2184, lng: -1.5536 },
       school: 'Audencia Business School',
-      description: 'L\'antenne nantaise, dynamique et innovante dans l\'ouest de la France.',
+      description: t('branches.nantesDescription'),
       image: '/placeholder.svg',
       contact: {
         email: 'nantes@kryptosphere.org',
@@ -41,12 +42,12 @@ const Antennes = () => {
     },
     {
       id: 'lille',
-      name: 'Lille',
-      city: 'Lille',
-      country: 'France',
+      name: t('cities.lille'),
+      city: t('cities.lille'),
+      country: t('countries.france'),
       coordinates: { lat: 50.6292, lng: 3.0573 },
       school: 'EDHEC Business School',
-      description: 'L\'antenne lilloise, proche de la frontière belge et très active.',
+      description: t('branches.lilleDescription'),
       image: '/placeholder.svg',
       contact: {
         email: 'lille@kryptosphere.org',
@@ -55,12 +56,12 @@ const Antennes = () => {
     },
     {
       id: 'londres',
-      name: 'Londres',
-      city: 'Londres',
-      country: 'Royaume-Uni',
+      name: t('cities.london'),
+      city: t('cities.london'),
+      country: t('countries.uk'),
       coordinates: { lat: 51.5074, lng: -0.1278 },
       school: 'London Business School',
-      description: 'Notre première antenne internationale, au cœur de la City londonienne.',
+      description: t('branches.londonDescription'),
       image: '/placeholder.svg',
       contact: {
         email: 'london@kryptosphere.org',
@@ -69,12 +70,12 @@ const Antennes = () => {
     },
     {
       id: 'bruxelles',
-      name: 'Bruxelles',
-      city: 'Bruxelles',
-      country: 'Belgique',
+      name: t('cities.brussels'),
+      city: t('cities.brussels'),
+      country: t('countries.belgium'),
       coordinates: { lat: 50.8503, lng: 4.3517 },
       school: 'Solvay Brussels School',
-      description: 'L\'antenne bruxelloise, au cœur des institutions européennes.',
+      description: t('branches.brusselsDescription'),
       image: '/placeholder.svg',
       contact: {
         email: 'brussels@kryptosphere.org',
@@ -96,7 +97,7 @@ const Antennes = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <MapPin className="w-4 h-4 text-blue-400" />
-            Notre présence en Europe
+            {t('branches.presenceTag')}
           </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               {t('branches.title')}

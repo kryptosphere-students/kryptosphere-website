@@ -32,12 +32,12 @@ const Hero = () => {
       {/* Navigation spacing */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 pt-20">
         <div className="mb-16">
-          {/* Logo Kryptosphere au-dessus du titre */}
+          {/* Logo Kryptosphere au-dessus du titre - agrandi */}
           <div className="mb-12 flex justify-center">
             <img 
               src="/lovable-uploads/365c0231-8bce-48ea-82d5-3f9468c95d85.png" 
               alt="Kryptosphere Logo"
-              className="h-32 w-auto opacity-90"
+              className="h-40 w-auto opacity-90" // Augmentation de la taille de 32px à 40px
             />
           </div>
 

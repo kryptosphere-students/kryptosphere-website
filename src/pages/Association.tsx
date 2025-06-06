@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,55 +12,55 @@ const Association = () => {
       year: '2017',
       title: t('timeline.2017.title'),
       description: t('timeline.2017.description'),
-      achievements: t('timeline.2017.achievements')
+      achievements: t('timeline.2017.achievements') as string[]
     },
     {
       year: '2018',
       title: t('timeline.2018.title'),
       description: t('timeline.2018.description'),
-      achievements: t('timeline.2018.achievements')
+      achievements: t('timeline.2018.achievements') as string[]
     },
     {
       year: '2019',
       title: t('timeline.2019.title'),
       description: t('timeline.2019.description'),
-      achievements: t('timeline.2019.achievements')
+      achievements: t('timeline.2019.achievements') as string[]
     },
     {
       year: '2020',
       title: t('timeline.2020.title'),
       description: t('timeline.2020.description'),
-      achievements: t('timeline.2020.achievements')
+      achievements: t('timeline.2020.achievements') as string[]
     },
     {
       year: '2021',
       title: t('timeline.2021.title'),
       description: t('timeline.2021.description'),
-      achievements: t('timeline.2021.achievements')
+      achievements: t('timeline.2021.achievements') as string[]
     },
     {
       year: '2022',
       title: t('timeline.2022.title'),
       description: t('timeline.2022.description'),
-      achievements: t('timeline.2022.achievements')
+      achievements: t('timeline.2022.achievements') as string[]
     },
     {
       year: '2023',
       title: t('timeline.2023.title'),
       description: t('timeline.2023.description'),
-      achievements: t('timeline.2023.achievements')
+      achievements: t('timeline.2023.achievements') as string[]
     },
     {
       year: '2024',
       title: t('timeline.2024.title'),
       description: t('timeline.2024.description'),
-      achievements: t('timeline.2024.achievements')
+      achievements: t('timeline.2024.achievements') as string[]
     },
     {
       year: '2025',
       title: t('timeline.2025.title'),
       description: t('timeline.2025.description'),
-      achievements: t('timeline.2025.achievements')
+      achievements: t('timeline.2025.achievements') as string[]
     }
   ];
 
@@ -151,7 +150,7 @@ const Association = () => {
                       <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                       <p className="text-slate-300 mb-4 leading-relaxed">{item.description}</p>
                       <div className="space-y-2">
-                        {item.achievements.map((achievement, i) => (
+                        {Array.isArray(item.achievements) && item.achievements.map((achievement, i) => (
                           <div key={i} className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                             <span className="text-sm text-slate-400">{achievement}</span>

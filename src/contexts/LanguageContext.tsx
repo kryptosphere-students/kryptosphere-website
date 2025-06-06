@@ -30,6 +30,7 @@ const translations = {
     'hero.branches': 'Voir nos antennes',
 
     // Stats
+    'stats.title': 'Kryptosphere en quelques chiffres',
     'stats.students': 'Étudiants',
     'stats.universities': 'Universités',
     'stats.events': 'Événements',
@@ -43,15 +44,43 @@ const translations = {
     'sponsors.media': 'Ils parlent de nous',
 
     // Publications
-    'publications.title': 'Nos Publications',
+    'publications.title': 'Nos dernières publications',
     'publications.subtitle': 'Découvrez nos dernières analyses et recherches sur la blockchain',
     'publications.readMore': 'Lire la suite',
+    'publications.viewAll': 'Tout voir',
 
     // Pages
     'board.title': 'Notre Bureau',
     'board.subtitle': 'Découvrez les passionnés qui font vivre Kryptosphere au quotidien. Une équipe diverse et motivée, unie par la vision d\'un avenir blockchain.',
     'board.teamTag': 'L\'équipe qui fait vivre Kryptosphere',
     'board.year': 'Année :',
+    'board.member1.name': 'Prénom Nom',
+    'board.member1.role': 'Président',
+    'board.member1.description': 'Étudiant en informatique passionné par les technologies blockchain et l\'innovation.',
+    'board.member1.school': 'École d\'ingénieurs',
+    'board.member2.name': 'Prénom Nom',
+    'board.member2.role': 'Vice-Président',
+    'board.member2.description': 'Expert en cryptomonnaies et développement de smart contracts.',
+    'board.member2.school': 'École de commerce',
+    'board.member3.name': 'Prénom Nom',
+    'board.member3.role': 'Trésorier',
+    'board.member3.description': 'Spécialiste en finance décentralisée (DeFi) et gestion de projets.',
+    'board.member3.school': 'Université',
+    'board.member4.name': 'Prénom Nom',
+    'board.member4.role': 'Secrétaire',
+    'board.member4.description': 'Responsable communication et organisation d\'événements.',
+    'board.member4.school': 'École d\'informatique',
+    'board.member5.name': 'Prénom Nom',
+    'board.member5.role': 'Responsable Technique',
+    'board.member5.description': 'Développeur blockchain et architecte de solutions décentralisées.',
+    'board.member5.school': 'École d\'ingénieurs',
+    'board.member6.name': 'Prénom Nom',
+    'board.member6.role': 'Responsable Partenariats',
+    'board.member6.description': 'Expert en relations entreprises et développement de partenariats.',
+    'board.member6.school': 'École de commerce',
+    'board.former.president': 'Ancien Président',
+    'board.former.description': 'Ancien président qui a mené l\'association vers de nouveaux horizons.',
+    'board.former.description2023': 'Leadership exceptionnel durant l\'année 2023.',
     
     'association.title': 'L\'Association',
     'association.subtitle': 'Depuis 2017, Kryptosphere s\'impose comme la référence européenne dans l\'écosystème blockchain étudiant. Découvrez notre histoire, nos valeurs et notre vision pour l\'avenir.',
@@ -69,6 +98,17 @@ const translations = {
     'branches.discover': 'Découvrir l\'antenne',
     'branches.localOffice': 'Bureau local',
     'branches.presenceTag': 'Notre présence en Europe',
+    'branches.parisDescription': 'Notre antenne parisienne, au cœur de l\'écosystème blockchain français.',
+    'branches.nantesDescription': 'L\'antenne nantaise, dynamique et innovante dans l\'ouest de la France.',
+    'branches.lilleDescription': 'L\'antenne lilloise, proche de la frontière belge et très active.',
+    'branches.londonDescription': 'Notre première antenne internationale, au cœur de la City londonienne.',
+    'branches.brusselsDescription': 'L\'antenne bruxelloise, au cœur des institutions européennes.',
+    'branches.backToList': 'Retour aux antennes',
+    'branches.bureauYear': 'Bureau {city} 2025',
+    'branches.contact': 'Nous contacter',
+    'branches.gallery': 'Galerie',
+    'branches.location': 'Localisation',
+    'branches.locationMap': 'Carte de localisation',
 
     'events.title': 'Événements',
     'events.subtitle': 'Rejoignez nos événements exclusifs et plongez dans l\'univers blockchain. Workshops, conférences et networking avec les leaders de l\'écosystème crypto.',
@@ -126,6 +166,31 @@ const translations = {
     'antenne.contact': 'Contact',
     'antenne.gallery': 'Galerie',
     'antenne.location': 'Localisation',
+    'antenne.email': 'Email',
+    'antenne.phone': 'Téléphone',
+    'antenne.address': 'Adresse',
+    'antenne.notFound': 'Antenne non trouvée',
+
+    // Countries
+    'countries.france': 'France',
+    'countries.uk': 'Royaume-Uni',
+    'countries.belgium': 'Belgique',
+
+    // Cities
+    'cities.paris': 'Paris',
+    'cities.nantes': 'Nantes',
+    'cities.lille': 'Lille',
+    'cities.london': 'Londres',
+    'cities.brussels': 'Bruxelles',
+
+    // Team roles
+    'roles.president': 'Président',
+    'roles.vicePresident': 'Vice-Président',
+    'roles.secretary': 'Secrétaire',
+    'roles.treasurer': 'Trésorier',
+    'roles.presidente': 'Présidente',
+    'roles.vicePresidente': 'Vice-Présidente',
+    'roles.tresoriere': 'Trésorière',
 
     // Footer Legal
     'footer.legal.disclaimer': 'Avertissement',
@@ -195,6 +260,21 @@ const translations = {
     'publication.report2024.description': 'Bilan des activités et accomplissements de l\'année',
     'publication.report2024.readTime': '30 min',
 
+    'publication.kryptopaper24.title': 'KryptoPaper Edition 24',
+    'publication.kryptopaper24.date': 'OCTOBRE 2024',
+    'publication.kryptopaper24.description': 'Spécial NFTs et métaverse',
+    'publication.kryptopaper24.readTime': '18 min',
+
+    'publication.blockchain.title': 'Étude: Blockchain dans l\'éducation',
+    'publication.blockchain.date': 'SEPTEMBRE 2024',
+    'publication.blockchain.description': 'Impact des technologies blockchain sur l\'enseignement supérieur',
+    'publication.blockchain.readTime': '25 min',
+
+    'publication.smartcontracts.title': 'Guide Smart Contracts',
+    'publication.smartcontracts.date': 'AOÛT 2024',
+    'publication.smartcontracts.description': 'Développement et déploiement de smart contracts',
+    'publication.smartcontracts.readTime': '35 min',
+
     // General
     'language': 'fr'
   },
@@ -218,6 +298,7 @@ const translations = {
     'hero.branches': 'See our branches',
 
     // Stats
+    'stats.title': 'Kryptosphere in numbers',
     'stats.students': 'Students',
     'stats.universities': 'Universities',
     'stats.events': 'Events',
@@ -231,15 +312,43 @@ const translations = {
     'sponsors.media': 'They talk about us',
 
     // Publications
-    'publications.title': 'Our Publications',
+    'publications.title': 'Our latest publications',
     'publications.subtitle': 'Discover our latest blockchain analyses and research',
     'publications.readMore': 'Read more',
+    'publications.viewAll': 'View all',
 
     // Pages
     'board.title': 'Our Board',
     'board.subtitle': 'Discover the passionate people who bring Kryptosphere to life every day. A diverse and motivated team, united by the vision of a blockchain future.',
     'board.teamTag': 'The team that brings Kryptosphere to life',
     'board.year': 'Year:',
+    'board.member1.name': 'First Name Last Name',
+    'board.member1.role': 'President',
+    'board.member1.description': 'Computer science student passionate about blockchain technologies and innovation.',
+    'board.member1.school': 'Engineering School',
+    'board.member2.name': 'First Name Last Name',
+    'board.member2.role': 'Vice-President',
+    'board.member2.description': 'Expert in cryptocurrencies and smart contract development.',
+    'board.member2.school': 'Business School',
+    'board.member3.name': 'First Name Last Name',
+    'board.member3.role': 'Treasurer',
+    'board.member3.description': 'Specialist in decentralized finance (DeFi) and project management.',
+    'board.member3.school': 'University',
+    'board.member4.name': 'First Name Last Name',
+    'board.member4.role': 'Secretary',
+    'board.member4.description': 'Communication manager and event organizer.',
+    'board.member4.school': 'Computer Science School',
+    'board.member5.name': 'First Name Last Name',
+    'board.member5.role': 'Technical Lead',
+    'board.member5.description': 'Blockchain developer and decentralized solutions architect.',
+    'board.member5.school': 'Engineering School',
+    'board.member6.name': 'First Name Last Name',
+    'board.member6.role': 'Partnership Manager',
+    'board.member6.description': 'Expert in business relations and partnership development.',
+    'board.member6.school': 'Business School',
+    'board.former.president': 'Former President',
+    'board.former.description': 'Former president who led the association to new horizons.',
+    'board.former.description2023': 'Exceptional leadership during 2023.',
     
     'association.title': 'The Association',
     'association.subtitle': 'Since 2017, Kryptosphere has established itself as the European reference in the student blockchain ecosystem. Discover our history, our values and our vision for the future.',
@@ -257,6 +366,17 @@ const translations = {
     'branches.discover': 'Discover the branch',
     'branches.localOffice': 'Local office',
     'branches.presenceTag': 'Our presence in Europe',
+    'branches.parisDescription': 'Our Parisian branch, at the heart of the French blockchain ecosystem.',
+    'branches.nantesDescription': 'The Nantes branch, dynamic and innovative in western France.',
+    'branches.lilleDescription': 'The Lille branch, close to the Belgian border and very active.',
+    'branches.londonDescription': 'Our first international branch, in the heart of London\'s City.',
+    'branches.brusselsDescription': 'The Brussels branch, at the heart of European institutions.',
+    'branches.backToList': 'Back to branches',
+    'branches.bureauYear': '{city} Office 2025',
+    'branches.contact': 'Contact us',
+    'branches.gallery': 'Gallery',
+    'branches.location': 'Location',
+    'branches.locationMap': 'Location map',
 
     'events.title': 'Events',
     'events.subtitle': 'Join our exclusive events and dive into the blockchain universe. Workshops, conferences and networking with crypto ecosystem leaders.',
@@ -314,6 +434,31 @@ const translations = {
     'antenne.contact': 'Contact',
     'antenne.gallery': 'Gallery',
     'antenne.location': 'Location',
+    'antenne.email': 'Email',
+    'antenne.phone': 'Phone',
+    'antenne.address': 'Address',
+    'antenne.notFound': 'Branch not found',
+
+    // Countries
+    'countries.france': 'France',
+    'countries.uk': 'United Kingdom',
+    'countries.belgium': 'Belgium',
+
+    // Cities
+    'cities.paris': 'Paris',
+    'cities.nantes': 'Nantes',
+    'cities.lille': 'Lille',
+    'cities.london': 'London',
+    'cities.brussels': 'Brussels',
+
+    // Team roles
+    'roles.president': 'President',
+    'roles.vicePresident': 'Vice-President',
+    'roles.secretary': 'Secretary',
+    'roles.treasurer': 'Treasurer',
+    'roles.presidente': 'President',
+    'roles.vicePresidente': 'Vice-President',
+    'roles.tresoriere': 'Treasurer',
 
     // Footer Legal
     'footer.legal.disclaimer': 'Disclaimer',
@@ -382,6 +527,21 @@ const translations = {
     'publication.report2024.date': 'DECEMBER 2024',
     'publication.report2024.description': 'Summary of activities and achievements of the year',
     'publication.report2024.readTime': '30 min',
+
+    'publication.kryptopaper24.title': 'KryptoPaper Edition 24',
+    'publication.kryptopaper24.date': 'OCTOBER 2024',
+    'publication.kryptopaper24.description': 'Special NFTs and metaverse',
+    'publication.kryptopaper24.readTime': '18 min',
+
+    'publication.blockchain.title': 'Study: Blockchain in Education',
+    'publication.blockchain.date': 'SEPTEMBER 2024',
+    'publication.blockchain.description': 'Impact of blockchain technologies on higher education',
+    'publication.blockchain.readTime': '25 min',
+
+    'publication.smartcontracts.title': 'Smart Contracts Guide',
+    'publication.smartcontracts.date': 'AUGUST 2024',
+    'publication.smartcontracts.description': 'Development and deployment of smart contracts',
+    'publication.smartcontracts.readTime': '35 min',
 
     // General
     'language': 'en'
