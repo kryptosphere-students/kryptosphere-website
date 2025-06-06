@@ -51,20 +51,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Bottom section avec sponsors preview */}
-      <div className="absolute bottom-0 left-0 right-0 bg-black/80 py-8">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-white text-lg font-medium">{t('sponsors.title')}</h3>
-            <div className="flex items-center gap-2 text-slate-400">
-              <span>{t('sponsors.sponsors')}</span>
-              <span>•</span>
-              <span>{t('sponsors.partners')}</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
