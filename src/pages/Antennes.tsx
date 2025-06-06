@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import AntennesMap from '../components/AntennesMap';
-import { Users, Mail, Phone, ExternalLink } from 'lucide-react';
+import { Users, Mail, Phone, ExternalLink, Target, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Antennes = () => {
@@ -92,16 +92,19 @@ const Antennes = () => {
       <Navigation />
       
       {/* Hero Section with Map */}
-      <section className="pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+      <section className="pt-32 pb-16 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
+            <MapPin className="w-4 h-4 text-blue-400" />
+            Notre présence en Europe
+          </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               {t('branches.title')}
             </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               {t('branches.subtitle')}
             </p>
-          </div>
 
           {/* Interactive Map */}
           <div className="mb-16">
