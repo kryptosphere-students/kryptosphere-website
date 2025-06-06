@@ -32,8 +32,12 @@ const Navigation = () => {
     <nav className={navClasses}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold text-white">
-            Kryptosphere
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.png" 
+              alt="Kryptosphere" 
+              className="h-8 w-auto"
+            />
           </Link>
           
           {/* Desktop Menu */}

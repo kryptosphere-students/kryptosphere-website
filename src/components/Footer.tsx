@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
@@ -20,9 +19,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2">
-            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Kryptosphere
-            </h3>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.png" 
+                alt="Kryptosphere" 
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-slate-400 mb-6 leading-relaxed max-w-md">
               L'association étudiante de référence dans l'univers blockchain. 
               Rejoignez-nous pour explorer les technologies de demain.
@@ -79,7 +82,6 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Legal Links Section */}
         <div className="border-t border-slate-800 pt-8 mb-8">
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
             {legalLinks.map((link, index) => (
