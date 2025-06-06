@@ -15,44 +15,30 @@ const Bureau = () => {
         name: t('board.member1.name'),
         role: t('board.member1.role'),
         description: t('board.member1.description'),
-        image: "/placeholder.svg",
+        image: "/bureau/rpautard.png",
         school: t('board.member1.school')
       },
       {
         name: t('board.member2.name'),
         role: t('board.member2.role'),
         description: t('board.member2.description'),
-        image: "/placeholder.svg",
+        image: "/bureau/amanival.png",
         school: t('board.member2.school')
       },
       {
         name: t('board.member3.name'),
         role: t('board.member3.role'),
         description: t('board.member3.description'),
-        image: "/placeholder.svg",
+        image: "/bureau/mlaruelle.png",
         school: t('board.member3.school')
       },
       {
         name: t('board.member4.name'),
         role: t('board.member4.role'),
         description: t('board.member4.description'),
-        image: "/placeholder.svg",
+        image: "/bureau/lpiallat.png",
         school: t('board.member4.school')
       },
-      {
-        name: t('board.member5.name'),
-        role: t('board.member5.role'),
-        description: t('board.member5.description'),
-        image: "/placeholder.svg",
-        school: t('board.member5.school')
-      },
-      {
-        name: t('board.member6.name'),
-        role: t('board.member6.role'),
-        description: t('board.member6.description'),
-        image: "/placeholder.svg",
-        school: t('board.member6.school')
-      }
     ],
     '2024': [
       {
@@ -127,15 +113,15 @@ const Bureau = () => {
       {/* Team Grid */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {bureauData[selectedYear]?.map((member, index) => (
               <div key={index} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden">
                 <div className="p-8 text-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6 overflow-hidden flex items-center justify-center">
-                    <img 
-                      src={member.image} 
+                  <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
+                    <img
+                      src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-300 transition-colors">{member.name}</h3>

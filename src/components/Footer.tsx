@@ -68,16 +68,16 @@ const Footer = () => {
             <ul className="space-y-3 text-slate-400">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>contact@kryptosphere.org</span>
+                <span>contact.kryptosphere@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-blue-400" />
-                <span>Lyon, France</span>
+                <span>France, UK & Belgium</span>
               </li>
-              <li className="flex items-center gap-2">
+              {/* <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-blue-400" />
                 <span>+33 (0)X XX XX XX XX</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -58,7 +58,8 @@ const Events = () => {
 
           <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
-              src="https://lu.ma/embed/calendar/kryptosphere?type=grid&future=true"
+              //src="https://lu.ma/embed/calendar/kryptosphere?type=grid&future=true"
+              src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events"
               width="100%"
               height="100%"
               loading="lazy"
@@ -79,7 +80,8 @@ const Events = () => {
 
           <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
-              src="https://lu.ma/embed/calendar/kryptosphere?type=grid&past=true"
+             // src="https://lu.ma/embed/calendar/kryptosphere?type=grid&past=true"
+              src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events"
               width="100%"
               height="100%"
               loading="lazy"

@@ -52,13 +52,13 @@ const Publications = () => {
     },
     {
       id: 5,
-      title: t('publication.blockchain.title'),
-      date: t('publication.blockchain.date'),
+      title: t('publication.research.title'),
+      date: t('publication.research.date'),
       category: "etude",
-      description: t('publication.blockchain.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.blockchain.readTime')
+      description: t('publication.research.description'),
+      image: "/publications/images/researchThibault.png",
+      downloadUrl: "/publications/LANGLOIS_BERTHELOT_Thibault_Doctorat_2023.pdf",
+      readTime: t('publication.research.readTime')
     },
     {
       id: 6,
@@ -80,14 +80,14 @@ const Publications = () => {
     { id: 'etude', name: t('publications.studies'), count: publications.filter(p => p.category === 'etude').length }
   ];
 
-  const filteredPublications = selectedCategory === 'all' 
-    ? publications 
+  const filteredPublications = selectedCategory === 'all'
+    ? publications
     : publications.filter(p => p.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
@@ -95,12 +95,12 @@ const Publications = () => {
             <FileText className="w-4 h-4" />
             {t('publications.resourcesTag')}
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
             {t('publications.page.title')}
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
-          
+
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
             {t('publications.page.subtitle')}
           </p>
@@ -115,11 +115,10 @@ const Publications = () => {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
-                  selectedCategory === category.id
+                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${selectedCategory === category.id
                     ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25'
                     : 'bg-slate-800/50 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700/50'
-                }`}
+                  }`}
               >
                 {category.name}
                 <span className="text-xs bg-slate-700 px-2 py-1 rounded-full">{category.count}</span>
@@ -139,8 +138,8 @@ const Publications = () => {
                 className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
               >
                 <div className="aspect-video bg-slate-700 relative overflow-hidden">
-                  <img 
-                    src={publication.image} 
+                  <img
+                    src={publication.image}
                     alt={publication.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -156,7 +155,7 @@ const Publications = () => {
                     {publication.readTime}
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
                     {publication.title}
@@ -164,16 +163,27 @@ const Publications = () => {
                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
                     {publication.description}
                   </p>
-                  
+
                   <div className="flex gap-3">
-                    <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
+                    <a
+                      href={publication.downloadUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+                    >
                       <Eye className="w-4 h-4" />
                       {t('publications.read')}
-                    </button>
-                    <button className="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2">
+                    </a>
+
+                    <a
+                      href={publication.downloadUrl}
+                      download
+                      className="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2"
+                    >
                       <Download className="w-4 h-4" />
                       {t('publications.pdf')}
-                    </button>
+                    </a>
+
                   </div>
                 </div>
               </div>

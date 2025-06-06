@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { MapPin, Mail, Phone, ArrowLeft, Users, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { useLanguage } from '../contexts/LanguageContext';
+import AntenneMapSingle from '@/components/AntenneMapSingle';
 
 const AntenneDetail = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const AntenneDetail = () => {
     paris: {
       name: t('cities.paris'),
       city: t('cities.paris'),
+      coordinates: { lat: 48.8566, lng: 2.3522 },
       country: t('countries.france'),
       school: 'HEC Paris',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
@@ -36,6 +38,7 @@ const AntenneDetail = () => {
     nantes: {
       name: t('cities.nantes'),
       city: t('cities.nantes'),
+      coordinates: { lat: 47.2184, lng: -1.5536 },
       country: t('countries.france'),
       school: 'Audencia Business School',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
@@ -56,6 +59,7 @@ const AntenneDetail = () => {
     lille: {
       name: t('cities.lille'),
       city: t('cities.lille'),
+      coordinates: { lat: 50.6292, lng: 3.0573 },
       country: t('countries.france'),
       school: 'EDHEC Business School',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
@@ -76,6 +80,7 @@ const AntenneDetail = () => {
     londres: {
       name: t('cities.london'),
       city: t('cities.london'),
+      coordinates: { lat: 51.5074, lng: -0.1278 },
       country: t('countries.uk'),
       school: 'London Business School',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
@@ -96,6 +101,7 @@ const AntenneDetail = () => {
     bruxelles: {
       name: t('cities.brussels'),
       city: t('cities.brussels'),
+      coordinates: { lat: 50.8503, lng: 4.3517 },
       country: t('countries.belgium'),
       school: 'Solvay Brussels School',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
@@ -143,30 +149,30 @@ const AntenneDetail = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative h-screen">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('${antenne.heroImage}')` }}
         >
           <div className="absolute inset-0 bg-slate-900/70"></div>
         </div>
-        
+
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
-            <Link 
-              to="/antennes" 
+            <Link
+              to="/antennes"
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors"
             >
               <ArrowLeft size={20} />
               {t('branches.backToList')}
             </Link>
-            
+
             <div className="max-w-4xl">
               <div className="flex items-center gap-6 mb-6">
-                <img 
-                  src={antenne.schoolLogo} 
+                <img
+                  src={antenne.schoolLogo}
                   alt={antenne.school}
                   className="w-16 h-16 bg-white rounded-lg p-2"
                 />
@@ -177,7 +183,7 @@ const AntenneDetail = () => {
                   <p className="text-xl text-slate-300">{antenne.school}</p>
                 </div>
               </div>
-              
+
               <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
                 {t('language') === 'fr' ? antenne.description : antenne.descriptionEn}
               </p>
@@ -185,33 +191,40 @@ const AntenneDetail = () => {
           </div>
         </div>
       </section>
-
       {/* Bureau Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-white text-center mb-16">
             {t('branches.bureauYear').replace('{city}', antenne.name)}
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {antenne.bureau.map((member, index) => (
-              <Card key={index} className="bg-slate-800/50 backdrop-blur-sm border-slate-700">
-                <CardContent className="p-6 text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-600 to-purple-700">
-                    <img 
-                      src={member.photo} 
+              <div
+                key={index}
+                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
+              >
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
+                    <img
+                      src={member.photo}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                  <p className="text-blue-400">{member.role}</p>
-                </CardContent>
-              </Card>
+                  <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-300 transition-colors">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-400 font-semibold mb-2 text-sm uppercase tracking-wide">
+                    {member.role}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* Contact & Map Section */}
       <section className="py-20 bg-slate-800/30">
@@ -230,7 +243,7 @@ const AntenneDetail = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 text-slate-300">
                   <Phone className="text-blue-400" size={24} />
                   <div>
@@ -240,7 +253,7 @@ const AntenneDetail = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 text-slate-300">
                   <MapPin className="text-blue-400" size={24} />
                   <div>
@@ -250,15 +263,12 @@ const AntenneDetail = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Map */}
-            <div className="bg-slate-800 rounded-xl overflow-hidden h-80">
-              <div className="h-full flex items-center justify-center text-slate-400">
-                <div className="text-center">
-                  <MapPin size={48} className="mx-auto mb-4 text-blue-400" />
-                  <p className="text-lg">{t('branches.locationMap')}</p>
-                  <p className="text-sm">{antenne.city}, {antenne.country}</p>
-                </div>
+            <div className="bg-slate-800 rounded-xl overflow-hidden">
+              {/* Map fills full width */}
+              <div className="h-80 w-full">
+                <AntenneMapSingle antenne={antenne} />
               </div>
             </div>
           </div>
@@ -272,8 +282,8 @@ const AntenneDetail = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {gallery.map((image, index) => (
               <div key={index} className="aspect-video rounded-xl overflow-hidden bg-slate-800">
-                <img 
-                  src={image} 
+                <img
+                  src={image}
                   alt={`${t('branches.gallery')} ${index + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
