@@ -2,8 +2,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
+  const legalLinks = [
+    { key: 'footer.legal.disclaimer', href: '/documents/avertissement.pdf' },
+    { key: 'footer.legal.privacy', href: '/documents/politique-confidentialite.pdf' },
+    { key: 'footer.legal.terms', href: '/documents/cgu.pdf' },
+    { key: 'footer.legal.cookies', href: '/documents/politique-cookies.pdf' },
+    { key: 'footer.legal.legal', href: '/documents/mentions-legales.pdf' }
+  ];
+
   return (
     <footer className="bg-slate-900 border-t border-slate-700/50">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -41,16 +52,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-6 text-lg text-white">Navigation</h4>
             <ul className="space-y-3 text-slate-400">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors duration-200">Accueil</Link></li>
-              <li><Link to="/team" className="hover:text-blue-400 transition-colors duration-200">Bureau</Link></li>
-              <li><Link to="/association" className="hover:text-blue-400 transition-colors duration-200">Association</Link></li>
-              <li><Link to="/antennes" className="hover:text-blue-400 transition-colors duration-200">Antennes</Link></li>
-              <li><Link to="/events" className="hover:text-blue-400 transition-colors duration-200">Événements</Link></li>
+              <li><Link to="/" className="hover:text-blue-400 transition-colors duration-200">{t('nav.home')}</Link></li>
+              <li><Link to="/bureau" className="hover:text-blue-400 transition-colors duration-200">{t('nav.board')}</Link></li>
+              <li><Link to="/association" className="hover:text-blue-400 transition-colors duration-200">{t('nav.association')}</Link></li>
+              <li><Link to="/antennes" className="hover:text-blue-400 transition-colors duration-200">{t('nav.branches')}</Link></li>
+              <li><Link to="/events" className="hover:text-blue-400 transition-colors duration-200">{t('nav.events')}</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-6 text-lg text-white">Contact</h4>
+            <h4 className="font-semibold mb-6 text-lg text-white">{t('antenne.contact')}</h4>
             <ul className="space-y-3 text-slate-400">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400" />
@@ -68,7 +79,28 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
+        {/* Legal Links Section */}
+        <div className="border-t border-slate-800 pt-8 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
+            {legalLinks.map((link, index) => (
+              <React.Fragment key={link.key}>
+                <a 
+                  href={link.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors duration-200"
+                >
+                  {t(link.key)}
+                </a>
+                {index < legalLinks.length - 1 && (
+                  <span className="text-slate-600">|</span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+        
+        <div className="text-center text-slate-400">
           <p>&copy; 2024 Kryptosphere. Tous droits réservés.</p>
         </div>
       </div>

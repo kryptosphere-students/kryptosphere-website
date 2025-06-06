@@ -51,8 +51,33 @@ const translations = {
     'board.title': 'Bureau',
     'association.title': 'Association',
     'branches.title': 'Nos Antennes',
+    'branches.subtitle': 'Découvrez nos antennes à travers l\'Europe et rejoignez la communauté Kryptosphere la plus proche de vous.',
+    'branches.discover': 'Découvrir l\'antenne',
+    'branches.localOffice': 'Bureau local',
     'publications.page.title': 'Publications',
     'donation.title': 'Faire une donation',
+
+    // Antenne Details
+    'antenne.team': 'Équipe',
+    'antenne.president': 'Président',
+    'antenne.vicePresident': 'Vice-Président',
+    'antenne.secretary': 'Secrétaire',
+    'antenne.treasurer': 'Trésorier',
+    'antenne.contact': 'Contact',
+    'antenne.gallery': 'Galerie',
+    'antenne.location': 'Localisation',
+
+    // Footer Legal
+    'footer.legal.disclaimer': 'Avertissement',
+    'footer.legal.privacy': 'Politique de confidentialité',
+    'footer.legal.terms': 'Conditions générales d\'utilisation (CGU)',
+    'footer.legal.cookies': 'Politique de cookies',
+    'footer.legal.legal': 'Mentions légales',
+
+    // Contact
+    'contact.email': 'Email',
+    'contact.phone': 'Téléphone',
+    'contact.address': 'Adresse',
 
     // General
     'language': 'fr'
@@ -98,8 +123,33 @@ const translations = {
     'board.title': 'Board',
     'association.title': 'Association',
     'branches.title': 'Our Branches',
+    'branches.subtitle': 'Discover our branches across Europe and join the Kryptosphere community closest to you.',
+    'branches.discover': 'Discover the branch',
+    'branches.localOffice': 'Local office',
     'publications.page.title': 'Publications',
     'donation.title': 'Make a donation',
+
+    // Antenne Details
+    'antenne.team': 'Team',
+    'antenne.president': 'President',
+    'antenne.vicePresident': 'Vice-President',
+    'antenne.secretary': 'Secretary',
+    'antenne.treasurer': 'Treasurer',
+    'antenne.contact': 'Contact',
+    'antenne.gallery': 'Gallery',
+    'antenne.location': 'Location',
+
+    // Footer Legal
+    'footer.legal.disclaimer': 'Disclaimer',
+    'footer.legal.privacy': 'Privacy Policy',
+    'footer.legal.terms': 'Terms of Use',
+    'footer.legal.cookies': 'Cookie Policy',
+    'footer.legal.legal': 'Legal Notice',
+
+    // Contact
+    'contact.email': 'Email',
+    'contact.phone': 'Phone',
+    'contact.address': 'Address',
 
     // General
     'language': 'en'

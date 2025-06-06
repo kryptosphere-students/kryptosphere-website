@@ -1,13 +1,14 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import AntennesMap from '../components/AntennesMap';
 import { Users, Mail, Phone, ExternalLink } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Antennes = () => {
   const [selectedAntenne, setSelectedAntenne] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   const antennes = [
     {
@@ -95,10 +96,10 @@ const Antennes = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Nos <span className="text-blue-400">Antennes</span>
+              {t('branches.title')}
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Découvrez nos antennes à travers l'Europe et rejoignez la communauté Kryptosphere la plus proche de vous.
+              {t('branches.subtitle')}
             </p>
           </div>
 
@@ -122,7 +123,7 @@ const Antennes = () => {
                         to={`/antennes/${antenne.id}`}
                         className="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                       >
-                        Découvrir l'antenne
+                        {t('branches.discover')}
                       </Link>
                     </div>
                   ) : null;
@@ -153,10 +154,10 @@ const Antennes = () => {
                   <div className="flex items-center justify-between text-sm">
                     <div className="flex items-center gap-2 text-slate-400">
                       <Users size={16} />
-                      <span>Bureau local</span>
+                      <span>{t('branches.localOffice')}</span>
                     </div>
                     <div className="text-blue-400 group-hover:text-blue-300 flex items-center gap-1">
-                      <span>Découvrir</span>
+                      <span>{t('branches.discover')}</span>
                       <ExternalLink size={16} />
                     </div>
                   </div>
