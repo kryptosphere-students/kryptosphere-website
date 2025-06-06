@@ -37,7 +37,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/365c0231-8bce-48ea-82d5-3f9468c95d85.png" 
               alt="Kryptosphere Logo"
-              className="h-40 w-auto opacity-90" // Augmentation de la taille de 32px à 40px
+              className="h-80 w-auto opacity-90" // Augmentation de la taille de 32px à 40px
             />
           </div>
 

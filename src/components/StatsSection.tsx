@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Users, GraduationCap, Calendar, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -30,27 +29,33 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="py-24 relative">
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-blue-900/20 to-slate-900 pointer-events-none"></div>
-      
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">
-          {t('stats.title')}
-        </h2>
-        
+    <section className="py-24 bg-slate-100">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
+            {t('stats.title')}
+          </h2>
+          <div className="flex items-center justify-center gap-2 text-xl text-slate-700">
+            <span>{t('stats.subtitle')}</span>
+            <div className="flex gap-1">
+              <div className="w-6 h-4 bg-blue-600 rounded-sm"></div>
+              <div className="w-6 h-4 bg-white border border-blue-600 rounded-sm"></div>
+              <div className="w-6 h-4 bg-red-600 rounded-sm"></div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 text-center hover:border-blue-500/50 transition-colors group"
+              className="text-center"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900/30 rounded-full mb-6 group-hover:bg-blue-900/50 transition-colors">
-                <stat.icon className="w-8 h-8 text-blue-400" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                <stat.icon className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-              <div className="text-blue-400 font-medium">{stat.label}</div>
+              <div className="text-4xl font-bold text-slate-900 mb-2">{stat.value}</div>
+              <div className="text-slate-700 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>

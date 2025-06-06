@@ -30,7 +30,8 @@ const translations = {
     'hero.branches': 'Voir nos antennes',
 
     // Stats
-    'stats.title': 'Kryptosphere en quelques chiffres',
+    'stats.title': 'KRYPTOSPHERE EN QUELQUES CHIFFRES',
+    'stats.subtitle': "Le réseau étudiant de la Tech",
     'stats.students': 'Étudiants',
     'stats.universities': 'Universités',
     'stats.events': 'Événements',
@@ -298,7 +299,8 @@ const translations = {
     'hero.branches': 'See our branches',
 
     // Stats
-    'stats.title': 'Kryptosphere in numbers',
+    'stats.title': 'KRYPTOSPHERE IN NUMBERS',
+    'stats.subtitle': "The student network of Tech",
     'stats.students': 'Students',
     'stats.universities': 'Universities',
     'stats.events': 'Events',
@@ -554,7 +556,11 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   const [language, setLanguage] = useState<Language>('fr');
 
   const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations[typeof language]] || key;
+    const value = translations[language][key as keyof typeof translations[typeof language]];
+    if (Array.isArray(value)) {
+      return value.join(', ');
+    }
+    return value || key;
   };
 
   return (
