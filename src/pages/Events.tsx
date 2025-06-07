@@ -58,8 +58,7 @@ const Events = () => {
 
           <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
-              //src="https://lu.ma/embed/calendar/kryptosphere?type=grid&future=true"
-              src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events"
+              src="https://lu.ma/embed/calendar/cal-9ZMsImcFu7TR6ed/events"
               width="100%"
               height="100%"
               loading="lazy"
@@ -73,7 +72,7 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Événements passés */}
+      {/* Événements passés
       <section className="py-16 px-6 border-t border-slate-700/50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">{t('events.past')}</h2>
@@ -81,7 +80,7 @@ const Events = () => {
           <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
              // src="https://lu.ma/embed/calendar/kryptosphere?type=grid&past=true"
-              src="https://lu.ma/embed/calendar/cal-KuAvNkii7TFKkpK/events"
+              src="https://lu.ma/embed/calendar/cal-9ZMsImcFu7TR6ed/events?type=grid&past=true"
               width="100%"
               height="100%"
               loading="lazy"
@@ -93,7 +92,7 @@ const Events = () => {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
