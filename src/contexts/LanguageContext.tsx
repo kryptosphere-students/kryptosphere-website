@@ -175,6 +175,7 @@ const translations = {
     'cities.lille': 'Lille',
     'cities.london': 'Londres',
     'cities.brussels': 'Bruxelles',
+    'cities.test': 'Test',
 
     // Team roles
     'roles.president': 'Président',

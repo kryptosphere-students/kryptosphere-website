@@ -24,8 +24,8 @@ const AntenneDetail = () => {
       descriptionEn: t('branches.parisDescription'),
       heroImage: '/antennes/EssecFont.png',
       contact: {
-        email: 'paris@kryptosphere.org',
-        phone: '+33 1 23 45 67 89',
+        email: 'contact@kryptosphere.org',
+        phone: '+33 X XX XX XX XX',
         address: '1 Rue de la Libération, 78350 Jouy-en-Josas'
       },
       bureau: [
@@ -40,15 +40,15 @@ const AntenneDetail = () => {
       city: t('cities.nantes'),
       coordinates: { lat: 47.2184, lng: -1.5536 },
       country: t('countries.france'),
-      school: 'Audencia Business School',
+      school: 'IMT Atlantique',
       schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
       description: t('branches.nantesDescription'),
       descriptionEn: t('branches.nantesDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=2000',
+      heroImage: 'https://lh3.googleusercontent.com/p/AF1QipPDW0OqhwW5X00AmGfUXGf2MpLYY-U4r8emR6dN=s1360-w1360-h1020-rw',
       contact: {
-        email: 'nantes@kryptosphere.org',
-        phone: '+33 2 23 45 67 89',
-        address: '8 Route de la Jonelière, 44312 Nantes'
+        email: 'contact@kryptosphere.org',
+        phone: '+33 x xx xx xx xx',
+        address: '4 Rue Alfred Kastler, 44300 Nantes'
       },
       bureau: [
         { name: 'Julie Moreau', role: t('roles.presidente'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
@@ -118,7 +118,28 @@ const AntenneDetail = () => {
         { name: 'Maxime Van Der Berg', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
         { name: 'Laura Janssens', role: t('roles.tresoriere'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
-    }
+    },
+    test: {
+      name: t('cities.test'),
+      city: t('cities.test'),
+      coordinates: { lat: 51.5074, lng: -0.1278 },
+      country: t('countries.test'),
+      school: 'Test',
+      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
+      description: t('branches.londonDescription'),
+      descriptionEn: t('branches.londonDescription'),
+      heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2000',
+      contact: {
+        email: 'london@kryptosphere.org',
+        phone: '+44 20 1234 5678',
+        address: 'Sussex Place, Regent\'s Park, London NW1 4SA'
+      },
+      bureau: [
+        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+      ]
+    },
   };
 
   const antenne = antennesData[id as keyof typeof antennesData];
