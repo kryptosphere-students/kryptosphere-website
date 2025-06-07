@@ -39,6 +39,13 @@ const Bureau = () => {
         image: "/bureau/lpiallat.png",
         school: t('board.member4.school')
       },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/lpiallat.png",
+        school: t('board.member5.school')
+      },
     ],
     '2024': [
       {

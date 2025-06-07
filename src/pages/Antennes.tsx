@@ -81,6 +81,20 @@ const Antennes = () => {
         email: 'brussels@kryptosphere.org',
         phone: '+32 2 123 45 67'
       }
+    },
+    {
+      id: 'test',
+      name: t('cities.test'),
+      city: t('cities.test'),
+      country: t('countries.belgium'),
+      coordinates: { lat: 50.8503, lng: 4.3517 },
+      school: 'Solvay Brussels School',
+      description: t('branches.brusselsDescription'),
+      image: '/placeholder.svg',
+      contact: {
+        email: 'brussels@kryptosphere.org',
+        phone: '+32 2 123 45 67'
+      }
     }
   ];
 
