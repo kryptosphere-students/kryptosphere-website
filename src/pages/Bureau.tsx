@@ -54,7 +54,14 @@ const Bureau = () => {
         description: t('board.former.description'),
         image: "/placeholder.svg",
         school: t('board.member1.school')
-      }
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
     ],
     '2023': [
       {
@@ -63,11 +70,83 @@ const Bureau = () => {
         description: t('board.former.description2023'),
         image: "/placeholder.svg",
         school: t('board.member3.school')
-      }
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2022': [
+      {
+        name: t('board.former.president') + " 2023",
+        role: t('board.member1.role'),
+        description: t('board.former.description2023'),
+        image: "/placeholder.svg",
+        school: t('board.member3.school')
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2021': [
+      {
+        name: t('board.former.president') + " 2023",
+        role: t('board.member1.role'),
+        description: t('board.former.description2023'),
+        image: "/placeholder.svg",
+        school: t('board.member3.school')
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2020': [
+      {
+        name: t('board.former.president') + " 2023",
+        role: t('board.member1.role'),
+        description: t('board.former.description2023'),
+        image: "/placeholder.svg",
+        school: t('board.member3.school')
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2019 - 2017': [
+      {
+        name: t('board.former.president') + " 2023",
+        role: t('board.member1.role'),
+        description: t('board.former.description2023'),
+        image: "/placeholder.svg",
+        school: t('board.member3.school')
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member4.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
     ]
+
   };
 
-  const years = ['2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017'];
+  const years = ['2025', '2024', '2023', '2022', '2021', '2020', '2019 - 2017'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
