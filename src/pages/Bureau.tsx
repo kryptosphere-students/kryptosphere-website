@@ -43,7 +43,7 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member4.description'),
-        image: "/bureau/lpiallat.png",
+        image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
     ],
@@ -67,7 +67,7 @@ const Bureau = () => {
     ]
   };
 
-  const years = ['2025', '2024', '2023'];
+  const years = ['2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">

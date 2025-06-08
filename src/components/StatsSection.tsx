@@ -129,10 +129,10 @@ export const translations = {
     'board.member4.school': 'ESSEC',
     'board.member5.name': 'Thibault LANGLOIS-BERTHELOT',
     'board.member5.role': 'Président Fondateur',
-    'board.member5.description': 'Responsable communication et organisation d\'événements.',
-    'board.member5.school': 'KEDGE BS Marseille',
+    'board.member5.description': 'Docteur en droit et élève avocat passionné de Bitcoin.',
+    'board.member5.school': 'KEDGE Marseille',
     'board.former.president': 'Ancien Président',
-    'board.former.description': 'Ancien président qui a mené l\'association vers de nouveaux horizons.',
+    'board.former.description': "Ancien président qui a mené notre réseau d'associations vers de nouveaux horizons.",
     'board.former.description2023': 'Leadership exceptionnel durant l\'année 2023.',
 
     'association.title': 'L\'Association',
@@ -262,7 +262,7 @@ export const translations = {
     'contact.address': 'Adresse',
 
     // Timeline years
-    'timeline.2017.title': 'Création de Kryptosphere',
+    'timeline.2017.title': 'Création du projet KRYPTOSPHERE',
     'timeline.2017.description': 'Fondation de l\'association par des étudiants passionnés de blockchain',
     'timeline.2017.achievements': ['Première antenne à Lyon', '10 membres fondateurs'],
 

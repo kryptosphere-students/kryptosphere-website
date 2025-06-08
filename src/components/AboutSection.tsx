@@ -7,32 +7,32 @@ const AboutSection = () => {
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Workshops et formations sur les dernières technologies blockchain"
+      description: "Workshops, hackathons et formations sur les crypto-actifs et les technologies blockchain"
     },
     {
       icon: Network,
       title: "Réseau",
-      description: "Connexions avec l'écosystème blockchain professionnel"
+      description: "Connexions directes avec les professionnels des écosystèmes des crypto-actifs, de l'IA et de la cybersécurité"
     },
     {
       icon: Users,
       title: "Communauté",
-      description: "Une communauté active de passionnés et d'experts"
+      description: "Constuire et fédérer une communauté active d'étudiants futurs experts des nouvelles technologies"
     },
     {
       icon: Trophy,
       title: "Excellence",
-      description: "Projets étudiants et participation à des hackathons"
+      description: "Lancement, financement et participation à de nombreux hackathons"
     },
     {
       icon: Code,
       title: "Développement",
-      description: "Formation pratique sur les smart contracts et DApps"
+      description: "Formation interne et externe sur les smart contracts et les plateformes décentralisées"
     },
     {
       icon: Rocket,
-      title: "Innovation",
-      description: "Incubation de projets blockchain étudiants"
+      title: "Incubateur",
+      description: "Incubation gratuite de projets innovants d'étudiants et de professionnels "
     }
   ];
 
