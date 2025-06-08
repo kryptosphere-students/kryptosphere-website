@@ -57,7 +57,7 @@ const Publications = () => {
       category: "etude",
       description: t('publication.research.description'),
       image: "/publications/images/researchThibault.png",
-      downloadUrl: "/publications/LANGLOIS_BERTHELOT_Thibault_Doctorat_2023.pdf",
+      downloadUrl: "https://hal.science/tel-04190658/document",
       readTime: t('publication.research.readTime')
     },
     {

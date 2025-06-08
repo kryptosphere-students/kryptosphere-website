@@ -42,7 +42,7 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
@@ -58,7 +58,7 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
@@ -74,7 +74,7 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
@@ -90,7 +90,7 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
@@ -106,7 +106,7 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
@@ -122,25 +122,89 @@ const Bureau = () => {
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
       },
     ],
     '2019 - 2017': [
-      {
-        name: t('board.former.president') + " 2023",
-        role: t('board.member1.role'),
-        description: t('board.former.description2023'),
-        image: "/placeholder.svg",
-        school: t('board.member3.school')
-      },
+      
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
-        description: t('board.member4.description'),
+        description: t('board.member5.description'),
         image: "/bureau/thibault.jpg",
         school: t('board.member5.school')
+      },
+                  {
+        name: t('board.member8.name'),
+        role: t('board.member8.role'),
+        description: t('board.member8.description'),
+        image: "/bureau/Guillaume.jpeg",
+        school: t('board.member8.school')
+      },
+                        {
+        name: t('board.member9.name'),
+        role: t('board.member9.role'),
+        description: t('board.member9.description'),
+        image: "/bureau/othmane.jpeg",
+        school: t('board.member9.school')
+      },
+                  {
+        name: t('board.member7.name'),
+        role: t('board.member7.role'),
+        description: t('board.member7.description'),
+        image: "/bureau/serge.jpg",
+        school: t('board.member7.school')
+      },
+                  {
+        name: t('board.member6.name'),
+        role: t('board.member6.role'),
+        description: t('board.member6.description'),
+        image: "/bureau/william.jpeg",
+        school: t('board.member6.school')
+      },
+                        {
+        name: t('board.member10.name'),
+        role: t('board.member10.role'),
+        description: t('board.member10.description'),
+        image: "/bureau/fanis.jpeg",
+        school: t('board.member10.school')
+      },
+                              {
+        name: t('board.member11.name'),
+        role: t('board.member11.role'),
+        description: t('board.member11.description'),
+        image: "/bureau/titouan.webp",
+        school: t('board.member11.school')
+      },
+                                    {
+        name: t('board.member12.name'),
+        role: t('board.member12.role'),
+        description: t('board.member12.description'),
+        image: "/bureau/julie.jpeg",
+        school: t('board.member12.school')
+      },
+                                          {
+        name: t('board.member13.name'),
+        role: t('board.member13.role'),
+        description: t('board.member13.description'),
+        image: "/bureau/manon.jpeg",
+        school: t('board.member13.school')
+      },
+                                                {
+        name: t('board.member14.name'),
+        role: t('board.member14.role'),
+        description: t('board.member14.description'),
+        image: "/bureau/harmonie.jpeg",
+        school: t('board.member14.school')
+      },
+                                                      {
+        name: t('board.member15.name'),
+        role: t('board.member15.role'),
+        description: t('board.member15.description'),
+        image: "/bureau/aymane.jpeg",
+        school: t('board.member15.school')
       },
     ]
 
