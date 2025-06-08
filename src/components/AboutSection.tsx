@@ -45,8 +45,8 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Kryptosphere est l'association étudiante de référence dans l'exploration des technologies blockchain. 
-            Nous créons un pont entre l'innovation technologique et la communauté étudiante.
+            KRYPTOSPHERE est l'association étudiante de référence dans les nouvelles technologies, pionnière dans les crypto-actifs. 
+            Nous formons un pont entre l'innovation technologique et la communauté étudiante.
           </p>
         </div>
 
