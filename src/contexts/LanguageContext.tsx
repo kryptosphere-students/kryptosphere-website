@@ -13,17 +13,17 @@ const translations = {
   fr: {
     // Navigation
     'nav.home': 'Accueil',
-    'nav.board': 'Bureau',
+    'nav.board': 'Gouvernance',
     'nav.association': 'Association',
     'nav.branches': 'Antennes',
     'nav.events': 'Événements',
     'nav.publications': 'Publications',
-    'nav.donate': 'Faire une donation',
+    'nav.donate': 'Nous soutenir',
 
     // Hero
-    'hero.title': 'La plus grande association',
+    'hero.title': "La première association",
     'hero.title2': 'étudiante',
-    'hero.title3': 'blockchain',
+    'hero.title3': 'et Tech',
     'hero.title4': "d'Europe",
     'hero.subtitle': 'Promouvoir les nouvelles technologies auprès des étudiants depuis 2017',
     'hero.join': "Rejoindre l'association",
