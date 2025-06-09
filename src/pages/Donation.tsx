@@ -180,6 +180,27 @@ const Donation = () => {
             {t('donation.reports')}
           </button>
         </div>
+
+<br></br>
+<br></br>
+     {/* IFRAME Bitcoin node KSF */}
+<div className="w-full h-[600px] rounded-2xl overflow-hidden border border-slate-700">
+            <iframe
+              src="https://amboss.space/node/035ecfa18f08c079ba58a410859aada06062ac31ca60585bfc878ad60e6a490448?section=General"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              style={{
+                border: 'none',
+                borderRadius: '1rem'
+              }}
+              title="Événements à venir Kryptosphere"
+            ></iframe>
+          </div>
+<br></br>
+<br></br>
+
+
       </section>
 
       <Footer />
