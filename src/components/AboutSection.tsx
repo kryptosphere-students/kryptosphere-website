@@ -53,7 +53,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <p className="text-lg text-slate-300 mb-12 leading-relaxed">
-              Notre mission : démocratiser l'accès aux technologies blockchains et aux crypto-actifs, organiser des événements 
+              Notre mission : démocratiser l'accès aux technologies blockchains, aux crypto-actifs et autres nouvelles technologies, organiser des événements 
               enrichissants et construire un réseau solide de futurs experts de la Tech.
             </p>
             

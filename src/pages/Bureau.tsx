@@ -53,7 +53,21 @@ const Bureau = () => {
         role: t('board.member24.role'),
         description: t('board.member24.description'),
         image: "/bureau/mathiasbouguon.jpeg",
-        school: t('board.member21.school')
+        school: t('board.member24.school')
+      },
+                  {
+        name: t('board.member25.name'),
+        role: t('board.member25.role'),
+        description: t('board.member25.description'),
+        image: "/bureau/rayan.webp",
+        school: t('board.member25.school')
+      },
+                        {
+        name: t('board.member26.name'),
+        role: t('board.member26.role'),
+        description: t('board.member26.description'),
+        image: "/bureau/gildas.webp",
+        school: t('board.member26.school')
       },
       {
         name: t('board.member5.name'),
@@ -202,8 +216,15 @@ const Bureau = () => {
         name: t('board.member15.name'),
         role: t('board.member15.role'),
         description: t('board.member15.description'),
-        image: "/bureau/aymane.jpeg",
+        image: "/bureau/marie.jpeg",
         school: t('board.member15.school')
+      },
+                                                            {
+        name: t('board.member16.name'),
+        role: t('board.member16.role'),
+        description: t('board.member16.description'),
+        image: "/bureau/aymane.jpeg",
+        school: t('board.member16.school')
       },
                         {
         name: t('board.member6.name'),
