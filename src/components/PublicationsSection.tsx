@@ -14,10 +14,10 @@ const PublicationsSection = () => {
       category: t('publications.kryptopaper')
     },
     {
-      title: t('publication.defi.title'),
-      date: t('publication.defi.date'),
-      image: "/placeholder.svg",
-      category: t('publications.guides')
+      title: t('publication.research.title'),
+      date: t('publication.research.date'),
+      image: "/publications/images/researchThibault.png",
+      category: t('etude')
     },
     {
       title: t('publication.report2024.title'),

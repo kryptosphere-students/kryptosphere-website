@@ -337,7 +337,7 @@ export const translations = {
     'footer.legal.legal': 'Mentions légales',
     'footer.description': 'L\'association étudiante de référence dans l\'univers blockchain. Rejoignez-nous pour explorer les technologies de demain.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025 KRYPTOSPHERE. Tous droits réservés.',
+    'footer.copyright': '2017 — 2025, KRYPTOSPHERE FRANCE, Tous droits réservés.',
 
     // Contact
     'contact.email': 'Email',

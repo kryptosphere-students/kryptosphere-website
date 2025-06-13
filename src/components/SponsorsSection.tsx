@@ -128,10 +128,50 @@ const universities = [
   }
 ];
 
-  const media = Array(10).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const media = [
+  {
+    name: 'Le Monde',
+    logo: '/lovable-uploads/lemonde.svg'
+  },
+  {
+    name: 'RTL',
+    logo: '/lovable-uploads/rtl.png'
+  },
+  {
+    name: 'Figaro',
+    logo: '/lovable-uploads/figaro.png'
+  },
+  {
+    name: 'Journal Du Net',
+    logo: '/lovable-uploads/JDN.png'
+  },
+  {
+    name: 'BFM Crypto',
+    logo: '/lovable-uploads/bfm.png'
+  },
+  {
+    name: 'Journal du Geek',
+    logo: '/lovable-uploads/JDG.png'
+  },
+  {
+    name: '20 minutes',
+    logo: '/lovable-uploads/20.png'
+  },
+  {
+    name: 'Journal du coin',
+    logo: '/lovable-uploads/journalducoin.png'
+  },
+    {
+    name: 'Cryptoast',
+    logo: '/lovable-uploads/cryptoast.webp'
+  },
+    {
+    name: 'Bitcoin.fr',
+    logo: '/lovable-uploads/bitcoinfr.webp'
+  }
+];
+
+
 
   const categories = [
     { id: 'sponsors', name: t('sponsors.sponsors'), data: sponsors },

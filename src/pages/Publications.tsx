@@ -20,8 +20,18 @@ const Publications = () => {
       downloadUrl: "#",
       readTime: t('publication.kryptopaper25.readTime')
     },
-    {
+        {
       id: 2,
+      title: t('publication.research.title'),
+      date: t('publication.research.date'),
+      category: "etude",
+      description: t('publication.research.description'),
+      image: "/publications/images/researchThibault.png",
+      downloadUrl: "https://hal.science/tel-04190658/document",
+      readTime: t('publication.research.readTime')
+    },
+    {
+      id: 3,
       title: t('publication.defi.title'),
       date: t('publication.defi.date'),
       category: "guide",
@@ -31,7 +41,7 @@ const Publications = () => {
       readTime: t('publication.defi.readTime')
     },
     {
-      id: 3,
+      id: 4,
       title: t('publication.report2024.title'),
       date: t('publication.report2024.date'),
       category: "rapport",
@@ -41,7 +51,7 @@ const Publications = () => {
       readTime: t('publication.report2024.readTime')
     },
     {
-      id: 4,
+      id: 5,
       title: t('publication.kryptopaper24.title'),
       date: t('publication.kryptopaper24.date'),
       category: "kryptopaper",
@@ -49,16 +59,6 @@ const Publications = () => {
       image: "/placeholder.svg",
       downloadUrl: "#",
       readTime: t('publication.kryptopaper24.readTime')
-    },
-    {
-      id: 5,
-      title: t('publication.research.title'),
-      date: t('publication.research.date'),
-      category: "etude",
-      description: t('publication.research.description'),
-      image: "/publications/images/researchThibault.png",
-      downloadUrl: "https://hal.science/tel-04190658/document",
-      readTime: t('publication.research.readTime')
     },
     {
       id: 6,
