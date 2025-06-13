@@ -6,10 +6,41 @@ const SponsorsSection = () => {
   const [activeCategory, setActiveCategory] = useState('sponsors');
   const { t } = useLanguage();
 
-  const sponsors = Array(8).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const sponsors = [
+  {
+    name: 'BPI France',
+    logo: '/lovable-uploads/bpifrance.png'
+  },
+  {
+    name: 'Ledger',
+    logo: '/lovable-uploads/Ledger.svg'
+  },
+  {
+    name: 'KPMG',
+    logo: '/lovable-uploads/KPMG.png'
+  },
+  {
+    name: 'DELUBAC',
+    logo: '/lovable-uploads/delubac.png'
+  },
+  {
+    name: 'XRP',
+    logo: '/lovable-uploads/xrp.png'
+  },
+  {
+    name: 'Forvis Mazars',
+    logo: '/lovable-uploads/Forvis_Mazars.jpg'
+  },
+  {
+    name: 'A COMPLETER',
+    logo: '/lovable-uploads/logo-chainalysis.png'
+  },
+  {
+    name: 'A COMPLETER',
+    logo: '/lovable-uploads/logo-polygon.png'
+  }
+];
+
 
   const partners = Array(6).fill(null).map((_, index) => ({
     name: 'Kryptosphere',

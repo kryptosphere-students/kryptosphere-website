@@ -23,7 +23,7 @@ const StatsSection = () => {
     },
     {
       icon: MapPin,
-      value: '5',
+      value: '7',
       label: t('stats.branches')
     }
   ];
@@ -319,7 +319,6 @@ export const translations = {
     'cities.lille': 'Lille',
     'cities.london': 'Londres',
     'cities.brussels': 'Bruxelles',
-    'cities.test': 'Test',
 
     // Team roles
     'roles.president': 'Président',

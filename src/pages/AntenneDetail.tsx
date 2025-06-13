@@ -67,7 +67,7 @@ const AntenneDetail = () => {
       descriptionEn: t('branches.lilleDescription'),
       heroImage: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2000',
       contact: {
-        email: 'lille@kryptosphere.org',
+        email: 'contact@kryptosphere.org',
         phone: '+33 3 23 45 67 89',
         address: '24 Avenue Gustave Delory, 59057 Roubaix'
       },
@@ -88,7 +88,7 @@ const AntenneDetail = () => {
       descriptionEn: t('branches.londonDescription'),
       heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2000',
       contact: {
-        email: 'london@kryptosphere.org',
+        email: 'contact@kryptosphere.org',
         phone: '+44 20 1234 5678',
         address: 'Sussex Place, Regent\'s Park, London NW1 4SA'
       },
@@ -109,7 +109,7 @@ const AntenneDetail = () => {
       descriptionEn: t('branches.brusselsDescription'),
       heroImage: 'https://images.unsplash.com/photo-1559113122-3f2b707ba3c6?q=80&w=2000',
       contact: {
-        email: 'brussels@kryptosphere.org',
+        email: 'contact@kryptosphere.org',
         phone: '+32 2 123 45 67',
         address: 'Avenue Franklin Roosevelt 50, 1050 Bruxelles'
       },
@@ -130,7 +130,7 @@ const AntenneDetail = () => {
       descriptionEn: t('branches.londonDescription'),
       heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2000',
       contact: {
-        email: 'london@kryptosphere.org',
+        email: 'test@kryptosphere.org',
         phone: '+44 20 1234 5678',
         address: 'Sussex Place, Regent\'s Park, London NW1 4SA'
       },
