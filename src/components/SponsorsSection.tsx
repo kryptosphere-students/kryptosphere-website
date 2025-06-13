@@ -21,7 +21,7 @@ const sponsors = [
   },
   {
     name: 'DELUBAC',
-    logo: '/lovable-uploads/delubac.png'
+    logo: '/lovable-uploads/delubac.svg'
   },
   {
     name: 'XRP',
@@ -29,28 +29,104 @@ const sponsors = [
   },
   {
     name: 'Forvis Mazars',
-    logo: '/lovable-uploads/Forvis_Mazars.jpg'
+    logo: '/lovable-uploads/Forvis_Mazars.png'
   },
   {
-    name: 'A COMPLETER',
+    name: 'A compléter : utiliser que des logos transparents',
     logo: '/lovable-uploads/logo-chainalysis.png'
   },
   {
-    name: 'A COMPLETER',
+    name: 'A compléter : utiliser que des logos transparents',
     logo: '/lovable-uploads/logo-polygon.png'
   }
 ];
 
 
-  const partners = Array(6).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const partners = [
+  {
+    name: 'Coinbase',
+    logo: '/lovable-uploads/Coinbase.svg.png'
+  },
+  {
+    name: 'Ledger',
+    logo: '/lovable-uploads/Ledger.svg'
+  },
+  {
+    name: 'KPMG',
+    logo: '/lovable-uploads/KPMG.png'
+  },
+  {
+    name: 'Pyratzlabs',
+    logo: '/lovable-uploads/pyratz.svg'
+  },
+  {
+    name: 'BFG',
+    logo: '/lovable-uploads/BFG.png'
+  },
+  {
+    name: 'ADAN',
+    logo: '/lovable-uploads/adan.svg'
+  },
+    {
+    name: 'Paymium',
+    logo: '/lovable-uploads/paymium.png'
+  },
+      {
+    name: 'VIVA TECH',
+    logo: '/lovable-uploads/viva.png'
+  },
+];
 
-  const universities = Array(6).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const universities = [
+  {
+    name: 'IMTBS-TSP',
+    logo: '/lovable-uploads/imtbstsp.png'
+  },
+  {
+    name: 'Polytechnique',
+    logo: '/lovable-uploads/TSP.png'
+  },
+  {
+    name: 'ESCP',
+    logo: '/lovable-uploads/ESCP.png'
+  },
+  {
+    name: 'HEH',
+    logo: '/lovable-uploads/HEH.png'
+  },
+  {
+    name: 'EMLV',
+    logo: '/lovable-uploads/emlv.png'
+  },
+  {
+    name: 'HULT London',
+    logo: '/lovable-uploads/hult.png'
+  },
+  {
+    name: 'NEOMA',
+    logo: '/lovable-uploads/NEOMA.png'
+  },
+  {
+    name: 'ESILV',
+    logo: '/lovable-uploads/ESILV.png'
+  },
+    {
+    name: 'ESTIA',
+    logo: '/lovable-uploads/estia.png'
+  },
+    {
+    name: 'Albert School',
+    logo: '/lovable-uploads/albert.png'
+  },
+    {
+    name: 'Paris Dauphine',
+    logo: '/lovable-uploads/dauphine.png'
+  },
+    {
+    name: 'ESSEC',
+    logo: '/lovable-uploads/ESSEC.svg'
+  }
+];
 
   const media = Array(10).fill(null).map((_, index) => ({
     name: 'Kryptosphere',
