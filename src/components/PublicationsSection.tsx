@@ -8,9 +8,9 @@ const PublicationsSection = () => {
 
   const publications = [
     {
-      title: t('publication.kryptopaper25.title'),
-      date: t('publication.kryptopaper25.date'),
-      image: "/placeholder.svg",
+      title: t('publication.kryptopaper22.title'),
+      date: t('publication.kryptopaper22.date'),
+      image: "/publications/images/KP22.png",
       category: t('publications.kryptopaper')
     },
     {

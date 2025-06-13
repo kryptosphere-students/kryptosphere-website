@@ -12,13 +12,13 @@ const Publications = () => {
   const publications = [
     {
       id: 1,
-      title: t('publication.kryptopaper25.title'),
-      date: t('publication.kryptopaper25.date'),
+      title: t('publication.kryptopaper22.title'),
+      date: t('publication.kryptopaper22.date'),
       category: "kryptopaper",
-      description: t('publication.kryptopaper25.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.kryptopaper25.readTime')
+      description: t('publication.kryptopaper22.description'),
+      image: "/publications/images/KP22.png",
+      downloadUrl: "/publications/KryptoPaper_2022.pdf",
+      readTime: t('publication.kryptopaper22.readTime')
     },
         {
       id: 2,
@@ -34,10 +34,10 @@ const Publications = () => {
       id: 3,
       title: t('publication.defi.title'),
       date: t('publication.defi.date'),
-      category: "guide",
+      category: "kryptopaper",
       description: t('publication.defi.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
+      image: "/publications/images/KP20.png",
+      downloadUrl: "/publications/KryptoPaper_2021.pdf",
       readTime: t('publication.defi.readTime')
     },
     {

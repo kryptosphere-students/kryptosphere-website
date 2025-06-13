@@ -108,7 +108,7 @@ export const translations = {
 
     // Pages
     'board.title': 'Notre Bureau',
-    'board.subtitle': "Découvrez les passionnés qui font battre KRYPTOSPHERE® au quotidien. Des profils et des équipes diversifiées, complémentaires et motivées, unis par leur passion des cryptomonnaies depuis plus de 8 ans.",
+    'board.subtitle': "Découvrez les passionnés qui font battre KRYPTOSPHERE® au quotidien. Des profils diversifiées et des équipes complémentaires, unis par leur confiance et passion des cryptomonnaies depuis 2017.",
     'board.teamTag': 'L\'équipe qui fait vivre et administre KRYPTOSPHERE®',
     'board.year': 'Année :',
     'board.member1.name': 'Raphaël PAUTARD',
@@ -223,11 +223,11 @@ export const translations = {
     'association.subtitle': 'Depuis 2017, KRYPTOSPHERE® s\'impose comme la référence européenne dans l\'écosystème crypto étudiant. Découvrez notre histoire, nos valeurs et notre vision pour l\'avenir.',
     'association.historyTag': 'Notre histoire et notre mission',
     'association.mission': 'Notre Mission',
-    'association.missionText': 'Démocratiser l\'accès aux crypto-actifs et former la prochaine génération de cet écosystème.',
+    'association.missionText': 'Démocratiser l\'accès aux crypto-actifs et former la prochaine génération aux nouvelles technologies numériques.',
     'association.values': 'Nos Valeurs',
     'association.valuesText': 'Confiance, partage de connaissances, collaboration et excellence académique au service de notre réseau de bénévoles.',
     'association.vision': 'Notre Vision',
-    'association.visionText': 'Faire le pont entre l\'innovation blockchain et l\'enseignement supérieur en Europe.',
+    'association.visionText': "Faire le pont entre l\'innovation sur l'IA, la blockchain, l'informatique quantique et l\'enseignement supérieur en Europe.",
     'association.journey': 'Notre Histoire',
 
     'branches.title': 'Nos Antennes',
@@ -335,9 +335,9 @@ export const translations = {
     'footer.legal.terms': 'Conditions générales d\'utilisation (CGU)',
     'footer.legal.cookies': 'Politique de cookies',
     'footer.legal.legal': 'Mentions légales',
-    'footer.description': 'L\'association étudiante de référence dans l\'univers blockchain. Rejoignez-nous pour explorer les technologies de demain.',
+    'footer.description': 'L\'association étudiante de référence dans la Tech. Rejoignez-nous pour explorer les technologies de demain.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025, KRYPTOSPHERE FRANCE, Tous droits réservés.',
+    'footer.copyright': '2017 — 2025 | KRYPTOSPHERE FRANCE | Tous droits réservés.',
 
     // Contact
     'contact.email': 'Email',
@@ -349,12 +349,12 @@ export const translations = {
     'timeline.2017.description': 'Fondation de notre réseau par 4 étudiants passionnés par Bitcoin',
     'timeline.2017.achievements': ['Première antenne à KEDGE Marseille', '10 membres fondateurs du réseau', 'Premiers articles sur Bitcoin'],
 
-    'timeline.2018.title': 'Expansion nationale',
+    'timeline.2018.title': 'Expansion nationale et création de KRYPTOSPHERE® FRANCE',
     'timeline.2018.description': 'Ouverture des premières antennes en région parisienne et partenariats avec plusieurs grandes écoles et universités',
     'timeline.2018.achievements': ['4 antennes actives', '50+ membres', 'Premier hackathon blockchain'],
 
-    'timeline.2019.title': "Diversification sur l'IA et structuration de notre gouvernance",
-    'timeline.2019.description': "Création de KRYPTOSPHERE® FRANCE pour accompagner le développement de notre réseau et diversification sur l'IA",
+    'timeline.2019.title': "Développement et diversification sur l'IA",
+    'timeline.2019.description': "Création de nouvelles antennes pour accompagner le développement de notre réseau et diversification sur l'IA",
     'timeline.2019.achievements': ['6 antennes actives', '100+ membres', 'Premier KryptoPaper'],
 
     'timeline.2020.title': 'Déploiement de notre stratégie de communication',
@@ -362,35 +362,35 @@ export const translations = {
     'timeline.2020.achievements': ['Événements virtuels', '10+ antennes actives', '200+ membres'],
 
     'timeline.2021.title': 'Diversification sur la cybersécurité',
-    'timeline.2021.description': "Ouverture des premières antennes au sein de plusieurs écoles d'informatique",
+    'timeline.2021.description': "Ouverture des premières antennes au sein d'écoles d'informatique",
     'timeline.2021.achievements': ['Nouveaux sponsors', 'Expansion continue', '300+ membres'],
 
     'timeline.2022.title': 'Innovation pédagogique',
-    'timeline.2022.description': 'Lancement de programmes de formation avancés sur les crypto-actifs',
+    'timeline.2022.description': 'Lancement de programmes de formations internes avancées sur la blockchain et les crypto-actifs',
     'timeline.2022.achievements': ['Formations internes labellisées', '15+ antennes', '400+ membres'],
 
-    'timeline.2023.title': 'Consolidation du réseau',
+    'timeline.2023.title': 'Consolidation de notre réseau',
     'timeline.2023.description': "Reconnaissance comme référence en France dans l'enseignement supérieur",
     'timeline.2023.achievements': ['500+ membres', '20+ antennes', '3 pays'],
 
-    'timeline.2024.title': 'Internationalisation à Londres et à Mons',
+    'timeline.2024.title': 'Internationalisation à Londres et en Belgique',
     'timeline.2024.description': 'Création de deux associations KRYPTOSPHERE® à Londres et en Belgique',
     'timeline.2024.achievements': ['Londres', 'Belgique', '700+ membres'],
 
     'timeline.2025.title': 'Nouveaux horizons',
-    'timeline.2025.description': "Cibler d'autres technologies émergentes",
+    'timeline.2025.description': "Cibler de nouvelles technologies émergentes et consolider notre position de leader dans l'enseignement supérieur européen",
     'timeline.2025.achievements': ['Intelligence Artificielle', 'Ordinateurs quantiques', 'Cybersécurité', '800+ membres'],
 
     // Publication items
-    'publication.kryptopaper25.title': 'KryptoPaper Edition 25',
-    'publication.kryptopaper25.date': 'JANVIER 2025',
-    'publication.kryptopaper25.description': 'Analyse des tendances blockchain 2025 et perspectives d\'avenir',
-    'publication.kryptopaper25.readTime': '15 min',
+    'publication.kryptopaper22.title': 'KryptoPaper Edition 22',
+    'publication.kryptopaper22.date': 'MARS 2022',
+    'publication.kryptopaper22.description': 'Analyse des tendances crypto 2022 et perspectives d\'avenir',
+    'publication.kryptopaper22.readTime': '15 min',
 
-    'publication.defi.title': 'Guide DeFi pour débutants',
-    'publication.defi.date': 'DÉCEMBRE 2024',
-    'publication.defi.description': 'Introduction complète à la finance décentralisée',
-    'publication.defi.readTime': '20 min',
+    'publication.defi.title': 'KryptoPaper Édition 2021',
+    'publication.defi.date': 'MARS 2021',
+    'publication.defi.description': 'Introduction complète aux crypto-actifs',
+    'publication.defi.readTime': '10 min',
 
     'publication.report2024.title': 'Rapport annuel 2024',
     'publication.report2024.date': 'DÉCEMBRE 2024',
@@ -643,15 +643,15 @@ export const translations = {
     'timeline.2025.achievements': ['Artificial Intelligence', 'Web3', 'Metaverse'],
 
     // Publication items
-    'publication.kryptopaper25.title': 'KryptoPaper Edition 25',
-    'publication.kryptopaper25.date': 'JANUARY 2025',
-    'publication.kryptopaper25.description': 'Analysis of blockchain trends 2025 and future perspectives',
-    'publication.kryptopaper25.readTime': '15 min',
+    'publication.kryptopaper21.title': 'KryptoPaper Édition 21',
+    'publication.kryptopaper21.date': 'JANUARY 2021',
+    'publication.kryptopaper21.description': 'Analysis of blockchain trends 2021 and future perspectives',
+    'publication.kryptopaper21.readTime': '15 min',
 
-    'publication.defi.title': 'DeFi Guide for Beginners',
-    'publication.defi.date': 'DECEMBER 2024',
-    'publication.defi.description': 'Complete introduction to decentralized finance',
-    'publication.defi.readTime': '20 min',
+    'publication.defi.title': 'KryptoPaper Édition 2021',
+    'publication.defi.date': 'MARS 2021',
+    'publication.defi.description': 'La météo des cryptos',
+    'publication.defi.readTime': '15 min',
 
     'publication.report2024.title': 'Annual Report 2024',
     'publication.report2024.date': 'DECEMBER 2024',
