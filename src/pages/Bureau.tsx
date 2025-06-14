@@ -40,11 +40,11 @@ const Bureau = () => {
         school: t('board.member4.school')
       },
       {
-        name: t('board.member5.name'),
-        role: t('board.member5.role'),
-        description: t('board.member5.description'),
+        name: t('board.member27.name'),
+        role: t('board.member27.role'),
+        description: t('board.member27.description'),
         image: "/bureau/thibault.jpg",
-        school: t('board.member5.school')
+        school: t('board.member27.school')
       },
     ],
     '2024': [
