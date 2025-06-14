@@ -78,115 +78,10 @@ const Donation = () => {
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">{t('donation.choose')}</h2>
             
-            {/* Amount Selection */}
-            <div className="mb-8">
-              <label className="block text-white font-medium mb-4">{t('donation.amount')}</label>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                {predefinedAmounts.map((value) => (
-                  <button
-                    key={value}
-                    onClick={() => {
-                      setAmount(value);
-                      setCustomAmount('');
-                    }}
-                    className={`p-4 rounded-lg font-medium transition-all duration-300 ${
-                      amount === value && !customAmount
-                        ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25'
-                        : 'bg-slate-700 text-slate-300 hover:bg-slate-600 hover:text-white'
-                    }`}
-                  >
-                    {value}€
-                  </button>
-                ))}
-              </div>
-              <div className="relative">
-                <Euro className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input
-                  type="number"
-                  placeholder={t('donation.customAmount')}
-                  value={customAmount}
-                  onChange={(e) => {
-                    setCustomAmount(e.target.value);
-                    setAmount('');
-                  }}
-                  className="w-full pl-12 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
-                />
-              </div>
-            </div>
-
-            {/* Payment Method */}
-            <div className="mb-8">
-              <label className="block text-white font-medium mb-4">{t('donation.paymentMethod')}</label>
-              <div className="grid md:grid-cols-2 gap-4">
-                <button
-                  onClick={() => setPaymentMethod('card')}
-                  className={`p-4 rounded-lg border transition-all duration-300 flex items-center gap-3 ${
-                    paymentMethod === 'card'
-                      ? 'border-blue-500 bg-blue-500/10 text-white'
-                      : 'border-slate-600 bg-slate-700 text-slate-300 hover:border-slate-500'
-                  }`}
-                >
-                  <CreditCard className="w-5 h-5" />
-                  {t('donation.card')}
-                </button>
-                <button
-                  onClick={() => setPaymentMethod('crypto')}
-                  className={`p-4 rounded-lg border transition-all duration-300 flex items-center gap-3 ${
-                    paymentMethod === 'crypto'
-                      ? 'border-blue-500 bg-blue-500/10 text-white'
-                      : 'border-slate-600 bg-slate-700 text-slate-300 hover:border-slate-500'
-                  }`}
-                >
-                  <Wallet className="w-5 h-5" />
-                  {t('donation.crypto')}
-                </button>
-              </div>
-            </div>
-
-            {/* Donation Info */}
-            <div className="bg-slate-700/50 rounded-lg p-6 mb-8">
-              <h3 className="text-white font-medium mb-2">{t('donation.summary')}</h3>
-              <div className="flex justify-between items-center text-slate-300">
-                <span>{t('donation.amountLabel')}</span>
-                <span className="text-xl font-bold text-blue-400">
-                  {customAmount || amount}€
-                </span>
-              </div>
-              <p className="text-sm text-slate-400 mt-2">
-                {t('donation.info')}
-              </p>
-            </div>
-
-            {/* Submit Button */}
-            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-blue-500/25">
-              {t('donation.finalize')}
-            </button>
-
-            <p className="text-sm text-slate-400 text-center mt-4">
-              {t('donation.security')}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Transparency Section */}
-      <section className="py-16 px-6 border-t border-slate-700/50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">{t('donation.transparency')}</h2>
-          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
-            {t('donation.transparencyText')}
-          </p>
-          <button className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600">
-            {t('donation.reports')}
-          </button>
-        </div>
-
-<br></br>
-<br></br>
-     {/* IFRAME Bitcoin node KSF */}
-<div className="w-full h-[600px] rounded-2xl overflow-hidden border border-slate-700">
+     {/* IFRAME Don en euros */}
+<div className="w-full h-[800px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
-              src="https://amboss.space/node/035ecfa18f08c079ba58a410859aada06062ac31ca60585bfc878ad60e6a490448?section=General"
+              src="https://kryptosphere.s2.yapla.com/fr/donation--6304"
               width="100%"
               height="100%"
               loading="lazy"
@@ -197,10 +92,81 @@ const Donation = () => {
               title="Événements à venir Kryptosphere"
             ></iframe>
           </div>
-<br></br>
-<br></br>
+           
+        </div>
+         </div>
+      </section>
 
 
+{/* Bouton pour donation en Bitcoin */}
+
+  <div className="flex justify-center mt-8">
+  <a
+    href="2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Bitcoin Lightning Network accepted!"
+    className="text-center bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
+  >
+    {t('donation.reportsBTC').split('\n').map((line, i) => (
+  <span key={i}>
+    {line}
+    <br />
+  </span>
+))}
+  </a>
+</div>
+
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+{/* Bouton pour donation en Ethers */}
+
+  <div className="flex justify-center mt-8">
+  <a
+    href="https://etherscan.io/address/0x1dd9214e10bbc4d4bbeeb01951cc5e73ef9d66c6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
+  >
+    {t('donation.reportsETH')}
+  </a>
+</div>
+
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+<br>
+</br>
+<br>
+</br>
+
+
+      {/* Transparency Section */}
+      <section className="py-16 px-6 border-t border-slate-700/50">
+      
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">{t('donation.transparency')}</h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+            {t('donation.transparencyText')}
+          </p>
+<a
+  href="https://www.pappers.fr/recherche?q=KRYPTOSPHERE"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
+>
+  {t('donation.reports')}
+</a>
+        </div>
       </section>
 
       <Footer />

@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const PublicationsSection = () => {
   const { t } = useLanguage();
@@ -40,10 +41,10 @@ const PublicationsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             {t('publications.title')}
           </h2>
-          <button className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
+          <Link to="/publications" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
             {t('publications.viewAll')}
-            <ArrowRight className="w-4 h-4" />
-          </button>
+           <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

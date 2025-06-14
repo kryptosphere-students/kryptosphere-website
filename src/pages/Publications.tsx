@@ -75,7 +75,7 @@ const Publications = () => {
   const categories = [
     { id: 'all', name: t('publications.all'), count: publications.length },
     { id: 'kryptopaper', name: t('publications.kryptopaper'), count: publications.filter(p => p.category === 'kryptopaper').length },
-    { id: 'article', name: t('publications.articless'), count: publications.filter(p => p.category === 'article').length },
+    { id: 'article', name: t('publications.articles'), count: publications.filter(p => p.category === 'article').length },
     { id: 'rapport', name: t('publications.reports'), count: publications.filter(p => p.category === 'rapport').length },
     { id: 'etude', name: t('publications.studies'), count: publications.filter(p => p.category === 'etude').length }
   ];
