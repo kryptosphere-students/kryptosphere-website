@@ -83,17 +83,17 @@ const Antennes = () => {
       }
     },
     {
-      id: 'test',
-      name: t('cities.test'),
-      city: t('cities.test'),
-      country: t('countries.belgium'),
-      coordinates: { lat: 50.8503, lng: 4.3517 },
-      school: 'Solvay Brussels School',
-      description: t('branches.brusselsDescription'),
-      image: '/placeholder.svg',
+      id: 'paris2',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.8965, lng: 2.2339 },
+      school: 'DEVINCI',
+      description: t('branches.parisDescription2'),
+      image: '/antennes/devinci.webp',
       contact: {
-        email: 'brussels@kryptosphere.org',
-        phone: '+32 2 123 45 67'
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
       }
     }
   ];

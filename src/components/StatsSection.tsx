@@ -224,7 +224,7 @@ export const translations = {
     'board.former.description2023': 'Leadership exceptionnel durant l\'année 2023.',
 
     'association.title': 'L\'Association',
-    'association.subtitle': 'Depuis 2017, KRYPTOSPHERE® s\'impose comme la référence européenne dans l\'écosystème crypto étudiant. Découvrez notre histoire, nos valeurs et notre vision pour l\'avenir.',
+    'association.subtitle': 'Depuis septembre 2017, KRYPTOSPHERE® s\'est imposé comme la référence européenne dans l\'écosystème crypto étudiant. Découvrez notre histoire, nos valeurs et notre vision pour l\'avenir.',
     'association.historyTag': 'Notre histoire et notre mission',
     'association.mission': 'Notre Mission',
     'association.missionText': 'Démocratiser l\'accès aux crypto-actifs et former la prochaine génération aux nouvelles technologies numériques.',
@@ -240,6 +240,7 @@ export const translations = {
     'branches.localOffice': 'Bureau local',
     'branches.presenceTag': 'Notre présence en Europe',
     'branches.parisDescription': 'Nos antennes parisiennes, au cœur de l\'écosystème crypto français.',
+    'branches.parisDescription2': "Découvrez KRYPTOSPHERE DEVINCI, l'une de nos antennes parisiennes les plus actives !",
     'branches.nantesDescription': 'L\'antenne nantaise, dynamique et innovante dans l\'ouest de la France.',
     'branches.lilleDescription': 'L\'antenne lilloise, proche de la frontière belge et très active.',
     'branches.londonDescription': 'Notre première antenne internationale, au cœur de la City londonienne.',
@@ -259,7 +260,7 @@ export const translations = {
     'events.past': 'Événements passés',
 
     'publications.page.title': 'Publications',
-    'publications.page.subtitle': 'Découvrez nos analyses, guides et rapports sur l\'écosystème blockchain. Des ressources créées par et pour la communauté étudiante.',
+    'publications.page.subtitle': "Découvrez nos analyses, guides et rapports au sujet des crypto-actifs, de la blockchain ou d'autres technologies. Des ressources créées par et pour la communauté étudiante.",
     'publications.resourcesTag': 'Ressources et contenus éducatifs',
     'publications.all': 'Toutes',
     'publications.kryptopaper': 'KryptoPaper',
@@ -349,7 +350,7 @@ export const translations = {
     'footer.legal.legal': 'Mentions légales',
     'footer.description': 'L\'association étudiante de référence dans la Tech. Rejoignez-nous pour explorer les technologies de demain.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025 | Association KRYPTOSPHERE FRANCE | Tous droits réservés.',
+    'footer.copyright': '2017 — 2025 | KRYPTOSPHERE FRANCE | Tous droits réservés.',
 
     // Contact
     'contact.email': 'Email',
@@ -419,7 +420,7 @@ export const translations = {
     'publication.research.description': 'La blockchain au regard du droit et de l’identité',
     'publication.research.readTime': '60+ min',
 
-    'publication.smartcontracts.title': 'Nos anciens articles',
+    'publication.smartcontracts.title': 'Articles archivés',
     'publication.smartcontracts.date': '2018 - 2024',
     'publication.smartcontracts.description': 'Retrouvez les archives de nos anciens articles pour suivre de multiples évolutions technologiques',
     'publication.smartcontracts.readTime': '+60 min',
@@ -513,6 +514,7 @@ export const translations = {
     'branches.lilleDescription': 'The Lille branch, close to the Belgian border and very active.',
     'branches.londonDescription': 'Our first international branch, in the heart of London\'s City.',
     'branches.brusselsDescription': 'The Brussels branch, at the heart of European institutions.',
+    'branches.devinciDescription': "L'antenne KRYPTOSPHERE DEVINCI, l'une des plus actives de notre projet au centre de la capitale.",
     'branches.backToList': 'Back to branches',
     'branches.bureauYear': '{city} Office 2025',
     'branches.contact': 'Contact us',

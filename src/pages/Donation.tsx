@@ -100,10 +100,6 @@ const Donation = () => {
 
 {/* Bouton pour donation en Bitcoin */}
 
- 
-
-
-
 
 
       {/* Don en cryptomonnaies */}

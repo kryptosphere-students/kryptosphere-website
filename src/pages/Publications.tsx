@@ -200,16 +200,16 @@ const Publications = () => {
             <p className="text-xl mb-8 text-slate-300">
               {t('publications.newsletter.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder={t('publications.newsletter.placeholder')}
-                className="flex-1 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
-              />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300">
-                {t('publications.newsletter.subscribe')}
-              </button>
-            </div>
+<div className="flex justify-center mt-6">
+  <a
+    href="https://substack.com/@kryptosphere"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 text-center"
+  >
+    {t('publications.newsletter.subscribe')}
+  </a>
+</div>
           </div>
         </div>
       </section>

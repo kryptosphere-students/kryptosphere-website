@@ -32,12 +32,12 @@ const sponsors = [
     logo: '/lovable-uploads/Forvis_Mazars.png'
   },
   {
-    name: 'A compléter : utiliser que des logos transparents',
-    logo: '/lovable-uploads/logo-chainalysis.png'
+    name: 'Avalanche',
+    logo: '/lovable-uploads/AVX.png'
   },
   {
-    name: 'A compléter : utiliser que des logos transparents',
-    logo: '/lovable-uploads/logo-polygon.png'
+    name: 'Aléo',
+    logo: '/lovable-uploads/aleo.png'
   }
 ];
 

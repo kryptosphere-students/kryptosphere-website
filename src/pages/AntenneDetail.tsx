@@ -119,20 +119,20 @@ const AntenneDetail = () => {
         { name: 'Laura Janssens', role: t('roles.tresoriere'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
     },
-    test: {
-      name: t('cities.test'),
-      city: t('cities.test'),
-      coordinates: { lat: 51.5074, lng: -0.1278 },
-      country: t('countries.test'),
-      school: 'Test',
-      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
-      description: t('branches.londonDescription'),
-      descriptionEn: t('branches.londonDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2000',
+    paris2: {
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.8965, lng: 2.2339 },
+      school: 'Léonard De Vinci',
+      schoolLogo: '/lovable-uploads/devinci.png',
+      description: t('branches.parisDescription2'),
+      descriptionEn: t('branches.parisDescription2'),
+      heroImage: 'https://images.pexels.com/photos/2389273/pexels-photo-2389273.jpeg?_gl=1*1trpnet*_ga*MTgxNTM4ODkzNi4xNzQ5OTMwMzY2*_ga_8JE65Q40S6*czE3NDk5MzAzNjYkbzEkZzEkdDE3NDk5MzAzODYkajQwJGwwJGgw',
       contact: {
-        email: 'test@kryptosphere.org',
-        phone: '+44 20 1234 5678',
-        address: 'Sussex Place, Regent\'s Park, London NW1 4SA'
+        email: 'contact@kryptosphere.org',
+        phone: '+XX XX XX XX XX',
+        address: '12 Avenue Léonard De Vinci, 92400, Courbevoie'
       },
       bureau: [
         { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
@@ -199,7 +199,7 @@ const AntenneDetail = () => {
                 />
                 <div>
                   <h1 className="text-5xl md:text-7xl font-bold mb-2">
-                    Kryptosphere <span className="text-blue-400">{antenne.name}</span>
+                    KRYPTOSPHERE <span className="text-blue-400">{antenne.name}</span>
                   </h1>
                   <p className="text-xl text-slate-300">{antenne.school}</p>
                 </div>
