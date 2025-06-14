@@ -150,6 +150,29 @@ const Donation = () => {
 </br>
 
 
+
+      {/* Bitcoin node */}
+      <section className="py-16 px-6 border-t border-slate-700/50">
+      
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">{t('donation.transparencyBTC')}</h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+            {t('donation.transparencyTextBTC')}
+          </p>
+<a
+  href="https://amboss.space/node/035ecfa18f08c079ba58a410859aada06062ac31ca60585bfc878ad60e6a490448?section=General"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
+>
+  {t('donation.reportsBTCNODE')}
+</a>
+        </div>
+      </section>
+
+
+
+
       {/* Transparency Section */}
       <section className="py-16 px-6 border-t border-slate-700/50">
       
