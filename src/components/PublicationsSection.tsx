@@ -22,13 +22,13 @@ const PublicationsSection = () => {
     {
       title: t('publication.report2024.title'),
       date: t('publication.report2024.date'),
-      image: "/placeholder.svg",
+      image: "/publications/Rapport2024.png",
       category: t('publications.reports')
     },
     {
       title: t('publication.kryptopaper24.title'),
       date: t('publication.kryptopaper24.date'),
-      image: "/placeholder.svg",
+      image: "/publications/images/KPavril22.png",
       category: t('publications.kryptopaper')
     }
   ];

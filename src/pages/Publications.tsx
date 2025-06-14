@@ -46,8 +46,8 @@ const Publications = () => {
       date: t('publication.report2024.date'),
       category: "rapport",
       description: t('publication.report2024.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
+      image: "/publications/Rapport2024.png",
+      downloadUrl: "https://thibaultlangloisberthelot.medium.com/how-many-people-did-the-kryptosphere-network-introduce-to-bitcoin-286789d7cc2f",
       readTime: t('publication.report2024.readTime')
     },
     {
@@ -56,18 +56,18 @@ const Publications = () => {
       date: t('publication.kryptopaper24.date'),
       category: "kryptopaper",
       description: t('publication.kryptopaper24.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
+      image: "/publications/images/KPavril22.png",
+      downloadUrl: "/publications/KSavril22.pdf",
       readTime: t('publication.kryptopaper24.readTime')
     },
     {
       id: 6,
       title: t('publication.smartcontracts.title'),
       date: t('publication.smartcontracts.date'),
-      category: "guide",
+      category: "article",
       description: t('publication.smartcontracts.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
+      image: "/publications/images/articles.png",
+      downloadUrl: "https://kryptosphere.medium.com/",
       readTime: t('publication.smartcontracts.readTime')
     }
   ];
@@ -75,7 +75,7 @@ const Publications = () => {
   const categories = [
     { id: 'all', name: t('publications.all'), count: publications.length },
     { id: 'kryptopaper', name: t('publications.kryptopaper'), count: publications.filter(p => p.category === 'kryptopaper').length },
-    { id: 'guide', name: t('publications.guides'), count: publications.filter(p => p.category === 'guide').length },
+    { id: 'article', name: t('publications.articless'), count: publications.filter(p => p.category === 'article').length },
     { id: 'rapport', name: t('publications.reports'), count: publications.filter(p => p.category === 'rapport').length },
     { id: 'etude', name: t('publications.studies'), count: publications.filter(p => p.category === 'etude').length }
   ];

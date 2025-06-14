@@ -77,11 +77,11 @@ export const translations = {
     'nav.donate': 'Nous soutenir',
 
     // Hero
-    'hero.title': "La première association",
-    'hero.title2': 'étudiante',
+    'hero.title': "Le premier réseau",
+    'hero.title2': 'étudiant',
     'hero.title3': 'et Tech',
     'hero.title4': "d'Europe",
-    'hero.subtitle': "Démocratiser les crypto-actifs, l'IA et la cybersécurité",
+    'hero.subtitle': "Démocratiser les crypto-actifs, l'IA et la cybersécurité auprès du grand public",
     'hero.join': "Rejoindre l'association",
     'hero.branches': 'Voir nos antennes',
 
@@ -259,7 +259,7 @@ export const translations = {
     'publications.resourcesTag': 'Ressources et contenus éducatifs',
     'publications.all': 'Toutes',
     'publications.kryptopaper': 'KryptoPaper',
-    'publications.guides': 'Guides',
+    'publications.articles': 'Articles',
     'publications.reports': 'Rapports',
     'publications.studies': 'Études',
     'publications.read': 'Lire',
@@ -337,7 +337,7 @@ export const translations = {
     'footer.legal.legal': 'Mentions légales',
     'footer.description': 'L\'association étudiante de référence dans la Tech. Rejoignez-nous pour explorer les technologies de demain.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025 | KRYPTOSPHERE FRANCE | Tous droits réservés.',
+    'footer.copyright': '2017 — 2025 | Association KRYPTOSPHERE FRANCE | Tous droits réservés.',
 
     // Contact
     'contact.email': 'Email',
@@ -382,7 +382,7 @@ export const translations = {
     'timeline.2025.achievements': ['Intelligence Artificielle', 'Ordinateurs quantiques', 'Cybersécurité', '800+ membres'],
 
     // Publication items
-    'publication.kryptopaper22.title': 'KryptoPaper Edition 22',
+    'publication.kryptopaper22.title': 'KryptoPaper Édition 22',
     'publication.kryptopaper22.date': 'MARS 2022',
     'publication.kryptopaper22.description': 'Analyse des tendances crypto 2022 et perspectives d\'avenir',
     'publication.kryptopaper22.readTime': '15 min',
@@ -392,14 +392,14 @@ export const translations = {
     'publication.defi.description': 'Introduction complète aux crypto-actifs',
     'publication.defi.readTime': '10 min',
 
-    'publication.report2024.title': 'Rapport annuel 2024',
-    'publication.report2024.date': 'DÉCEMBRE 2024',
-    'publication.report2024.description': 'Bilan des activités et accomplissements de l\'année',
-    'publication.report2024.readTime': '30 min',
+    'publication.report2024.title': "Rapport d'impact 2024",
+    'publication.report2024.date': 'FEVRIER 2024',
+    'publication.report2024.description': "Bilan chiffrée de l'impact de notre réseau pour le marché des crypto-actifs",
+    'publication.report2024.readTime': '15 min',
 
-    'publication.kryptopaper24.title': 'KryptoPaper Edition 24',
-    'publication.kryptopaper24.date': 'OCTOBRE 2024',
-    'publication.kryptopaper24.description': 'Spécial NFTs et métaverse',
+    'publication.kryptopaper24.title': 'KryptoPaper Édition 22',
+    'publication.kryptopaper24.date': 'AVRIL 2022',
+    'publication.kryptopaper24.description': 'Actualité, DeFi, Cryptoactifs, Articles de fond',
     'publication.kryptopaper24.readTime': '18 min',
 
     'publication.research.title': 'Recherche académique',
@@ -407,10 +407,10 @@ export const translations = {
     'publication.research.description': 'La blockchain au regard du droit et de l’identité',
     'publication.research.readTime': '60+ min',
 
-    'publication.smartcontracts.title': 'Guide Smart Contracts',
-    'publication.smartcontracts.date': 'AOÛT 2024',
-    'publication.smartcontracts.description': 'Développement et déploiement de smart contracts',
-    'publication.smartcontracts.readTime': '35 min',
+    'publication.smartcontracts.title': 'Nos anciens articles',
+    'publication.smartcontracts.date': '2018 - 2024',
+    'publication.smartcontracts.description': 'Retrouvez les archives de nos anciens articles pour suivre de multiples évolutions technologiques',
+    'publication.smartcontracts.readTime': '+60 min',
 
     // General
     'language': 'fr'
@@ -520,7 +520,7 @@ export const translations = {
     'publications.resourcesTag': 'Resources and educational content',
     'publications.all': 'All',
     'publications.kryptopaper': 'KryptoPaper',
-    'publications.guides': 'Guides',
+    'publications.articles': 'Articles',
     'publications.reports': 'Reports',
     'publications.studies': 'Studies',
     'publications.read': 'Read',
