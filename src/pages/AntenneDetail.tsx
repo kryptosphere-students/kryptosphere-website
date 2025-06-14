@@ -98,25 +98,25 @@ const AntenneDetail = () => {
         { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
     },
-    bruxelles: {
-      name: t('cities.brussels'),
-      city: t('cities.brussels'),
+    mons: {
+      name: t('cities.mons'),
+      city: t('cities.mons'),
       coordinates: { lat: 50.8503, lng: 4.3517 },
       country: t('countries.belgium'),
-      school: 'Solvay Brussels School',
-      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
-      description: t('branches.brusselsDescription'),
-      descriptionEn: t('branches.brusselsDescription'),
+      school: 'HEH',
+      schoolLogo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VjgnAtJ9fDWMfxpQvZhDoQghuizHlb9RIQ&s',
+      description: t('branches.monsDescription'),
+      descriptionEn: t('branches.monsDescription'),
       heroImage: 'https://images.unsplash.com/photo-1559113122-3f2b707ba3c6?q=80&w=2000',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+32 2 123 45 67',
-        address: 'Avenue Franklin Roosevelt 50, 1050 Bruxelles'
+        phone: '+X XX XX XX XX',
+        address: '8 Avenue Victor Maistriau, 7000, Mons'
       },
       bureau: [
-        { name: 'Claire Vandenberghe', role: t('roles.presidente'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'Maxime Van Der Berg', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'Laura Janssens', role: t('roles.tresoriere'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: 'William HUBAUX', role: t('roles.presidente'), photo: '/public/antennes/William.webp' },
+        { name: "Yassine N'CIRI", role: t('roles.vicePresident'), photo: '/public/antennes/Yassine.webp' },
+        { name: 'Romain MOREAU', role: t('roles.tresoriere'), photo: '/public/antennes/Romain.webp' }
       ]
     },
     paris2: {
@@ -133,6 +133,27 @@ const AntenneDetail = () => {
         email: 'contact@kryptosphere.org',
         phone: '+XX XX XX XX XX',
         address: '12 Avenue Léonard De Vinci, 92400, Courbevoie'
+      },
+      bureau: [
+        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+      ]
+    },
+        paris3: {
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.624853, lng: 2.444104 },
+      school: 'IMTBS-TSP',
+      schoolLogo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANx3tURfMi9hQsmtiSi7DN_MRoNFasI4JZw&s',
+      description: t('branches.parisDescription3'),
+      descriptionEn: t('branches.parisDescription3'),
+      heroImage: 'https://images.pexels.com/photos/2389273/pexels-photo-2389273.jpeg?_gl=1*1trpnet*_ga*MTgxNTM4ODkzNi4xNzQ5OTMwMzY2*_ga_8JE65Q40S6*czE3NDk5MzAzNjYkbzEkZzEkdDE3NDk5MzAzODYkajQwJGwwJGgw',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+XX XX XX XX XX',
+        address: '9 Rue Charles Fourier, 91000 Évry-Courcouronnes'
       },
       bureau: [
         { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },

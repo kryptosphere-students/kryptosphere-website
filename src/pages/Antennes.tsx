@@ -69,17 +69,17 @@ const Antennes = () => {
       }
     },
     {
-      id: 'bruxelles',
-      name: t('cities.brussels'),
-      city: t('cities.brussels'),
+      id: 'mons',
+      name: t('cities.mons'),
+      city: t('cities.mons'),
       country: t('countries.belgium'),
-      coordinates: { lat: 50.8503, lng: 4.3517 },
-      school: 'Solvay Brussels School',
-      description: t('branches.brusselsDescription'),
-      image: '/placeholder.svg',
+      coordinates: { lat: 50.45413, lng: 3.95229 },
+      school: 'HEH',
+      description: t('branches.monsDescription'),
+      image: 'https://st4.depositphotos.com/38198886/39435/i/1600/depositphotos_394351038-stock-photo-main-square-city-hall-mons.jpg',
       contact: {
-        email: 'brussels@kryptosphere.org',
-        phone: '+32 2 123 45 67'
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
       }
     },
     {
@@ -91,6 +91,20 @@ const Antennes = () => {
       school: 'DEVINCI',
       description: t('branches.parisDescription2'),
       image: '/antennes/devinci.webp',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
+      }
+    },
+       {
+      id: 'paris3',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.624853, lng: 2.444104 },
+      school: 'IMTBS-TSP',
+      description: t('branches.parisDescription3'),
+      image: '/lovable-uploads/imtbs_tsp.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+X XX XX XX XX'
