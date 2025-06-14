@@ -100,7 +100,24 @@ const Donation = () => {
 
 {/* Bouton pour donation en Bitcoin */}
 
-  <div className="flex justify-center mt-8">
+ 
+
+
+
+
+
+      {/* Don en cryptomonnaies */}
+      <section className="py-16 px-6 border-t border-slate-700/50">
+      
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">{t('donation.transparencyCRYPTO')}</h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+            {t('donation.transparencyTextCRYPTO')}
+          </p>
+
+
+
+ <div className="flex justify-center mt-8">
   <a
     href="2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos"
     target="_blank"
@@ -117,12 +134,6 @@ const Donation = () => {
   </a>
 </div>
 
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
 
 {/* Bouton pour donation en Ethers */}
 
@@ -137,17 +148,11 @@ const Donation = () => {
   </a>
 </div>
 
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
 
-<br>
-</br>
-<br>
-</br>
+
+
+        </div>
+      </section>
 
 
 
@@ -166,28 +171,6 @@ const Donation = () => {
   className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
 >
   {t('donation.reportsBTCNODE')}
-</a>
-        </div>
-      </section>
-
-
-
-
-      {/* Transparency Section */}
-      <section className="py-16 px-6 border-t border-slate-700/50">
-      
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">{t('donation.transparency')}</h2>
-          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
-            {t('donation.transparencyText')}
-          </p>
-<a
-  href="https://www.pappers.fr/recherche?q=KRYPTOSPHERE"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300 border border-slate-600"
->
-  {t('donation.reports')}
 </a>
         </div>
       </section>

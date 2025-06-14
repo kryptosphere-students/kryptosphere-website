@@ -296,13 +296,15 @@ export const translations = {
     'donation.finalize': 'Finaliser la donation',
     'donation.security': 'Vos dons sont sécurisés et utilisés exclusivement pour les activités de l\'association.',
     'donation.transparency': 'Transparence financière',
+    'donation.transparencyCRYPTO': 'Faire un don en cryptommonaie',
     'donation.transparencyBTC': 'Notre noeud Bitcoin',
     'donation.transparencyText': 'Nous publions une partie de nos informations financières pour assurer une transparence sur nos activités.',
     'donation.transparencyTextBTC': 'Nous maintenons de façon bénévole notre propre noeud Bitcoin depuis plusieurs années : soutenez-nous !',
+    'donation.transparencyTextCRYPTO': 'Nous acceptons directement les dons en Ethers ou en Bitcoin depuis 2021 (uniquement en utilisant le navigateur TOR pour ce dernier).',
     'donation.reports': 'Consulter nos données officielles',
     'donation.reportsBTCNODE': 'Découvrez notre noeud Bitcoin',
-    'donation.reportsBTC': 'Faire un don en Bitcoin \n (seulement via TOR Browser)',
-    'donation.reportsETH': 'Faire un don en Ethers',
+    'donation.reportsBTC': 'Donner en Bitcoin \n (via TOR Browser)',
+    'donation.reportsETH': 'Donner en Ethers',
 
     // Antenne Details
     'antenne.team': 'Équipe',
