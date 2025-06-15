@@ -81,7 +81,7 @@ export const translations = {
     'hero.title2': 'étudiant',
     'hero.title3': 'et Tech',
     'hero.title4': "d'Europe",
-    'hero.subtitle': "Démocratiser les crypto-actifs, l'IA et la cybersécurité auprès du grand public",
+    'hero.subtitle': "Le réseau bien physique du numérique : crypto-actifs, IA et cybersécurité",
     'hero.join': "Rejoindre l'association",
     'hero.branches': 'Voir nos antennes',
 
