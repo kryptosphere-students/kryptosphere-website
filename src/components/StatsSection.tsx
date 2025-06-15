@@ -13,7 +13,7 @@ const StatsSection = () => {
     },
     {
       icon: GraduationCap,
-      value: '22+',
+      value: '20+',
       label: t('stats.universities')
     },
     {
@@ -336,6 +336,7 @@ export const translations = {
     'cities.lyon': 'Lyon',
     'cities.london': 'Londres',
     'cities.mons': 'Mons',
+    'cities.reims': 'Reims',
 
     // Team roles
     'roles.president': 'Président',
@@ -520,6 +521,7 @@ export const translations = {
     'branches.londonDescription': 'Our first international branch, in the heart of London\'s City.',
     'branches.brusselsDescription': 'The Brussels branch, at the heart of European institutions.',
     'branches.devinciDescription': "L'antenne KRYPTOSPHERE DEVINCI, l'une des plus actives de notre projet au centre de la capitale.",
+    'branches.reimsDescription': "Créée en 2024, notre antenne rémoise collabore activement avec nos antennes parisiennes sur le sujet des cryptomonnaies.",
     'branches.backToList': 'Back to branches',
     'branches.bureauYear': '{city} Office 2025',
     'branches.contact': 'Contact us',
@@ -560,13 +562,6 @@ export const translations = {
     'donation.events': 'Community events',
     'donation.eventsDesc': 'Organization of free conferences and meetups',
     'donation.choose': 'Choose your donation',
-    'donation.amount': 'Donation amount',
-    'donation.customAmount': 'Custom amount',
-    'donation.paymentMethod': 'Payment method',
-    'donation.card': 'Credit card',
-    'donation.crypto': 'Cryptocurrency',
-    'donation.summary': 'Summary',
-    'donation.amountLabel': 'Donation amount:',
     'donation.info': 'Your donation will be used to support our educational activities and community development.',
     'donation.finalize': 'Finalize donation',
     'donation.security': 'Your donations are secure and used exclusively for association activities.',
@@ -599,6 +594,7 @@ export const translations = {
     'cities.lille': 'Lille',
     'cities.london': 'London',
     'cities.brussels': 'Brussels',
+    'cities.reims': 'Reims',
 
     // Team roles
     'roles.president': 'President',
@@ -651,7 +647,7 @@ export const translations = {
 
     'timeline.2023.title': 'European leadership',
     'timeline.2023.description': 'Recognition as European reference',
-    'timeline.2023.achievements': ['800+ members', '22+ institutions', '3 countries'],
+    'timeline.2023.achievements': ['800+ members', '20+ institutions', '3 countries'],
 
     'timeline.2024.title': 'Consolidation',
     'timeline.2024.description': 'Strengthening partnerships and ecosystem',

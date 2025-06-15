@@ -145,7 +145,7 @@ const AntenneDetail = () => {
       city: t('cities.paris'),
       country: t('countries.france'),
       coordinates: { lat: 48.624853, lng: 2.444104 },
-      school: 'IMTBS-TSP',
+      school: 'IMTBS - TSP',
       schoolLogo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANx3tURfMi9hQsmtiSi7DN_MRoNFasI4JZw&s',
       description: t('branches.parisDescription3'),
       descriptionEn: t('branches.parisDescription3'),
@@ -181,6 +181,27 @@ const AntenneDetail = () => {
         { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
         { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
+    },
+    reims: {
+      name: t('cities.reims'),
+      city: t('cities.reims'),
+      country: t('countries.france'),
+      coordinates: { lat: 49.238939, lng: 4.002990 },
+      school: 'NEOMA',
+      schoolLogo: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-NEOMA-2016.png',
+      description: t('branches.reimsDescription'),
+      descriptionEn: t('branches.reimsDescription'),
+      heroImage: 'https://www.fondation-neoma.fr/sites/fondation/files/styles/w2000/public/2023-11/NEOMA_Front.png?h=fb205de0&itok=sDaXH5eq',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+XX XX XX XX XX',
+        address: '59 Rue Pierre Taittinger, 51100, Reims'
+      },
+      bureau: [
+        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+      ]
     }
   };
 
@@ -201,12 +222,12 @@ const AntenneDetail = () => {
   }
 
   const gallery = [
-    'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800',
-    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800',
-    'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800',
-    'https://images.unsplash.com/photo-1515169067868-5387ec70266d?q=80&w=800',
-    'https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?q=80&w=800',
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800'
+    'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
+    'https://media.licdn.com/dms/image/v2/D4E22AQF9QO3mLYD6rg/feedshare-shrink_800/feedshare-shrink_800/0/1713435841897?e=2147483647&v=beta&t=guc97PjUtfUSTJ9UcO4sHxXFZ86DJ2PHGEXktZQnVeY',
+    'https://www.univ-lyon3.fr/medias/photo/kryptotour_1732016056202-jpg',
+    'https://i.ytimg.com/vi/D1KWsD1pGwQ/maxresdefault.jpg',
+    'https://www.devinci.fr/wordpress/wp-content/uploads/2022/11/KRYPTOSPHERE-1200x700.jpg',
+    'https://www.planetegrandesecoles.com/wp-content/uploads/2022/05/Sans-titre-2.jpg.webp'
   ];
 
   return (

@@ -74,7 +74,7 @@ const Antennes = () => {
       city: t('cities.mons'),
       country: t('countries.belgium'),
       coordinates: { lat: 50.45413, lng: 3.95229 },
-      school: 'HEH',
+      school: 'Haute École en Hainaut',
       description: t('branches.monsDescription'),
       image: 'https://ds.static.rtbf.be/article/image/1248x702/7/f/9/02561fa1a900cabe15c228f10a34a382-1391700643.jpg',
       contact: {
@@ -102,7 +102,7 @@ const Antennes = () => {
       city: t('cities.paris'),
       country: t('countries.france'),
       coordinates: { lat: 48.624853, lng: 2.444104 },
-      school: 'IMTBS-TSP',
+      school: 'IMTBS - TSP',
       description: t('branches.parisDescription3'),
       image: '/lovable-uploads/imtbs_tsp.jpg',
       contact: {
@@ -119,6 +119,20 @@ const Antennes = () => {
       school: 'IAE LYON',
       description: t('branches.lyon'),
       image: 'https://pbs.twimg.com/media/E_PmcY2WUAE4C6j.jpg:large',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
+      }
+    },
+          {
+      id: 'reims',
+      name: t('cities.reims'),
+      city: t('cities.reims'),
+      country: t('countries.france'),
+      coordinates: { lat: 49.238939, lng: 4.002990 },
+      school: 'NEOMA',
+      description: t('branches.reimsDescription'),
+      image: 'https://www.fondation-neoma.fr/sites/fondation/files/styles/w2000/public/2023-11/NEOMA_Front.png?h=fb205de0&itok=sDaXH5eq',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+X XX XX XX XX'
