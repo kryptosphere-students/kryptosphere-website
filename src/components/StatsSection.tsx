@@ -243,8 +243,10 @@ export const translations = {
     'branches.parisDescription2': "Découvrez KRYPTOSPHERE DEVINCI, l'une de nos antennes parisiennes les plus actives !",
     'branches.parisDescription3': "Découvrez KRYPTOSPHERE IMTBS-TSP, l'une de nos plus anciennes antennes, parisienne, parmi les plus actives !",
     'branches.nantesDescription': 'L\'antenne nantaise, dynamique et innovante dans l\'ouest de la France.',
-    'branches.lilleDescription': 'L\'antenne lilloise, proche de la frontière belge et très active.',
+    'branches.parisDescription4': "L\'antenne de l'ESCP créée en avril 2022, aussi prestigieuse que compétente depuis lors. Spécialisation : crypto, IA.",
     'branches.londonDescription': 'Notre première antenne internationale, au cœur de la City londonienne.',
+    'branches.lyon': "Créée en février 2024, KS IAE LYON rayonne par l'organisation annuelle de notre évènement phare : le KryptoTour !",
+    'branches.lyonDescription': "Créée en février 2024, KS IAE LYON rayonne par l'organisation annuelle de notre évènement phare : le KryptoTour !",
     'branches.monsDescription': 'L\'antenne de Mons, au plus près des institutions européennes de Bruxelles.',
     'branches.backToList': 'Retour aux antennes',
     'branches.bureauYear': 'Bureau {city} 2025',
@@ -330,7 +332,8 @@ export const translations = {
     // Cities
     'cities.paris': 'Paris',
     'cities.nantes': 'Nantes',
-    'cities.lille': 'Lille',
+    'cities.paris4': 'Paris',
+    'cities.lyon': 'Lyon',
     'cities.london': 'Londres',
     'cities.mons': 'Mons',
 
@@ -416,7 +419,7 @@ export const translations = {
     'publication.kryptopaper24.description': 'Actualité, DeFi, Cryptoactifs, Articles de fond',
     'publication.kryptopaper24.readTime': '18 min',
 
-    'publication.research.title': 'Recherche académique',
+    'publication.research.title': 'Thèse de doctorat',
     'publication.research.date': 'AOUT 2023',
     'publication.research.description': 'La blockchain au regard du droit et de l’identité',
     'publication.research.readTime': '60+ min',

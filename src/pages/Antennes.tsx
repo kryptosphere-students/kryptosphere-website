@@ -32,26 +32,26 @@ const Antennes = () => {
       city: t('cities.nantes'),
       country: t('countries.france'),
       coordinates: { lat: 47.2184, lng: -1.5536 },
-      school: 'Audencia Business School',
+      school: 'IMT Atlantique',
       description: t('branches.nantesDescription'),
-      image: '/placeholder.svg',
+      image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
       contact: {
-        email: 'nantes@kryptosphere.org',
-        phone: '+33 2 23 45 67 89'
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
       }
     },
     {
-      id: 'lille',
-      name: t('cities.lille'),
-      city: t('cities.lille'),
+      id: 'paris4',
+      name: t('cities.paris4'),
+      city: t('cities.paris4'),
       country: t('countries.france'),
       coordinates: { lat: 50.6292, lng: 3.0573 },
-      school: 'EDHEC Business School',
-      description: t('branches.lilleDescription'),
-      image: '/placeholder.svg',
+      school: 'ESCP Business School',
+      description: t('branches.parisDescription4'),
+      image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
       contact: {
-        email: 'lille@kryptosphere.org',
-        phone: '+33 3 23 45 67 89'
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX XX'
       }
     },
     {
@@ -60,12 +60,12 @@ const Antennes = () => {
       city: t('cities.london'),
       country: t('countries.uk'),
       coordinates: { lat: 51.5074, lng: -0.1278 },
-      school: 'London Business School',
+      school: 'Hult Business School',
       description: t('branches.londonDescription'),
-      image: '/placeholder.svg',
+      image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
       contact: {
-        email: 'london@kryptosphere.org',
-        phone: '+44 20 1234 5678'
+        email: 'contact@kryptosphere.org',
+        phone: '+XX XX XX XX XX'
       }
     },
     {
@@ -76,7 +76,7 @@ const Antennes = () => {
       coordinates: { lat: 50.45413, lng: 3.95229 },
       school: 'HEH',
       description: t('branches.monsDescription'),
-      image: 'https://st4.depositphotos.com/38198886/39435/i/1600/depositphotos_394351038-stock-photo-main-square-city-hall-mons.jpg',
+      image: 'https://ds.static.rtbf.be/article/image/1248x702/7/f/9/02561fa1a900cabe15c228f10a34a382-1391700643.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+X XX XX XX XX'
@@ -90,7 +90,7 @@ const Antennes = () => {
       coordinates: { lat: 48.8965, lng: 2.2339 },
       school: 'DEVINCI',
       description: t('branches.parisDescription2'),
-      image: '/antennes/devinci.webp',
+      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+X XX XX XX XX'
@@ -105,6 +105,20 @@ const Antennes = () => {
       school: 'IMTBS-TSP',
       description: t('branches.parisDescription3'),
       image: '/lovable-uploads/imtbs_tsp.jpg',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+X XX XX XX XX'
+      }
+    },
+    {
+      id: 'lyon',
+      name: t('cities.lyon'),
+      city: t('cities.lyon'),
+      country: t('countries.france'),
+      coordinates: { lat: 45.74861, lng: 4.86000 },
+      school: 'IAE LYON',
+      description: t('branches.lyon'),
+      image: 'https://pbs.twimg.com/media/E_PmcY2WUAE4C6j.jpg:large',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+X XX XX XX XX'

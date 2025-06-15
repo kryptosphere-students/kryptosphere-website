@@ -41,10 +41,10 @@ const AntenneDetail = () => {
       coordinates: { lat: 47.2184, lng: -1.5536 },
       country: t('countries.france'),
       school: 'IMT Atlantique',
-      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
+      schoolLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/IMT_Atlantique.svg/1200px-IMT_Atlantique.svg.png',
       description: t('branches.nantesDescription'),
       descriptionEn: t('branches.nantesDescription'),
-      heroImage: 'https://lh3.googleusercontent.com/p/AF1QipPDW0OqhwW5X00AmGfUXGf2MpLYY-U4r8emR6dN=s1360-w1360-h1020-rw',
+      heroImage: 'https://cdn.pixabay.com/photo/2017/07/26/20/12/nantes-2542973_1280.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
         phone: '+33 x xx xx xx xx',
@@ -56,20 +56,20 @@ const AntenneDetail = () => {
         { name: 'Emma Roux', role: t('roles.tresoriere'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
     },
-    lille: {
-      name: t('cities.lille'),
-      city: t('cities.lille'),
-      coordinates: { lat: 50.6292, lng: 3.0573 },
+    paris4: {
+      name: t('cities.paris4'),
+      city: t('cities.paris4'),
+      coordinates: { lat: 48.858636, lng: 2.375139 },
       country: t('countries.france'),
-      school: 'EDHEC Business School',
-      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
-      description: t('branches.lilleDescription'),
-      descriptionEn: t('branches.lilleDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2000',
+      school: 'ESCP Business School',
+      schoolLogo: 'https://www.cfa-sciences.fr/sites/default/files/inline-images/1200px-ESCP_LOGO_CMJN.png',
+      description: t('branches.parisDescription4'),
+      descriptionEn: t('branches.parisDescription4'),
+      heroImage: 'https://escp.eu/sites/default/files/inline-images/Paris/Champerret-Campus/ESCP-Campus-Champerret-016-square-hotel-de-ville.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+33 3 23 45 67 89',
-        address: '24 Avenue Gustave Delory, 59057 Roubaix'
+        phone: '+X XX XX XX XX XX',
+        address: '79 Avenue de la République 75011 Paris'
       },
       bureau: [
         { name: 'Antoine Leroy', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
@@ -82,15 +82,15 @@ const AntenneDetail = () => {
       city: t('cities.london'),
       coordinates: { lat: 51.5074, lng: -0.1278 },
       country: t('countries.uk'),
-      school: 'London Business School',
-      schoolLogo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png',
+      school: 'Hult Business School',
+      schoolLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/HULT_IBS_Logo_Outline_Black_%28cropped%29.png/640px-HULT_IBS_Logo_Outline_Black_%28cropped%29.png',
       description: t('branches.londonDescription'),
       descriptionEn: t('branches.londonDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2000',
+      heroImage: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+44 20 1234 5678',
-        address: 'Sussex Place, Regent\'s Park, London NW1 4SA'
+        phone: '+XX XX XX XX XX',
+        address: '37–38 John Street London WC1N 2AT United Kingdom'
       },
       bureau: [
         { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
@@ -161,6 +161,27 @@ const AntenneDetail = () => {
         { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
       ]
     },
+    lyon: {
+      name: t('cities.lyon'),
+      city: t('cities.lyon'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.624853, lng: 2.444104 },
+      school: 'IAE Lyon',
+      schoolLogo: 'https://www.eduopinions.com/wp-content/uploads/2018/02/iae_lyon.png',
+      description: t('branches.lyonDescription'),
+      descriptionEn: t('branches.lyonDescription'),
+      heroImage: 'https://cdn.pixabay.com/photo/2022/04/07/13/33/lyon-7117498_1280.jpg',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '+XX XX XX XX XX',
+        address: '1C, avenue des Frères Lumière, 69372, Lyon CEDEX 08'
+      },
+      bureau: [
+        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
+        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+      ]
+    }
   };
 
   const antenne = antennesData[id as keyof typeof antennesData];
