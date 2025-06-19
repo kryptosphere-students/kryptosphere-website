@@ -7,32 +7,32 @@ const AboutSection = () => {
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Workshops et formations sur les dernières technologies blockchain"
+      description: "Workshops, hackathons et formations sur les crypto-actifs et les technologies blockchain"
     },
     {
       icon: Network,
       title: "Réseau",
-      description: "Connexions avec l'écosystème blockchain professionnel"
+      description: "Connexions directes avec les professionnels des écosystèmes des crypto-actifs, de l'IA et de la cybersécurité"
     },
     {
       icon: Users,
       title: "Communauté",
-      description: "Une communauté active de passionnés et d'experts"
+      description: "Constuire et fédérer une communauté active d'étudiants futurs experts des nouvelles technologies"
     },
     {
       icon: Trophy,
       title: "Excellence",
-      description: "Projets étudiants et participation à des hackathons"
+      description: "Lancement, financement et participation à de nombreux hackathons"
     },
     {
       icon: Code,
       title: "Développement",
-      description: "Formation pratique sur les smart contracts et DApps"
+      description: "Formation interne et externe sur les smart contracts et les plateformes décentralisées"
     },
     {
       icon: Rocket,
-      title: "Innovation",
-      description: "Incubation de projets blockchain étudiants"
+      title: "Incubateur",
+      description: "Incubation gratuite de projets innovants d'étudiants et de professionnels "
     }
   ];
 
@@ -45,23 +45,23 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Kryptosphere est l'association étudiante de référence dans l'exploration des technologies blockchain. 
-            Nous créons un pont entre l'innovation technologique et la communauté étudiante.
+            KRYPTOSPHERE® est l'association étudiante de référence dans les nouvelles technologies, pionnière dans les crypto-actifs. 
+            Nous formons un pont entre l'innovation technologique et la communauté étudiante.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <p className="text-lg text-slate-300 mb-12 leading-relaxed">
-              Notre mission : démocratiser l'accès à la connaissance blockchain, organiser des événements 
-              enrichissants et construire un réseau solide de futurs experts.
+              Notre mission : démocratiser l'accès aux technologies blockchains, aux crypto-actifs et toute autre nouvelle technologie, en organisant des événements 
+              enrichissants et en construisant un réseau immuable de futurs experts de la Tech.
             </p>
             
             {/* Mission points */}
             <div className="space-y-6 mb-12">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <span className="text-slate-300">Former la prochaine génération d'experts blockchain</span>
+                <span className="text-slate-300">Former la prochaine génération d'experts sur les crypto-actifs</span>
               </div>
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-purple-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
@@ -82,7 +82,7 @@ const AboutSection = () => {
             <div className="bg-slate-800/50 backdrop-blur-lg rounded-2xl p-8 border border-slate-700/50 shadow-2xl">
               <h3 className="text-3xl font-bold mb-6 text-white">Notre Vision</h3>
               <p className="text-slate-300 leading-relaxed mb-6">
-                Devenir le hub européen de référence pour l'innovation blockchain étudiante, 
+                Devenir le hub européen de référence pour les étudiants au sujet des nouvelles technologies, 
                 en formant les leaders de demain et en accélérant l'adoption des technologies décentralisées.
               </p>
               <div className="flex items-center gap-4">
@@ -90,8 +90,8 @@ const AboutSection = () => {
                   <Rocket className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">Lancé en 2021</p>
-                  <p className="text-slate-400 text-sm">3 ans d'innovation</p>
+                  <p className="text-white font-semibold">Lancé en 2017</p>
+                  <p className="text-slate-400 text-sm">Pionnière depuis 8 ans</p>
                 </div>
               </div>
             </div>

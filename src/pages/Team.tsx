@@ -53,7 +53,7 @@ const Team = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <Users className="w-4 h-4" />
-            L'équipe qui fait vivre Kryptosphere
+            L'équipe qui fait vivre KRYPTOSPHERE®
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -62,8 +62,8 @@ const Team = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Découvrez les passionnés qui font vivre Kryptosphere au quotidien. 
-            Une équipe diverse et motivée, unie par la vision d'un avenir blockchain.
+            Découvrez les passionnés qui font vivre KRYPTOSPHERE® au quotidien. 
+            Une équipe diversifiée et motivée, unie par la vision d'un avenir technologique et financier compris de tous.
           </p>
         </div>
       </section>
@@ -103,8 +103,8 @@ const Team = () => {
             
             <h2 className="text-4xl font-bold mb-6 text-white">Rejoignez notre équipe</h2>
             <p className="text-xl mb-8 text-slate-300">
-              Vous êtes passionné par la blockchain et souhaitez contribuer à notre mission ? 
-              Rejoignez-nous et participez à la révolution technologique !
+              Vous êtes passionné par une nouvelle technologie et souhaitez contribuer à notre mission ? 
+              Rejoignez-nous et participez à la révolution du numérique !
             </p>
             <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-blue-500/25">
               Postuler maintenant

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
@@ -32,22 +32,34 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/technologiesleader/"
                 className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
               >
                 <Linkedin className="w-5 h-5 text-white" />
               </a>
               <a
-                href="#"
-                className="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg transition-colors duration-200 group"
+                href="https://twitter.com/kryptosphere_?lang=en"
+                className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
               >
-                <MessageCircle className="w-5 h-5 text-white" />
+                <Twitter className="w-5 h-5 text-white" />
+              </a>
+                            <a
+                href="https://www.youtube.com/@kryptosphere"
+                className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
+              >
+                <Youtube className="w-5 h-5 text-white" />
+              </a>
+                            <a
+                href="https://www.instagram.com/explore/search/keyword/?q=%23kryptosphere"
+                className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
+              >
+                <Instagram className="w-5 h-5 text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/kryptosphereofficial"
                 className="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg transition-colors duration-200 group"
               >
-                <Github className="w-5 h-5 text-white" />
+                <Facebook className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -68,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-3 text-slate-400">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>contact.kryptosphere@gmail.com</span>
+                <span>contact@kryptosphere.org</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-blue-400" />

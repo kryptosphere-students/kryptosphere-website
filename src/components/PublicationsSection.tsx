@@ -2,33 +2,34 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const PublicationsSection = () => {
   const { t } = useLanguage();
 
   const publications = [
     {
-      title: t('publication.kryptopaper25.title'),
-      date: t('publication.kryptopaper25.date'),
-      image: "/placeholder.svg",
+      title: t('publication.kryptopaper22.title'),
+      date: t('publication.kryptopaper22.date'),
+      image: "/publications/images/KP22.png",
       category: t('publications.kryptopaper')
     },
     {
-      title: t('publication.defi.title'),
-      date: t('publication.defi.date'),
-      image: "/placeholder.svg",
-      category: t('publications.guides')
+      title: t('publication.research.title'),
+      date: t('publication.research.date'),
+      image: "/publications/images/researchThibault.png",
+      category: t('etude')
     },
     {
       title: t('publication.report2024.title'),
       date: t('publication.report2024.date'),
-      image: "/placeholder.svg",
+      image: "/publications/Rapport2024.png",
       category: t('publications.reports')
     },
     {
       title: t('publication.kryptopaper24.title'),
       date: t('publication.kryptopaper24.date'),
-      image: "/placeholder.svg",
+      image: "/publications/images/KPavril22.png",
       category: t('publications.kryptopaper')
     }
   ];
@@ -40,10 +41,10 @@ const PublicationsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             {t('publications.title')}
           </h2>
-          <button className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
+          <Link to="/publications" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
             {t('publications.viewAll')}
-            <ArrowRight className="w-4 h-4" />
-          </button>
+           <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

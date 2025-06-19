@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom'; 
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -12,7 +13,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/e930801d-6056-4451-a96a-ff4fad677d1e.png')`,
+          backgroundImage: `url('/lovable-uploads/backgroundks.png')`,
         }}
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
@@ -51,12 +52,17 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-slate-900 transition-all duration-300 flex items-center gap-2 group">
-              {t('hero.join')}
-            </button>
-            <button className="text-white hover:text-blue-400 transition-colors duration-300 underline">
-              {t('hero.branches')}
-            </button>
+<a
+  href="https://www.linkedin.com/company/kryptosphere"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-400"
+>
+  {t('hero.join')}
+</a>
+<Link to="/antennes" className="text-white hover:text-blue-400 transition-colors duration-300 underline">
+  {t('hero.branches')}
+</Link>
           </div>
         </div>
       </div>

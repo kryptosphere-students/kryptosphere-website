@@ -12,62 +12,62 @@ const Publications = () => {
   const publications = [
     {
       id: 1,
-      title: t('publication.kryptopaper25.title'),
-      date: t('publication.kryptopaper25.date'),
+      title: t('publication.kryptopaper22.title'),
+      date: t('publication.kryptopaper22.date'),
       category: "kryptopaper",
-      description: t('publication.kryptopaper25.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.kryptopaper25.readTime')
+      description: t('publication.kryptopaper22.description'),
+      image: "/publications/images/KP22.png",
+      downloadUrl: "/publications/KryptoPaper_2022.pdf",
+      readTime: t('publication.kryptopaper22.readTime')
     },
-    {
+        {
       id: 2,
-      title: t('publication.defi.title'),
-      date: t('publication.defi.date'),
-      category: "guide",
-      description: t('publication.defi.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.defi.readTime')
-    },
-    {
-      id: 3,
-      title: t('publication.report2024.title'),
-      date: t('publication.report2024.date'),
-      category: "rapport",
-      description: t('publication.report2024.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.report2024.readTime')
-    },
-    {
-      id: 4,
-      title: t('publication.kryptopaper24.title'),
-      date: t('publication.kryptopaper24.date'),
-      category: "kryptopaper",
-      description: t('publication.kryptopaper24.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
-      readTime: t('publication.kryptopaper24.readTime')
-    },
-    {
-      id: 5,
       title: t('publication.research.title'),
       date: t('publication.research.date'),
       category: "etude",
       description: t('publication.research.description'),
       image: "/publications/images/researchThibault.png",
-      downloadUrl: "/publications/LANGLOIS_BERTHELOT_Thibault_Doctorat_2023.pdf",
+      downloadUrl: "https://hal.science/tel-04190658/document",
       readTime: t('publication.research.readTime')
+    },
+    {
+      id: 3,
+      title: t('publication.defi.title'),
+      date: t('publication.defi.date'),
+      category: "kryptopaper",
+      description: t('publication.defi.description'),
+      image: "/publications/images/KP20.png",
+      downloadUrl: "/publications/KryptoPaper_2021.pdf",
+      readTime: t('publication.defi.readTime')
+    },
+    {
+      id: 4,
+      title: t('publication.report2024.title'),
+      date: t('publication.report2024.date'),
+      category: "rapport",
+      description: t('publication.report2024.description'),
+      image: "/publications/Rapport2024.png",
+      downloadUrl: "https://thibaultlangloisberthelot.medium.com/how-many-people-did-the-kryptosphere-network-introduce-to-bitcoin-286789d7cc2f",
+      readTime: t('publication.report2024.readTime')
+    },
+    {
+      id: 5,
+      title: t('publication.kryptopaper24.title'),
+      date: t('publication.kryptopaper24.date'),
+      category: "kryptopaper",
+      description: t('publication.kryptopaper24.description'),
+      image: "/publications/images/KPavril22.png",
+      downloadUrl: "/publications/KSavril22.pdf",
+      readTime: t('publication.kryptopaper24.readTime')
     },
     {
       id: 6,
       title: t('publication.smartcontracts.title'),
       date: t('publication.smartcontracts.date'),
-      category: "guide",
+      category: "article",
       description: t('publication.smartcontracts.description'),
-      image: "/placeholder.svg",
-      downloadUrl: "#",
+      image: "/publications/images/articles.png",
+      downloadUrl: "https://kryptosphere.medium.com/",
       readTime: t('publication.smartcontracts.readTime')
     }
   ];
@@ -75,7 +75,7 @@ const Publications = () => {
   const categories = [
     { id: 'all', name: t('publications.all'), count: publications.length },
     { id: 'kryptopaper', name: t('publications.kryptopaper'), count: publications.filter(p => p.category === 'kryptopaper').length },
-    { id: 'guide', name: t('publications.guides'), count: publications.filter(p => p.category === 'guide').length },
+    { id: 'article', name: t('publications.articles'), count: publications.filter(p => p.category === 'article').length },
     { id: 'rapport', name: t('publications.reports'), count: publications.filter(p => p.category === 'rapport').length },
     { id: 'etude', name: t('publications.studies'), count: publications.filter(p => p.category === 'etude').length }
   ];
@@ -200,16 +200,16 @@ const Publications = () => {
             <p className="text-xl mb-8 text-slate-300">
               {t('publications.newsletter.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder={t('publications.newsletter.placeholder')}
-                className="flex-1 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500"
-              />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300">
-                {t('publications.newsletter.subscribe')}
-              </button>
-            </div>
+<div className="flex justify-center mt-6">
+  <a
+    href="https://substack.com/@kryptosphere"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 text-center"
+  >
+    {t('publications.newsletter.subscribe')}
+  </a>
+</div>
           </div>
         </div>
       </section>

@@ -6,25 +6,172 @@ const SponsorsSection = () => {
   const [activeCategory, setActiveCategory] = useState('sponsors');
   const { t } = useLanguage();
 
-  const sponsors = Array(8).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const sponsors = [
+  {
+    name: 'BPI France',
+    logo: '/lovable-uploads/bpifrance.png'
+  },
+  {
+    name: 'Ledger',
+    logo: '/lovable-uploads/Ledger.svg'
+  },
+  {
+    name: 'KPMG',
+    logo: '/lovable-uploads/KPMG.png'
+  },
+  {
+    name: 'DELUBAC',
+    logo: '/lovable-uploads/delubac.svg'
+  },
+  {
+    name: 'XRP',
+    logo: '/lovable-uploads/xrp.png'
+  },
+  {
+    name: 'Forvis Mazars',
+    logo: '/lovable-uploads/Forvis_Mazars.png'
+  },
+  {
+    name: 'Avalanche',
+    logo: '/lovable-uploads/AVX.png'
+  },
+  {
+    name: 'Aléo',
+    logo: '/lovable-uploads/aleo.png'
+  }
+];
 
-  const partners = Array(6).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
 
-  const universities = Array(6).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const partners = [
+  {
+    name: 'Coinbase',
+    logo: '/lovable-uploads/Coinbase.svg.png'
+  },
+  {
+    name: 'Ledger',
+    logo: '/lovable-uploads/Ledger.svg'
+  },
+  {
+    name: 'KPMG',
+    logo: '/lovable-uploads/KPMG.png'
+  },
+  {
+    name: 'Pyratzlabs',
+    logo: '/lovable-uploads/pyratz.svg'
+  },
+  {
+    name: 'BFG',
+    logo: '/lovable-uploads/BFG.png'
+  },
+  {
+    name: 'ADAN',
+    logo: '/lovable-uploads/adan.svg'
+  },
+    {
+    name: 'Paymium',
+    logo: '/lovable-uploads/paymium.png'
+  },
+      {
+    name: 'VIVA TECH',
+    logo: '/lovable-uploads/viva.png'
+  },
+];
 
-  const media = Array(10).fill(null).map((_, index) => ({
-    name: 'Kryptosphere',
-    logo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png'
-  }));
+const universities = [
+  {
+    name: 'IMTBS-TSP',
+    logo: '/lovable-uploads/imtbstsp.png'
+  },
+  {
+    name: 'Polytechnique',
+    logo: '/lovable-uploads/TSP.png'
+  },
+  {
+    name: 'ESCP',
+    logo: '/lovable-uploads/ESCP.png'
+  },
+  {
+    name: 'HEH',
+    logo: '/lovable-uploads/HEH.png'
+  },
+  {
+    name: 'EMLV',
+    logo: '/lovable-uploads/emlv.png'
+  },
+  {
+    name: 'HULT London',
+    logo: '/lovable-uploads/hult.png'
+  },
+  {
+    name: 'NEOMA',
+    logo: '/lovable-uploads/NEOMA.png'
+  },
+  {
+    name: 'ESILV',
+    logo: '/lovable-uploads/ESILV.png'
+  },
+    {
+    name: 'ESTIA',
+    logo: '/lovable-uploads/estia.png'
+  },
+    {
+    name: 'Albert School',
+    logo: '/lovable-uploads/albert.png'
+  },
+    {
+    name: 'Paris Dauphine',
+    logo: '/lovable-uploads/dauphine.png'
+  },
+    {
+    name: 'ESSEC',
+    logo: '/lovable-uploads/ESSEC.svg'
+  }
+];
+
+const media = [
+  {
+    name: 'Le Monde',
+    logo: '/lovable-uploads/lemonde.svg'
+  },
+  {
+    name: 'RTL',
+    logo: '/lovable-uploads/rtl.png'
+  },
+  {
+    name: 'Figaro',
+    logo: '/lovable-uploads/figaro.png'
+  },
+  {
+    name: 'Journal Du Net',
+    logo: '/lovable-uploads/JDN.png'
+  },
+  {
+    name: 'BFM Crypto',
+    logo: '/lovable-uploads/bfm.png'
+  },
+  {
+    name: 'Journal du Geek',
+    logo: '/lovable-uploads/JDG.png'
+  },
+  {
+    name: '20 minutes',
+    logo: '/lovable-uploads/20.png'
+  },
+  {
+    name: 'Journal du coin',
+    logo: '/lovable-uploads/journalducoin.png'
+  },
+    {
+    name: 'Cryptoast',
+    logo: '/lovable-uploads/cryptoast.webp'
+  },
+    {
+    name: 'Bitcoin.fr',
+    logo: '/lovable-uploads/bitcoinfr.webp'
+  }
+];
+
+
 
   const categories = [
     { id: 'sponsors', name: t('sponsors.sponsors'), data: sponsors },

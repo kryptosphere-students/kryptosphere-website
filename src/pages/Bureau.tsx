@@ -39,28 +39,212 @@ const Bureau = () => {
         image: "/bureau/lpiallat.png",
         school: t('board.member4.school')
       },
+      {
+        name: t('board.member27.name'),
+        role: t('board.member27.role'),
+        description: t('board.member27.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member27.school')
+      },
     ],
     '2024': [
+            {
+        name: t('board.member24.name'),
+        role: t('board.member24.role'),
+        description: t('board.member24.description'),
+        image: "/bureau/mathiasbouguon.jpeg",
+        school: t('board.member24.school')
+      },
+                  {
+        name: t('board.member25.name'),
+        role: t('board.member25.role'),
+        description: t('board.member25.description'),
+        image: "/bureau/rayan.webp",
+        school: t('board.member25.school')
+      },
+                        {
+        name: t('board.member26.name'),
+        role: t('board.member26.role'),
+        description: t('board.member26.description'),
+        image: "/bureau/gildas.webp",
+        school: t('board.member26.school')
+      },
       {
-        name: t('board.former.president'),
-        role: t('board.member1.role'),
-        description: t('board.former.description'),
-        image: "/placeholder.svg",
-        school: t('board.member1.school')
-      }
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
     ],
     '2023': [
+
+            {
+        name: t('board.member21.name'),
+        role: t('board.member21.role'),
+        description: t('board.member21.description'),
+        image: "/bureau/maxime.jpeg",
+        school: t('board.member21.school')
+      },
+            {
+        name: t('board.member22.name'),
+        role: t('board.member22.role'),
+        description: t('board.member22.description'),
+        image: "/bureau/leo.jpeg",
+        school: t('board.member22.school')
+      },
+                  {
+        name: t('board.member23.name'),
+        role: t('board.member23.role'),
+        description: t('board.member23.description'),
+        image: "/bureau/louis.jpeg",
+        school: t('board.member23.school')
+      },
       {
-        name: t('board.former.president') + " 2023",
-        role: t('board.member1.role'),
-        description: t('board.former.description2023'),
-        image: "/placeholder.svg",
-        school: t('board.member3.school')
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2022': [
+      {
+        name: t('board.member19.name'),
+        role: t('board.member19.role'),
+        description: t('board.member19.description'),
+        image: "/bureau/mathias.jpeg",
+        school: t('board.member19.school')
+      },
+            {
+        name: t('board.member20.name'),
+        role: t('board.member20.role'),
+        description: t('board.member20.description'),
+        image: "/bureau/gabriel.jpeg",
+        school: t('board.member20.school')
+      },
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+    ],
+    '2021': [
+                               {
+        name: t('board.member17.name'),
+        role: t('board.member17.role'),
+        description: t('board.member17.description'),
+        image: "/bureau/karolina.jpeg",
+        school: t('board.member17.school')
+      },
+      {
+        name: t('board.member18.name'),
+        role: t('board.member18.role'),
+        description: t('board.member18.description'),
+        image: "/bureau/Pierre.jpeg",
+        school: t('board.member18.school')
+      },
+            {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
       }
+    ],
+    '2020 - 2017': [
+      
+      {
+        name: t('board.member5.name'),
+        role: t('board.member5.role'),
+        description: t('board.member5.description'),
+        image: "/bureau/thibault.jpg",
+        school: t('board.member5.school')
+      },
+                  {
+        name: t('board.member8.name'),
+        role: t('board.member8.role'),
+        description: t('board.member8.description'),
+        image: "/bureau/Guillaume.jpeg",
+        school: t('board.member8.school')
+      },
+                        {
+        name: t('board.member9.name'),
+        role: t('board.member9.role'),
+        description: t('board.member9.description'),
+        image: "/bureau/othmane.jpeg",
+        school: t('board.member9.school')
+      },
+                        {
+        name: t('board.member10.name'),
+        role: t('board.member10.role'),
+        description: t('board.member10.description'),
+        image: "/bureau/fanis.jpeg",
+        school: t('board.member10.school')
+      },
+                              {
+        name: t('board.member11.name'),
+        role: t('board.member11.role'),
+        description: t('board.member11.description'),
+        image: "/bureau/titouan.webp",
+        school: t('board.member11.school')
+      },
+                                    {
+        name: t('board.member12.name'),
+        role: t('board.member12.role'),
+        description: t('board.member12.description'),
+        image: "/bureau/julie.jpeg",
+        school: t('board.member12.school')
+      },
+                                          {
+        name: t('board.member13.name'),
+        role: t('board.member13.role'),
+        description: t('board.member13.description'),
+        image: "/bureau/manon.jpeg",
+        school: t('board.member13.school')
+      },
+                                                {
+        name: t('board.member14.name'),
+        role: t('board.member14.role'),
+        description: t('board.member14.description'),
+        image: "/bureau/harmonie.jpeg",
+        school: t('board.member14.school')
+      },
+                                                      {
+        name: t('board.member15.name'),
+        role: t('board.member15.role'),
+        description: t('board.member15.description'),
+        image: "/bureau/marie.jpeg",
+        school: t('board.member15.school')
+      },
+                                                            {
+        name: t('board.member16.name'),
+        role: t('board.member16.role'),
+        description: t('board.member16.description'),
+        image: "/bureau/aymane.jpeg",
+        school: t('board.member16.school')
+      },
+                        {
+        name: t('board.member6.name'),
+        role: t('board.member6.role'),
+        description: t('board.member6.description'),
+        image: "/bureau/william.jpeg",
+        school: t('board.member6.school')
+      },
+                        {
+        name: t('board.member7.name'),
+        role: t('board.member7.role'),
+        description: t('board.member7.description'),
+        image: "/bureau/serge.jpg",
+        school: t('board.member7.school')
+      },
     ]
+
   };
 
-  const years = ['2025', '2024', '2023'];
+  const years = ['2025', '2024', '2023', '2022', '2021', '2020 - 2017'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
