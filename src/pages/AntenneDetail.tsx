@@ -57,8 +57,8 @@ const AntenneDetail = () => {
       ]
     },
     paris4: {
-      name: t('cities.paris4'),
-      city: t('cities.paris4'),
+      name: t('cities.paris'),
+      city: t('cities.paris'),
       coordinates: { lat: 48.858636, lng: 2.375139 },
       country: t('countries.france'),
       school: 'ESCP Business School',

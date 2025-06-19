@@ -5,62 +5,62 @@ import { Calendar, Target, Users, Award } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Association = () => {
-  const { t } = useLanguage();
+  const { t, tRaw } = useLanguage();
 
   const timeline = [
     {
       year: '2017',
       title: t('timeline.2017.title'),
       description: t('timeline.2017.description'),
-      achievements: t('timeline.2017.achievements') as string[]
+      achievements: tRaw('timeline.2017.achievements') as string[]
     },
     {
       year: '2018',
       title: t('timeline.2018.title'),
       description: t('timeline.2018.description'),
-      achievements: t('timeline.2018.achievements') as string[]
+      achievements: tRaw('timeline.2018.achievements') as string[]
     },
     {
       year: '2019',
       title: t('timeline.2019.title'),
       description: t('timeline.2019.description'),
-      achievements: t('timeline.2019.achievements') as string[]
+      achievements: tRaw('timeline.2019.achievements') as string[]
     },
     {
       year: '2020',
       title: t('timeline.2020.title'),
       description: t('timeline.2020.description'),
-      achievements: t('timeline.2020.achievements') as string[]
+      achievements: tRaw('timeline.2020.achievements') as string[]
     },
     {
       year: '2021',
       title: t('timeline.2021.title'),
       description: t('timeline.2021.description'),
-      achievements: t('timeline.2021.achievements') as string[]
+      achievements: tRaw('timeline.2021.achievements') as string[]
     },
     {
       year: '2022',
       title: t('timeline.2022.title'),
       description: t('timeline.2022.description'),
-      achievements: t('timeline.2022.achievements') as string[]
+      achievements: tRaw('timeline.2022.achievements') as string[]
     },
     {
       year: '2023',
       title: t('timeline.2023.title'),
       description: t('timeline.2023.description'),
-      achievements: t('timeline.2023.achievements') as string[]
+      achievements: tRaw('timeline.2023.achievements') as string[]
     },
     {
       year: '2024',
       title: t('timeline.2024.title'),
       description: t('timeline.2024.description'),
-      achievements: t('timeline.2024.achievements') as string[]
+      achievements: tRaw('timeline.2024.achievements') as string[]
     },
     {
       year: '2025',
       title: t('timeline.2025.title'),
       description: t('timeline.2025.description'),
-      achievements: t('timeline.2025.achievements') as string[]
+      achievements: tRaw('timeline.2025.achievements') as string[]
     }
   ];
 

@@ -8,6 +8,7 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  tRaw: (key: string) => unknown;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -23,8 +24,13 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     return value || key;
   };
 
+  const tRaw = (key: string): unknown => {
+  return translations[language][key as keyof typeof translations[typeof language]];
+};
+
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tRaw }}>
       {children}
     </LanguageContext.Provider>
   );
