@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -135,7 +134,7 @@ const Publications = () => {
             {filteredPublications.map((publication) => (
               <div
                 key={publication.id}
-                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
+                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden flex flex-col h-full"
               >
                 <div className="aspect-video bg-slate-700 relative overflow-hidden">
                   <img
@@ -156,15 +155,17 @@ const Publications = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                    {publication.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                    {publication.description}
-                  </p>
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                      {publication.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                      {publication.description}
+                    </p>
+                  </div>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 mt-auto">
                     <a
                       href={publication.downloadUrl}
                       target="_blank"
@@ -183,7 +184,6 @@ const Publications = () => {
                       <Download className="w-4 h-4" />
                       {t('publications.pdf')}
                     </a>
-
                   </div>
                 </div>
               </div>

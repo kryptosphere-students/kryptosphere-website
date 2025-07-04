@@ -147,7 +147,7 @@ const media = [
   },
   {
     name: 'BFM Crypto',
-    logo: '/lovable-uploads/bfm.png'
+    logo: '/lovable-uploads/bfm.jpg'
   },
   {
     name: 'Journal du Geek',
@@ -180,7 +180,9 @@ const media = [
   ];
 
   return (
-    <div className="bg-slate-900">
+<div className="bg-slate-900">
+
+
       {/* Sponsors Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -208,13 +210,13 @@ const media = [
             {categories.find(cat => cat.id === activeCategory)?.data.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-6 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-all duration-300"
-              >
+               className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
+  >
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="h-16 w-auto max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
-                />
+                 className="h-16 w-auto max-w-full object-contain"
+        />
               </div>
             ))}
           </div>
@@ -229,13 +231,13 @@ const media = [
             {media.map((outlet, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-all duration-300"
-              >
+       className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
+        >
                 <img
                   src={outlet.logo}
                   alt={outlet.name}
-                  className="h-12 w-auto max-w-full object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
-                />
+              className="h-16 w-auto max-w-full object-contain"
+    />
               </div>
             ))}
           </div>
