@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -7,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const Bureau = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
-  const { t } = useLanguage();
+  const { t, tRaw } = useLanguage();
 
   const bureauData = {
     '2025': [
@@ -244,6 +243,71 @@ const Bureau = () => {
 
   };
 
+  const polesData = {
+    '2025': [
+      {
+        title: t('board.poles.partnership.title'),
+        description: t('board.poles.partnership.description'),
+        team: [
+          {
+            name: t('board.poles.partnership.team.member1.name'),
+            role: t('board.poles.partnership.team.member1.role'),
+            description: t('board.poles.partnership.team.member1.description'),
+            image: '/bureau/jules.jpeg',
+          },
+          {
+            name: t('board.poles.partnership.team.member2.name'),
+            role: t('board.poles.partnership.team.member2.role'),
+            description: t('board.poles.partnership.team.member2.description'),
+            image: '/bureau/thibault.jpg',
+          },
+          {
+            name: t('board.poles.partnership.team.member3.name'),
+            role: t('board.poles.partnership.team.member3.role'),
+            description: t('board.poles.partnership.team.member3.description'),
+            image: '/bureau/rayan.webp',
+          },
+        ],
+      },
+      {
+        title: t('board.poles.communication.title'),
+        description: tRaw('board.poles.communication.description'),
+        team: [
+          {
+            name: t('board.poles.communication.team.member1.name'),
+            role: t('board.poles.communication.team.member1.role'),
+            description: t('board.poles.communication.team.member1.description'),
+            image: '/bureau/thibault.jpg',
+          },
+          {
+            name: t('board.poles.communication.team.member2.name'),
+            role: t('board.poles.communication.team.member2.role'),
+            description: t('board.poles.communication.team.member2.description'),
+            image: '/bureau/thibault.jpg',
+          },
+        ],
+      },
+      {
+        title: t('board.poles.aidefi.title'),
+        description: t('board.poles.aidefi.description'),
+        team: [
+          {
+            name: t('board.poles.aidefi.team.member1.name'),
+            role: t('board.poles.aidefi.team.member1.role'),
+            description: '',
+            image: '/bureau/louis-piallat.jpg',
+          },
+          {
+            name: t('board.poles.aidefi.team.member2.name'),
+            role: t('board.poles.aidefi.team.member2.role'),
+            description: '',
+            image: '/bureau/mark-killian.jpg',
+          },
+        ],
+      },
+    ],
+  };
+
   const years = ['2025', '2024', '2023', '2022', '2021', '2020 - 2017'];
 
   return (
@@ -297,9 +361,9 @@ const Bureau = () => {
       {/* Team Grid */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {bureauData[selectedYear]?.map((member, index) => (
-              <div key={index} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden">
+              <div key={index} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden w-full">
                 <div className="p-8 text-center">
                   <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
                     <img
@@ -318,6 +382,51 @@ const Bureau = () => {
           </div>
         </div>
       </section>
+
+      {selectedYear === '2025' && (
+        <section className="py-16 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                {t('board.polesTitle')}
+              </h2>
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+
+            {(polesData[selectedYear] || []).map((pole, poleIndex) => (
+              <div key={poleIndex} className="mb-20">
+                <h3 className="text-3xl font-bold text-center mb-4 text-slate-100">{pole.title}</h3>
+                <div className="max-w-4xl mx-auto text-center text-slate-300 leading-relaxed mb-10 space-y-4">
+                  {Array.isArray(pole.description) ? (
+                    (pole.description as string[]).map((p, i) => <p key={i}>{p}</p>)
+                  ) : (
+                    <p>{pole.description as string}</p>
+                  )}
+                </div>
+
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {pole.team.map((member, memberIndex) => (
+                    <div key={memberIndex} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden w-full">
+                      <div className="p-8 text-center">
+                        <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-300 transition-colors">{member.name}</h3>
+                        <p className="text-blue-400 font-semibold mb-4 text-sm uppercase tracking-wide">{member.role}</p>
+                        <p className="text-slate-400 text-sm leading-relaxed">{member.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <Footer />
     </div>

@@ -85,20 +85,20 @@ const Antennes = () => {
         phone: '+X XX XX XX XX XX'
       }
     },
-    {
-      id: 'londres',
-      name: t('cities.london'),
-      city: t('cities.london'),
-      country: t('countries.uk'),
-      coordinates: { lat: 51.5074, lng: -0.1278 },
-      school: 'Hult Business School',
-      description: t('branches.londonDescription'),
-      image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+XX XX XX XX XX'
-      }
-    },
+    // {
+    //   id: 'londres',
+    //   name: t('cities.london'),
+    //   city: t('cities.london'),
+    //   country: t('countries.uk'),
+    //   coordinates: { lat: 51.5074, lng: -0.1278 },
+    //   school: 'Hult Business School',
+    //   description: t('branches.londonDescription'),
+    //   image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
+    //   contact: {
+    //     email: 'contact@kryptosphere.org',
+    //     phone: '+XX XX XX XX XX'
+    //   }
+    // },
     {
       id: 'mons',
       name: t('cities.mons'),
