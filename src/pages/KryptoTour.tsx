@@ -80,16 +80,15 @@ const KryptoTour = () => {
       {/* Aftermovie/YouTube Section */}
       <section className="py-8 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="border-2 border-slate-400/30 bg-slate-800/40 aspect-video overflow-hidden min-h-[400px]">
+          <div className="border-2 border-slate-400/30 bg-slate-800/40 aspect-video overflow-hidden w-full">
             <iframe
-              width="100%"
-              height="100%"
               src="https://www.youtube.com/embed/Ai1VoWrEqrM?autoplay=1&loop=1&playlist=Ai1VoWrEqrM&mute=1"
               title="KryptoTour Lyon Aftermovie"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-              className="w-full h-full"
+              className="w-full h-full max-w-full max-h-full aspect-video"
+              style={{ minHeight: '200px' }}
             />
           </div>
         </div>
