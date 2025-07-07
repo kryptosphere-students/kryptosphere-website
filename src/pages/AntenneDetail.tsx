@@ -141,9 +141,9 @@ const AntenneDetail = () => {
         address: '8 Avenue Victor Maistriau, 7000, Mons'
       },
       bureau: [
-        { name: 'William HUBAUX', role: t('roles.presidente'), photo: '/public/antennes/William.webp' },
-        { name: "Yassine N'CIRI", role: t('roles.vicePresident'), photo: '/public/antennes/Yassine.webp' },
-        { name: 'Romain MOREAU', role: t('roles.tresoriere'), photo: '/public/antennes/Romain.webp' }
+        { name: 'William HUBAUX', role: t('roles.presidente'), photo: '/antennes/William.webp' },
+        { name: "Yassine N'CIRI", role: t('roles.vicePresident'), photo: '/antennes/Yassine.webp' },
+        { name: 'Romain MOREAU', role: t('roles.tresoriere'), photo: '/antennes/Romain.webp' }
       ],
       gallery: [],
       descriptionKey: 'antennes.mons.description'

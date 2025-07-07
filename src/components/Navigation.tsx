@@ -14,13 +14,14 @@ const Navigation = () => {
     { name: t('nav.board'), path: '/bureau' },
     { name: t('nav.association'), path: '/association' },
     { name: t('nav.branches'), path: '/antennes' },
-    {
-      name: t('nav.events'),
-      subItems: [
-        { name: t('events.upcoming'), path: '/events' },
-        { name: 'KryptoTour', path: '/events/krypto-tour' }
-      ]
-    },
+    { name: t('nav.events'), path: '/events' },
+    // {
+    //   name: t('nav.events'),
+    //   subItems: [
+    //     { name: t('events.upcoming'), path: '/events' },
+    //     { name: 'KryptoTour', path: '/events/krypto-tour' }
+    //   ]
+    // },
     { name: t('nav.publications'), path: '/publications' },
     { name: t('nav.donate'), path: '/donation' }
   ];

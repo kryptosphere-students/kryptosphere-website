@@ -12,13 +12,23 @@ const Antennes = () => {
 
   const antennes = [
     {
+      id: 'devinci',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
+      school: 'DeVinci',
+      description: t('antennes.devinci.littleDescription'),
+      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
+    },
+    {
       id: 'essec',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
       coordinates: { lat: 49.0334698, lng: 2.076515 },
       school: 'ESSEC Business School',
-      description: t('branches.parisDescription'),
+      description: t('antennes.essec.littleDescription'),
       image: '/antennes/EssecBig.webp'
     },
     {
@@ -28,7 +38,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.870086669921875, lng: 2.273621082305908 },
       school: 'Paris Dauphine-PSL',
-      description: t('branches.parisDescription'),
+      description: t('antennes.dauphine.littleDescription'),
       image: '/antennes/dauphine/dauphine-2.webp',
     },
     {
@@ -38,7 +48,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 45.74861, lng: 4.86000 },
       school: 'IAE LYON',
-      description: t('branches.lyon'),
+      description: t('antennes.lyon.littleDescription'),
       image: 'https://pbs.twimg.com/media/E_PmcY2WUAE4C6j.jpg:large',
     },
     {
@@ -48,7 +58,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.624853, lng: 2.444104 },
       school: 'IMTBS - TSP',
-      description: t('branches.parisDescription3'),
+      description: t('antennes.telecom.littleDescription'),
       image: '/lovable-uploads/imtbs_tsp.webp',
     },
         {
@@ -58,7 +68,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.892372131347656, lng: 2.235696315765381 },
       school: 'IESEG Business School',
-      description: t('branches.parisDescription4'),
+      description: t('antennes.ieseg.littleDescription'),
       image: 'https://www.parisladefense.com/sites/default/files/styles/responsive_2_1_s/public/import/image/ie-useg-pld-08-2022-augustin-detienne-004_9.jpg.webp',
     },
     {
@@ -68,7 +78,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 47.281455993652344, lng: -1.5201970338821411 },
       school: 'IMT Atlantique',
-      description: t('branches.nantesDescription'),
+      description: t('antennes.imtatlantique.littleDescription'),
       image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
     },
     {
@@ -78,7 +88,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 50.6292, lng: 3.0573 },
       school: 'ESCP Business School',
-      description: t('branches.parisDescription4'),
+      description: t('antennes.escp.littleDescription'),
       image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
     },
     {
@@ -88,7 +98,7 @@ const Antennes = () => {
       country: t('countries.uk'),
       coordinates: { lat: 51.5074, lng: -0.1278 },
       school: 'Hult Business School',
-      description: t('branches.londonDescription'),
+      description: t('antennes.hult.littleDescription'),
       image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
     },
     {
@@ -98,18 +108,8 @@ const Antennes = () => {
       country: t('countries.belgium'),
       coordinates: { lat: 50.45413, lng: 3.95229 },
       school: 'Haute École en Hainaut',
-      description: t('branches.monsDescription'),
+      description: t('antennes.mons.littleDescription'),
       image: 'https://ds.static.rtbf.be/article/image/1248x702/7/f/9/02561fa1a900cabe15c228f10a34a382-1391700643.jpg',
-    },
-    {
-      id: 'devinci',
-      name: t('cities.paris'),
-      city: t('cities.paris'),
-      country: t('countries.france'),
-      coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
-      school: 'DeVinci',
-      description: t('branches.parisDescription2'),
-      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
     },
           {
       id: 'neoma',
@@ -118,7 +118,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 49.238939, lng: 4.002990 },
       school: 'NEOMA',
-      description: t('branches.reimsDescription'),
+      description: t('antennes.neoma.littleDescription'),
       image: 'https://www.fondation-neoma.fr/sites/fondation/files/styles/w2000/public/2023-11/NEOMA_Front.png?h=fb205de0&itok=sDaXH5eq',
     },
     {
@@ -128,7 +128,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.87514877319336, lng: 2.351832389831543 },
       school: 'Albert Eugenia School',
-      description: t('branches.parisDescription5'),
+      description: t('antennes.aes.littleDescription'),
       image: '/antennes/aes/aesImage.webp',
     },
     {
@@ -138,7 +138,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.88954544067383, lng: 2.2442686557769775 },
       school: 'INSEEC Paris',
-      description: t('branches.parisDescription6'),
+      description: t('antennes.inseecparis.littleDescription'),
       image: '/antennes/inseec/inseec.webp', 
     },
     {
@@ -148,7 +148,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.62651443481445, lng: 2.432352066040039 },
       school: 'ensIIE',
-      description: t('branches.parisDescription6'),
+      description: t('antennes.ensiie.littleDescription'),
       image: '/antennes/ensiie/ensiie.webp', 
     },
     {
@@ -158,7 +158,7 @@ const Antennes = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.81573486328125, lng: 2.3623597621917725 },
       school: 'EPITA',
-      description: t('branches.parisDescription6'),
+      description: t('antennes.epita.littleDescription'),
       image: '/antennes/epita/epita.webp', 
     }
   ];

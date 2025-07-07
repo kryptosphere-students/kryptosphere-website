@@ -470,6 +470,7 @@ export const translations = {
     'antennes.dauphine.email': 'kryptospheredau@gmail.com',
     'antennes.dauphine.phone': '+33 6 18 86 28 77',
     'antennes.dauphine.address': 'Pl. du Maréchal de Lattre de Tassigny, 75016 Paris',
+    'antennes.dauphine.littleDescription': "À Dauphine, KRYPTOSPHERE connecte économie, finance et technologies émergentes, offrant des ateliers et projets concrets pour former les leaders de demain.",
 
     // Antenne ESSEC (Paris)
     'antennes.essec.name': 'ESSEC',
@@ -485,6 +486,7 @@ export const translations = {
     'antennes.essec.email': 'ksessec@gmail.com',
     'antennes.essec.phone': '+33 6 52 61 16 79',
     'antennes.essec.address': '3 avenue Bernard Hirsch CS 50105 95021 Cergy-Pontoise Cedex France',
+    'antennes.essec.littleDescription': "À l'ESSEC, KRYPTOSPHERE rassemble des étudiants passionnés par la finance, l'innovation et la blockchain, organisant des événements pour explorer les technologies de demain.",
 
     // Antenne IAE Lyon (Lyon) en français
     'antennes.lyon.name': 'IAE Lyon',
@@ -502,6 +504,7 @@ export const translations = {
     'antennes.lyon.email': 'kryptosphereiaelyon@gmail.com',
     'antennes.lyon.phone': '+33 7 81 89 20 90',
     'antennes.lyon.address': '6 Cr Albert Thomas, 69008 Lyon',
+    'antennes.lyon.littleDescription': "KRYPTOSPHERE IAE Lyon réunit des étudiants de tous horizons pour innover en finance, marketing et Web3, dans un esprit d'équipe et de diversité.",
 
     // Antenne Télécom SudParis/IMT BS (Paris)
     'antennes.telecom.name': 'IMTBS/TSP',
@@ -517,6 +520,7 @@ export const translations = {
     'antennes.telecom.email': 'kryptosphereimt@gmail.com',
     'antennes.telecom.phone': '+33 6 20 48 10 20',
     'antennes.telecom.address': '14 Rue Charles Fourier, 91000 Évry-Courcouronnes',
+    'antennes.telecom.littleDescription': "À IMTBS-TSP, KRYPTOSPHERE allie expertise technique et vision stratégique, explorant l'IA, le Web3 et la finance à travers des projets étudiants ambitieux.",
 
     // Antenne IESEG (Paris)
     'antennes.ieseg.name': 'IESEG Paris Nanterre',
@@ -540,6 +544,7 @@ export const translations = {
     'antennes.ieseg.email': 'kryptosphere.ieseg@gmail.com',
     'antennes.ieseg.phone': '+33 7 82 76 87 83',
     'antennes.ieseg.address': '1 parvis de. La Défense - 92044. Paris - La Défense',
+    'antennes.ieseg.littleDescription': "À l'IESEG, KRYPTOSPHERE accueille tous les curieux sur le parvis de La Défense pour discuter Web3, innovation et entreprendre des initiatives étudiantes.",
 
     // Pôle AI, DEFI and Financial Engineering
     'board.poles.aidefi.title': 'Pôle AI, DEFI et Ingénierie Financière',
@@ -561,6 +566,7 @@ export const translations = {
     'antennes.aes.email': ' ',
     'antennes.aes.phone': ' ',
     'antennes.aes.address': '18 rue de Paradis, 75010, Paris',
+    'antennes.aes.littleDescription': "À AES, KRYPTOSPHERE propulse les idées étudiantes et concrétise des projets inclusifs à fort impact, à l'intersection de l'IA, de la finance et du Web3.",
 
     // Antenne INSEEC Paris
     'antennes.inseecparis.name': 'INSEEC Paris',
@@ -582,6 +588,7 @@ export const translations = {
     'antennes.inseecparis.email': 'kryptosphere.msc.paris@assos.inseec-france.com',
     'antennes.inseecparis.phone': '+33 6 71 23 17 78',
     'antennes.inseecparis.address': '82 Espl. du Général de Gaulle, 92400 Courbevoie',
+    'antennes.inseecparis.littleDescription': "À INSEEC Paris, KRYPTOSPHERE ouvre le Web3, l'IA et les technologies émergentes à tous les étudiants Omnes, à travers ateliers et événements conviviaux.",
 
     // Antenne ensIIE Paris
     'antennes.ensiie.name': 'ensIIE',
@@ -597,6 +604,7 @@ export const translations = {
     'antennes.ensiie.email': 'kryptosphere.ensiie@gmail.com',
     'antennes.ensiie.phone': ' ',
     'antennes.ensiie.address': '1 place de la Résistance, 91000 Évry-Courcouronnes',
+    'antennes.ensiie.littleDescription': "À l'ensIIE, KRYPTOSPHERE forme des ingénieurs à la blockchain, l'IA et la finance appliquée, dans une dynamique d'innovation technique.",
 
     // Antenne NEOMA (Reims, Paris)
     'antennes.neoma.name': 'NEOMA',
@@ -620,6 +628,7 @@ export const translations = {
     'antennes.neoma.email': 'lucas.page.22@neoma-bs.com',
     'antennes.neoma.phone': '+33695902829',
     'antennes.neoma.address': '59 Rue Pierre Taittinger, 51100 Reims',
+    'antennes.neoma.littleDescription': "À NEOMA, KRYPTOSPHERE démocratise la blockchain, la fintech et l'entrepreneuriat, multipliant les initiatives pour former les innovateurs de demain.",
 
     // Antenne EPITA (Paris)
     'antennes.epita.name': 'EPITA',
@@ -637,6 +646,7 @@ export const translations = {
     'antennes.epita.email': 'kryptosphere.epita@gmail.com',
     'antennes.epita.phone': '+33 6 17 20 90 09',
     'antennes.epita.address': '14-16 Rue Voltaire, 94270 Le Kremlin-Bicêtre',
+    'antennes.epita.littleDescription': "À EPITA, KRYPTOSPHERE démocratise l'IA, la blockchain et l'innovation auprès des étudiants en informatique, à travers des projets et ateliers pratiques.",
 
     // Antenne IMT Atlantique (Nantes)
     'antennes.imtatlantique.name': 'IMT Atlantique',
@@ -668,6 +678,7 @@ export const translations = {
     'antennes.imtatlantique.email': 'kryptosphere.imta@gmail.com',
     'antennes.imtatlantique.phone': '+33 6 09 60 89 41',
     'antennes.imtatlantique.address': '4 Rue Alfred Kastler, 44300 Nantes, France',
+    'antennes.imtatlantique.littleDescription': "À IMT Atlantique, KRYPTOSPHERE rayonne sur l'ouest de la France, explorant l'IA, la blockchain et la finance à travers des projets collaboratifs.",
 
     // Antenne DEVINCI (Paris)
     'antennes.devinci.name': 'DeVinci',
@@ -687,10 +698,12 @@ export const translations = {
     'antennes.devinci.email': 'kryptosphere@devinci.fr',
     'antennes.devinci.phone': ' ',
     'antennes.devinci.address': '32 Rue des 3 Fontanot, 92000 Nanterre',
+    'antennes.devinci.littleDescription': "Au Pôle Léonard de Vinci, KRYPTOSPHERE réunit ingénieurs, managers et designers autour du Web3, de l'IA et de la blockchain, dans un esprit d'innovation.",
 
-
-
-    'antennes.mons.description': ' '
+    'antennes.mons.description': ' ',
+    'antennes.mons.littleDescription': "À Mons, KRYPTOSPHERE favorise l'innovation technologique et la finance, créant un hub étudiant dynamique au cœur de la Belgique.",
+    'antennes.hult.littleDescription': "À Hult London, KRYPTOSPHERE connecte des étudiants internationaux autour du Web3, de l'innovation et de l'entrepreneuriat global, au cœur de Londres.",
+    'antennes.escp.littleDescription': "À l'ESCP, KRYPTOSPHERE se distingue par ses projets innovants en crypto, IA et finance, dans un environnement académique cosmopolite et dynamique."
   },
   en: {
     // Navigation
@@ -1085,6 +1098,7 @@ export const translations = {
     'antennes.dauphine.email': 'kryptospheredau@gmail.com',
     'antennes.dauphine.phone': '+33 6 18 86 28 77',
     'antennes.dauphine.address': 'Pl. du Maréchal de Lattre de Tassigny, 75016 Paris',
+    'antennes.dauphine.littleDescription': "At Dauphine, KRYPTOSPHERE connects economics, finance, and emerging technologies, offering workshops and real-world projects to train tomorrow's leaders.",
 
     // Antenne ESSEC (Paris)
     'antennes.essec.name': 'ESSEC',
@@ -1102,6 +1116,7 @@ export const translations = {
     'antennes.essec.email': 'ksessec@gmail.com',
     'antennes.essec.phone': '+33 6 12 34 5678',
     'antennes.essec.address': '3 Avenue Bernard Hirsch, 95000 Cergy',
+    'antennes.essec.littleDescription': "At ESSEC, KRYPTOSPHERE brings together students passionate about finance, innovation, and blockchain, organizing events to explore tomorrow's technologies.",
 
     // Antenne IAE Lyon (Lyon)
     'antennes.lyon.name': 'IAE Lyon',
@@ -1119,6 +1134,7 @@ export const translations = {
     'antennes.lyon.email': 'kryptosphereiaelyon@gmail.com',
     'antennes.lyon.phone': '+33 7 81 89 20 90',
     'antennes.lyon.address': '6 Cr Albert Thomas, 69008 Lyon',
+    'antennes.lyon.littleDescription': "KRYPTOSPHERE IAE Lyon brings together students from all backgrounds to innovate in finance, marketing, and Web3, fostering teamwork and diversity.",
 
     // Antenne Télécom SudParis/IMT BS (Paris)
     'antennes.telecom.name': 'IMTBS/TSP',
@@ -1134,6 +1150,7 @@ export const translations = {
     'antennes.telecom.email': 'kryptosphereimt@gmail.com',
     'antennes.telecom.phone': '+33 6 20 48 10 20',
     'antennes.telecom.address': '14 Rue Charles Fourier, 91000 Évry-Courcouronnes',
+    'antennes.telecom.littleDescription': "At IMTBS-TSP, KRYPTOSPHERE combines technical expertise and strategic vision, exploring AI, Web3, and finance through ambitious student projects.",
 
     // Antenne IESEG (Paris)
     'antennes.ieseg.name': 'IESEG Paris Nanterre',
@@ -1157,6 +1174,7 @@ export const translations = {
     'antennes.ieseg.email': 'kryptosphere.ieseg@gmail.com',
     'antennes.ieseg.phone': '+33 7 82 76 87 83',
     'antennes.ieseg.address': '1 parvis de. La Défense - 92044. Paris - La Défense',
+    'antennes.ieseg.littleDescription': "At IESEG, KRYPTOSPHERE welcomes all curious minds at La Défense to discuss Web3, innovation, and launch student initiatives.",
 
     // AI, DEFI and Financial Engineering Pole
     'board.poles.aidefi.title': 'AI, DEFI and Financial Engineering Pole',
@@ -1178,6 +1196,7 @@ export const translations = {
     'antennes.aes.email': ' ',
     'antennes.aes.phone': ' ',
     'antennes.aes.address': '18 rue de Paradis, 75010, Paris',
+    'antennes.aes.littleDescription': "At AES, KRYPTOSPHERE propels student ideas and brings to life inclusive, high-impact projects at the intersection of AI, finance, and Web3.",
 
     // Antenne INSEEC Paris
     'antennes.inseecparis.name': 'INSEEC Paris',
@@ -1199,6 +1218,7 @@ export const translations = {
     'antennes.inseecparis.email': 'kryptosphere.msc.paris@assos.inseec-france.com',
     'antennes.inseecparis.phone': '+33 6 71 23 17 78',
     'antennes.inseecparis.address': '82 Espl. du Général de Gaulle, 92400 Courbevoie',
+    'antennes.inseecparis.littleDescription': "At INSEEC Paris, KRYPTOSPHERE opens Web3, AI, and emerging tech to all Omnes students, through accessible workshops and friendly events.",
 
     // Antenne ensIIE Paris
     'antennes.ensiie.name': 'ensIIE',
@@ -1214,6 +1234,7 @@ export const translations = {
     'antennes.ensiie.email': 'kryptosphere.ensiie@gmail.com',
     'antennes.ensiie.phone': ' ',
     'antennes.ensiie.address': '1 place de la Résistance, 91000 Évry-Courcouronnes',
+    'antennes.ensiie.littleDescription': "At ensIIE, KRYPTOSPHERE trains engineers in blockchain, AI, and applied finance, fostering a culture of technical innovation.",
 
     // Antenne NEOMA (Reims, Paris)
     'antennes.neoma.name': 'NEOMA',
@@ -1237,6 +1258,7 @@ export const translations = {
     'antennes.neoma.email': 'lucas.page.22@neoma-bs.com',
     'antennes.neoma.phone': '+33695902829',
     'antennes.neoma.address': '59 Rue Pierre Taittinger, 51100 Reims',
+    'antennes.neoma.littleDescription': "At NEOMA, KRYPTOSPHERE democratizes blockchain, fintech, and entrepreneurship, multiplying initiatives to train tomorrow's innovators.",
 
     // Antenne EPITA (Paris)
     'antennes.epita.name': 'EPITA',
@@ -1254,6 +1276,7 @@ export const translations = {
     'antennes.epita.email': 'kryptosphere.epita@gmail.com',
     'antennes.epita.phone': '+33 6 17 20 90 09',
     'antennes.epita.address': '14-16 Rue Voltaire, 94270 Le Kremlin-Bicêtre',
+    'antennes.epita.littleDescription': "At EPITA, KRYPTOSPHERE brings AI, blockchain, and innovation to computer science students, through practical projects and workshops.",
 
     // Antenne IMT Atlantique (Nantes)
     'antennes.imtatlantique.name': 'IMT Atlantique',
@@ -1285,6 +1308,7 @@ export const translations = {
     'antennes.imtatlantique.email': 'kryptosphere.imta@gmail.com',
     'antennes.imtatlantique.phone': '+33 6 09 60 89 41',
     'antennes.imtatlantique.address': '4 Rue Alfred Kastler, 44300 Nantes, France',
+    'antennes.imtatlantique.littleDescription': "At IMT Atlantique, KRYPTOSPHERE shines across western France, exploring AI, blockchain, and finance through collaborative projects.",
 
     // Antenne DEVINCI (Paris)
     'antennes.devinci.name': 'DeVinci',
@@ -1304,7 +1328,11 @@ export const translations = {
     'antennes.devinci.email': 'kryptosphere@devinci.fr',
     'antennes.devinci.phone': ' ',
     'antennes.devinci.address': '32 Rue des 3 Fontanot, 92000 Nanterre',
+    'antennes.devinci.littleDescription': "At Pôle Léonard de Vinci, KRYPTOSPHERE unites engineers, managers, and designers around Web3, AI, and blockchain, in a spirit of innovation.",
 
-    'antennes.mons.description': ' '
+    'antennes.mons.description': ' ',
+    'antennes.mons.littleDescription': "In Mons, KRYPTOSPHERE fosters tech innovation and finance, creating a dynamic student hub in the heart of Belgium.",
+    'antennes.hult.littleDescription': "At Hult London, KRYPTOSPHERE connects international students around Web3, innovation, and global entrepreneurship, in the heart of London.",
+    'antennes.escp.littleDescription': "At ESCP, KRYPTOSPHERE stands out for innovative projects in crypto, AI, and finance, within a dynamic and cosmopolitan academic environment."
   }
 };
