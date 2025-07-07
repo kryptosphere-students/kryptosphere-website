@@ -72,6 +72,16 @@ const Footer = () => {
               <li><Link to="/association" className="hover:text-blue-400 transition-colors duration-200">{t('nav.association')}</Link></li>
               <li><Link to="/antennes" className="hover:text-blue-400 transition-colors duration-200">{t('nav.branches')}</Link></li>
               <li><Link to="/events" className="hover:text-blue-400 transition-colors duration-200">{t('nav.events')}</Link></li>
+              <li>
+                <a href="/publications" className="hover:text-blue-400 transition-colors">
+                  {t('nav.publications')}
+                </a>
+              </li>
+              <li>
+                <a href="/donate" className="hover:text-blue-400 transition-colors">
+                  {t('nav.donate')}
+                </a>
+              </li>
             </ul>
           </div>
           
