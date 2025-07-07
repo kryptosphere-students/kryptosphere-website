@@ -1,249 +1,135 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from './ui/carousel';
+import AutoScroll from 'embla-carousel-auto-scroll';
 
 const SponsorsSection = () => {
-  const [activeCategory, setActiveCategory] = useState('sponsors');
   const { t } = useLanguage();
 
-const sponsors = [
-  {
-    name: 'BPI France',
-    logo: '/lovable-uploads/bpifrance.webp'
-  },
-  {
-    name: 'Ledger',
-    logo: '/lovable-uploads/Ledger.svg'
-  },
-  {
-    name: 'KPMG',
-    logo: '/lovable-uploads/KPMG.webp'
-  },
-  {
-    name: 'DELUBAC',
-    logo: '/lovable-uploads/delubac.svg'
-  },
-  {
-    name: 'XRP',
-    logo: '/lovable-uploads/xrp.webp'
-  },
-  {
-    name: 'Forvis Mazars',
-    logo: '/lovable-uploads/Forvis_Mazars.webp'
-  },
-  {
-    name: 'Avalanche',
-    logo: '/lovable-uploads/AVX.webp'
-  },
-  {
-    name: 'Aléo',
-    logo: '/lovable-uploads/aleo.webp'
-  }
-];
-
-
-const partners = [
-  {
-    name: 'Coinbase',
-    logo: '/lovable-uploads/Coinbase.svg.webp'
-  },
-  {
-    name: 'Ledger',
-    logo: '/lovable-uploads/Ledger.svg'
-  },
-  {
-    name: 'KPMG',
-    logo: '/lovable-uploads/KPMG.webp'
-  },
-  {
-    name: 'Blockchain Addict',
-    logo: '/lovable-uploads/ba.webp'
-  },
-  {
-    name: 'BFG',
-    logo: '/lovable-uploads/BFG.webp'
-  },
-  {
-    name: 'ADAN',
-    logo: '/lovable-uploads/adan.svg'
-  },
-    {
-    name: 'Paymium',
-    logo: '/lovable-uploads/paymium.webp'
-  },
-      {
-    name: 'VIVA TECH',
-    logo: '/lovable-uploads/viva.webp'
-  },
-];
-
-const universities = [
-  {
-    name: 'IMTBS-TSP',
-    logo: '/lovable-uploads/imtbstsp.webp'
-  },
-  {
-    name: 'Polytechnique',
-    logo: '/lovable-uploads/TSP.webp'
-  },
-  {
-    name: 'ESCP',
-    logo: '/lovable-uploads/ESCP.webp'
-  },
-  {
-    name: 'HEH',
-    logo: '/lovable-uploads/HEH.webp'
-  },
-  {
-    name: 'EMLV',
-    logo: '/lovable-uploads/emlv.webp'
-  },
-  {
-    name: 'HULT London',
-    logo: '/lovable-uploads/hult.webp'
-  },
-  {
-    name: 'NEOMA',
-    logo: '/lovable-uploads/NEOMA.webp'
-  },
-  {
-    name: 'ESILV',
-    logo: '/lovable-uploads/ESILV.webp'
-  },
-    {
-    name: 'ESTIA',
-    logo: '/lovable-uploads/estia.webp'
-  },
-    {
-    name: 'Albert School',
-    logo: '/lovable-uploads/albert.webp'
-  },
-    {
-    name: 'Paris Dauphine',
-    logo: '/lovable-uploads/dauphine.webp'
-  },
-    {
-    name: 'ESSEC',
-    logo: '/lovable-uploads/ESSEC.svg'
-  }
-];
-
-const media = [
-  {
-    name: 'Le Monde',
-    logo: '/lovable-uploads/lemonde.svg'
-  },
-  {
-    name: 'RTL',
-    logo: '/lovable-uploads/rtl.webp'
-  },
-  {
-    name: 'Figaro',
-    logo: '/lovable-uploads/figaro.webp'
-  },
-  {
-    name: 'Journal Du Net',
-    logo: '/lovable-uploads/JDN.webp'
-  },
-  {
-    name: 'BFM Crypto',
-    logo: '/lovable-uploads/bfm.jpg'
-  },
-  {
-    name: 'Journal du Geek',
-    logo: '/lovable-uploads/JDG.webp'
-  },
-  {
-    name: '20 minutes',
-    logo: '/lovable-uploads/20.webp'
-  },
-  {
-    name: 'Journal du coin',
-    logo: '/lovable-uploads/journalducoin.webp'
-  },
-    {
-    name: 'Cryptoast',
-    logo: '/lovable-uploads/cryptoast.webp'
-  },
-    {
-    name: 'Bitcoin.fr',
-    logo: '/lovable-uploads/bitcoinfr.webp'
-  }
-];
-
-
-
-  const categories = [
-    { id: 'sponsors', name: t('sponsors.sponsors'), data: sponsors },
-    { id: 'partners', name: t('sponsors.partners'), data: partners },
-    { id: 'universities', name: t('sponsors.universities'), data: universities }
+  const sponsors = [
+    { name: 'BPI France', logo: '/lovable-uploads/bpifrance.webp' },
+    { name: 'Ledger', logo: '/lovable-uploads/Ledger.svg' },
+    { name: 'KPMG', logo: '/lovable-uploads/KPMG.webp' },
+    { name: 'DELUBAC', logo: '/lovable-uploads/delubac.svg' },
+    { name: 'XRP', logo: '/lovable-uploads/xrp.webp' },
+    { name: 'Forvis Mazars', logo: '/lovable-uploads/Forvis_Mazars.webp' },
+    { name: 'Avalanche', logo: '/lovable-uploads/AVX.webp' },
+    { name: 'Aléo', logo: '/lovable-uploads/aleo.webp' },
   ];
 
+  const partners = [
+    { name: 'Coinbase', logo: '/lovable-uploads/Coinbase.svg.webp' },
+    { name: 'Blockchain Addict', logo: '/lovable-uploads/ba.webp' },
+    { name: 'BFG', logo: '/lovable-uploads/BFG.webp' },
+    { name: 'KPMG', logo: '/lovable-uploads/KPMG.webp' },
+    { name: 'ADAN', logo: '/lovable-uploads/adan.svg' },
+    { name: 'Paymium', logo: '/lovable-uploads/paymium.webp' },
+    { name: 'Ledger', logo: '/lovable-uploads/Ledger.svg' },
+    { name: 'VIVA TECH', logo: '/lovable-uploads/viva.webp' },
+  ];
+
+  const universities = [
+    { name: 'IMTBS-TSP', logo: '/lovable-uploads/imtbstsp.webp' },
+    { name: 'Polytechnique', logo: '/lovable-uploads/TSP.webp' },
+    { name: 'ESCP', logo: '/lovable-uploads/ESCP.webp' },
+    { name: 'HEH', logo: '/lovable-uploads/HEH.webp' },
+    { name: 'EMLV', logo: '/lovable-uploads/emlv.webp' },
+    { name: 'HULT London', logo: '/lovable-uploads/hult.webp' },
+    { name: 'NEOMA', logo: '/lovable-uploads/NEOMA.webp' },
+    { name: 'ESILV', logo: '/lovable-uploads/ESILV.webp' },
+    { name: 'ESTIA', logo: '/lovable-uploads/estia.webp' },
+    { name: 'Albert School', logo: '/lovable-uploads/albert.webp' },
+    { name: 'Paris Dauphine', logo: '/lovable-uploads/dauphine.webp' },
+    { name: 'ESSEC', logo: '/lovable-uploads/ESSEC.svg' },
+  ];
+
+  const media = [
+    { name: 'Le Monde', logo: '/lovable-uploads/lemonde.svg' },
+    { name: 'RTL', logo: '/lovable-uploads/rtl.webp' },
+    { name: 'Figaro', logo: '/lovable-uploads/figaro.webp' },
+    { name: 'Journal Du Net', logo: '/lovable-uploads/JDN.webp' },
+    { name: 'BFM Crypto', logo: '/lovable-uploads/bfm.jpg' },
+    { name: 'Journal du Geek', logo: '/lovable-uploads/JDG.webp' },
+    { name: '20 minutes', logo: '/lovable-uploads/20.webp' },
+    { name: 'Journal du coin', logo: '/lovable-uploads/journalducoin.webp' },
+    { name: 'Cryptoast', logo: '/lovable-uploads/cryptoast.webp' },
+    { name: 'Bitcoin.fr', logo: '/lovable-uploads/bitcoinfr.webp' },
+  ];
+
+  // Helper to render a carousel for a given array
+  const renderCarousel = (
+    title: string,
+    items: { name: string; logo: string }[],
+    autoScrollSpeed: number
+  ) => (
+    <section className="py-12">
+      <div className="max-w-7xl mx-auto px-6">
+        <h3 className="text-white text-2xl md:text-3xl font-bold text-center mb-8">{title}</h3>
+        <div className="relative">
+          <Carousel opts={{ align: 'start', loop: true }} plugins={[AutoScroll({ speed: autoScrollSpeed, stopOnInteraction: false })]}>
+            <CarouselPrevious />
+            <CarouselContent>
+              {items.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/4 basis-1/2">
+                  <div className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300 h-32">
+                    <img
+                      src={item.logo}
+                      alt={item.name}
+                      loading="lazy"
+                      className="h-16 w-auto max-w-full object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </div>
+    </section>
+  );
+
+  // Media carousel (autoplay)
+  const renderMediaCarousel = (title: string, items: { name: string; logo: string }[], autoScrollSpeed: number) => (
+    <section className="py-16 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6">
+        <h3 className="text-white text-3xl font-bold text-center mb-12">{title}</h3>
+        <div className="relative">
+          <Carousel opts={{ align: 'start', loop: true }} plugins={[AutoScroll({ speed: autoScrollSpeed, stopOnInteraction: false })]}>
+            <CarouselPrevious />
+            <CarouselContent>
+              {items.map((outlet, index) => (
+                <CarouselItem key={index} className="md:basis-1/5 basis-1/2">
+                  <div className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300 h-32">
+                    <img
+                      src={outlet.logo}
+                      alt={outlet.name}
+                      loading="lazy"
+                      className="h-16 w-auto max-w-full object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </div>
+    </section>
+  );
+
   return (
-<div>
-
-
-      {/* Sponsors Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-white text-3xl font-bold text-center mb-12">{t('sponsors.title')}</h3>
-          
-          {/* Category Buttons */}
-          <div className="flex justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeCategory === category.id
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-
-          {/* Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {categories.find(cat => cat.id === activeCategory)?.data.map((item, index) => (
-              <div
-                key={index}
-               className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
-  >
-                <img
-                  src={item.logo}
-                  alt={item.name}
-                  loading="lazy"
-                  className="h-16 w-auto max-w-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Media Section */}
-      <section className="py-16 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-white text-3xl font-bold text-center mb-12">{t('sponsors.media')}</h3>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {media.map((outlet, index) => (
-              <div
-                key={index}
-       className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
-        >
-                <img
-                  src={outlet.logo}
-                  alt={outlet.name}
-                  loading="lazy"
-                  className="h-16 w-auto max-w-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div>
+      {renderCarousel(t('sponsors.sponsors'), sponsors, 0.6)}
+      {renderCarousel(t('sponsors.partners'), partners, 1.0)}
+      {renderCarousel(t('sponsors.universities'), universities, 0.8)}
+      {renderMediaCarousel(t('sponsors.media'), media, 1.2)}
     </div>
   );
 };

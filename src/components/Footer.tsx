@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/company/technologiesleader/"
+                href="https://www.linkedin.com/company/kryptosphere/"
                 className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
               >
                 <Linkedin className="w-5 h-5 text-white" />
@@ -49,12 +49,12 @@ const Footer = () => {
               >
                 <Youtube className="w-5 h-5 text-white" />
               </a>
-                            <a
+              {/* <a
                 href="https://www.instagram.com/explore/search/keyword/?q=%23kryptosphere"
                 className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200 group"
               >
                 <Instagram className="w-5 h-5 text-white" />
-              </a>
+              </a> */}
               <a
                 href="https://www.facebook.com/kryptosphereofficial"
                 className="bg-slate-700 hover:bg-slate-600 p-3 rounded-lg transition-colors duration-200 group"
@@ -78,7 +78,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/donate" className="hover:text-blue-400 transition-colors">
+                <a href="/donation" className="hover:text-blue-400 transition-colors">
                   {t('nav.donate')}
                 </a>
               </li>
