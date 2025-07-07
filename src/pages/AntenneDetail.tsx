@@ -485,8 +485,8 @@ const AntenneDetail = () => {
               {t('branches.backToList')}
             </Link>
 
-            <div className="max-w-4xl">
-              <div className="flex items-center gap-6 mb-6">
+            <div className="max-w-4xl w-full p-4 md:p-8">
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
                 <img
                   src={antenne.schoolLogo}
                   alt={antenne.school}
@@ -494,15 +494,19 @@ const AntenneDetail = () => {
                   className="max-w-28 max-h-28 bg-white rounded-lg p-2 object-contain"
                 />
                 <div>
-                  <h1 className="text-3xl md:text-5xl font-bold mb-2">
+                  <h1 className="text-3xl md:text-5xl font-bold mb-2 break-words">
                     KRYPTOSPHERE® <span className="text-blue-400">{antenne.name}</span>
                   </h1>
-                  <p className="text-xl text-slate-300">{antenne.school}</p>
+                  <p className="text-xl text-slate-300 break-words">{antenne.school}</p>
                 </div>
               </div>
 
-              <p className="text-xl md:text-2xl text-slate-300 leading-relaxed text-justify">
-                {t(antenne.descriptionKey)}
+              <p className="text-xl md:text-2xl text-slate-300 leading-relaxed text-justify break-words">
+                {('descriptionKey' in antenne && antenne.descriptionKey)
+                  ? t(antenne.descriptionKey)
+                  : ('description' in antenne && antenne.description)
+                    ? antenne.description
+                    : ''}
               </p>
             </div>
           </div>
