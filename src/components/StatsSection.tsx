@@ -328,11 +328,11 @@ export const translations = {
     'donation.transparencyBTC': 'Notre noeud Bitcoin',
     'donation.transparencyText': 'Nous publions une partie de nos informations financières pour assurer une transparence sur nos activités.',
     'donation.transparencyTextBTC': 'Nous maintenons de façon bénévole notre propre noeud Bitcoin depuis plusieurs années : soutenez-nous !',
-    'donation.transparencyTextCRYPTO': 'Nous acceptons directement les dons en Ethers ou en Bitcoin depuis 2021 (uniquement en utilisant le navigateur TOR pour ce dernier).',
+    'donation.transparencyTextCRYPTO': 'Nous acceptons directement les dons en ETH ou en BTC depuis 2021 (uniquement en utilisant le navigateur TOR pour ce dernier).',
     'donation.reports': 'Consulter nos données officielles',
     'donation.reportsBTCNODE': 'Découvrez notre noeud Bitcoin',
-    'donation.reportsBTC': 'Donner en Bitcoin \n (via TOR Browser)',
-    'donation.reportsETH': 'Donner en Ethers',
+    'donation.reportsBTC': 'Donner en BTC (via TOR Browser)',
+    'donation.reportsETH': 'Donner en ETH',
 
     // Antenne Details
     'antenne.team': 'Équipe',
@@ -687,6 +687,10 @@ export const translations = {
     'antennes.devinci.email': 'kryptosphere@devinci.fr',
     'antennes.devinci.phone': ' ',
     'antennes.devinci.address': '32 Rue des 3 Fontanot, 92000 Nanterre',
+
+
+
+    'antennes.mons.description': ' '
   },
   en: {
     // Navigation
@@ -950,11 +954,11 @@ export const translations = {
     'donation.transparencyBTC': 'Our Bitcoin node',
     'donation.transparencyText': 'We publish part of our financial information to ensure transparency about our activities.',
     'donation.transparencyTextBTC': 'We have been voluntarily running our own Bitcoin node for several years: support us!',
-    'donation.transparencyTextCRYPTO': 'We have been accepting direct donations in Ether or Bitcoin since 2021 (only using the TOR browser for the latter).',
+    'donation.transparencyTextCRYPTO': 'We have been accepting direct donations in ETH or BTC since 2021 (only using the TOR browser for the latter).',
     'donation.reports': 'View our official data',
     'donation.reportsBTCNODE': 'Discover our Bitcoin node',
-    'donation.reportsBTC': 'Donate in Bitcoin \n (via TOR Browser)',
-    'donation.reportsETH': 'Donate in Ether',
+    'donation.reportsBTC': 'Donate in BTC (via TOR Browser)',
+    'donation.reportsETH': 'Donate in ETH',
 
     // Antenne Details
     'antenne.team': 'Team',
@@ -1300,5 +1304,7 @@ export const translations = {
     'antennes.devinci.email': 'kryptosphere@devinci.fr',
     'antennes.devinci.phone': ' ',
     'antennes.devinci.address': '32 Rue des 3 Fontanot, 92000 Nanterre',
+
+    'antennes.mons.description': ' '
   }
 };

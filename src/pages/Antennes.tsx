@@ -19,7 +19,7 @@ const Antennes = () => {
       coordinates: { lat: 49.0334698, lng: 2.076515 },
       school: 'ESSEC Business School',
       description: t('branches.parisDescription'),
-      image: '/antennes/EssecBig.png'
+      image: '/antennes/EssecBig.webp'
     },
     {
       id: 'dauphine',
@@ -29,7 +29,7 @@ const Antennes = () => {
       coordinates: { lat: 48.870086669921875, lng: 2.273621082305908 },
       school: 'Paris Dauphine-PSL',
       description: t('branches.parisDescription'),
-      image: '/antennes/dauphine/dauphine-2.png',
+      image: '/antennes/dauphine/dauphine-2.webp',
     },
     {
       id: 'lyon',
@@ -49,7 +49,7 @@ const Antennes = () => {
       coordinates: { lat: 48.624853, lng: 2.444104 },
       school: 'IMTBS - TSP',
       description: t('branches.parisDescription3'),
-      image: '/lovable-uploads/imtbs_tsp.jpg',
+      image: '/lovable-uploads/imtbs_tsp.webp',
     },
         {
       id: 'ieseg',
@@ -72,7 +72,7 @@ const Antennes = () => {
       image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
     },
     {
-      id: 'paris4',
+      id: '#',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
@@ -80,25 +80,17 @@ const Antennes = () => {
       school: 'ESCP Business School',
       description: t('branches.parisDescription4'),
       image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX XX'
-      }
     },
-    // {
-    //   id: 'londres',
-    //   name: t('cities.london'),
-    //   city: t('cities.london'),
-    //   country: t('countries.uk'),
-    //   coordinates: { lat: 51.5074, lng: -0.1278 },
-    //   school: 'Hult Business School',
-    //   description: t('branches.londonDescription'),
-    //   image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
-    //   contact: {
-    //     email: 'contact@kryptosphere.org',
-    //     phone: '+XX XX XX XX XX'
-    //   }
-    // },
+    {
+      id: '#',
+      name: t('cities.london'),
+      city: t('cities.london'),
+      country: t('countries.uk'),
+      coordinates: { lat: 51.5074, lng: -0.1278 },
+      school: 'Hult Business School',
+      description: t('branches.londonDescription'),
+      image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
+    },
     {
       id: 'mons',
       name: t('cities.mons'),
@@ -137,7 +129,7 @@ const Antennes = () => {
       coordinates: { lat: 48.87514877319336, lng: 2.351832389831543 },
       school: 'Albert Eugenia School',
       description: t('branches.parisDescription5'),
-      image: '/antennes/aes/aesImage.jpg',
+      image: '/antennes/aes/aesImage.webp',
     },
     {
       id: 'inseecparis',
@@ -147,7 +139,7 @@ const Antennes = () => {
       coordinates: { lat: 48.88954544067383, lng: 2.2442686557769775 },
       school: 'INSEEC Paris',
       description: t('branches.parisDescription6'),
-      image: '/antennes/inseec/inseec.jpg', 
+      image: '/antennes/inseec/inseec.webp', 
     },
     {
       id: 'ensiie',
@@ -157,7 +149,7 @@ const Antennes = () => {
       coordinates: { lat: 48.62651443481445, lng: 2.432352066040039 },
       school: 'ensIIE',
       description: t('branches.parisDescription6'),
-      image: '/antennes/ensiie/ensiie.jpeg', 
+      image: '/antennes/ensiie/ensiie.webp', 
     },
     {
       id: 'epita',
@@ -167,7 +159,7 @@ const Antennes = () => {
       coordinates: { lat: 48.81573486328125, lng: 2.3623597621917725 },
       school: 'EPITA',
       description: t('branches.parisDescription6'),
-      image: '/antennes/epita/epita.jpg', 
+      image: '/antennes/epita/epita.webp', 
     }
   ];
 
@@ -235,6 +227,7 @@ const Antennes = () => {
                   <img
                     src={antenne.image}
                     alt={antenne.name}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/50" />

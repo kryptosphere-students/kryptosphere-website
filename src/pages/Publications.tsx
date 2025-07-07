@@ -15,7 +15,7 @@ const Publications = () => {
       date: t('publication.kryptopaper22.date'),
       category: "kryptopaper",
       description: t('publication.kryptopaper22.description'),
-      image: "/publications/images/KP22.png",
+      image: "/publications/images/KP22.webp",
       downloadUrl: "/publications/KryptoPaper_2022.pdf",
       readTime: t('publication.kryptopaper22.readTime')
     },
@@ -25,7 +25,7 @@ const Publications = () => {
       date: t('publication.research.date'),
       category: "etude",
       description: t('publication.research.description'),
-      image: "/publications/images/researchThibault.png",
+      image: "/publications/images/researchThibault.webp",
       downloadUrl: "https://hal.science/tel-04190658/document",
       readTime: t('publication.research.readTime')
     },
@@ -35,7 +35,7 @@ const Publications = () => {
       date: t('publication.defi.date'),
       category: "kryptopaper",
       description: t('publication.defi.description'),
-      image: "/publications/images/KP20.png",
+      image: "/publications/images/KP20.webp",
       downloadUrl: "/publications/KryptoPaper_2021.pdf",
       readTime: t('publication.defi.readTime')
     },
@@ -45,7 +45,7 @@ const Publications = () => {
       date: t('publication.report2024.date'),
       category: "rapport",
       description: t('publication.report2024.description'),
-      image: "/publications/Rapport2024.png",
+      image: "/publications/Rapport2024.webp",
       downloadUrl: "https://thibaultlangloisberthelot.medium.com/how-many-people-did-the-kryptosphere-network-introduce-to-bitcoin-286789d7cc2f",
       readTime: t('publication.report2024.readTime')
     },
@@ -55,7 +55,7 @@ const Publications = () => {
       date: t('publication.kryptopaper24.date'),
       category: "kryptopaper",
       description: t('publication.kryptopaper24.description'),
-      image: "/publications/images/KPavril22.png",
+      image: "/publications/images/KPavril22.webp",
       downloadUrl: "/publications/KSavril22.pdf",
       readTime: t('publication.kryptopaper24.readTime')
     },
@@ -65,7 +65,7 @@ const Publications = () => {
       date: t('publication.smartcontracts.date'),
       category: "article",
       description: t('publication.smartcontracts.description'),
-      image: "/publications/images/articles.png",
+      image: "/publications/images/articles.webp",
       downloadUrl: "https://kryptosphere.medium.com/",
       readTime: t('publication.smartcontracts.readTime')
     }

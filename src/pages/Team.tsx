@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -79,6 +78,7 @@ const Team = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </div>

@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Navigation = () => {
@@ -15,7 +14,13 @@ const Navigation = () => {
     { name: t('nav.board'), path: '/bureau' },
     { name: t('nav.association'), path: '/association' },
     { name: t('nav.branches'), path: '/antennes' },
-    { name: t('nav.events'), path: '/events' },
+    {
+      name: t('nav.events'),
+      subItems: [
+        { name: t('events.upcoming'), path: '/events' },
+        { name: 'KryptoTour', path: '/events/krypto-tour' }
+      ]
+    },
     { name: t('nav.publications'), path: '/publications' },
     { name: t('nav.donate'), path: '/donation' }
   ];
@@ -34,8 +39,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.png" 
+              src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.webp" 
               alt="Kryptosphere" 
+              loading="lazy"
               className="h-8 w-auto"
             />
           </Link>
@@ -43,14 +49,39 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              item.subItems ? (
+                <div key={item.name} className="relative group flex items-center">
+                  <span
+                    className="flex items-center text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group cursor-default select-none"
+                  >
+                    {item.name}
+                    <ChevronDown className="ml-1 w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors duration-200" />
+                  </span>
+                  <div className="absolute left-0 top-full w-48 bg-slate-900 border border-slate-700 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200 z-50 flex flex-col py-2"
+                    onMouseEnter={e => e.currentTarget.classList.add('opacity-100','pointer-events-auto')}
+                    onMouseLeave={e => e.currentTarget.classList.remove('opacity-100','pointer-events-auto')}
+                  >
+                    {item.subItems.map((sub) => (
+                      <Link
+                        key={sub.path}
+                        to={sub.path}
+                        className="block px-5 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-800 rounded-lg transition-colors duration-200 whitespace-nowrap"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              )
             ))}
             
             {/* Language Switcher */}
@@ -76,14 +107,31 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden border-t border-slate-700/50 py-4 bg-slate-900/95 backdrop-blur-lg">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="block py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
+              <React.Fragment key={item.name || item.path}>
+                {!item.subItems ? (
+                  <Link
+                    to={item.path}
+                    className="block py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <>
+                    <span className="block py-3 text-slate-300 font-medium cursor-default select-none">{item.name}</span>
+                    {item.subItems.map((sub) => (
+                      <Link
+                        key={sub.path}
+                        to={sub.path}
+                        className="block pl-8 py-2 text-slate-400 hover:text-white transition-colors duration-200 font-medium text-sm"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </>
+                )}
+              </React.Fragment>
             ))}
             <button
               onClick={toggleLanguage}

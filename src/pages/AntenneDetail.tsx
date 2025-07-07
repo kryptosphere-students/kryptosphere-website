@@ -18,25 +18,25 @@ const AntenneDetail = () => {
       coordinates: { lat: 49.0334698, lng: 2.076515 },
       country: t('countries.france'),
       school: 'ESSEC Paris Cergy',
-      schoolLogo: '/antennes/essec/logo.jpg',
+      schoolLogo: '/antennes/essec/logo.webp',
       descriptionKey: 'antennes.essec.description',
-      heroImage: '/antennes/EssecFont.png',
+      heroImage: '/antennes/EssecFont.webp',
       contact: {
         email: t('antennes.essec.email'),
         phone: t('antennes.essec.phone'),
         address: t('antennes.essec.address')
       },
       bureau: [
-        { name: t('antennes.essec.bureau.1.name'), role: t('antennes.essec.bureau.1.role'), photo: '/antennes/essec/gabriel.jpeg' },
-        { name: t('antennes.essec.bureau.2.name'), role: t('antennes.essec.bureau.2.role'), photo: '/antennes/essec/arthur.jpeg' },
-        { name: t('antennes.essec.bureau.3.name'), role: t('antennes.essec.bureau.3.role'), photo: '/antennes/essec/edgar.jpeg' },
-        { name: t('antennes.essec.bureau.4.name'), role: t('antennes.essec.bureau.4.role'), photo: '/antennes/essec/paul.jpeg' }
+        { name: t('antennes.essec.bureau.1.name'), role: t('antennes.essec.bureau.1.role'), photo: '/antennes/essec/gabriel.webp' },
+        { name: t('antennes.essec.bureau.2.name'), role: t('antennes.essec.bureau.2.role'), photo: '/antennes/essec/arthur.webp' },
+        { name: t('antennes.essec.bureau.3.name'), role: t('antennes.essec.bureau.3.role'), photo: '/antennes/essec/edgar.webp' },
+        { name: t('antennes.essec.bureau.4.name'), role: t('antennes.essec.bureau.4.role'), photo: '/antennes/essec/paul.webp' }
       ],
       gallery: [
-        '/antennes/essec/essec1.jpg',
-        '/antennes/essec/essec2.jpg',
-        '/antennes/essec/essec3.jpg',
-        '/antennes/essec/essec4.jpg'
+        '/antennes/essec/essec1.webp',
+        '/antennes/essec/essec2.webp',
+        '/antennes/essec/essec3.webp',
+        '/antennes/essec/essec4.webp'
       ],
     },
     dauphine: {
@@ -45,7 +45,7 @@ const AntenneDetail = () => {
       coordinates: { lat: 48.870086669921875, lng: 2.273621082305908 },
       country: t('countries.france'),
       school: 'Paris Dauphine-PSL',
-      schoolLogo: '/antennes/dauphine/logo.jpg',
+      schoolLogo: '/antennes/dauphine/logo.webp',
       descriptionKey: 'antennes.dauphine.description',
       heroImage: '/antennes/dauphine/dauphine-1.avif',
       contact: {
@@ -54,15 +54,15 @@ const AntenneDetail = () => {
         address: t('antennes.dauphine.address')
       },
       bureau: [
-        { name: t('antennes.dauphine.bureau.1.name'), role: t('antennes.dauphine.bureau.1.role'), photo: '/antennes/dauphine/MOUAWAD-Ray.png' },
-        { name: t('antennes.dauphine.bureau.2.name'), role: t('antennes.dauphine.bureau.2.role'), photo: '/antennes/dauphine/BOUKHARI-Yanis.png' },
-        { name: t('antennes.dauphine.bureau.3.name'), role: t('antennes.dauphine.bureau.3.role'), photo: '/antennes/dauphine/VAN_RENTERGHEM_Emiel.png' },
-        { name: t('antennes.dauphine.bureau.4.name'), role: t('antennes.dauphine.bureau.4.role'), photo: '/antennes/dauphine/MELLITI-Amine.png' }
+        { name: t('antennes.dauphine.bureau.1.name'), role: t('antennes.dauphine.bureau.1.role'), photo: '/antennes/dauphine/MOUAWAD-Ray.webp' },
+        { name: t('antennes.dauphine.bureau.2.name'), role: t('antennes.dauphine.bureau.2.role'), photo: '/antennes/dauphine/BOUKHARI-Yanis.webp' },
+        { name: t('antennes.dauphine.bureau.3.name'), role: t('antennes.dauphine.bureau.3.role'), photo: '/antennes/dauphine/VAN_RENTERGHEM_Emiel.webp' },
+        { name: t('antennes.dauphine.bureau.4.name'), role: t('antennes.dauphine.bureau.4.role'), photo: '/antennes/dauphine/MELLITI-Amine.webp' }
       ],
       gallery: [
-        '/antennes/dauphine/dauphineGallery1.jpeg',
-        '/antennes/dauphine/dauphineGallery2.jpeg',
-        '/antennes/dauphine/dauphineGallery3.jpeg',
+        '/antennes/dauphine/dauphineGallery1.webp',
+        '/antennes/dauphine/dauphineGallery2.webp',
+        '/antennes/dauphine/dauphineGallery3.webp',
       ],
     },
     paris4: {
@@ -81,9 +81,9 @@ const AntenneDetail = () => {
         address: '79 Avenue de la République 75011 Paris'
       },
       bureau: [
-        { name: 'Antoine Leroy', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'Camille Dupont', role: t('roles.vicePresidente'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'Hugo Blanc', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: 'Antoine Leroy', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: 'Camille Dupont', role: t('roles.vicePresidente'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: 'Hugo Blanc', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' }
       ],
       gallery: [
         'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
@@ -111,9 +111,9 @@ const AntenneDetail = () => {
         address: '37–38 John Street London WC1N 2AT United Kingdom'
       },
       bureau: [
-        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' }
       ],
       gallery: [
         'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
@@ -134,10 +134,10 @@ const AntenneDetail = () => {
       schoolLogo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VjgnAtJ9fDWMfxpQvZhDoQghuizHlb9RIQ&s',
       description: t('branches.monsDescription'),
       descriptionEn: t('branches.monsDescription'),
-      heroImage: 'https://images.unsplash.com/photo-1559113122-3f2b707ba3c6?q=80&w=2000',
+      heroImage: '/antennes/mons/hero.webp',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX',
+        phone: ' ',
         address: '8 Avenue Victor Maistriau, 7000, Mons'
       },
       bureau: [
@@ -145,42 +145,35 @@ const AntenneDetail = () => {
         { name: "Yassine N'CIRI", role: t('roles.vicePresident'), photo: '/public/antennes/Yassine.webp' },
         { name: 'Romain MOREAU', role: t('roles.tresoriere'), photo: '/public/antennes/Romain.webp' }
       ],
-      gallery: [
-        'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
-        'https://media.licdn.com/dms/image/v2/D4E22AQF9QO3mLYD6rg/feedshare-shrink_800/feedshare-shrink_800/0/1713435841897?e=2147483647&v=beta&t=guc97PjUtfUSTJ9UcO4sHxXFZ86DJ2PHGEXktZQnVeY',
-        'https://www.univ-lyon3.fr/medias/photo/kryptotour_1732016056202-jpg',
-        'https://i.ytimg.com/vi/D1KWsD1pGwQ/maxresdefault.jpg',
-        'https://www.devinci.fr/wordpress/wp-content/uploads/2022/11/KRYPTOSPHERE-1200x700.jpg',
-        'https://www.planetegrandesecoles.com/wp-content/uploads/2022/05/Sans-titre-2.jpg.webp'
-      ],
+      gallery: [],
       descriptionKey: 'antennes.mons.description'
     },
     telecom: {
         name: t('antennes.telecom.name'),
-        city: t('cities.paris'),
-        country: t('countries.france'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
         coordinates: { lat: 48.624853, lng: 2.444104 },
         school: 'Télécom SudParis/IMT BS',
-        schoolLogo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANx3tURfMi9hQsmtiSi7DN_MRoNFasI4JZw&s',
+        schoolLogo: '/lovable-uploads/imtbstsp.webp',
         descriptionKey: 'antennes.telecom.description',
-        heroImage: '/antennes/telecom/telecom1.jpg',
-        contact: {
+        heroImage: '/antennes/telecom/telecom1.webp',
+      contact: {
           email: t('antennes.telecom.email'),
           phone: t('antennes.telecom.phone'),
           address: t('antennes.telecom.address')
-        },
-        bureau: [
-          { name: t('antennes.telecom.bureau.1.name'), role: t('antennes.telecom.bureau.1.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-          { name: t('antennes.telecom.bureau.2.name'), role: t('antennes.telecom.bureau.2.role'), photo: '/antennes/telecom/jeremy.jpeg' },
-          { name: t('antennes.telecom.bureau.3.name'), role: t('antennes.telecom.bureau.3.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-          { name: t('antennes.telecom.bureau.4.name'), role: t('antennes.telecom.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+      },
+      bureau: [
+          { name: t('antennes.telecom.bureau.1.name'), role: t('antennes.telecom.bureau.1.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+          { name: t('antennes.telecom.bureau.2.name'), role: t('antennes.telecom.bureau.2.role'), photo: '/antennes/telecom/jeremy.webp' },
+          { name: t('antennes.telecom.bureau.3.name'), role: t('antennes.telecom.bureau.3.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+          { name: t('antennes.telecom.bureau.4.name'), role: t('antennes.telecom.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' }
         ],
         gallery: [
-          '/antennes/telecom/telecomGallery1.jpg',
-          '/antennes/telecom/telecomGallery2.jpeg',
-          '/antennes/telecom/telecomGallery3.jpg',
-          '/antennes/telecom/telecomGallery4.jpg',
-          '/antennes/telecom/telecomGallery5.jpg',
+          '/antennes/telecom/telecomGallery1.webp',
+          '/antennes/telecom/telecomGallery2.webp',
+          '/antennes/telecom/telecomGallery3.webp',
+          '/antennes/telecom/telecomGallery4.webp',
+          '/antennes/telecom/telecomGallery5.webp',
         ]
       },
     ieseg: {
@@ -198,22 +191,19 @@ const AntenneDetail = () => {
         address: t('antennes.ieseg.address')
       },
       bureau: [
-        { name: t('antennes.ieseg.bureau.1.name'), role: t('antennes.ieseg.bureau.1.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.2.name'), role: t('antennes.ieseg.bureau.2.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.3.name'), role: t('antennes.ieseg.bureau.3.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.4.name'), role: t('antennes.ieseg.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.5.name'), role: t('antennes.ieseg.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.6.name'), role: t('antennes.ieseg.bureau.6.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.7.name'), role: t('antennes.ieseg.bureau.7.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.ieseg.bureau.8.name'), role: t('antennes.ieseg.bureau.8.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: t('antennes.ieseg.bureau.1.name'), role: t('antennes.ieseg.bureau.1.role'), photo: '/antennes/ieseg/guillaume.webp' },
+        { name: t('antennes.ieseg.bureau.2.name'), role: t('antennes.ieseg.bureau.2.role'), photo: '/antennes/ieseg/nicolas.webp' },
+        { name: t('antennes.ieseg.bureau.3.name'), role: t('antennes.ieseg.bureau.3.role'), photo: '/antennes/ieseg/adrian.webp' },
+        { name: t('antennes.ieseg.bureau.4.name'), role: t('antennes.ieseg.bureau.4.role'), photo: '/antennes/ieseg/paolo.webp' },
+        { name: t('antennes.ieseg.bureau.5.name'), role: t('antennes.ieseg.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: t('antennes.ieseg.bureau.6.name'), role: t('antennes.ieseg.bureau.6.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: t('antennes.ieseg.bureau.7.name'), role: t('antennes.ieseg.bureau.7.role'), photo: '/antennes/ieseg/louis.webp' },
+        { name: t('antennes.ieseg.bureau.8.name'), role: t('antennes.ieseg.bureau.8.role'), photo: '/antennes/ieseg/clarence.webp' }
       ],
       gallery: [
-        'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
-        'https://media.licdn.com/dms/image/v2/D4E22AQF9QO3mLYD6rg/feedshare-shrink_800/feedshare-shrink_800/0/1713435841897?e=2147483647&v=beta&t=guc97PjUtfUSTJ9UcO4sHxXFZ86DJ2PHGEXktZQnVeY',
-        'https://www.univ-lyon3.fr/medias/photo/kryptotour_1732016056202-jpg',
-        'https://i.ytimg.com/vi/D1KWsD1pGwQ/maxresdefault.jpg',
-        'https://www.devinci.fr/wordpress/wp-content/uploads/2022/11/KRYPTOSPHERE-1200x700.jpg',
-        'https://www.planetegrandesecoles.com/wp-content/uploads/2022/05/Sans-titre-2.jpg.webp'
+        '/antennes/ieseg/ieseg1.webp',
+        '/antennes/ieseg/ieseg2.webp',
+        '/antennes/ieseg/ieseg3.webp',
       ]
     },
     lyon: {
@@ -231,20 +221,20 @@ const AntenneDetail = () => {
         address: t('antennes.lyon.address')
       },
       bureau: [
-        { name: t('antennes.lyon.bureau.1.name'), role: t('antennes.lyon.bureau.1.role'), photo: '/antennes/lyon/RaphaelPAUTARD.jpeg' },
-        { name: t('antennes.lyon.bureau.2.name'), role: t('antennes.lyon.bureau.2.role'), photo: '/antennes/lyon/alexandre.jpeg' },
-        { name: t('antennes.lyon.bureau.3.name'), role: t('antennes.lyon.bureau.3.role'), photo: '/antennes/lyon/JessicaDINOTA.jpeg' },
-        { name: t('antennes.lyon.bureau.4.name'), role: t('antennes.lyon.bureau.4.role'), photo: '/antennes/lyon/ClementCARVALHO.jpeg' },
-        { name: t('antennes.lyon.bureau.5.name'), role: t('antennes.lyon.bureau.5.role'), photo: '/antennes/lyon/CharlotteBECHON.jpeg' }
+        { name: t('antennes.lyon.bureau.1.name'), role: t('antennes.lyon.bureau.1.role'), photo: '/antennes/lyon/RaphaelPAUTARD.webp' },
+        { name: t('antennes.lyon.bureau.2.name'), role: t('antennes.lyon.bureau.2.role'), photo: '/antennes/lyon/alexandre.webp' },
+        { name: t('antennes.lyon.bureau.3.name'), role: t('antennes.lyon.bureau.3.role'), photo: '/antennes/lyon/JessicaDINOTA.webp' },
+        { name: t('antennes.lyon.bureau.4.name'), role: t('antennes.lyon.bureau.4.role'), photo: '/antennes/lyon/ClementCARVALHO.webp' },
+        { name: t('antennes.lyon.bureau.5.name'), role: t('antennes.lyon.bureau.5.role'), photo: '/antennes/lyon/CharlotteBECHON.webp' }
       ],
       gallery: [
-        '/antennes/lyon/iaelyonGallery1.jpg',
-        '/antennes/lyon/iaelyonGallery2.jpg',
-        '/antennes/lyon/iaelyonGallery5.jpg',
-        '/antennes/lyon/iaelyonGallery6.jpg',
-        '/antennes/lyon/iaelyonGallery7.jpg',
-        '/antennes/lyon/iaelyonGallery8.jpg',
-        '/antennes/lyon/iaelyonGallery10.jpg',
+        '/antennes/lyon/iaelyonGallery1.webp',
+        '/antennes/lyon/iaelyonGallery2.webp',
+        '/antennes/lyon/iaelyonGallery5.webp',
+        '/antennes/lyon/iaelyonGallery6.webp',
+        '/antennes/lyon/iaelyonGallery7.webp',
+        '/antennes/lyon/iaelyonGallery8.webp',
+        '/antennes/lyon/iaelyonGallery10.webp',
         'https://www.univ-lyon3.fr/medias/photo/kryptotour_1732016056202-jpg',
         'https://i.ytimg.com/vi/D1KWsD1pGwQ/maxresdefault.jpg'
       ],
@@ -264,16 +254,19 @@ const AntenneDetail = () => {
         address: t('antennes.neoma.address')
       },
       bureau: [
-        { name: t('antennes.neoma.bureau.1.name'), role: t('antennes.neoma.bureau.1.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.2.name'), role: t('antennes.neoma.bureau.2.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.3.name'), role: t('antennes.neoma.bureau.3.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.4.name'), role: t('antennes.neoma.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.5.name'), role: t('antennes.neoma.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.6.name'), role: t('antennes.neoma.bureau.6.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.7.name'), role: t('antennes.neoma.bureau.7.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.neoma.bureau.8.name'), role: t('antennes.neoma.bureau.8.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: t('antennes.neoma.bureau.1.name'), role: t('antennes.neoma.bureau.1.role'), photo: '/antennes/neoma/bureau/lucas.webp' },
+        { name: t('antennes.neoma.bureau.2.name'), role: t('antennes.neoma.bureau.2.role'), photo: '/antennes/neoma/bureau/axel.webp' },
+        { name: t('antennes.neoma.bureau.3.name'), role: t('antennes.neoma.bureau.3.role'), photo: '/antennes/neoma/bureau/emeric.webp' },
+        { name: t('antennes.neoma.bureau.4.name'), role: t('antennes.neoma.bureau.4.role'), photo: '/antennes/neoma/bureau/hugo.webp' },
+        { name: t('antennes.neoma.bureau.5.name'), role: t('antennes.neoma.bureau.5.role'), photo: '/antennes/neoma/bureau/arthur.webp' },
+        { name: t('antennes.neoma.bureau.6.name'), role: t('antennes.neoma.bureau.6.role'), photo: '/antennes/neoma/bureau/victor.webp' },
+        { name: t('antennes.neoma.bureau.7.name'), role: t('antennes.neoma.bureau.7.role'), photo: '/antennes/neoma/bureau/olivier.webp' },
+        { name: t('antennes.neoma.bureau.8.name'), role: t('antennes.neoma.bureau.8.role'), photo: '/antennes/neoma/bureau/youssef.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/neoma/evenements/conference.webp',
+        '/antennes/neoma/evenements/formation.webp'
+      ]
     },
     aes: {
       name: t('antennes.aes.name'),
@@ -281,7 +274,7 @@ const AntenneDetail = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.87514877319336, lng: 2.351832389831543 },
       school: 'Albert Eugenia School (AES)',
-      schoolLogo: '/antennes/aes/albertLogo.png',
+      schoolLogo: '/antennes/aes/albertLogo.webp',
       descriptionKey: 'antennes.aes.description',
       heroImage: '/antennes/aes/hero.webp',
       contact: {
@@ -290,9 +283,9 @@ const AntenneDetail = () => {
         address: t('antennes.aes.address')
       },
       bureau: [
-        { name: t('antennes.aes.bureau.1.name'), role: t('antennes.aes.bureau.1.role'), photo: '/antennes/aes/DianeDoualapic.png' },
-        { name: t('antennes.aes.bureau.2.name'), role: t('antennes.aes.bureau.2.role'), photo: '/antennes/aes/PaulinRandon.jpg' },
-        { name: t('antennes.aes.bureau.3.name'), role: t('antennes.aes.bureau.3.role'), photo: '/antennes/aes/DangVo.jpg' }
+        { name: t('antennes.aes.bureau.1.name'), role: t('antennes.aes.bureau.1.role'), photo: '/antennes/aes/DianeDoualapic.webp' },
+        { name: t('antennes.aes.bureau.2.name'), role: t('antennes.aes.bureau.2.role'), photo: '/antennes/aes/PaulinRandon.webp' },
+        { name: t('antennes.aes.bureau.3.name'), role: t('antennes.aes.bureau.3.role'), photo: '/antennes/aes/DangVo.webp' }
       ],
       gallery: []
     },
@@ -302,24 +295,31 @@ const AntenneDetail = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.88954544067383, lng: 2.2442686557769775 },
       school: 'INSEEC Paris',
-      schoolLogo: '/antennes/inseec/logo.png',
+      schoolLogo: '/antennes/inseec/logo.webp',
       descriptionKey: 'antennes.inseecparis.description',
-      heroImage: '/antennes/inseec/hero.jpg',
+      heroImage: '/antennes/inseec/hero.webp',
       contact: {
         email: t('antennes.inseecparis.email'),
         phone: t('antennes.inseecparis.phone'),
         address: t('antennes.inseecparis.address')
       },
       bureau: [
-        { name: t('antennes.inseecparis.bureau.1.name'), role: t('antennes.inseecparis.bureau.1.role'), photo: '/antennes/inseec/bureau/Antoine.jpeg' },
-        { name: t('antennes.inseecparis.bureau.2.name'), role: t('antennes.inseecparis.bureau.2.role'), photo: '/antennes/inseec/bureau/Kylian.png' },
-        { name: t('antennes.inseecparis.bureau.3.name'), role: t('antennes.inseecparis.bureau.3.role'), photo: '/antennes/inseec/bureau/Prince.jpg' },
-        { name: t('antennes.inseecparis.bureau.4.name'), role: t('antennes.inseecparis.bureau.4.role'), photo: '/antennes/inseec/bureau/Khayla.jpg' },
-        { name: t('antennes.inseecparis.bureau.5.name'), role: t('antennes.inseecparis.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.inseecparis.bureau.6.name'), role: t('antennes.inseecparis.bureau.6.role'), photo: '/antennes/inseec/bureau/Selma.jpeg' },
-        { name: t('antennes.inseecparis.bureau.7.name'), role: t('antennes.inseecparis.bureau.7.role'), photo: '/antennes/inseec/bureau/Inass.png' }
+        { name: t('antennes.inseecparis.bureau.1.name'), role: t('antennes.inseecparis.bureau.1.role'), photo: '/antennes/inseec/bureau/Antoine.webp' },
+        { name: t('antennes.inseecparis.bureau.2.name'), role: t('antennes.inseecparis.bureau.2.role'), photo: '/antennes/inseec/bureau/Kylian.webp' },
+        { name: t('antennes.inseecparis.bureau.3.name'), role: t('antennes.inseecparis.bureau.3.role'), photo: '/antennes/inseec/bureau/Prince.webp' },
+        { name: t('antennes.inseecparis.bureau.4.name'), role: t('antennes.inseecparis.bureau.4.role'), photo: '/antennes/inseec/bureau/Khayla.webp' },
+        { name: t('antennes.inseecparis.bureau.5.name'), role: t('antennes.inseecparis.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
+        { name: t('antennes.inseecparis.bureau.6.name'), role: t('antennes.inseecparis.bureau.6.role'), photo: '/antennes/inseec/bureau/Selma.webp' },
+        { name: t('antennes.inseecparis.bureau.7.name'), role: t('antennes.inseecparis.bureau.7.role'), photo: '/antennes/inseec/bureau/Inass.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/inseec/events/nftparis/gallery1.webp',
+        '/antennes/inseec/events/nftparis/gallery2.webp',
+        '/antennes/inseec/events/nftparis/gallery3.webp',
+        '/antennes/inseec/events/nftparis/gallery4.webp',
+        '/antennes/inseec/events/nftparis/gallery5.webp',
+        '/antennes/inseec/events/nftparis/gallery6.webp',
+      ]
     },
     ensiie: {
       name: t('antennes.ensiie.name'),
@@ -327,21 +327,27 @@ const AntenneDetail = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.62651443481445, lng: 2.432352066040039 },
       school: 'ensIIE',
-      schoolLogo: '/antennes/ensiie/logo.png',
+      schoolLogo: '/antennes/ensiie/logo.webp',
       descriptionKey: 'antennes.ensiie.description',
-      heroImage: '/antennes/ensiie/hero.jpg',
+      heroImage: '/antennes/ensiie/hero.webp',
       contact: {
         email: t('antennes.ensiie.email'),
         phone: t('antennes.ensiie.phone'),
         address: t('antennes.ensiie.address')
       },
       bureau: [
-        { name: t('antennes.ensiie.bureau.1.name'), role: t('antennes.ensiie.bureau.1.role'), photo: '/antennes/ensiie/bureau/sarangan.jpeg' },
-        { name: t('antennes.ensiie.bureau.2.name'), role: t('antennes.ensiie.bureau.2.role'), photo: '/antennes/ensiie/bureau/corentin.jpeg' },
-        { name: t('antennes.ensiie.bureau.3.name'), role: t('antennes.ensiie.bureau.3.role'), photo: '/antennes/ensiie/bureau/tom.jpeg' },
-        { name: t('antennes.ensiie.bureau.4.name'), role: t('antennes.ensiie.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: t('antennes.ensiie.bureau.1.name'), role: t('antennes.ensiie.bureau.1.role'), photo: '/antennes/ensiie/bureau/sarangan.webp' },
+        { name: t('antennes.ensiie.bureau.2.name'), role: t('antennes.ensiie.bureau.2.role'), photo: '/antennes/ensiie/bureau/corentin.webp' },
+        { name: t('antennes.ensiie.bureau.3.name'), role: t('antennes.ensiie.bureau.3.role'), photo: '/antennes/ensiie/bureau/tom.webp' },
+        { name: t('antennes.ensiie.bureau.4.name'), role: t('antennes.ensiie.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/ensiie/events/gallery1.webp',
+        '/antennes/ensiie/events/gallery2.webp',
+        '/antennes/ensiie/events/gallery3.webp',
+        '/antennes/ensiie/events/gallery4.webp',
+        '/antennes/ensiie/events/gallery5.webp',
+      ]
     },
     epita: {
       name: t('antennes.epita.name'),
@@ -349,22 +355,25 @@ const AntenneDetail = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.81573486328125, lng: 2.3623597621917725 },
       school: 'EPITA',
-      schoolLogo: '/antennes/epita/logo.jpeg',
+      schoolLogo: '/antennes/epita/logo.webp',
       descriptionKey: 'antennes.epita.description',
-      heroImage: '/antennes/epita/hero.jpg',
+      heroImage: '/antennes/epita/hero.webp',
       contact: {
         email: t('antennes.epita.email'),
         phone: t('antennes.epita.phone'),
         address: t('antennes.epita.address')
       },
       bureau: [
-        { name: t('antennes.epita.bureau.1.name'), role: t('antennes.epita.bureau.1.role'), photo: '/antennes/epita/bureau/louise.jpeg' },
-        { name: t('antennes.epita.bureau.2.name'), role: t('antennes.epita.bureau.2.role'), photo: '/antennes/epita/bureau/lara.jpeg' },
-        { name: t('antennes.epita.bureau.3.name'), role: t('antennes.epita.bureau.3.role'), photo: '/antennes/epita/bureau/clara.jpeg' },
-        { name: t('antennes.epita.bureau.4.name'), role: t('antennes.epita.bureau.4.role'), photo: '/antennes/epita/bureau/ines.jpeg' },
-        { name: t('antennes.epita.bureau.5.name'), role: t('antennes.epita.bureau.5.role'), photo: '/antennes/epita/bureau/amina.png' }
+        { name: t('antennes.epita.bureau.1.name'), role: t('antennes.epita.bureau.1.role'), photo: '/antennes/epita/bureau/louise.webp' },
+        { name: t('antennes.epita.bureau.2.name'), role: t('antennes.epita.bureau.2.role'), photo: '/antennes/epita/bureau/lara.webp' },
+        { name: t('antennes.epita.bureau.3.name'), role: t('antennes.epita.bureau.3.role'), photo: '/antennes/epita/bureau/clara.webp' },
+        { name: t('antennes.epita.bureau.4.name'), role: t('antennes.epita.bureau.4.role'), photo: '/antennes/epita/bureau/ines.webp' },
+        { name: t('antennes.epita.bureau.5.name'), role: t('antennes.epita.bureau.5.role'), photo: '/antennes/epita/bureau/amina.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/epita/events/gallery1.webp',
+        '/antennes/epita/events/gallery2.webp',
+      ]
     },
     devinci: {
       name: t('antennes.devinci.name'),
@@ -372,7 +381,7 @@ const AntenneDetail = () => {
       country: t('countries.france'),
       coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
       school: 'Léonard De Vinci',
-      schoolLogo: '/lovable-uploads/devinci.png',
+      schoolLogo: '/lovable-uploads/devinci.webp',
       heroImage: 'https://images.pexels.com/photos/2389273/pexels-photo-2389273.jpeg?_gl=1*1trpnet*_ga*MTgxNTM4ODkzNi4xNzQ5OTMwMzY2*_ga_8JE65Q40S6*czE3NDk5MzAzNjYkbzEkZzEkdDE3NDk5MzAzODYkajQwJGwwJGgw',
       contact: {
         email: t('antennes.devinci.email'),
@@ -380,14 +389,24 @@ const AntenneDetail = () => {
         address: t('antennes.devinci.address')
       },
       bureau: [
-        { name: t('antennes.devinci.bureau.1.name'), role: t('antennes.devinci.bureau.1.role'), photo: '/antennes/devinci/eden.jpeg' },
-        { name: t('antennes.devinci.bureau.2.name'), role: t('antennes.devinci.bureau.2.role'), photo: '/antennes/devinci/fawzi.png' },
-        { name: t('antennes.devinci.bureau.3.name'), role: t('antennes.devinci.bureau.3.role'), photo: '/antennes/devinci/romain.jpg' },
-        { name: t('antennes.devinci.bureau.4.name'), role: t('antennes.devinci.bureau.4.role'), photo: '/antennes/devinci/kylie.png' },
-        { name: t('antennes.devinci.bureau.5.name'), role: t('antennes.devinci.bureau.5.role'), photo: '/antennes/devinci/johann.jpg' },
-        { name: t('antennes.devinci.bureau.6.name'), role: t('antennes.devinci.bureau.6.role'), photo: '/antennes/devinci/alban.jpg' }
+        { name: t('antennes.devinci.bureau.1.name'), role: t('antennes.devinci.bureau.1.role'), photo: '/antennes/devinci/eden.webp' },
+        { name: t('antennes.devinci.bureau.2.name'), role: t('antennes.devinci.bureau.2.role'), photo: '/antennes/devinci/fawzi.webp' },
+        { name: t('antennes.devinci.bureau.3.name'), role: t('antennes.devinci.bureau.3.role'), photo: '/antennes/devinci/romain.webp' },
+        { name: t('antennes.devinci.bureau.4.name'), role: t('antennes.devinci.bureau.4.role'), photo: '/antennes/devinci/kylie.webp' },
+        { name: t('antennes.devinci.bureau.5.name'), role: t('antennes.devinci.bureau.5.role'), photo: '/antennes/devinci/johann.webp' },
+        { name: t('antennes.devinci.bureau.6.name'), role: t('antennes.devinci.bureau.6.role'), photo: '/antennes/devinci/alban.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/devinci/gallery1.webp',
+        '/antennes/devinci/gallery2.webp',
+        '/antennes/devinci/gallery3.webp',
+        '/antennes/devinci/gallery4.webp',
+        '/antennes/devinci/gallery5.webp',
+        '/antennes/devinci/gallery6.webp',
+        '/antennes/devinci/gallery7.webp',
+        '/antennes/devinci/gallery8.webp',
+        '/antennes/devinci/gallery9.webp',
+      ]
     },
     imtatlantique: {
       name: t('antennes.imtatlantique.name'),
@@ -404,20 +423,26 @@ const AntenneDetail = () => {
         address: t('antennes.imtatlantique.address')
       },
       bureau: [
-        { name: t('antennes.imtatlantique.bureau.1.name'), role: t('antennes.imtatlantique.bureau.1.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.2.name'), role: t('antennes.imtatlantique.bureau.2.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.3.name'), role: t('antennes.imtatlantique.bureau.3.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.4.name'), role: t('antennes.imtatlantique.bureau.4.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.5.name'), role: t('antennes.imtatlantique.bureau.5.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.6.name'), role: t('antennes.imtatlantique.bureau.6.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.7.name'), role: t('antennes.imtatlantique.bureau.7.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.8.name'), role: t('antennes.imtatlantique.bureau.8.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.9.name'), role: t('antennes.imtatlantique.bureau.9.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.10.name'), role: t('antennes.imtatlantique.bureau.10.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.11.name'), role: t('antennes.imtatlantique.bureau.11.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' },
-        { name: t('antennes.imtatlantique.bureau.12.name'), role: t('antennes.imtatlantique.bureau.12.role'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.png' }
+        { name: t('antennes.imtatlantique.bureau.1.name'), role: t('antennes.imtatlantique.bureau.1.role'), photo: '/antennes/imtAtlantique/RYM.webp' },
+        { name: t('antennes.imtatlantique.bureau.2.name'), role: t('antennes.imtatlantique.bureau.2.role'), photo: '/antennes/imtAtlantique/DAVID_HADDAD.webp' },
+        { name: t('antennes.imtatlantique.bureau.3.name'), role: t('antennes.imtatlantique.bureau.3.role'), photo: '/antennes/imtAtlantique/LUCAS.webp' },
+        { name: t('antennes.imtatlantique.bureau.4.name'), role: t('antennes.imtatlantique.bureau.4.role'), photo: '/antennes/imtAtlantique/CHLOE.webp' },
+        { name: t('antennes.imtatlantique.bureau.5.name'), role: t('antennes.imtatlantique.bureau.5.role'), photo: '/antennes/imtAtlantique/DAVID_OUEDRAOGO.webp' },
+        { name: t('antennes.imtatlantique.bureau.6.name'), role: t('antennes.imtatlantique.bureau.6.role'), photo: '/antennes/imtAtlantique/TEODORE.webp' },
+        { name: t('antennes.imtatlantique.bureau.7.name'), role: t('antennes.imtatlantique.bureau.7.role'), photo: '/antennes/imtAtlantique/ACHRAF.webp' },
+        { name: t('antennes.imtatlantique.bureau.8.name'), role: t('antennes.imtatlantique.bureau.8.role'), photo: '/antennes/imtAtlantique/INES.webp' },
+        { name: t('antennes.imtatlantique.bureau.9.name'), role: t('antennes.imtatlantique.bureau.9.role'), photo: '/antennes/imtAtlantique/THOMAS.webp' },
+        { name: t('antennes.imtatlantique.bureau.10.name'), role: t('antennes.imtatlantique.bureau.10.role'), photo: '/antennes/imtAtlantique/TELMO.webp' },
+        { name: t('antennes.imtatlantique.bureau.11.name'), role: t('antennes.imtatlantique.bureau.11.role'), photo: '/antennes/imtAtlantique/GAUTIER.webp' },
+        { name: t('antennes.imtatlantique.bureau.12.name'), role: t('antennes.imtatlantique.bureau.12.role'), photo: '/antennes/imtAtlantique/SARA.webp' }
       ],
-      gallery: []
+      gallery: [
+        '/antennes/imtAtlantique/EVENT.webp',
+        '/antennes/imtAtlantique/EVENT2.webp',
+        '/antennes/imtAtlantique/EVENT3.webp',
+        '/antennes/imtAtlantique/EVENT4.webp',
+        '/antennes/imtAtlantique/EVENT5.webp'
+      ]
     }
   };
 
@@ -465,6 +490,7 @@ const AntenneDetail = () => {
                 <img
                   src={antenne.schoolLogo}
                   alt={antenne.school}
+                  loading="lazy"
                   className="max-w-28 max-h-28 bg-white rounded-lg p-2 object-contain"
                 />
                 <div>
@@ -500,6 +526,7 @@ const AntenneDetail = () => {
                     <img
                       src={member.photo}
                       alt={member.name}
+                      loading="lazy"
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -568,22 +595,23 @@ const AntenneDetail = () => {
 
       {/* Gallery Section */}
       {antenne.gallery && antenne.gallery.length > 0 && (
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-white text-center mb-16">{t('branches.gallery')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-white text-center mb-16">{t('branches.gallery')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {antenne.gallery.map((image, index) => (
-                <div key={index} className="aspect-video rounded-xl overflow-hidden bg-slate-800">
-                  <img
-                    src={image}
-                    alt={`${t('branches.gallery')} ${index + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
+              <div key={index} className="aspect-video rounded-xl overflow-hidden bg-slate-800">
+                <img
+                  src={image}
+                  alt={`${t('branches.gallery')} ${index + 1}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
       )}
 
       <Footer />
