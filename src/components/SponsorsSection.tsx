@@ -125,7 +125,7 @@ const SponsorsSection = () => {
   );
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {renderCarousel(t('sponsors.sponsors'), sponsors, 0.6)}
       {renderCarousel(t('sponsors.partners'), partners, 1.0)}
       {renderCarousel(t('sponsors.universities'), universities, 0.8)}
