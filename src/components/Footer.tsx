@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
@@ -22,8 +21,9 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.png" 
+                src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.webp" 
                 alt="Kryptosphere" 
+                loading="lazy"
                 className="h-12 w-auto"
               />
             </div>

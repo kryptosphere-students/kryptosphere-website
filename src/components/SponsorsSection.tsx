@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -9,7 +8,7 @@ const SponsorsSection = () => {
 const sponsors = [
   {
     name: 'BPI France',
-    logo: '/lovable-uploads/bpifrance.png'
+    logo: '/lovable-uploads/bpifrance.webp'
   },
   {
     name: 'Ledger',
@@ -17,7 +16,7 @@ const sponsors = [
   },
   {
     name: 'KPMG',
-    logo: '/lovable-uploads/KPMG.png'
+    logo: '/lovable-uploads/KPMG.webp'
   },
   {
     name: 'DELUBAC',
@@ -25,19 +24,19 @@ const sponsors = [
   },
   {
     name: 'XRP',
-    logo: '/lovable-uploads/xrp.png'
+    logo: '/lovable-uploads/xrp.webp'
   },
   {
     name: 'Forvis Mazars',
-    logo: '/lovable-uploads/Forvis_Mazars.png'
+    logo: '/lovable-uploads/Forvis_Mazars.webp'
   },
   {
     name: 'Avalanche',
-    logo: '/lovable-uploads/AVX.png'
+    logo: '/lovable-uploads/AVX.webp'
   },
   {
     name: 'Aléo',
-    logo: '/lovable-uploads/aleo.png'
+    logo: '/lovable-uploads/aleo.webp'
   }
 ];
 
@@ -45,7 +44,7 @@ const sponsors = [
 const partners = [
   {
     name: 'Coinbase',
-    logo: '/lovable-uploads/Coinbase.svg.png'
+    logo: '/lovable-uploads/Coinbase.svg.webp'
   },
   {
     name: 'Ledger',
@@ -53,15 +52,15 @@ const partners = [
   },
   {
     name: 'KPMG',
-    logo: '/lovable-uploads/KPMG.png'
+    logo: '/lovable-uploads/KPMG.webp'
   },
   {
-    name: 'Pyratzlabs',
-    logo: '/lovable-uploads/pyratz.svg'
+    name: 'Blockchain Addict',
+    logo: '/lovable-uploads/ba.webp'
   },
   {
     name: 'BFG',
-    logo: '/lovable-uploads/BFG.png'
+    logo: '/lovable-uploads/BFG.webp'
   },
   {
     name: 'ADAN',
@@ -69,58 +68,58 @@ const partners = [
   },
     {
     name: 'Paymium',
-    logo: '/lovable-uploads/paymium.png'
+    logo: '/lovable-uploads/paymium.webp'
   },
       {
     name: 'VIVA TECH',
-    logo: '/lovable-uploads/viva.png'
+    logo: '/lovable-uploads/viva.webp'
   },
 ];
 
 const universities = [
   {
     name: 'IMTBS-TSP',
-    logo: '/lovable-uploads/imtbstsp.png'
+    logo: '/lovable-uploads/imtbstsp.webp'
   },
   {
     name: 'Polytechnique',
-    logo: '/lovable-uploads/TSP.png'
+    logo: '/lovable-uploads/TSP.webp'
   },
   {
     name: 'ESCP',
-    logo: '/lovable-uploads/ESCP.png'
+    logo: '/lovable-uploads/ESCP.webp'
   },
   {
     name: 'HEH',
-    logo: '/lovable-uploads/HEH.png'
+    logo: '/lovable-uploads/HEH.webp'
   },
   {
     name: 'EMLV',
-    logo: '/lovable-uploads/emlv.png'
+    logo: '/lovable-uploads/emlv.webp'
   },
   {
     name: 'HULT London',
-    logo: '/lovable-uploads/hult.png'
+    logo: '/lovable-uploads/hult.webp'
   },
   {
     name: 'NEOMA',
-    logo: '/lovable-uploads/NEOMA.png'
+    logo: '/lovable-uploads/NEOMA.webp'
   },
   {
     name: 'ESILV',
-    logo: '/lovable-uploads/ESILV.png'
+    logo: '/lovable-uploads/ESILV.webp'
   },
     {
     name: 'ESTIA',
-    logo: '/lovable-uploads/estia.png'
+    logo: '/lovable-uploads/estia.webp'
   },
     {
     name: 'Albert School',
-    logo: '/lovable-uploads/albert.png'
+    logo: '/lovable-uploads/albert.webp'
   },
     {
     name: 'Paris Dauphine',
-    logo: '/lovable-uploads/dauphine.png'
+    logo: '/lovable-uploads/dauphine.webp'
   },
     {
     name: 'ESSEC',
@@ -135,31 +134,31 @@ const media = [
   },
   {
     name: 'RTL',
-    logo: '/lovable-uploads/rtl.png'
+    logo: '/lovable-uploads/rtl.webp'
   },
   {
     name: 'Figaro',
-    logo: '/lovable-uploads/figaro.png'
+    logo: '/lovable-uploads/figaro.webp'
   },
   {
     name: 'Journal Du Net',
-    logo: '/lovable-uploads/JDN.png'
+    logo: '/lovable-uploads/JDN.webp'
   },
   {
     name: 'BFM Crypto',
-    logo: '/lovable-uploads/bfm.png'
+    logo: '/lovable-uploads/bfm.jpg'
   },
   {
     name: 'Journal du Geek',
-    logo: '/lovable-uploads/JDG.png'
+    logo: '/lovable-uploads/JDG.webp'
   },
   {
     name: '20 minutes',
-    logo: '/lovable-uploads/20.png'
+    logo: '/lovable-uploads/20.webp'
   },
   {
     name: 'Journal du coin',
-    logo: '/lovable-uploads/journalducoin.png'
+    logo: '/lovable-uploads/journalducoin.webp'
   },
     {
     name: 'Cryptoast',
@@ -180,7 +179,9 @@ const media = [
   ];
 
   return (
-    <div className="bg-slate-900">
+<div>
+
+
       {/* Sponsors Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -208,12 +209,13 @@ const media = [
             {categories.find(cat => cat.id === activeCategory)?.data.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-6 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-all duration-300"
-              >
+               className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
+  >
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="h-16 w-auto max-w-full object-contain filter brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  loading="lazy"
+                  className="h-16 w-auto max-w-full object-contain"
                 />
               </div>
             ))}
@@ -229,12 +231,13 @@ const media = [
             {media.map((outlet, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-all duration-300"
-              >
+       className="flex items-center justify-center p-6 bg-white border border-slate-200 rounded-lg hover:shadow-md transition-all duration-300"
+        >
                 <img
                   src={outlet.logo}
                   alt={outlet.name}
-                  className="h-12 w-auto max-w-full object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                  loading="lazy"
+                  className="h-16 w-auto max-w-full object-contain"
                 />
               </div>
             ))}

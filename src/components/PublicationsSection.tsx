@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -11,31 +10,31 @@ const PublicationsSection = () => {
     {
       title: t('publication.kryptopaper22.title'),
       date: t('publication.kryptopaper22.date'),
-      image: "/publications/images/KP22.png",
+      image: "/publications/images/KP22.webp",
       category: t('publications.kryptopaper')
     },
     {
       title: t('publication.research.title'),
       date: t('publication.research.date'),
-      image: "/publications/images/researchThibault.png",
+      image: "/publications/images/researchThibault.webp",
       category: t('etude')
     },
     {
       title: t('publication.report2024.title'),
       date: t('publication.report2024.date'),
-      image: "/publications/Rapport2024.png",
+      image: "/publications/Rapport2024.webp",
       category: t('publications.reports')
     },
     {
       title: t('publication.kryptopaper24.title'),
       date: t('publication.kryptopaper24.date'),
-      image: "/publications/images/KPavril22.png",
+      image: "/publications/images/KPavril22.webp",
       category: t('publications.kryptopaper')
     }
   ];
 
   return (
-    <section className="py-24 bg-slate-900">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -55,6 +54,7 @@ const PublicationsSection = () => {
                   <img 
                     src={publication.image} 
                     alt={publication.title}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4 bg-slate-900/80 px-3 py-1 rounded text-xs text-blue-400 font-medium">

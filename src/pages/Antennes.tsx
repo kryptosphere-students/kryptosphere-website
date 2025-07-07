@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
@@ -13,102 +12,24 @@ const Antennes = () => {
 
   const antennes = [
     {
-      id: 'paris',
+      id: 'essec',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
-      coordinates: { lat: 48.8566, lng: 2.3522 },
-      school: 'ESSEC Paris',
+      coordinates: { lat: 49.0334698, lng: 2.076515 },
+      school: 'ESSEC Business School',
       description: t('branches.parisDescription'),
-      image: '/antennes/EssecBig.png',
-      contact: {
-        email: 'paris@kryptosphere.org',
-        phone: '+33 1 23 45 67 89'
-      }
+      image: '/antennes/EssecBig.webp'
     },
     {
-      id: 'nantes',
-      name: t('cities.nantes'),
-      city: t('cities.nantes'),
-      country: t('countries.france'),
-      coordinates: { lat: 47.2184, lng: -1.5536 },
-      school: 'IMT Atlantique',
-      description: t('branches.nantesDescription'),
-      image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
-    },
-    {
-      id: 'paris4',
+      id: 'dauphine',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
-      coordinates: { lat: 50.6292, lng: 3.0573 },
-      school: 'ESCP Business School',
-      description: t('branches.parisDescription4'),
-      image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX XX'
-      }
-    },
-    {
-      id: 'londres',
-      name: t('cities.london'),
-      city: t('cities.london'),
-      country: t('countries.uk'),
-      coordinates: { lat: 51.5074, lng: -0.1278 },
-      school: 'Hult Business School',
-      description: t('branches.londonDescription'),
-      image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+XX XX XX XX XX'
-      }
-    },
-    {
-      id: 'mons',
-      name: t('cities.mons'),
-      city: t('cities.mons'),
-      country: t('countries.belgium'),
-      coordinates: { lat: 50.45413, lng: 3.95229 },
-      school: 'Haute École en Hainaut',
-      description: t('branches.monsDescription'),
-      image: 'https://ds.static.rtbf.be/article/image/1248x702/7/f/9/02561fa1a900cabe15c228f10a34a382-1391700643.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
-    },
-    {
-      id: 'paris2',
-      name: t('cities.paris'),
-      city: t('cities.paris'),
-      country: t('countries.france'),
-      coordinates: { lat: 48.8965, lng: 2.2339 },
-      school: 'DEVINCI',
-      description: t('branches.parisDescription2'),
-      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
-    },
-       {
-      id: 'paris3',
-      name: t('cities.paris'),
-      city: t('cities.paris'),
-      country: t('countries.france'),
-      coordinates: { lat: 48.624853, lng: 2.444104 },
-      school: 'IMTBS - TSP',
-      description: t('branches.parisDescription3'),
-      image: '/lovable-uploads/imtbs_tsp.jpg',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
+      coordinates: { lat: 48.870086669921875, lng: 2.273621082305908 },
+      school: 'Paris Dauphine-PSL',
+      description: t('branches.parisDescription'),
+      image: '/antennes/dauphine/dauphine-2.webp',
     },
     {
       id: 'lyon',
@@ -119,13 +40,79 @@ const Antennes = () => {
       school: 'IAE LYON',
       description: t('branches.lyon'),
       image: 'https://pbs.twimg.com/media/E_PmcY2WUAE4C6j.jpg:large',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
+    },
+    {
+      id: 'telecom',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.624853, lng: 2.444104 },
+      school: 'IMTBS - TSP',
+      description: t('branches.parisDescription3'),
+      image: '/lovable-uploads/imtbs_tsp.webp',
+    },
+        {
+      id: 'ieseg',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.892372131347656, lng: 2.235696315765381 },
+      school: 'IESEG Business School',
+      description: t('branches.parisDescription4'),
+      image: 'https://www.parisladefense.com/sites/default/files/styles/responsive_2_1_s/public/import/image/ie-useg-pld-08-2022-augustin-detienne-004_9.jpg.webp',
+    },
+    {
+      id: 'imtatlantique',
+      name: t('cities.nantes'),
+      city: t('cities.nantes'),
+      country: t('countries.france'),
+      coordinates: { lat: 47.281455993652344, lng: -1.5201970338821411 },
+      school: 'IMT Atlantique',
+      description: t('branches.nantesDescription'),
+      image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
+    },
+    {
+      id: '#',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 50.6292, lng: 3.0573 },
+      school: 'ESCP Business School',
+      description: t('branches.parisDescription4'),
+      image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
+    },
+    {
+      id: '#',
+      name: t('cities.london'),
+      city: t('cities.london'),
+      country: t('countries.uk'),
+      coordinates: { lat: 51.5074, lng: -0.1278 },
+      school: 'Hult Business School',
+      description: t('branches.londonDescription'),
+      image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
+    },
+    {
+      id: 'mons',
+      name: t('cities.mons'),
+      city: t('cities.mons'),
+      country: t('countries.belgium'),
+      coordinates: { lat: 50.45413, lng: 3.95229 },
+      school: 'Haute École en Hainaut',
+      description: t('branches.monsDescription'),
+      image: 'https://ds.static.rtbf.be/article/image/1248x702/7/f/9/02561fa1a900cabe15c228f10a34a382-1391700643.jpg',
+    },
+    {
+      id: 'devinci',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
+      school: 'DeVinci',
+      description: t('branches.parisDescription2'),
+      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
     },
           {
-      id: 'reims',
+      id: 'neoma',
       name: t('cities.reims'),
       city: t('cities.reims'),
       country: t('countries.france'),
@@ -133,10 +120,46 @@ const Antennes = () => {
       school: 'NEOMA',
       description: t('branches.reimsDescription'),
       image: 'https://www.fondation-neoma.fr/sites/fondation/files/styles/w2000/public/2023-11/NEOMA_Front.png?h=fb205de0&itok=sDaXH5eq',
-      contact: {
-        email: 'contact@kryptosphere.org',
-        phone: '+X XX XX XX XX'
-      }
+    },
+    {
+      id: 'aes',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.87514877319336, lng: 2.351832389831543 },
+      school: 'Albert Eugenia School',
+      description: t('branches.parisDescription5'),
+      image: '/antennes/aes/aesImage.webp',
+    },
+    {
+      id: 'inseecparis',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.88954544067383, lng: 2.2442686557769775 },
+      school: 'INSEEC Paris',
+      description: t('branches.parisDescription6'),
+      image: '/antennes/inseec/inseec.webp', 
+    },
+    {
+      id: 'ensiie',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.62651443481445, lng: 2.432352066040039 },
+      school: 'ensIIE',
+      description: t('branches.parisDescription6'),
+      image: '/antennes/ensiie/ensiie.webp', 
+    },
+    {
+      id: 'epita',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.81573486328125, lng: 2.3623597621917725 },
+      school: 'EPITA',
+      description: t('branches.parisDescription6'),
+      image: '/antennes/epita/epita.webp', 
     }
   ];
 
@@ -198,12 +221,13 @@ const Antennes = () => {
               <Link
                 key={antenne.id}
                 to={`/antennes/${antenne.id}`}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-slate-700/50 transition-all duration-300 group"
+                className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-slate-700/50 transition-all duration-300 group flex flex-col h-full"
               >
                 <div className="aspect-video relative rounded-xl overflow-hidden">
                   <img
                     src={antenne.image}
                     alt={antenne.name}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/50" />
@@ -215,10 +239,12 @@ const Antennes = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h4 className="text-xl font-semibold text-white mb-2">{antenne.school}</h4>
-                  <p className="text-slate-300 text-sm mb-4">{antenne.description}</p>
-                  <div className="flex items-center justify-between text-sm">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex-grow">
+                    <h4 className="text-xl font-semibold text-white mb-2">{antenne.school}</h4>
+                    <p className="text-slate-300 text-sm mb-4">{antenne.description}</p>
+                  </div>
+                  <div className="flex items-center justify-between text-sm mt-auto">
                     <div className="flex items-center gap-2 text-slate-400">
                       <Users size={16} />
                       <span>{t('branches.localOffice')}</span>

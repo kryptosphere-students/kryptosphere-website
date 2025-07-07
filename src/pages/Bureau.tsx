@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -7,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const Bureau = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
-  const { t } = useLanguage();
+  const { t, tRaw } = useLanguage();
 
   const bureauData = {
     '2025': [
@@ -15,35 +14,35 @@ const Bureau = () => {
         name: t('board.member1.name'),
         role: t('board.member1.role'),
         description: t('board.member1.description'),
-        image: "/bureau/rpautard.png",
+        image: "/bureau/rpautard.webp",
         school: t('board.member1.school')
       },
       {
         name: t('board.member2.name'),
         role: t('board.member2.role'),
         description: t('board.member2.description'),
-        image: "/bureau/amanival.png",
+        image: "/bureau/amanival.webp",
         school: t('board.member2.school')
       },
       {
         name: t('board.member3.name'),
         role: t('board.member3.role'),
         description: t('board.member3.description'),
-        image: "/bureau/mlaruelle.png",
+        image: "/bureau/mlaruelle.webp",
         school: t('board.member3.school')
       },
       {
         name: t('board.member4.name'),
         role: t('board.member4.role'),
         description: t('board.member4.description'),
-        image: "/bureau/lpiallat.png",
+        image: "/bureau/lpiallat.webp",
         school: t('board.member4.school')
       },
       {
         name: t('board.member27.name'),
         role: t('board.member27.role'),
         description: t('board.member27.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member27.school')
       },
     ],
@@ -52,7 +51,7 @@ const Bureau = () => {
         name: t('board.member24.name'),
         role: t('board.member24.role'),
         description: t('board.member24.description'),
-        image: "/bureau/mathiasbouguon.jpeg",
+        image: "/bureau/mathiasbouguon.webp",
         school: t('board.member24.school')
       },
                   {
@@ -73,7 +72,7 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member5.school')
       },
     ],
@@ -83,28 +82,28 @@ const Bureau = () => {
         name: t('board.member21.name'),
         role: t('board.member21.role'),
         description: t('board.member21.description'),
-        image: "/bureau/maxime.jpeg",
+        image: "/bureau/maxime.webp",
         school: t('board.member21.school')
       },
             {
         name: t('board.member22.name'),
         role: t('board.member22.role'),
         description: t('board.member22.description'),
-        image: "/bureau/leo.jpeg",
+        image: "/bureau/leo.webp",
         school: t('board.member22.school')
       },
                   {
         name: t('board.member23.name'),
         role: t('board.member23.role'),
         description: t('board.member23.description'),
-        image: "/bureau/louis.jpeg",
+        image: "/bureau/louis.webp",
         school: t('board.member23.school')
       },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member5.school')
       },
     ],
@@ -113,21 +112,21 @@ const Bureau = () => {
         name: t('board.member19.name'),
         role: t('board.member19.role'),
         description: t('board.member19.description'),
-        image: "/bureau/mathias.jpeg",
+        image: "/bureau/mathias.webp",
         school: t('board.member19.school')
       },
             {
         name: t('board.member20.name'),
         role: t('board.member20.role'),
         description: t('board.member20.description'),
-        image: "/bureau/gabriel.jpeg",
+        image: "/bureau/gabriel.webp",
         school: t('board.member20.school')
       },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member5.school')
       },
     ],
@@ -136,21 +135,21 @@ const Bureau = () => {
         name: t('board.member17.name'),
         role: t('board.member17.role'),
         description: t('board.member17.description'),
-        image: "/bureau/karolina.jpeg",
+        image: "/bureau/karolina.webp",
         school: t('board.member17.school')
       },
       {
         name: t('board.member18.name'),
         role: t('board.member18.role'),
         description: t('board.member18.description'),
-        image: "/bureau/Pierre.jpeg",
+        image: "/bureau/Pierre.webp",
         school: t('board.member18.school')
       },
             {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member5.school')
       }
     ],
@@ -160,28 +159,28 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.jpg",
+        image: "/bureau/thibault.webp",
         school: t('board.member5.school')
       },
                   {
         name: t('board.member8.name'),
         role: t('board.member8.role'),
         description: t('board.member8.description'),
-        image: "/bureau/Guillaume.jpeg",
+        image: "/bureau/Guillaume.webp",
         school: t('board.member8.school')
       },
                         {
         name: t('board.member9.name'),
         role: t('board.member9.role'),
         description: t('board.member9.description'),
-        image: "/bureau/othmane.jpeg",
+        image: "/bureau/othmane.webp",
         school: t('board.member9.school')
       },
                         {
         name: t('board.member10.name'),
         role: t('board.member10.role'),
         description: t('board.member10.description'),
-        image: "/bureau/fanis.jpeg",
+        image: "/bureau/fanis.webp",
         school: t('board.member10.school')
       },
                               {
@@ -195,53 +194,118 @@ const Bureau = () => {
         name: t('board.member12.name'),
         role: t('board.member12.role'),
         description: t('board.member12.description'),
-        image: "/bureau/julie.jpeg",
+        image: "/bureau/julie.webp",
         school: t('board.member12.school')
       },
                                           {
         name: t('board.member13.name'),
         role: t('board.member13.role'),
         description: t('board.member13.description'),
-        image: "/bureau/manon.jpeg",
+        image: "/bureau/manon.webp",
         school: t('board.member13.school')
       },
                                                 {
         name: t('board.member14.name'),
         role: t('board.member14.role'),
         description: t('board.member14.description'),
-        image: "/bureau/harmonie.jpeg",
+        image: "/bureau/harmonie.webp",
         school: t('board.member14.school')
       },
                                                       {
         name: t('board.member15.name'),
         role: t('board.member15.role'),
         description: t('board.member15.description'),
-        image: "/bureau/marie.jpeg",
+        image: "/bureau/marie.webp",
         school: t('board.member15.school')
       },
                                                             {
         name: t('board.member16.name'),
         role: t('board.member16.role'),
         description: t('board.member16.description'),
-        image: "/bureau/aymane.jpeg",
+        image: "/bureau/aymane.webp",
         school: t('board.member16.school')
       },
                         {
         name: t('board.member6.name'),
         role: t('board.member6.role'),
         description: t('board.member6.description'),
-        image: "/bureau/william.jpeg",
+        image: "/bureau/william.webp",
         school: t('board.member6.school')
       },
                         {
         name: t('board.member7.name'),
         role: t('board.member7.role'),
         description: t('board.member7.description'),
-        image: "/bureau/serge.jpg",
+        image: "/bureau/serge.webp",
         school: t('board.member7.school')
       },
     ]
 
+  };
+
+  const polesData = {
+    '2025': [
+      {
+        title: t('board.poles.partnership.title'),
+        description: t('board.poles.partnership.description'),
+        team: [
+          {
+            name: t('board.poles.partnership.team.member1.name'),
+            role: t('board.poles.partnership.team.member1.role'),
+            description: t('board.poles.partnership.team.member1.description'),
+            image: '/bureau/jg.webp',
+          },
+          {
+            name: t('board.poles.partnership.team.member2.name'),
+            role: t('board.poles.partnership.team.member2.role'),
+            description: t('board.poles.partnership.team.member2.description'),
+            image: '/bureau/tevfik.webp',
+          },
+          {
+            name: t('board.poles.partnership.team.member3.name'),
+            role: t('board.poles.partnership.team.member3.role'),
+            description: t('board.poles.partnership.team.member3.description'),
+            image: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp',
+          },
+        ],
+      },
+      {
+        title: t('board.poles.communication.title'),
+        description: tRaw('board.poles.communication.description'),
+        team: [
+          {
+            name: t('board.poles.communication.team.member1.name'),
+            role: t('board.poles.communication.team.member1.role'),
+            description: t('board.poles.communication.team.member1.description'),
+            image: '/bureau/amangin.webp',
+          },
+          {
+            name: t('board.poles.communication.team.member2.name'),
+            role: t('board.poles.communication.team.member2.role'),
+            description: t('board.poles.communication.team.member2.description'),
+            image: '/bureau/alexandra.webp',
+          },
+        ],
+      },
+      {
+        title: t('board.poles.aidefi.title'),
+        description: t('board.poles.aidefi.description'),
+        team: [
+          {
+            name: t('board.poles.aidefi.team.member1.name'),
+            role: t('board.poles.aidefi.team.member1.role'),
+            description: '',
+            image: '/bureau/lpiallat.webp',
+          },
+          {
+            name: t('board.poles.aidefi.team.member2.name'),
+            role: t('board.poles.aidefi.team.member2.role'),
+            description: '',
+            image: '/bureau/mk.webp',
+          },
+        ],
+      },
+    ],
   };
 
   const years = ['2025', '2024', '2023', '2022', '2021', '2020 - 2017'];
@@ -297,9 +361,9 @@ const Bureau = () => {
       {/* Team Grid */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {bureauData[selectedYear]?.map((member, index) => (
-              <div key={index} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden">
+              <div key={index} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden w-full">
                 <div className="p-8 text-center">
                   <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
                     <img
@@ -318,6 +382,51 @@ const Bureau = () => {
           </div>
         </div>
       </section>
+
+      {selectedYear === '2025' && (
+        <section className="py-16 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                {t('board.polesTitle')}
+              </h2>
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+
+            {(polesData[selectedYear] || []).map((pole, poleIndex) => (
+              <div key={poleIndex} className="mb-20">
+                <h3 className="text-3xl font-bold text-center mb-4 text-slate-100">{pole.title}</h3>
+                <div className="max-w-4xl mx-auto text-center text-slate-300 leading-relaxed mb-10 space-y-4">
+                  {Array.isArray(pole.description) ? (
+                    (pole.description as string[]).map((p, i) => <p key={i}>{p}</p>)
+                  ) : (
+                    <p>{pole.description as string}</p>
+                  )}
+                </div>
+
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {pole.team.map((member, memberIndex) => (
+                    <div key={memberIndex} className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden w-full">
+                      <div className="p-8 text-center">
+                        <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-300 transition-colors">{member.name}</h3>
+                        <p className="text-blue-400 font-semibold mb-4 text-sm uppercase tracking-wide">{member.role}</p>
+                        <p className="text-slate-400 text-sm leading-relaxed">{member.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <Footer />
     </div>

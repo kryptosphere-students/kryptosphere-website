@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
@@ -13,8 +12,10 @@ const Index = () => {
       <Navigation />
       <Hero />
       <StatsSection />
-      <SponsorsSection />
-      <PublicationsSection />
+      <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
+        <SponsorsSection />
+        <PublicationsSection />
+      </div>
       <Footer />
     </div>
   );

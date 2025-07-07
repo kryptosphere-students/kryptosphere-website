@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -16,7 +15,7 @@ const Publications = () => {
       date: t('publication.kryptopaper22.date'),
       category: "kryptopaper",
       description: t('publication.kryptopaper22.description'),
-      image: "/publications/images/KP22.png",
+      image: "/publications/images/KP22.webp",
       downloadUrl: "/publications/KryptoPaper_2022.pdf",
       readTime: t('publication.kryptopaper22.readTime')
     },
@@ -26,7 +25,7 @@ const Publications = () => {
       date: t('publication.research.date'),
       category: "etude",
       description: t('publication.research.description'),
-      image: "/publications/images/researchThibault.png",
+      image: "/publications/images/researchThibault.webp",
       downloadUrl: "https://hal.science/tel-04190658/document",
       readTime: t('publication.research.readTime')
     },
@@ -36,7 +35,7 @@ const Publications = () => {
       date: t('publication.defi.date'),
       category: "kryptopaper",
       description: t('publication.defi.description'),
-      image: "/publications/images/KP20.png",
+      image: "/publications/images/KP20.webp",
       downloadUrl: "/publications/KryptoPaper_2021.pdf",
       readTime: t('publication.defi.readTime')
     },
@@ -46,7 +45,7 @@ const Publications = () => {
       date: t('publication.report2024.date'),
       category: "rapport",
       description: t('publication.report2024.description'),
-      image: "/publications/Rapport2024.png",
+      image: "/publications/Rapport2024.webp",
       downloadUrl: "https://thibaultlangloisberthelot.medium.com/how-many-people-did-the-kryptosphere-network-introduce-to-bitcoin-286789d7cc2f",
       readTime: t('publication.report2024.readTime')
     },
@@ -56,7 +55,7 @@ const Publications = () => {
       date: t('publication.kryptopaper24.date'),
       category: "kryptopaper",
       description: t('publication.kryptopaper24.description'),
-      image: "/publications/images/KPavril22.png",
+      image: "/publications/images/KPavril22.webp",
       downloadUrl: "/publications/KSavril22.pdf",
       readTime: t('publication.kryptopaper24.readTime')
     },
@@ -66,7 +65,7 @@ const Publications = () => {
       date: t('publication.smartcontracts.date'),
       category: "article",
       description: t('publication.smartcontracts.description'),
-      image: "/publications/images/articles.png",
+      image: "/publications/images/articles.webp",
       downloadUrl: "https://kryptosphere.medium.com/",
       readTime: t('publication.smartcontracts.readTime')
     }
@@ -135,7 +134,7 @@ const Publications = () => {
             {filteredPublications.map((publication) => (
               <div
                 key={publication.id}
-                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
+                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden flex flex-col h-full"
               >
                 <div className="aspect-video bg-slate-700 relative overflow-hidden">
                   <img
@@ -156,15 +155,17 @@ const Publications = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                    {publication.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                    {publication.description}
-                  </p>
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                      {publication.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                      {publication.description}
+                    </p>
+                  </div>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 mt-auto">
                     <a
                       href={publication.downloadUrl}
                       target="_blank"
@@ -183,7 +184,6 @@ const Publications = () => {
                       <Download className="w-4 h-4" />
                       {t('publications.pdf')}
                     </a>
-
                   </div>
                 </div>
               </div>

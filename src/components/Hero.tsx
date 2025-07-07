@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -13,7 +12,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/backgroundks.png')`,
+          backgroundImage: `url('/hero.webp')`,
         }}
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
@@ -36,8 +35,9 @@ const Hero = () => {
           {/* Logo Kryptosphere au-dessus du titre - agrandi */}
           <div className="mb-12 flex justify-center">
             <img 
-              src="/lovable-uploads/ksLogo.png" 
+              src="/lovable-uploads/ksLogo.webp" 
               alt="Kryptosphere Logo"
+              loading="lazy"
               className="h-80 w-auto opacity-90" // Augmentation de la taille de 32px à 40px
             />
           </div>
