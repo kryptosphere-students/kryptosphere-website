@@ -15,6 +15,8 @@ import Antennes from "./pages/Antennes";
 import AntenneDetail from "./pages/AntenneDetail";
 import NotFound from "./pages/NotFound";
 import KryptoTour from './pages/KryptoTour';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +44,8 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
+    <Analytics />
+    <SpeedInsights />
   </QueryClientProvider>
 );
 
