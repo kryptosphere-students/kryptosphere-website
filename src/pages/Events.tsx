@@ -58,7 +58,7 @@ const Events = () => {
 
           <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
             <iframe
-              src="https://lu.ma/embed/calendar/cal-9ZMsImcFu7TR6ed/events"
+              src="https://lu.ma/embed/calendar/cal-098AwKOPKgqH6Mw/events"
               width="100%"
               height="100%"
               loading="lazy"

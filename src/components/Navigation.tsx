@@ -92,7 +92,7 @@ const Navigation = () => {
             ))}
             <Link
               to="/krypto-tour"
-              className="ml-2 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl transition-transform duration-200 border-2 border-transparent hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
+              className="ml-2 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
             >
               KRYPTO-TOUR
             </Link>
@@ -118,7 +118,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-slate-700/50 py-4 bg-slate-900/95 backdrop-blur-lg">
+          <div className="md:hidden border-t border-slate-700/50 py-4 px-4 bg-slate-900/95 backdrop-blur-lg">
             {navItems.map((item) => (
               <React.Fragment key={item.name || item.path}>
                 {!item.subItems ? (
@@ -148,7 +148,7 @@ const Navigation = () => {
             ))}
             <Link
               to="/krypto-tour"
-              className="block mt-2 mb-4 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl text-center border-2 border-transparent transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
+              className="block mt-2 mb-4 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl text-center transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
               onClick={() => setIsOpen(false)}
             >
               KRYPTO-TOUR

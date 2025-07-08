@@ -229,6 +229,17 @@ const KryptoTour = () => {
                             </div>
                         ))}
                     </div>
+                    {/* More coming soon card centered below the grid */}
+                    <div className="flex justify-center mt-6">
+                        <div className="bg-slate-800/50 rounded-xl border border-slate-700/50 p-6 flex flex-col items-center justify-center w-64 h-64 shadow-lg">
+                            <div className="w-28 h-28 rounded-full bg-gradient-to-br from-blue-400/80 to-purple-400/80 mb-4 flex items-center justify-center mx-auto">
+                                <span className="text-5xl text-white font-bold">...</span>
+                            </div>
+                            <div className="text-white font-extrabold text-center text-xl italic mt-2 w-full drop-shadow-lg">
+                                Plus d'intervenants à venir
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -261,8 +272,8 @@ const KryptoTour = () => {
                         </h3>
                         <div className="grid grid-cols-2 gap-8">
                             {['/krypto-tour/sponsors/ajf.webp', '/krypto-tour/sponsors/fc.webp'].map((img, i) => (
-                                <div key={i} className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300">
-                                    <img src={img} alt="Gold Sponsor Logo" loading="lazy" className="w-full h-full object-contain" />
+                                <div key={i} className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300 h-24 md:h-32">
+                                    <img src={img} alt="Gold Sponsor Logo" loading="lazy" className="w-full h-24 max-h-24 object-contain" />
                                 </div>
                             ))}
                         </div>
@@ -322,24 +333,26 @@ const KryptoTour = () => {
             <section className="py-8 px-6">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl font-bold text-center mb-6 text-red-400">Partenaire média</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mb-8">
-                        {mediaPartners.map((mp, i) => (
-                            <a
-                                key={i}
-                                href={mp.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center justify-center w-full h-full p-2"
-                                title={mp.name}
-                            >
-                                <img
-                                    src={mp.img}
-                                    alt={mp.name}
-                                    loading="lazy"
-                                    className="max-h-24 w-auto object-contain mx-auto"
-                                />
-                            </a>
-                        ))}
+                    <div className="bg-white/70 rounded-2xl p-4 mb-8">
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
+                            {mediaPartners.map((mp, i) => (
+                                <a
+                                    key={i}
+                                    href={mp.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center w-full h-full p-2"
+                                    title={mp.name}
+                                >
+                                    <img
+                                        src={mp.img}
+                                        alt={mp.name}
+                                        loading="lazy"
+                                        className="max-h-24 w-auto object-contain mx-auto"
+                                    />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
