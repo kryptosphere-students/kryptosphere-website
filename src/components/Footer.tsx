@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
+import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone, Twitter, Youtube, Instagram, Facebook, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
 
   const legalLinks = [
     { key: 'footer.legal.disclaimer', href: '/documents/avertissement.pdf' },
@@ -13,6 +13,10 @@ const Footer = () => {
     { key: 'footer.legal.cookies', href: '/documents/politique-cookies.pdf' },
     { key: 'footer.legal.legal', href: '/documents/mentions-legales.pdf' }
   ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'fr' ? 'en' : 'fr');
+  };
 
   return (
     <footer className="bg-slate-900 border-t border-slate-700/50">
@@ -128,6 +132,14 @@ const Footer = () => {
           <p>&copy; {t('footer.copyright')}</p>
         </div>
       </div>
+      {/* Language Switcher - absolute bottom right */}
+      <button
+        onClick={toggleLanguage}
+        className="hidden md:flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-200 font-medium bg-slate-800/50 px-5 py-2 rounded-full text-base fixed bottom-6 right-6 z-50 shadow-lg"
+      >
+        <Globe size={20} />
+        {language.toUpperCase()}
+      </button>
     </footer>
   );
 };

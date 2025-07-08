@@ -9,7 +9,13 @@ const Navigation = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
-  const navItems = [
+  type NavItem = {
+    name: string;
+    path?: string;
+    subItems?: { name: string; path: string }[];
+  };
+
+  const navItems: NavItem[] = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.board'), path: '/bureau' },
     { name: t('nav.association'), path: '/association' },
@@ -84,15 +90,21 @@ const Navigation = () => {
                 </Link>
               )
             ))}
+            <Link
+              to="/krypto-tour"
+              className="ml-2 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl transition-transform duration-200 border-2 border-transparent hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
+            >
+              KRYPTO-TOUR
+            </Link>
             
             {/* Language Switcher */}
-            <button
+            {/* <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-200 font-medium bg-slate-800/50 px-3 py-1 rounded-full"
             >
               <Globe size={16} />
               {language.toUpperCase()}
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -134,13 +146,20 @@ const Navigation = () => {
                 )}
               </React.Fragment>
             ))}
-            <button
+            <Link
+              to="/krypto-tour"
+              className="block mt-2 mb-4 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl text-center border-2 border-transparent transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
+              onClick={() => setIsOpen(false)}
+            >
+              KRYPTO-TOUR
+            </Link>
+            {/* <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium"
             >
               <Globe size={16} />
               {language === 'fr' ? 'English' : 'Français'}
-            </button>
+            </button> */}
           </div>
         )}
       </div>

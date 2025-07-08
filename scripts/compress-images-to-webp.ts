@@ -3,8 +3,8 @@ import path from 'path';
 import sharp from 'sharp';
     
 
-const INPUT_DIR = path.join(__dirname, '../public');
-const OUTPUT_DIR = path.join(__dirname, '../public_compressed');
+const INPUT_DIR = path.join(__dirname, '../public/medias');
+const OUTPUT_DIR = path.join(__dirname, '../public/krypto-tour/medias');
 const SUPPORTED_EXT: string[] = ['.jpg', '.JPG', '.jpeg', '.JPEG', '.png', '.PNG', '.gif', '.webp'];
 
 function ensureDirSync(dir: string) {
