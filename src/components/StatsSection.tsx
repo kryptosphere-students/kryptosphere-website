@@ -81,7 +81,7 @@ export const translations = {
     'hero.title2': 'étudiant',
     'hero.title3': 'Tech',
     'hero.title4': "d'Europe",
-    'hero.subtitle': "Le réseau bien physique du numérique : crypto-actifs, IA et cybersécurité",
+    'hero.subtitle': "Le réseau physique du numérique : crypto-actifs, IA et cybersécurité",
     'hero.join': "Rejoindre l'association",
     'hero.branches': 'Voir nos antennes',
 

@@ -46,33 +46,42 @@ const PublicationsSection = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {publications.map((publication, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="bg-slate-800 rounded-lg overflow-hidden hover:bg-slate-700 transition-colors duration-300">
-                <div className="aspect-video bg-slate-700 relative overflow-hidden">
-                  <img 
-                    src={publication.image} 
-                    alt={publication.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4 bg-slate-900/80 px-3 py-1 rounded text-xs text-blue-400 font-medium">
-                    {publication.category}
-                  </div>
-                  <div className="absolute top-4 right-4 bg-slate-900/80 px-3 py-1 rounded text-xs text-slate-300">
-                    {publication.date}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-white font-semibold text-lg group-hover:text-blue-400 transition-colors">
-                    {publication.title}
-                  </h3>
-                </div>
-              </div>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {publications.map((publication, index) => (
+    <div key={index} className="group cursor-pointer">
+      <div className="bg-slate-800 rounded-lg overflow-hidden hover:bg-slate-700 transition-colors duration-300">
+        
+        {/* IMAGE CLIQUABLE renvoi vers la page "Publication"*/}
+        <Link to="/publications">
+          <div className="aspect-video bg-slate-700 relative overflow-hidden">
+            <img 
+              src={publication.image} 
+              alt={publication.title}
+              loading="lazy"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute top-4 left-4 bg-slate-900/80 px-3 py-1 rounded text-xs text-blue-400 font-medium">
+              {publication.category}
             </div>
-          ))}
+            <div className="absolute top-4 right-4 bg-slate-900/80 px-3 py-1 rounded text-xs text-slate-300">
+              {publication.date}
+            </div>
+          </div>
+        </Link>
+
+        <div className="p-6">
+          {/* TITRE CLIQUABLE renvoi vers la page "Publication" */}
+          <Link to="/publications">
+            <h3 className="text-white font-semibold text-lg group-hover:text-blue-400 transition-colors">
+              {publication.title}
+            </h3>
+          </Link>
         </div>
+
+      </div>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

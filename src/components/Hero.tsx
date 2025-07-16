@@ -16,6 +16,9 @@ const Hero = () => {
         }}
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
+        {/* ajout ci-dessous d'un overlay blanc sur l'image background */}
+        <div className="absolute inset-0 bg-white opacity-10 z-10"></div>
+
       </div>
 
       {/* Geometric pattern overlay */}
