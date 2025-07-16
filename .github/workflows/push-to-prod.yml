@@ -1,4 +1,4 @@
-name: Push to Website Prod (Vercel)
+name: Push to Fork Prod (kryptosphere-dev)
 
 on:
   push:
@@ -6,15 +6,29 @@ on:
       - main
 
 jobs:
-  sync:
+  push-to-fork:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout full repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Push to Website Prod (Vercel)
+      - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
+
+      - name: Update version file
+        run: |
+          echo "Last pushed at $(date -u)" > version.txt
+
+      - name: Commit changes
+        run: |
+          git add version.txt
+          git diff --cached --quiet || git commit -m "Update version file at $(date -u)"
+
+      - name: Add fork remote and push
+        run: |
           git remote add personal https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/kryptosphere-dev/kryptosphere-website.git
           git push personal main --force
