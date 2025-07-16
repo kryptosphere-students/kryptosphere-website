@@ -31,6 +31,14 @@ jobs:
         run: |
           echo "Last pushed at $(date -u)" > version.txt
           git add version.txt
+
+      - name: Remove workflows from commit
+        run: |
+          git restore --staged .github/workflows || true
+          git restore .github/workflows || true
+
+      - name: Commit if needed
+        run: |
           git diff --cached --quiet || git commit -m "Update version file at $(date -u)"
 
       - name: Push to kryptosphere-dev
