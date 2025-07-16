@@ -1,0 +1,20 @@
+name: Push to Website Prod (Vercel)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Push to Website Prod (Vercel)
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git remote add personal https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/kryptosphere-dev/kryptosphere-website.git
+          git push personal main --force
