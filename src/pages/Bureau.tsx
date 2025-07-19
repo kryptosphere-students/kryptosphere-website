@@ -42,7 +42,7 @@ const Bureau = () => {
         name: t('board.member27.name'),
         role: t('board.member27.role'),
         description: t('board.member27.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member27.school')
       },
     ],
@@ -68,13 +68,48 @@ const Bureau = () => {
         image: "/bureau/gildas.webp",
         school: t('board.member26.school')
       },
+                        {
+        name: t('board.member30.name'),
+        role: t('board.member30.role'),
+        description: t('board.member30.description'),
+        image: "/bureau/charles.webp",
+        school: t('board.member30.school')
+      },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school')
       },
+      {
+        name: t('board.member32.name'),
+        role: t('board.member32.role'),
+        description: t('board.member32.description'),
+        image: "/bureau/maksym.webp",
+        school: t('board.member32.school')
+      },
+      {
+        name: t('board.member38.name'),
+        role: t('board.member38.role'),
+        description: t('board.member38.description'),
+        image: "/bureau/emile.webp",
+        school: t('board.member38.school')
+      },
+            {
+        name: t('board.member45.name'),
+        role: t('board.member45.role'),
+        description: t('board.member45.description'),
+        image: "/bureau/nas.webp",
+        school: t('board.member45.school')
+      },
+                  {
+        name: t('board.member62.name'),
+        role: t('board.member62.role'),
+        description: t('board.member62.description'),
+        image: "/bureau/mark.webp",
+        school: t('board.member62.school')
+      }
     ],
     '2023': [
 
@@ -103,8 +138,64 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school')
+      },
+      {
+        name: t('board.member33.name'),
+        role: t('board.member33.role'),
+        description: t('board.member33.description'),
+        image: "/bureau/maxence.webp",
+        school: t('board.member33.school')
+      },
+       {
+        name: t('board.member37.name'),
+        role: t('board.member37.role'),
+        description: t('board.member37.description'),
+        image: "/bureau/preau.webp",
+        school: t('board.member37.school')
+      },
+      {
+        name: t('board.member46.name'),
+        role: t('board.member46.role'),
+        description: t('board.member46.description'),
+        image: "/bureau/manonc.webp",
+        school: t('board.member46.school')
+      },
+            {
+        name: t('board.member47.name'),
+        role: t('board.member47.role'),
+        description: t('board.member47.description'),
+        image: "/bureau/quentin.webp",
+        school: t('board.member47.school')
+      },
+      {
+        name: t('board.member51.name'),
+        role: t('board.member51.role'),
+        description: t('board.member51.description'),
+        image: "/bureau/sara.webp",
+        school: t('board.member51.school')
+      },
+      {
+        name: t('board.member59.name'),
+        role: t('board.member59.role'),
+        description: t('board.member59.description'),
+        image: "/bureau/lery.webp",
+        school: t('board.member59.school')
+      },
+      {
+        name: t('board.member60.name'),
+        role: t('board.member60.role'),
+        description: t('board.member60.description'),
+        image: "/bureau/thib.webp",
+        school: t('board.member60.school')
+      },
+                {
+        name: t('board.member63.name'),
+        role: t('board.member63.role'),
+        description: t('board.member63.description'),
+        image: "/bureau/salim.webp",
+        school: t('board.member63.school')
       },
     ],
     '2022': [
@@ -126,9 +217,51 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school')
       },
+      {
+        name: t('board.member41.name'),
+        role: t('board.member41.role'),
+        description: t('board.member41.description'),
+        image: "/bureau/louisd.webp",
+        school: t('board.member41.school')
+      },
+      {
+        name: t('board.member42.name'),
+        role: t('board.member42.role'),
+        description: t('board.member42.description'),
+        image: "/bureau/nandy.webp",
+        school: t('board.member42.school')
+      },
+       {
+        name: t('board.member43.name'),
+        role: t('board.member43.role'),
+        description: t('board.member43.description'),
+        image: "/bureau/nour.webp",
+        school: t('board.member43.school')
+      },
+                 {
+        name: t('board.member48.name'),
+        role: t('board.member48.role'),
+        description: t('board.member48.description'),
+        image: "/bureau/pierrelouis.webp",
+        school: t('board.member48.school')
+      },
+                 {
+        name: t('board.member49.name'),
+        role: t('board.member49.role'),
+        description: t('board.member49.description'),
+        image: "/bureau/lilyan.webp",
+        school: t('board.member49.school')
+      },
+                       {
+        name: t('board.member50.name'),
+        role: t('board.member50.role'),
+        description: t('board.member50.description'),
+        image: "/bureau/pierref.webp",
+        school: t('board.member50.school')
+      }
     ],
     '2021': [
                                {
@@ -142,15 +275,79 @@ const Bureau = () => {
         name: t('board.member18.name'),
         role: t('board.member18.role'),
         description: t('board.member18.description'),
-        image: "/bureau/Pierre.webp",
+        image: "/bureau/pierrel.webp",
         school: t('board.member18.school')
       },
             {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school')
+      }
+      ,
+            {
+        name: t('board.member28.name'),
+        role: t('board.member28.role'),
+        description: t('board.member28.description'),
+        image: "/bureau/choy.webp",
+        school: t('board.member28.school')
+      },
+            {
+        name: t('board.member34.name'),
+        role: t('board.member34.role'),
+        description: t('board.member34.description'),
+        image: "/bureau/aymeric.webp",
+        school: t('board.member34.school')
+      },
+            {
+        name: t('board.member35.name'),
+        role: t('board.member35.role'),
+        description: t('board.member35.description'),
+        image: "/bureau/Morgan.webp",
+        school: t('board.member35.school')
+      },
+            {
+        name: t('board.member39.name'),
+        role: t('board.member39.role'),
+        description: t('board.member39.description'),
+        image: "/bureau/mathis.webp",
+        school: t('board.member39.school')
+      },
+            {
+        name: t('board.member40.name'),
+        role: t('board.member40.role'),
+        description: t('board.member40.description'),
+        image: "/bureau/paul.webp",
+        school: t('board.member40.school')
+      },
+            {
+        name: t('board.member44.name'),
+        role: t('board.member44.role'),
+        description: t('board.member44.description'),
+        image: "/bureau/andy.webp",
+        school: t('board.member44.school')
+      },
+            {
+        name: t('board.member52.name'),
+        role: t('board.member52.role'),
+        description: t('board.member52.description'),
+        image: "/bureau/paulw.webp",
+        school: t('board.member52.school')
+      },
+            {
+        name: t('board.member53.name'),
+        role: t('board.member53.role'),
+        description: t('board.member53.description'),
+        image: "/bureau/pierreantoine.webp",
+        school: t('board.member53.school')
+      },
+      {
+        name: t('board.member54.name'),
+        role: t('board.member54.role'),
+        description: t('board.member54.description'),
+        image: "/bureau/imen.webp",
+        school: t('board.member54.school')
       }
     ],
     '2020 - 2017': [
@@ -159,7 +356,7 @@ const Bureau = () => {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
-        image: "/bureau/thibault.webp",
+        image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school')
       },
                   {
@@ -188,7 +385,8 @@ const Bureau = () => {
         role: t('board.member11.role'),
         description: t('board.member11.description'),
         image: "/bureau/titouan.webp",
-        school: t('board.member11.school')
+        school: t('board.member11.school'),
+        linkedin: t('board.member11.linkedin')
       },
                                     {
         name: t('board.member12.name'),
@@ -239,6 +437,69 @@ const Bureau = () => {
         image: "/bureau/serge.webp",
         school: t('board.member7.school')
       },
+                        {
+        name: t('board.member29.name'),
+        role: t('board.member29.role'),
+        description: t('board.member29.description'),
+        image: "/bureau/brice.webp",
+        school: t('board.member29.school')
+      },
+                        {
+        name: t('board.member31.name'),
+        role: t('board.member31.role'),
+        description: t('board.member31.description'),
+        image: "/bureau/jules.webp",
+        school: t('board.member31.school')
+      },
+      {
+        name: t('board.member36.name'),
+        role: t('board.member36.role'),
+        description: t('board.member36.description'),
+        image: "/bureau/hadrien.webp",
+        school: t('board.member36.school')
+      },
+      {
+        name: t('board.member55.name'),
+        role: t('board.member55.role'),
+        description: t('board.member55.description'),
+        image: "/bureau/thomas.webp",
+        school: t('board.member55.school')
+      },
+      {
+        name: t('board.member56.name'),
+        role: t('board.member56.role'),
+        description: t('board.member56.description'),
+        image: "/bureau/clementb.webp",
+        school: t('board.member56.school')
+      },
+      {
+        name: t('board.member57.name'),
+        role: t('board.member57.role'),
+        description: t('board.member57.description'),
+        image: "/bureau/jeremie.webp",
+        school: t('board.member57.school')
+      },
+      {
+        name: t('board.member61.name'),
+        role: t('board.member61.role'),
+        description: t('board.member61.description'),
+        image: "/bureau/jb.webp",
+        school: t('board.member61.school')
+      },
+      {
+        name: t('board.member64.name'),
+        role: t('board.member64.role'),
+        description: t('board.member64.description'),
+        image: "/bureau/maxl.webp",
+        school: t('board.member64.school')
+      },
+      {
+        name: t('board.member65.name'),
+        role: t('board.member65.role'),
+        description: t('board.member65.description'),
+        image: "/bureau/manu.webp",
+        school: t('board.member65.school')
+      }
     ]
 
   };

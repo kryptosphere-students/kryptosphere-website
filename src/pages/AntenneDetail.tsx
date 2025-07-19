@@ -95,7 +95,7 @@ const AntenneDetail = () => {
       ],
       descriptionKey: 'antennes.paris4.description'
     },
-    londres: {
+    london: {
       name: t('cities.london'),
       city: t('cities.london'),
       coordinates: { lat: 51.5074, lng: -0.1278 },
@@ -107,13 +107,13 @@ const AntenneDetail = () => {
       heroImage: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+XX XX XX XX XX',
+        phone: '+ 33 6 08 81 90 19',
         address: '37–38 John Street London WC1N 2AT United Kingdom'
       },
       bureau: [
-        { name: 'James Wilson', role: t('roles.president'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
-        { name: 'Sarah Johnson', role: t('roles.vicePresident'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' },
-        { name: 'David Brown', role: t('roles.treasurer'), photo: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp' }
+        { name: 'Thibaut GRAVELLE-VIVIEN', role: t('roles.president'), photo: '/bureau/thib.webp' },
+        { name: 'Lery PHELIPPEAU', role: t('roles.vicePresident'), photo: '/bureau/lery.webp' },
+        { name: 'Jérémie LEROY', role: t('roles.treasurer'), photo: '/bureau/leroy.webp' }
       ],
       gallery: [
         'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
@@ -123,7 +123,7 @@ const AntenneDetail = () => {
         'https://www.devinci.fr/wordpress/wp-content/uploads/2022/11/KRYPTOSPHERE-1200x700.jpg',
         'https://www.planetegrandesecoles.com/wp-content/uploads/2022/05/Sans-titre-2.jpg.webp'
       ],
-      descriptionKey: 'antennes.londres.description'
+      descriptionKey: 'antennes.london.description'
     },
     mons: {
       name: t('cities.mons'),
@@ -546,7 +546,6 @@ const AntenneDetail = () => {
           </div>
         </div>
       </section>
-
 
       {/* Contact & Map Section */}
       <section className="py-20 bg-slate-800/30">

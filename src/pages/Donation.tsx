@@ -6,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const handleTorClick = () => {
   alert(
-    "💡 Ce lien .onion doit être ouvert avec le navigateur TOR (pour donner directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur, vous pouvez le télécharger ici :\nhttps://www.torproject.org/\n\nSinon, copiez ce lien et ouvrez-le dans TOR :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion"
+    "💡 Pour un don en BTC, le lien qui suit (xxxx.onion) doit être ouvert avec le navigateur Tor Browser (don en BTC sans intermédiaires, directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur (Tor Browser), vous pouvez le télécharger ici :\nhttps://www.torproject.org/\n\nSinon, copiez ce lien et ouvrez-le dans TOR :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos"
   );
 
   window.open(
@@ -113,7 +113,6 @@ const Donation = () => {
       </section>
 
       {/* Bouton pour donation en Bitcoin */}
-
 
 
       {/* Don en cryptomonnaies */}
