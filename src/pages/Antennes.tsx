@@ -82,7 +82,7 @@ const Antennes = () => {
       image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
     },
     {
-      id: '#',
+      id: 'escp',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
@@ -92,7 +92,7 @@ const Antennes = () => {
       image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
     },
     {
-      id: '#',
+      id: 'london',
       name: t('cities.london'),
       city: t('cities.london'),
       country: t('countries.uk'),
@@ -267,3 +267,4 @@ const Antennes = () => {
 };
 
 export default Antennes;
+
