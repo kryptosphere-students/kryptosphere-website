@@ -73,7 +73,6 @@ const SponsorsSection = () => {
         <h3 className="text-white text-2xl md:text-3xl font-bold text-center mb-8">{title}</h3>
         <div className="relative">
           <Carousel opts={{ align: 'start', loop: true }} plugins={[AutoScroll({ speed: autoScrollSpeed, stopOnInteraction: false })]}>
-            <CarouselPrevious />
             <CarouselContent>
               {items.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/4 basis-1/2">
@@ -88,7 +87,6 @@ const SponsorsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselNext />
           </Carousel>
         </div>
       </div>
@@ -102,7 +100,6 @@ const SponsorsSection = () => {
         <h3 className="text-white text-3xl font-bold text-center mb-12">{title}</h3>
         <div className="relative">
           <Carousel opts={{ align: 'start', loop: true }} plugins={[AutoScroll({ speed: autoScrollSpeed, stopOnInteraction: false })]}>
-            <CarouselPrevious />
             <CarouselContent>
               {items.map((outlet, index) => (
                 <CarouselItem key={index} className="md:basis-1/5 basis-1/2">
@@ -117,7 +114,6 @@ const SponsorsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselNext />
           </Carousel>
         </div>
       </div>
