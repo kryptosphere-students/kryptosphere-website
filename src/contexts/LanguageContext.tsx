@@ -1,5 +1,5 @@
 
-import { translations } from '@/components/StatsSection';
+import { translations } from '@/contexts/translations';
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'fr' | 'en';

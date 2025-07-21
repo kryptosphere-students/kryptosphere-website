@@ -3,22 +3,23 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Heart, Euro, Users, Target, CreditCard, Wallet } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogClose
+} from '../components/ui/dialog';
 
-const handleTorClick = () => {
-  alert(
-    "💡 Pour un don en BTC, le lien qui suit (xxxx.onion) doit être ouvert avec le navigateur Tor Browser (don en BTC sans intermédiaires, directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur (Tor Browser), vous pouvez le télécharger ici :\nhttps://www.torproject.org/\n\nSinon, copiez ce lien et ouvrez-le dans TOR :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos"
-  );
-
-  window.open(
-    "http://2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
-    "_blank"
-  );
-};
+const TOR_URL = "http://2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos";
 
 const Donation = () => {
   const [amount, setAmount] = useState('50');
   const [customAmount, setCustomAmount] = useState('');
   const [paymentMethod, setPaymentMethod] = useState('card');
+  const [openTorModal, setOpenTorModal] = useState(false);
   const { t } = useLanguage();
 
   const predefinedAmounts = ['25', '50', '100', '250'];
@@ -134,12 +135,41 @@ const Donation = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Bitcoin Lightning</h3>
-              <button
-  onClick={handleTorClick}
-  className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25 transform hover:-translate-y-1"
->
-  {t('donation.reportsBTC').split('\n')[0]}
-</button>
+              <Dialog open={openTorModal} onOpenChange={setOpenTorModal}>
+                <DialogTrigger asChild>
+                  <button
+                    onClick={() => setOpenTorModal(true)}
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/25 transform hover:-translate-y-1"
+                  >
+                    {t('donation.reportsBTC').split('\n')[0]}
+                  </button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>{t('donation.btcModal.title')}</DialogTitle>
+                  </DialogHeader>
+                  <DialogDescription>
+                    <pre className="whitespace-pre-wrap break-all overflow-x-auto text-sm mb-4">{t('donation.btcModal.body')}</pre>
+                  </DialogDescription>
+                  <div className="flex justify-end gap-2 mt-4">
+                    <DialogClose asChild>
+                      <button
+                        className="px-4 py-2 rounded bg-slate-200 text-slate-900 font-semibold hover:bg-slate-300 transition"
+                      >
+                        {t('donation.btcModal.close')}
+                      </button>
+                    </DialogClose>
+                    <a
+                      href={TOR_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded bg-orange-600 text-white font-semibold hover:bg-orange-700 transition"
+                    >
+                      {t('donation.btcModal.button')}
+                    </a>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
 
             {/* Ethereum */}
