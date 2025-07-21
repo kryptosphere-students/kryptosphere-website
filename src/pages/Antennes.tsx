@@ -82,7 +82,7 @@ const Antennes = () => {
       image: 'https://i.ytimg.com/vi/mF_yJHWc9S0/maxresdefault.jpg',
     },
     {
-      id: 'escp',
+      id: '#',
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
