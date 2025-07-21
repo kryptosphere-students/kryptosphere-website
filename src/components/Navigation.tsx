@@ -3,11 +3,20 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Helper to get current language from the URL
+function getLangFromPath(pathname: string) {
+  if (pathname.startsWith('/en')) return 'en';
+  if (pathname.startsWith('/fr')) return 'fr';
+  return 'fr'; // default
+}
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const lang = getLangFromPath(location.pathname);
+  const langPrefix = `/${lang}`;
+  const isHomePage = location.pathname === `/${lang}` || location.pathname === '/';
 
   type NavItem = {
     name: string;
@@ -16,11 +25,11 @@ const Navigation = () => {
   };
 
   const navItems: NavItem[] = [
-    { name: t('nav.home'), path: '/' },
-    { name: t('nav.board'), path: '/bureau' },
-    { name: t('nav.association'), path: '/association' },
-    { name: t('nav.branches'), path: '/antennes' },
-    { name: t('nav.events'), path: '/events' },
+    { name: t('nav.home'), path: `${langPrefix}/` },
+    { name: t('nav.board'), path: `${langPrefix}/bureau` },
+    { name: t('nav.association'), path: `${langPrefix}/association` },
+    { name: t('nav.branches'), path: `${langPrefix}/antennes` },
+    { name: t('nav.events'), path: `${langPrefix}/events` },
     // {
     //   name: t('nav.events'),
     //   subItems: [
@@ -28,8 +37,8 @@ const Navigation = () => {
     //     { name: 'KryptoTour', path: '/events/krypto-tour' }
     //   ]
     // },
-    { name: t('nav.publications'), path: '/publications' },
-    { name: t('nav.donate'), path: '/donation' }
+    { name: t('nav.publications'), path: `${langPrefix}/publications` },
+    { name: t('nav.donate'), path: `${langPrefix}/donation` }
   ];
 
   const toggleLanguage = () => {
@@ -91,7 +100,7 @@ const Navigation = () => {
               )
             ))}
             <Link
-              to="/krypto-tour"
+              to={`${langPrefix}/krypto-tour`}
               className="ml-2 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
             >
               KRYPTO-TOUR
@@ -147,7 +156,7 @@ const Navigation = () => {
               </React.Fragment>
             ))}
             <Link
-              to="/krypto-tour"
+              to={`${langPrefix}/krypto-tour`}
               className="block mt-2 mb-4 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl text-center transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
               onClick={() => setIsOpen(false)}
             >
