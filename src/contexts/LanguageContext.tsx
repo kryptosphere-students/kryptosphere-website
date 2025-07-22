@@ -4,6 +4,13 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'fr' | 'en';
 
+// Helper to get current language from the URL
+export const getLangFromPath = (pathname: string): Language => {
+  if (pathname.startsWith('/en')) return 'en';
+  if (pathname.startsWith('/fr')) return 'fr';
+  return 'fr'; // default
+};
+
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;

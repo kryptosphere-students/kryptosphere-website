@@ -1,10 +1,13 @@
 import React from 'react';
-import { ArrowRight, Users } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-import { Link } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom';
+import { ArrowRight, MapPin } from 'lucide-react';
+import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 
 const Hero = () => {
   const { t } = useLanguage();
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname);
+  const langPrefix = `/${lang}`;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -63,7 +66,7 @@ const Hero = () => {
 >
   {t('hero.join')}
 </a>
-<Link to="/antennes" className="text-white hover:text-blue-400 transition-colors duration-300 underline">
+<Link to={`${langPrefix}/antennes`} className="text-white hover:text-blue-400 transition-colors duration-300 underline">
   {t('hero.branches')}
 </Link>
           </div>
