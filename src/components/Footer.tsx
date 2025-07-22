@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, MessageCircle, Mail, MapPin, Phone, Twitter, Youtube, Instagram, Facebook, Globe } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 
 const Footer = () => {
   const { t, language, setLanguage } = useLanguage();
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname);
+  const langPrefix = `/${lang}`;
 
   const legalLinks = [
     { key: 'footer.legal.disclaimer', href: '/documents/avertissement.pdf' },
@@ -71,11 +74,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-6 text-lg text-white">{t('footer.navigation')}</h4>
             <ul className="space-y-3 text-slate-400">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors duration-200">{t('nav.home')}</Link></li>
-              <li><Link to="/bureau" className="hover:text-blue-400 transition-colors duration-200">{t('nav.board')}</Link></li>
-              <li><Link to="/association" className="hover:text-blue-400 transition-colors duration-200">{t('nav.association')}</Link></li>
-              <li><Link to="/antennes" className="hover:text-blue-400 transition-colors duration-200">{t('nav.branches')}</Link></li>
-              <li><Link to="/events" className="hover:text-blue-400 transition-colors duration-200">{t('nav.events')}</Link></li>
+              <li><Link to={`${langPrefix}/`} className="hover:text-blue-400 transition-colors duration-200">{t('nav.home')}</Link></li>
+              <li><Link to={`${langPrefix}/bureau`} className="hover:text-blue-400 transition-colors duration-200">{t('nav.board')}</Link></li>
+              <li><Link to={`${langPrefix}/association`} className="hover:text-blue-400 transition-colors duration-200">{t('nav.association')}</Link></li>
+              <li><Link to={`${langPrefix}/antennes`} className="hover:text-blue-400 transition-colors duration-200">{t('nav.branches')}</Link></li>
+              <li><Link to={`${langPrefix}/events`} className="hover:text-blue-400 transition-colors duration-200">{t('nav.events')}</Link></li>
               <li>
                 <a href="/publications" className="hover:text-blue-400 transition-colors">
                   {t('nav.publications')}
@@ -132,10 +135,10 @@ const Footer = () => {
           <p>&copy; {t('footer.copyright')}</p>
         </div>
       </div>
-      {/* Language Switcher - absolute bottom right */}
+      {/* Language Switcher - visible on all devices */}
       <button
         onClick={toggleLanguage}
-        className="hidden md:flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-200 font-medium bg-slate-800/50 px-5 py-2 rounded-full text-base fixed bottom-6 right-6 z-50 shadow-lg"
+        className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors duration-200 font-medium bg-slate-800/50 px-5 py-2 rounded-full text-base fixed bottom-6 right-6 z-50 shadow-lg"
       >
         <Globe size={20} />
         {language.toUpperCase()}

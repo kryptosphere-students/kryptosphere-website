@@ -1,52 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- French URLs -->
   <url>
-    <loc>https://www.kryptosphere.org/</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/gouvernance</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/bureau</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/association</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/association</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/antennes</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/antennes</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/evenements</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/events</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/publications</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/publications</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/soutenir</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/donation</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.kryptosphere.org/krypto-tour</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.kryptosphere.org/fr/krypto-tour</loc>
+    <lastmod>2025-01-22</lastmod>
     <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- English URLs -->
+  <url>
+    <loc>https://www.kryptosphere.org/en/</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/bureau</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/association</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/antennes</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/events</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/publications</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/donation</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.kryptosphere.org/en/krypto-tour</loc>
+    <lastmod>2025-01-22</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>

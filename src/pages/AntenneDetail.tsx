@@ -1,15 +1,18 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { MapPin, Mail, Phone, ArrowLeft, Users, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 import AntenneMapSingle from '@/components/AntenneMapSingle';
 
 const AntenneDetail = () => {
   const { id } = useParams();
   const { t } = useLanguage();
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname);
+  const langPrefix = `/${lang}`;
 
   const antennesData = {
     essec: {
@@ -454,7 +457,7 @@ const AntenneDetail = () => {
         <Navigation />
         <div className="pt-24 text-center text-white">
           <h1 className="text-4xl font-bold">{t('antenne.notFound')}</h1>
-          <Link to="/antennes" className="text-blue-400 hover:text-blue-300 mt-4 inline-block">
+          <Link to={`${langPrefix}/antennes`} className="text-blue-400 hover:text-blue-300 mt-4 inline-block">
             {t('branches.backToList')}
           </Link>
         </div>
@@ -478,7 +481,7 @@ const AntenneDetail = () => {
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
             <Link
-              to="/antennes"
+              to={`${langPrefix}/antennes`}
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8 transition-colors"
             >
               <ArrowLeft size={20} />
