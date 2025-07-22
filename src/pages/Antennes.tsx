@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import AntennesMap from '../components/AntennesMap';
 import { Users, Mail, Phone, ExternalLink, Target, MapPin } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 
 const Antennes = () => {
   const [selectedAntenne, setSelectedAntenne] = useState<string | null>(null);
   const { t } = useLanguage();
+  const location = useLocation();
+  const lang = getLangFromPath(location.pathname);
+  const langPrefix = `/${lang}`;
 
   const antennes = [
     {
@@ -203,7 +206,7 @@ const Antennes = () => {
                       <p className="text-slate-300 mb-2">{antenne.school}</p>
                       <p className="text-sm text-slate-400">{antenne.description}</p>
                       <Link
-                        to={`/antennes/${antenne.id}`}
+                        to={`${langPrefix}/antennes/${antenne.id}`}
                         className="inline-block mt-3 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                       >
                         {t('branches.discover')}
@@ -220,7 +223,7 @@ const Antennes = () => {
             {antennes.map((antenne) => (
               <Link
                 key={antenne.id}
-                to={`/antennes/${antenne.id}`}
+                to={`${langPrefix}/antennes/${antenne.id}`}
                 className="bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-slate-700/50 transition-all duration-300 group flex flex-col h-full"
               >
                 <div className="aspect-video relative rounded-xl overflow-hidden">

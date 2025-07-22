@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-
-// Helper to get current language from the URL
-function getLangFromPath(pathname: string) {
-  if (pathname.startsWith('/en')) return 'en';
-  if (pathname.startsWith('/fr')) return 'fr';
-  return 'fr'; // default
-}
+import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +9,13 @@ const Navigation = () => {
   const location = useLocation();
   const lang = getLangFromPath(location.pathname);
   const langPrefix = `/${lang}`;
-  const isHomePage = location.pathname === `/${lang}` || location.pathname === '/';
+  
+  // More robust home page detection
+  const isHomePage = location.pathname === `/${lang}` || 
+                    location.pathname === `/${lang}/` || 
+                    location.pathname === '/' ||
+                    location.pathname === '/fr' ||
+                    location.pathname === '/en';
 
   type NavItem = {
     name: string;
