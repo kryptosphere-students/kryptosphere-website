@@ -1615,7 +1615,6 @@ export const translations = {
     'antennes.london.name': 'Hult Business School',
     'antennes.london.description': "KRYPTOSPHERE® LONDON embodies our European expansion, connecting traditional finance and the crypto universe.",
 
-
         // KryptoTour
         'kryptotour.date': 'October 11, 2025 · Lyon',
         'kryptotour.title': 'KRYPTO-TOUR LYON',
