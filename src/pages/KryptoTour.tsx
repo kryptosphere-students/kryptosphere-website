@@ -46,11 +46,25 @@ const KryptoTour = () => {
             twitter: "https://x.com/powerhasheur",
         },
         {
+            name: "Adli Takkal Bataille",
+            role: "Usual, DEO",
+            img: "/krypto-tour/speakers/adli.webp",
+            linkedin: "https://www.linkedin.com/in/adlitb/",
+            twitter: "https://x.com/AdliTB",
+        },
+        {
             name: "Quentin Werle",
             role: "Head of Portfolio Management at 6Monks",
             img: "/krypto-tour/speakers/qwerle.webp",
             linkedin: "https://www.linkedin.com/in/quentin-werle/",
             twitter: "https://x.com/quentin_werle",
+        },
+        {
+            name: "Pudgy",
+            role: "Pudgy Penguins",
+            img: "/krypto-tour/speakers/pudgy.webp",
+            linkedin: "https://www.linkedin.com/company/pudgy-penguins/posts/?feedView=all",
+            twitter: "https://x.com/pudgypenguins",
         },
         {
             name: "David Bchiri",
@@ -93,20 +107,6 @@ const KryptoTour = () => {
             img: "/krypto-tour/speakers/ftrepo.webp",
             linkedin: "https://www.linkedin.com/in/trepoflorent/",
             twitter: "https://x.com/florenttrepo",
-        },
-        {
-            name: "Adli Takkal Bataille",
-            role: "Usual, DEO",
-            img: "/krypto-tour/speakers/adli.webp",
-            linkedin: "https://www.linkedin.com/in/adlitb/",
-            twitter: "https://x.com/AdliTB",
-        },
-        {
-            name: "Pudgy",
-            role: "Pudgy Penguins",
-            img: "/krypto-tour/speakers/pudgy.webp",
-            linkedin: "https://www.linkedin.com/company/pudgy-penguins/posts/?feedView=all",
-            twitter: "https://x.com/pudgypenguins",
         },
         {
             name: "Addy",
