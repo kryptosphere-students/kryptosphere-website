@@ -806,7 +806,31 @@ export const translations = {
     'donation.btcModal.title': 'Donner en Bitcoin via Tor',
     'donation.btcModal.body': "💡 Pour un don en BTC, le lien qui suit (xxxx.onion) doit être ouvert avec le navigateur Tor Browser (don en BTC sans intermédiaires, directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur (Tor Browser), vous pouvez le télécharger ici : https://www.torproject.org/\n\nSinon, copiez ce lien et ouvrez-le dans TOR :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
     'donation.btcModal.button': 'Ouvrir le lien dans Tor',
-    'donation.btcModal.close': 'Fermer'
+    'donation.btcModal.close': 'Fermer',
+
+    // KryptoTour
+    'kryptotour.date': '11 octobre 2025 · Lyon',
+    'kryptotour.title': 'KRYPTO-TOUR LYON',
+    'kryptotour.subtitle': 'Lancé en 2022, le KRYPTO-TOUR est l\'événement phare de KRYPTOSPHERE® pour démocratiser la blockchain en France. Rendez-vous le 11 octobre 2025 à Lyon, pour une journée de conférences, tables rondes et expositions.',
+    'kryptotour.stats.participants': 'Participants',
+    'kryptotour.stats.speakers': 'Speakers',
+    'kryptotour.stats.partners': 'Partenaires',
+    'kryptotour.stats.booths': 'Stands',
+    'kryptotour.format.title': 'Le format',
+    'kryptotour.format.description': 'Rejoignez la communauté blockchain française au KRYPTO-TOUR, l\'événement phare de KRYPTOSPHERE®, qui depuis 2022 a démocratisé les technologies Web3 au-delà de Paris. Après deux éditions à Marseille et une première lyonnaise ayant réuni plus de 500 participants, le KRYPTO-TOUR revient à Lyon le 11 octobre 2025 pour une 4ᵉ édition encore plus ambitieuse.',
+    'kryptotour.format.description2': 'Conférences, tables rondes, keynotes et stands : une journée pour connecter les mondes de la finance traditionnelle et du Web3, créer des synergies concrètes et comprendre les enjeux d\'un secteur en pleine transformation. Ne ratez pas l\'événement où l\'écosystème français se rencontre, débat et construit l\'avenir de la blockchain.',
+    'kryptotour.speakers.title': 'Speakers',
+    'kryptotour.sponsors.title': 'Sponsors',
+    'kryptotour.sponsors.diamond': 'Diamond',
+    'kryptotour.sponsors.gold': 'Gold',
+    'kryptotour.sponsors.silver': 'Silver',
+    'kryptotour.sponsors.bronze': 'Bronze',
+    'kryptotour.sponsors.comingSoon': 'Coming Soon',
+    'kryptotour.ticketing.title': 'Billetterie',
+    'kryptotour.communityPartners.title': 'Partenaires communautaires',
+    'kryptotour.mediaPartners.title': 'Partenaire média',
+    'kryptotour.address.title': 'Adresse',
+    'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France'
   },
   en: {
     // Navigation
@@ -1592,6 +1616,29 @@ export const translations = {
     'antennes.london.description': "KRYPTOSPHERE® LONDON embodies our European expansion, connecting traditional finance and the crypto universe.",
 
 
+        // KryptoTour
+        'kryptotour.date': 'October 11, 2025 · Lyon',
+        'kryptotour.title': 'KRYPTO-TOUR LYON',
+        'kryptotour.subtitle': 'Launched in 2022, the KRYPTO-TOUR is KRYPTOSPHERE®\'s flagship event to democratize blockchain in France. Join us on October 11, 2025 in Lyon for a full day of conferences, roundtables, and exhibitions.',
+        'kryptotour.stats.participants': 'Participants',
+        'kryptotour.stats.speakers': 'Speakers',
+        'kryptotour.stats.partners': 'Partners',
+        'kryptotour.stats.booths': 'Booths',
+        'kryptotour.format.title': 'The format',
+        'kryptotour.format.description': 'Join the French blockchain community at the KRYPTO-TOUR, KRYPTOSPHERE®\'s flagship event, which since 2022 has been democratizing Web3 technologies beyond Paris. After two editions in Marseille and a first one in Lyon that brought together over 500 participants, the KRYPTO-TOUR returns to Lyon on October 11, 2025, for a 4th edition that\'s more ambitious than ever.',
+        'kryptotour.format.description2': 'Conferences, panels, keynotes, and booths: a full day to connect the worlds of traditional finance and Web3, spark real synergies, and explore the challenges of a rapidly evolving sector. Don\'t miss the event where the French ecosystem meets, debates, and builds the future of blockchain.',
+        'kryptotour.speakers.title': 'Speakers',
+        'kryptotour.sponsors.title': 'Sponsors',
+        'kryptotour.sponsors.diamond': 'Diamond',
+        'kryptotour.sponsors.gold': 'Gold',
+        'kryptotour.sponsors.silver': 'Silver',
+        'kryptotour.sponsors.bronze': 'Bronze',
+        'kryptotour.sponsors.comingSoon': 'Coming Soon',
+        'kryptotour.ticketing.title': 'Ticketing',
+        'kryptotour.communityPartners.title': 'Community Partners',
+        'kryptotour.mediaPartners.title': 'Media Partner',
+        'kryptotour.address.title': 'Address',
+        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
     
     'donation.btcModal.title': 'Donate in Bitcoin via Tor',
     'donation.btcModal.body': "💡 For a BTC donation, the following link (xxxx.onion) must be opened with the Tor Browser (BTC donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nOtherwise, copy this link and open it in TOR:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
