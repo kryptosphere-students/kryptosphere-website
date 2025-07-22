@@ -327,12 +327,12 @@ const KryptoTour = () => {
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                             {[
                                 { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
-                                { img: '/krypto-tour/sponsors/alyra.webp', url: 'https://www.alyra.fr/', name: 'ALYRA' },
-                                { img: '/krypto-tour/sponsors/commons.webp', url: 'https://www.xrpl-commons.org/', name: 'XRPL Commons' },
-                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
                                 { img: '/krypto-tour/sponsors/meria.webp', url: 'https://www.meria.com/?__cf_chl_rt_tk=coMMdm.WTYsaW2Dj2W8xZj8P6oJlrmuCvZtOSnj90bc-1753186731-1.0.1.1-.ye_2PS1SIQgS2dm6swqleXNXN86_6p1qfe4QSu6Lbg', name: 'Meria' },
+                                { img: '/krypto-tour/sponsors/commons.webp', url: 'https://www.xrpl-commons.org/', name: 'XRPL Commons' },
+                                { img: '/krypto-tour/sponsors/pudgy.webp', url: 'https://pudgypenguins.com/', name: 'Pudgy Penguins' },
+                                { img: '/krypto-tour/sponsors/alyra.webp', url: 'https://www.alyra.fr/', name: 'ALYRA' },
                                 { img: '/krypto-tour/sponsors/tabo.webp', url: 'https://x.com/cryptotaboo_xyz', name: 'Crypto Taboo' },
-                                { img: '/krypto-tour/sponsors/pudgy.webp', url: 'https://pudgypenguins.com/', name: 'Pudgy Penguins' }
+                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
