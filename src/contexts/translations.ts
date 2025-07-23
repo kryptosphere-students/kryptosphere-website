@@ -149,7 +149,7 @@ export const translations = {
     'board.member26.description': "Program Manager KRYPTOSPHERE® Accelerator",
     'board.member26.school': 'EMLV',
     'board.member27.name': 'Thibault LANGLOIS-BERTHELOT',
-    'board.member27.role': 'Représentant légal & Fondateur',
+    'board.member27.role': 'Représentant & Fondateur',
     'board.member27.description': "Représentant légal accompagnant l'association dans ses aspects complexes.",
     'board.member27.school': 'KRYPTOSPHERE® FRANCE',
     'board.member28.name': 'Choi JANGHYUN',
