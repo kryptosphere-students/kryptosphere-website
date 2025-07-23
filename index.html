@@ -13,7 +13,7 @@
   <meta name="description"
     content="KRYPTOSPHERE® est le 1er réseau étudiant en Europe dédié aux technologies innovantes comme les crypto-actifs, la blockchain, l’intelligence artificielle et la cybersécurité." />
   <meta name="keywords"
-    content="kryptosphere, cryptosphere, blockchain, crypto, bitcoin, cryptomonnaies, IA, cybersécurité, tech, innovation, étudiants, école, France, Europe" />
+    content="kryptosphere, cryptosphere, blockchain, crypto, bitcoin, cryptomonnaies, IA, cybersécurité, tech, innovation, étudiants, école, France, Europe, startup, entrepreneur" />
   <meta name="author" content="Association KRYPTOSPHERE® FRANCE" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.kryptosphere.org/" />
@@ -41,27 +41,64 @@
   <meta name="twitter:creator" content="@kryptosphere" />
 
   <!-- Favicon / App Icons -->
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="public/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.kryptosphere.org/#organization",
+  "name": "KRYPTOSPHERE",
+  "url": "https://www.kryptosphere.org/",
+  "logo": "https://www.kryptosphere.org/ksLogo.webp",
+  "sameAs": [
+    "https://twitter.com/kryptosphere",
+    "https://www.linkedin.com/company/kryptosphere",
+    "https://www.instagram.com/kryptosphereparis"
+  ],
+  "description": "Premier réseau étudiant européen sur les crypto-actifs, la blockchain, l'intelligence artificielle et de la cybersécurité.",
+  "foundingDate": "2017",
+  "founder": {
+    "@type": "Person",
+    "name": "Thibault Langlois-Berthelot",
+    "description": "Entrepreneur français, passionné par les crypto-actifs et l’éducation numérique. Président Fondateur de KRYPTOSPHERE.",
+    "jobTitle": "Président Fondateur",
+    "image": "https://thibaultlangloisberthelot.github.io/images/pic02.jpg",
+    "url": "https://www.linkedin.com/in/kryptosphere",
+    "sameAs": [
+      "https://www.instagram.com/docteurbtc",
+      "https://x.com/docteurbtc"
+    ],
+    "affiliation": {
       "@type": "Organization",
-      "@id": "https://www.kryptosphere.org/#organization",
-      "name": "KRYPTOSPHERE",
-      "url": "https://www.kryptosphere.org/",
-      "logo": "https://www.kryptosphere.org/ksLogo.webp",
-      "sameAs": [
-        "https://twitter.com/kryptosphere",
-        "https://www.linkedin.com/company/kryptosphere",
-        "https://www.instagram.com/kryptosphereparis"
-      ],
-      "description": "Premier réseau étudiant européen autour des crypto-actifs, de la blockchain, de l'IA et de la cybersécurité."
+      "name": "KRYPTOSPHERE"
+    },
+    "nationality": {
+      "@type": "Country",
+      "name": "France"
     }
-  </script>
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@kryptosphere.org",
+    "contactType": "customer service",
+    "areaServed": ["FR", "BE", "GB"],
+    "availableLanguage": ["French", "English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "59 Avenue de l'Observatoire",
+    "postalCode": "75014",
+    "addressLocality": "Paris",
+    "addressRegion": "Île-de-France",
+    "addressCountry": "FR"
+  }
+}
+</script>
+
 </head>
 
 <body>
