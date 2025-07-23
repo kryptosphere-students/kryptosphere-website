@@ -396,7 +396,6 @@ const Bureau = () => {
         description: t('board.member11.description'),
         image: "/bureau/titouan.webp",
         school: t('board.member11.school'),
-        linkedin: t('board.member11.linkedin')
       },
                                     {
         name: t('board.member12.name'),
