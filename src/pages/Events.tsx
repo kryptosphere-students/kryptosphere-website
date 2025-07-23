@@ -38,7 +38,7 @@ const Events = () => {
           {/* Button Lu.ma */}
           <div className="mb-16">
             <a
-              href="https://lu.ma/kryptosphere"
+              href="https://lu.ma/user/KRYPTOSPHERE"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 group"
