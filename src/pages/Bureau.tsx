@@ -52,7 +52,7 @@ const Bureau = () => {
         description: t('board.member27.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member27.school'),
-        linkedin: "https://fr.linkedin.com/in/kryptosphere/en", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
         twitter: "https://twitter.com/docteurbtc" // ajout lien X
       },
     ],
@@ -62,63 +62,72 @@ const Bureau = () => {
         role: t('board.member24.role'),
         description: t('board.member24.description'),
         image: "/bureau/mathiasbouguon.webp",
-        school: t('board.member24.school')
+        school: t('board.member24.school'),
+        linkedin: "https://fr.linkedin.com/in/mathias-bougon/fr", // ajout lien Linkedin
       },
                   {
         name: t('board.member25.name'),
         role: t('board.member25.role'),
         description: t('board.member25.description'),
         image: "/bureau/rayan.webp",
-        school: t('board.member25.school')
+        school: t('board.member25.school'),
+        linkedin: "https://fr.linkedin.com/in/ryan-thibault", // ajout lien Linkedin
       },
                         {
         name: t('board.member26.name'),
         role: t('board.member26.role'),
         description: t('board.member26.description'),
         image: "/bureau/gildas.webp",
-        school: t('board.member26.school')
+        school: t('board.member26.school'),
+        linkedin: "https://fr.linkedin.com/in/gildassoeiro", // ajout lien Linkedin
       },
                         {
         name: t('board.member30.name'),
         role: t('board.member30.role'),
         description: t('board.member30.description'),
         image: "/bureau/charles.webp",
-        school: t('board.member30.school')
+        school: t('board.member30.school'),
+        linkedin: "https://fr.linkedin.com/in/charles-andr%C3%A9-goichot", // ajout lien Linkedin
       },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member5.school')
+        school: t('board.member5.school'),
+        linkedin: "https://fr.linkedin.com/in/kryptosphere", // ajout lien Linkedin
       },
       {
         name: t('board.member32.name'),
         role: t('board.member32.role'),
         description: t('board.member32.description'),
         image: "/bureau/maksym.webp",
-        school: t('board.member32.school')
+        school: t('board.member32.school'),
+        linkedin: "https://fr.linkedin.com/in/maksym-andrushkiv", // ajout lien Linkedin
       },
       {
         name: t('board.member38.name'),
         role: t('board.member38.role'),
         description: t('board.member38.description'),
         image: "/bureau/emile.webp",
-        school: t('board.member38.school')
+        school: t('board.member38.school'),
+        linkedin: "https://fr.linkedin.com/in/emile-bremond", // ajout lien Linkedin
       },
             {
         name: t('board.member45.name'),
         role: t('board.member45.role'),
         description: t('board.member45.description'),
         image: "/bureau/nas.webp",
-        school: t('board.member45.school')
+        school: t('board.member45.school'),
+        linkedin: "https://www.linkedin.com/in/grihma-nasreddine/", // ajout lien Linkedin
       },
                   {
         name: t('board.member62.name'),
         role: t('board.member62.role'),
         description: t('board.member62.description'),
         image: "/bureau/mark.webp",
-        school: t('board.member62.school')
+        school: t('board.member62.school'),
+        linkedin: "https://fr.linkedin.com/in/mark-killianzinenberg", // ajout lien Linkedin
       }
     ],
     '2023': [
@@ -128,84 +137,96 @@ const Bureau = () => {
         role: t('board.member21.role'),
         description: t('board.member21.description'),
         image: "/bureau/maxime.webp",
-        school: t('board.member21.school')
+        school: t('board.member21.school'),
+        linkedin: "https://uk.linkedin.com/in/maxime-dienger/fr", // ajout lien Linkedin
       },
             {
         name: t('board.member22.name'),
         role: t('board.member22.role'),
         description: t('board.member22.description'),
         image: "/bureau/leo.webp",
-        school: t('board.member22.school')
+        school: t('board.member22.school'),
+        linkedin: "https://fr.linkedin.com/in/l%C3%A9o-jouanny", // ajout lien Linkedin
       },
                   {
         name: t('board.member23.name'),
         role: t('board.member23.role'),
         description: t('board.member23.description'),
         image: "/bureau/louis.webp",
-        school: t('board.member23.school')
+        school: t('board.member23.school'),
+        linkedin: "https://www.linkedin.com/in/louisfarcotlafond/", // ajout lien Linkedin
       },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member5.school')
+        school: t('board.member5.school'),
+        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
       },
       {
         name: t('board.member33.name'),
         role: t('board.member33.role'),
         description: t('board.member33.description'),
         image: "/bureau/maxence.webp",
-        school: t('board.member33.school')
+        school: t('board.member33.school'),
+        linkedin: "https://uk.linkedin.com/in/maxence-laisne", // ajout lien Linkedin
       },
        {
         name: t('board.member37.name'),
         role: t('board.member37.role'),
         description: t('board.member37.description'),
         image: "/bureau/preau.webp",
-        school: t('board.member37.school')
+        school: t('board.member37.school'),
+        linkedin: "https://fr.linkedin.com/in/beno%C3%AEtpreau", // ajout lien Linkedin
       },
       {
         name: t('board.member46.name'),
         role: t('board.member46.role'),
         description: t('board.member46.description'),
         image: "/bureau/manonc.webp",
-        school: t('board.member46.school')
+        school: t('board.member46.school'),
+        linkedin: "https://fr.linkedin.com/in/manon-coiffard-9810401b7", // ajout lien Linkedin
       },
             {
         name: t('board.member47.name'),
         role: t('board.member47.role'),
         description: t('board.member47.description'),
         image: "/bureau/quentin.webp",
-        school: t('board.member47.school')
+        school: t('board.member47.school'),
+        linkedin: "https://fr.linkedin.com/in/quentin-bailly", // ajout lien Linkedin
       },
       {
         name: t('board.member51.name'),
         role: t('board.member51.role'),
         description: t('board.member51.description'),
         image: "/bureau/sara.webp",
-        school: t('board.member51.school')
+        school: t('board.member51.school'),
+        linkedin: "https://fr.linkedin.com/in/sarafeore", // ajout lien Linkedin
       },
       {
         name: t('board.member59.name'),
         role: t('board.member59.role'),
         description: t('board.member59.description'),
         image: "/bureau/lery.webp",
-        school: t('board.member59.school')
+        school: t('board.member59.school'),
+        linkedin: "https://uk.linkedin.com/in/lery-phelippeau-b4426819a", // ajout lien Linkedin
       },
       {
         name: t('board.member60.name'),
         role: t('board.member60.role'),
         description: t('board.member60.description'),
         image: "/bureau/thib.webp",
-        school: t('board.member60.school')
+        school: t('board.member60.school'),
+        linkedin: "https://uk.linkedin.com/in/thibaut-gravelle-vivien-a937a41b4", // ajout lien Linkedin
       },
                 {
         name: t('board.member63.name'),
         role: t('board.member63.role'),
         description: t('board.member63.description'),
         image: "/bureau/salim.webp",
-        school: t('board.member63.school')
+        school: t('board.member63.school'),
+        linkedin: "https://fr.linkedin.com/in/salim-lakhal", // ajout lien Linkedin
       },
     ],
     '2022': [
@@ -214,63 +235,72 @@ const Bureau = () => {
         role: t('board.member19.role'),
         description: t('board.member19.description'),
         image: "/bureau/mathias.webp",
-        school: t('board.member19.school')
+        school: t('board.member19.school'),
+        linkedin: "https://fr.linkedin.com/in/matthias-vallet", // ajout lien Linkedin
       },
             {
         name: t('board.member20.name'),
         role: t('board.member20.role'),
         description: t('board.member20.description'),
         image: "/bureau/gabriel.webp",
-        school: t('board.member20.school')
+        school: t('board.member20.school'),
+        linkedin: "https://fr.linkedin.com/in/gabriel-begazo", // ajout lien Linkedin
       },
       {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member5.school')
+        school: t('board.member5.school'),
+        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
       },
       {
         name: t('board.member41.name'),
         role: t('board.member41.role'),
         description: t('board.member41.description'),
         image: "/bureau/louisd.webp",
-        school: t('board.member41.school')
+        school: t('board.member41.school'),
+        linkedin: "https://fr.linkedin.com/in/louis-doidy", // ajout lien Linkedin
       },
       {
         name: t('board.member42.name'),
         role: t('board.member42.role'),
         description: t('board.member42.description'),
         image: "/bureau/nandy.webp",
-        school: t('board.member42.school')
+        school: t('board.member42.school'),
+        linkedin: "https://fr.linkedin.com/in/nandyba/en", // ajout lien Linkedin
       },
        {
         name: t('board.member43.name'),
         role: t('board.member43.role'),
         description: t('board.member43.description'),
         image: "/bureau/nour.webp",
-        school: t('board.member43.school')
+        school: t('board.member43.school'),
+        linkedin: "https://fr.linkedin.com/in/rammal-nour/fr", // ajout lien Linkedin
       },
                  {
         name: t('board.member48.name'),
         role: t('board.member48.role'),
         description: t('board.member48.description'),
         image: "/bureau/pierrelouis.webp",
-        school: t('board.member48.school')
+        school: t('board.member48.school'),
+        linkedin: "https://www.linkedin.com/in/pierre-louis-haboury-807061237/", // ajout lien Linkedin
       },
                  {
         name: t('board.member49.name'),
         role: t('board.member49.role'),
         description: t('board.member49.description'),
         image: "/bureau/lilyan.webp",
-        school: t('board.member49.school')
+        school: t('board.member49.school'),
+        linkedin: "https://fr.linkedin.com/in/lilyanb", // ajout lien Linkedin
       },
                        {
         name: t('board.member50.name'),
         role: t('board.member50.role'),
         description: t('board.member50.description'),
         image: "/bureau/pierref.webp",
-        school: t('board.member50.school')
+        school: t('board.member50.school'),
+        linkedin: "https://www.linkedin.com/in/pierre-ftn/", // ajout lien Linkedin
       }
     ],
     '2021': [
@@ -279,21 +309,24 @@ const Bureau = () => {
         role: t('board.member17.role'),
         description: t('board.member17.description'),
         image: "/bureau/karolina.webp",
-        school: t('board.member17.school')
+        school: t('board.member17.school'),
+        linkedin: "https://fr.linkedin.com/in/karolina-gorna-29210a194", // ajout lien Linkedin
       },
       {
         name: t('board.member18.name'),
         role: t('board.member18.role'),
         description: t('board.member18.description'),
         image: "/bureau/pierrel.webp",
-        school: t('board.member18.school')
+        school: t('board.member18.school'),
+        linkedin: "https://fr.linkedin.com/in/pierre-lourdelet", // ajout lien Linkedin
       },
             {
         name: t('board.member5.name'),
         role: t('board.member5.role'),
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member5.school')
+        school: t('board.member5.school'),
+        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
       }
       ,
             {
@@ -301,63 +334,72 @@ const Bureau = () => {
         role: t('board.member28.role'),
         description: t('board.member28.description'),
         image: "/bureau/choy.webp",
-        school: t('board.member28.school')
+        school: t('board.member28.school'),
+        linkedin: "https://kr.linkedin.com/in/janghyunchoi", // ajout lien Linkedin
       },
             {
         name: t('board.member34.name'),
         role: t('board.member34.role'),
         description: t('board.member34.description'),
         image: "/bureau/aymeric.webp",
-        school: t('board.member34.school')
+        school: t('board.member34.school'),
+        linkedin: "https://fr.linkedin.com/in/aymericlabedan/en", // ajout lien Linkedin
       },
             {
         name: t('board.member35.name'),
         role: t('board.member35.role'),
         description: t('board.member35.description'),
         image: "/bureau/Morgan.webp",
-        school: t('board.member35.school')
+        school: t('board.member35.school'),
+        linkedin: "https://fr.linkedin.com/in/morgan-richaud-2b3484198", // ajout lien Linkedin
       },
             {
         name: t('board.member39.name'),
         role: t('board.member39.role'),
         description: t('board.member39.description'),
         image: "/bureau/mathis.webp",
-        school: t('board.member39.school')
+        school: t('board.member39.school'),
+        linkedin: "https://fr.linkedin.com/in/mathis-delaunay-21908a130", // ajout lien Linkedin
       },
             {
         name: t('board.member40.name'),
         role: t('board.member40.role'),
         description: t('board.member40.description'),
         image: "/bureau/paul.webp",
-        school: t('board.member40.school')
+        school: t('board.member40.school'),
+        linkedin: "https://fr.linkedin.com/in/paul-frambot", // ajout lien Linkedin
       },
             {
         name: t('board.member44.name'),
         role: t('board.member44.role'),
         description: t('board.member44.description'),
         image: "/bureau/andy.webp",
-        school: t('board.member44.school')
+        school: t('board.member44.school'),
+        linkedin: "https://fr.linkedin.com/in/andy-cousineau-b5294b195", // ajout lien Linkedin
       },
             {
         name: t('board.member52.name'),
         role: t('board.member52.role'),
         description: t('board.member52.description'),
         image: "/bureau/paulw.webp",
-        school: t('board.member52.school')
+        school: t('board.member52.school'),
+        linkedin: "https://fr.linkedin.com/in/paulwlf", // ajout lien Linkedin
       },
             {
         name: t('board.member53.name'),
         role: t('board.member53.role'),
         description: t('board.member53.description'),
         image: "/bureau/pierreantoine.webp",
-        school: t('board.member53.school')
+        school: t('board.member53.school'),
+        linkedin: "https://fr.linkedin.com/in/pierre-antoine-arsaguet/fr", // ajout lien Linkedin
       },
       {
         name: t('board.member54.name'),
         role: t('board.member54.role'),
         description: t('board.member54.description'),
         image: "/bureau/imen.webp",
-        school: t('board.member54.school')
+        school: t('board.member54.school'),
+        linkedin: "https://www.linkedin.com/in/imen-saci-311243163/", // ajout lien Linkedin
       }
     ],
     '2020 - 2017': [
@@ -367,28 +409,32 @@ const Bureau = () => {
         role: t('board.member5.role'),
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member5.school')
+        school: t('board.member5.school'),
+        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
       },
                   {
         name: t('board.member8.name'),
         role: t('board.member8.role'),
         description: t('board.member8.description'),
         image: "/bureau/Guillaume.webp",
-        school: t('board.member8.school')
+        school: t('board.member8.school'),
+        linkedin: "https://uk.linkedin.com/in/guillaumegirard-", // ajout lien Linkedin
       },
                         {
         name: t('board.member9.name'),
         role: t('board.member9.role'),
         description: t('board.member9.description'),
         image: "/bureau/othmane.webp",
-        school: t('board.member9.school')
+        school: t('board.member9.school'),
+        linkedin: "https://ca.linkedin.com/in/othmane-el-mejjad-02a4b5147", // ajout lien Linkedin
       },
                         {
         name: t('board.member10.name'),
         role: t('board.member10.role'),
         description: t('board.member10.description'),
         image: "/bureau/fanis.webp",
-        school: t('board.member10.school')
+        school: t('board.member10.school'),
+        linkedin: "https://fr.linkedin.com/in/fanis-michalakis", // ajout lien Linkedin
       },
                               {
         name: t('board.member11.name'),
@@ -396,48 +442,55 @@ const Bureau = () => {
         description: t('board.member11.description'),
         image: "/bureau/titouan.webp",
         school: t('board.member11.school'),
+        linkedin: "https://fr.linkedin.com/in/titouangalpin", // ajout lien Linkedin
       },
                                     {
         name: t('board.member12.name'),
         role: t('board.member12.role'),
         description: t('board.member12.description'),
         image: "/bureau/julie.webp",
-        school: t('board.member12.school')
+        school: t('board.member12.school'),
+        linkedin: "https://fr.linkedin.com/in/julie-martin0/en", // ajout lien Linkedin
       },
                                           {
         name: t('board.member13.name'),
         role: t('board.member13.role'),
         description: t('board.member13.description'),
         image: "/bureau/manon.webp",
-        school: t('board.member13.school')
+        school: t('board.member13.school'),
+        linkedin: "https://fr.linkedin.com/in/manon-seraut", // ajout lien Linkedin
       },
                                                 {
         name: t('board.member14.name'),
         role: t('board.member14.role'),
         description: t('board.member14.description'),
         image: "/bureau/harmonie.webp",
-        school: t('board.member14.school')
+        school: t('board.member14.school'),
+        linkedin: "https://lu.linkedin.com/in/harmonie-lefort", // ajout lien Linkedin
       },
                                                       {
         name: t('board.member15.name'),
         role: t('board.member15.role'),
         description: t('board.member15.description'),
         image: "/bureau/marie.webp",
-        school: t('board.member15.school')
+        school: t('board.member15.school'),
+        linkedin: "https://fr.linkedin.com/in/marie-cecchini-434381108", // ajout lien Linkedin
       },
                                                             {
         name: t('board.member16.name'),
         role: t('board.member16.role'),
         description: t('board.member16.description'),
         image: "/bureau/aymane.webp",
-        school: t('board.member16.school')
+        school: t('board.member16.school'),
+        linkedin: "https://fr.linkedin.com/in/aymane-tabet", // ajout lien Linkedin
       },
                         {
         name: t('board.member6.name'),
         role: t('board.member6.role'),
         description: t('board.member6.description'),
         image: "/bureau/william.webp",
-        school: t('board.member6.school')
+        school: t('board.member6.school'),
+        linkedin: "https://www.linkedin.com/in/william-derenne-0954ba139", // ajout lien Linkedin
       },
                         {
         name: t('board.member7.name'),
@@ -451,63 +504,72 @@ const Bureau = () => {
         role: t('board.member29.role'),
         description: t('board.member29.description'),
         image: "/bureau/brice.webp",
-        school: t('board.member29.school')
+        school: t('board.member29.school'),
+        linkedin: "https://fr.linkedin.com/in/brice-bonnet", // ajout lien Linkedin
       },
                         {
         name: t('board.member31.name'),
         role: t('board.member31.role'),
         description: t('board.member31.description'),
         image: "/bureau/jules.webp",
-        school: t('board.member31.school')
+        school: t('board.member31.school'),
+        linkedin: "https://fr.linkedin.com/in/jules-foa", // ajout lien Linkedin
       },
       {
         name: t('board.member36.name'),
         role: t('board.member36.role'),
         description: t('board.member36.description'),
         image: "/bureau/hadrien.webp",
-        school: t('board.member36.school')
+        school: t('board.member36.school'),
+        linkedin: "https://fr.linkedin.com/in/hadrien-jaubert-951b63192", // ajout lien Linkedin
       },
       {
         name: t('board.member55.name'),
         role: t('board.member55.role'),
         description: t('board.member55.description'),
         image: "/bureau/thomas.webp",
-        school: t('board.member55.school')
+        school: t('board.member55.school'),
+        linkedin: "https://www.linkedin.com/in/thomas-benetreau/", // ajout lien Linkedin
       },
       {
         name: t('board.member56.name'),
         role: t('board.member56.role'),
         description: t('board.member56.description'),
         image: "/bureau/clementb.webp",
-        school: t('board.member56.school')
+        school: t('board.member56.school'),
+        linkedin: "https://fr.linkedin.com/in/clement-bidan", // ajout lien Linkedin
       },
       {
         name: t('board.member57.name'),
         role: t('board.member57.role'),
         description: t('board.member57.description'),
         image: "/bureau/jeremie.webp",
-        school: t('board.member57.school')
+        school: t('board.member57.school'),
+        linkedin: "https://www.linkedin.com/in/jeremiepontis/", // ajout lien Linkedin
       },
       {
         name: t('board.member61.name'),
         role: t('board.member61.role'),
         description: t('board.member61.description'),
         image: "/bureau/jb.webp",
-        school: t('board.member61.school')
+        school: t('board.member61.school'),
+        linkedin: "https://www.linkedin.com/in/jeanbaptistebarou", // ajout lien Linkedin
       },
       {
         name: t('board.member64.name'),
         role: t('board.member64.role'),
         description: t('board.member64.description'),
         image: "/bureau/maxl.webp",
-        school: t('board.member64.school')
+        school: t('board.member64.school'),
+        linkedin: "https://fr.linkedin.com/in/lacroi-m", // ajout lien Linkedin
       },
       {
         name: t('board.member65.name'),
         role: t('board.member65.role'),
         description: t('board.member65.description'),
         image: "/bureau/manu.webp",
-        school: t('board.member65.school')
+        school: t('board.member65.school'),
+        linkedin: "https://www.linkedin.com/in/emmanuel-marquette-3a7490120/", // ajout lien Linkedin
       }
     ]
 
