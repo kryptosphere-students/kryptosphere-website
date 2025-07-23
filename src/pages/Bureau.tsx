@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Users, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Linkedin, Twitter } from 'lucide-react';
 
 const Bureau = () => {
   const [selectedYear, setSelectedYear] = useState('2025');
@@ -15,35 +16,44 @@ const Bureau = () => {
         role: t('board.member1.role'),
         description: t('board.member1.description'),
         image: "/bureau/rpautard.webp",
-        school: t('board.member1.school')
+        school: t('board.member1.school'),
+        linkedin: "https://fr.linkedin.com/in/rapha%C3%ABl-pautard-744013220", // ajout lien Linkedin
+        twitter: "https://x.com/pautardr" // ajout lien X
       },
       {
         name: t('board.member2.name'),
         role: t('board.member2.role'),
         description: t('board.member2.description'),
         image: "/bureau/amanival.webp",
-        school: t('board.member2.school')
+        school: t('board.member2.school'),
+        linkedin: "https://fr.linkedin.com/in/antoinemanival", // ajout lien Linkedin
+        twitter: "https://x.com/AntoineM_eth" // ajout lien X
       },
       {
         name: t('board.member3.name'),
         role: t('board.member3.role'),
         description: t('board.member3.description'),
         image: "/bureau/mlaruelle.webp",
-        school: t('board.member3.school')
+        school: t('board.member3.school'),
+        linkedin: "https://fr.linkedin.com/in/mathieu-laruelle", // ajout lien Linkedin
+        twitter: "https://x.com/MathieuLRL" // ajout lien X
       },
       {
         name: t('board.member4.name'),
         role: t('board.member4.role'),
         description: t('board.member4.description'),
         image: "/bureau/lpiallat.webp",
-        school: t('board.member4.school')
+        school: t('board.member4.school'),
+        linkedin: "https://fr.linkedin.com/in/louispiallat/fr", // ajout lien Linkedin
       },
       {
         name: t('board.member27.name'),
         role: t('board.member27.role'),
         description: t('board.member27.description'),
         image: "/bureau/thibaultlanglois.webp",
-        school: t('board.member27.school')
+        school: t('board.member27.school'),
+        linkedin: "https://fr.linkedin.com/in/kryptosphere/en", // ajout lien Linkedin
+        twitter: "https://twitter.com/docteurbtc" // ajout lien X
       },
     ],
     '2024': [
@@ -642,6 +652,30 @@ const Bureau = () => {
                   <p className="text-blue-400 font-semibold mb-2 text-sm uppercase tracking-wide">{member.role}</p>
                   <p className="text-purple-300 text-xs mb-4 opacity-75">{member.school}</p>
                   <p className="text-slate-400 text-sm leading-relaxed">{member.description}</p>
+                  <div className="flex justify-center gap-2 mt-4">
+  {member.linkedin && (
+    <a
+      href={member.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full bg-blue-700/80 hover:bg-blue-700 text-white p-2 transition-colors"
+      title="LinkedIn"
+    >
+      <Linkedin className="w-5 h-5" />
+    </a>
+  )}
+  {member.twitter && (
+    <a
+      href={member.twitter}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full bg-blue-400/80 hover:bg-blue-400 text-white p-2 transition-colors"
+      title="Twitter"
+    >
+      <Twitter className="w-5 h-5" />
+    </a>
+  )}
+</div>
                 </div>
               </div>
             ))}
