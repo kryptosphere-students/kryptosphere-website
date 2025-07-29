@@ -804,7 +804,7 @@ export const translations = {
 
     
     'donation.btcModal.title': 'Donner en Bitcoin via Tor',
-    'donation.btcModal.body': "💡 Pour un don en BTC, le lien qui suit (xxxx.onion) doit être ouvert avec le navigateur Tor Browser (don en BTC sans intermédiaires, directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur (Tor Browser), vous pouvez le télécharger ici : https://www.torproject.org/\n\nSinon, copiez ce lien et ouvrez-le dans TOR :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
+    'donation.btcModal.body': "💡 Pour un don en BTC, le lien qui suit (.onion) doit être ouvert avec le navigateur Tor Browser (don sans intermédiaires, directement via notre noeud Bitcoin).\n\nSi vous n'avez pas ce navigateur (Tor Browser), vous pouvez le télécharger ici : https://www.torproject.org/\n\nSi vous l'avez, copiez ce lien et ouvrez-le dans Tor Browser :\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
     'donation.btcModal.button': 'Ouvrir le lien dans Tor',
     'donation.btcModal.close': 'Fermer',
 
@@ -1641,7 +1641,7 @@ export const translations = {
         'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
     
     'donation.btcModal.title': 'Donate in Bitcoin via Tor',
-    'donation.btcModal.body': "💡 For a BTC donation, the following link (xxxx.onion) must be opened with the Tor Browser (BTC donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nOtherwise, copy this link and open it in TOR:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
+    'donation.btcModal.body': "💡 For a BTC donation, the following link (.onion) must be opened with the Tor Browser (donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nIf you do, copy this link and open it with Tor Browser:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
     'donation.btcModal.button': 'Open link in Tor',
     'donation.btcModal.close': 'Close'
   }
