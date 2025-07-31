@@ -116,7 +116,7 @@ const AntenneDetail = () => {
       bureau: [
         { name: 'Jérémie LEROY', role: t('roles.president'), photo: '/bureau/leroy.webp' },
         { name: 'Lery PHELIPPEAU', role: t('roles.vicePresident'), photo: '/bureau/lery.webp' },
-        { name: 'Join us!', role: t('roles.treasurer'), photo: '/bureau/ks.webp' }
+        { name: 'Join us!', role: t('roles.treasurer'), photo: '/bureau/ksLogo.webp' }
       ],
       gallery: [
         'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
