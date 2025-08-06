@@ -53,11 +53,25 @@ const KryptoTour = () => {
             twitter: "https://x.com/AdliTB",
         },
         {
+            name: "Arthur Dietrich",
+            role: "European Lead Superteam Solana",
+            img: "/krypto-tour/speakers/arthur.webp",
+            linkedin: "https://www.linkedin.com/in/arthurdietrichdoingthings/",
+            twitter: "https://x.com/Arthurisfrench",
+        },
+        {
             name: "Quentin Werle",
             role: "Head of Portfolio Management at 6Monks",
             img: "/krypto-tour/speakers/qwerle.webp",
             linkedin: "https://www.linkedin.com/in/quentin-werle/",
             twitter: "https://x.com/quentin_werle",
+        },
+        {
+            name: "David Bchiri",
+            role: "President at XRPL Commons",
+            img: "/krypto-tour/speakers/dbchiri.webp",
+            linkedin: "https://www.linkedin.com/in/davidbchiri/",
+            twitter: "",
         },
         {
             name: "Pudgy",
@@ -67,10 +81,17 @@ const KryptoTour = () => {
             twitter: "https://x.com/pudgypenguins",
         },
         {
-            name: "David Bchiri",
-            role: "President at XRPL Commons",
-            img: "/krypto-tour/speakers/dbchiri.webp",
-            linkedin: "https://www.linkedin.com/in/davidbchiri/",
+            name: "Figue",
+            role: "Web3 Developer",
+            img: "/krypto-tour/speakers/figue.webp",
+            linkedin: "",
+            twitter: "https://x.com/Figue_me",
+        },
+        {
+            name: "Chiara Operto",
+            role: "CEO EDGE Skills",
+            img: "/krypto-tour/speakers/chiara.webp",
+            linkedin: "https://www.linkedin.com/in/chiara-operto-46bb91146/",
             twitter: "",
         },
         {
@@ -102,6 +123,13 @@ const KryptoTour = () => {
             twitter: "https://x.com/MaxMartelo",
         },
         {
+            name: "Jérémie Cohen",
+            role: "GM Web3 & Alyra",
+            img: "/krypto-tour/speakers/jeremie.webp",
+            linkedin: "https://www.linkedin.com/in/jeremie-cohen-w3/",
+            twitter: "",
+        },
+        {
             name: "Florent Trepo",
             role: "co-fondateur AJF Gestion privée",
             img: "/krypto-tour/speakers/ftrepo.webp",
@@ -114,6 +142,13 @@ const KryptoTour = () => {
             img: "/krypto-tour/speakers/addy.webp",
             linkedin: "",
             twitter: "https://x.com/Addy_8x",
+        },
+        {
+            name: "Arnaud Besançon",
+            role: "Vice Lead Superteam France",
+            img: "/krypto-tour/speakers/arnaud.webp",
+            linkedin: "https://www.linkedin.com/in/arnaudbesancon/",
+            twitter: "https://x.com/chainhera",
         },
         {
             name: "Plus d'intervenants à venir",
@@ -333,6 +368,7 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/alyra.webp', url: 'https://www.alyra.fr/', name: 'ALYRA' },
                                 { img: '/krypto-tour/sponsors/tabo.webp', url: 'https://x.com/cryptotaboo_xyz', name: 'Crypto Taboo' },
                                 { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
+                                { img: '/krypto-tour/sponsors/solana.svg', url: 'https://solana.com/', name: 'Solana' },
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -358,7 +394,8 @@ const KryptoTour = () => {
                             {[
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
                                 { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
-                                { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'VenaLabs' }
+                                { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'VenaLabs' },
+                                { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://superteam.fun/', name: 'Superteam' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
