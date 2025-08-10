@@ -333,7 +333,7 @@ const KryptoTour = () => {
                             <Star className="w-5 h-5" />
                             {t('kryptotour.sponsors.gold') || 'Gold'}
                         </h3>
-                        <div className="grid grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             {[
                                 { img: '/krypto-tour/sponsors/ajf.webp', url: 'https://ajf-gp.com/', name: 'AJF Gestion Privée' },
                                 { img: '/krypto-tour/sponsors/avalanche.webp', url: 'https://www.avax.network/', name: 'Avalanche' },
@@ -344,10 +344,10 @@ const KryptoTour = () => {
                                     href={sponsor.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300 h-40 md:h-48 group"
+                                    className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-6 md:p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300 h-32 md:h-40 lg:h-48 group"
                                     title={sponsor.name}
                                 >
-                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" className="w-full h-full max-h-24 md:max-h-28 object-contain group-hover:scale-105 transition-transform duration-300" />
+                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" className="w-full h-full max-h-20 md:max-h-24 lg:max-h-28 object-contain group-hover:scale-105 transition-transform duration-300" />
                                 </a>
                             ))}
                         </div>
@@ -390,7 +390,7 @@ const KryptoTour = () => {
                             <Star className="w-5 h-5" />
                             {t('kryptotour.sponsors.bronze') || 'Bronze'}
                         </h3>
-                        <div className="grid grid-cols-3 gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                             {[
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
                                 { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
