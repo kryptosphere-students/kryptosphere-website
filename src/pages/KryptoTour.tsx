@@ -359,16 +359,17 @@ const KryptoTour = () => {
                             <Star className="w-5 h-5" />
                             {t('kryptotour.sponsors.silver') || 'Silver'}
                         </h3>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {[
-                                { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
+                                { img: '/krypto-tour/sponsors/solana.svg', url: 'https://solana.com/fr', name: 'Solana France' },
+                                { img: '/krypto-tour/sponsors/morpho.svg', url: 'https://morpho.org/', name: 'Morpho' },
                                 { img: '/krypto-tour/sponsors/meria.webp', url: 'https://www.meria.com/?__cf_chl_rt_tk=coMMdm.WTYsaW2Dj2W8xZj8P6oJlrmuCvZtOSnj90bc-1753186731-1.0.1.1-.ye_2PS1SIQgS2dm6swqleXNXN86_6p1qfe4QSu6Lbg', name: 'Meria' },
                                 { img: '/krypto-tour/sponsors/commons.webp', url: 'https://www.xrpl-commons.org/', name: 'XRPL Commons' },
                                 { img: '/krypto-tour/sponsors/pudgy.webp', url: 'https://pudgypenguins.com/', name: 'Pudgy Penguins' },
                                 { img: '/krypto-tour/sponsors/alyra.webp', url: 'https://www.alyra.fr/', name: 'ALYRA' },
                                 { img: '/krypto-tour/sponsors/tabo.webp', url: 'https://x.com/cryptotaboo_xyz', name: 'Crypto Taboo' },
-                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
-                                { img: '/krypto-tour/sponsors/solana.svg', url: 'https://solana.com/', name: 'Solana' },
+                                { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
+                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -392,10 +393,11 @@ const KryptoTour = () => {
                         </h3>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                             {[
+                                { img: '/krypto-tour/sponsors/borgpad.webp', url: 'https://borgpad.com/', name: 'Borgpad' },
+                                { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://x.com/SuperteamFRANCE', name: 'Superteam France' },
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
-                                { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
-                                { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'VenaLabs' },
-                                { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://superteam.fun/', name: 'Superteam' }
+                                { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'Venalabs' },
+                                { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -440,12 +442,12 @@ const KryptoTour = () => {
                     <div className="bg-slate-700/80 backdrop-blur-lg rounded-2xl p-4 mb-8 border border-slate-600/40">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {[
-                                { img: '/krypto-tour/community-partner/tum.webp', url: 'https://www.tum-blockchain.com/', name: 'TUM Blockchain' },
+                                { img: '/krypto-tour/community-partner/b@b.webp', url: 'https://blockchain.studentorg.berkeley.edu/', name: 'Blockchain at Berkeley' },
                                 { img: '/krypto-tour/community-partner/stAndrews.webp', url: 'https://www.linkedin.com/company/uni-st-andrews-blockchain-society/posts/?feedView=all', name: 'St Andrews Blockchain Society' },
+                                { img: '/krypto-tour/community-partner/bsa.webp', url: 'https://www.epfl.ch/fr/', name: 'BSA' },
                                 { img: '/krypto-tour/community-partner/poc.webp', url: 'https://www.linkedin.com/company/pocinnovation/posts/?feedView=all', name: 'POC Innovation' },
                                 { img: '/krypto-tour/community-partner/dev3pack.webp', url: 'https://dev3pack.xyz/', name: 'DEV3Pack' },
-                                { img: '/krypto-tour/community-partner/bsa.webp', url: 'https://www.epfl.ch/fr/', name: 'EPFL' },
-                                { img: '/krypto-tour/community-partner/b@b.webp', url: 'https://blockchain.studentorg.berkeley.edu/', name: 'Blockchain at Berkeley' }
+                                { img: '/krypto-tour/community-partner/tum.webp', url: 'https://www.tum-blockchain.com/', name: 'TUM Blockchain' }
                             ].map((partner, i) => (
                                 <a
                                     key={i}
