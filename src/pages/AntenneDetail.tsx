@@ -110,13 +110,13 @@ const AntenneDetail = () => {
       heroImage: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
       contact: {
         email: 'contact@kryptosphere.org',
-        phone: '+ 33 6 08 81 90 19',
+        phone: '+ 33 6 48 62 03 77',
         address: '37–38 John Street London WC1N 2AT United Kingdom'
       },
       bureau: [
-        { name: 'Thibaut GRAVELLE-VIVIEN', role: t('roles.president'), photo: '/bureau/thib.webp' },
+        { name: 'Jérémie LEROY', role: t('roles.president'), photo: '/bureau/leroy.webp' },
         { name: 'Lery PHELIPPEAU', role: t('roles.vicePresident'), photo: '/bureau/lery.webp' },
-        { name: 'Jérémie LEROY', role: t('roles.treasurer'), photo: '/bureau/leroy.webp' }
+        { name: 'Join us!', role: t('roles.treasurer'), photo: '/public/ksLogo.webp' }
       ],
       gallery: [
         'https://media.licdn.com/dms/image/v2/D4E10AQGSYuvgGxd0bg/image-shrink_1280/image-shrink_1280/0/1713630614769?e=2147483647&v=beta&t=XgWZ4Pu55orzVM76NJMdQ3CzdZk0Fgrzdm9TPYWC9Sg',
