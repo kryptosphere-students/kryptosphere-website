@@ -40,7 +40,7 @@ const KryptoTour = () => {
     const speakers = [
         {
             name: "Owen Simonin (Hasheur)",
-            role: "Fondateur & CEO at Meria",
+            role: "Founder & CEO at Meria",
             img: "/krypto-tour/speakers/osimonin.webp",
             linkedin: "https://www.linkedin.com/in/owensimonin/",
             twitter: "https://x.com/powerhasheur",
@@ -58,6 +58,13 @@ const KryptoTour = () => {
             img: "/krypto-tour/speakers/arthur.webp",
             linkedin: "https://www.linkedin.com/in/arthurdietrichdoingthings/",
             twitter: "https://x.com/Arthurisfrench",
+        },
+        {
+            name: "Paul-Adrien Hyppolite",
+            role: "Co-Founder & CEO @ Spiko",
+            img: "/krypto-tour/speakers/paulAdrien.webp",
+            linkedin: "https://www.linkedin.com/in/paul-adrien-hyppolite-71217ab4/",
+            twitter: "",
         },
         {
             name: "Quentin Werle",
@@ -82,7 +89,7 @@ const KryptoTour = () => {
         },
         {
             name: "Figue",
-            role: "Web3 Developer",
+            role: "Trevee Co-Founder",
             img: "/krypto-tour/speakers/figue.webp",
             linkedin: "",
             twitter: "https://x.com/Figue_me",
@@ -109,8 +116,15 @@ const KryptoTour = () => {
             twitter: "https://x.com/clairebalva",
         },
         {
+            name: "Maxime Chery",
+            role: "Co-Founder & CEO - Nod-i",
+            img: "/krypto-tour/speakers/mchery.webp",
+            linkedin: "https://www.linkedin.com/in/maxime-chery/",
+            twitter: "https://x.com/Max_Metis",
+        },
+        {
             name: "Thibaut Boutrou",
-            role: "COO et Co-Fondateur de Meria",
+            role: "COO & Co-Founder - Meria",
             img: "/krypto-tour/speakers/tboutrou.webp",
             linkedin: "https://www.linkedin.com/in/thibaut-boutrou/",
             twitter: "https://x.com/thibaut_boutrou",
@@ -123,7 +137,7 @@ const KryptoTour = () => {
             twitter: "https://x.com/MaxMartelo",
         },
         {
-            name: "Jérémie Cohen",
+            name: "Jérémie Cohen (GRM)",
             role: "GM Web3 & Alyra",
             img: "/krypto-tour/speakers/jeremie.webp",
             linkedin: "https://www.linkedin.com/in/jeremie-cohen-w3/",
@@ -131,7 +145,7 @@ const KryptoTour = () => {
         },
         {
             name: "Florent Trepo",
-            role: "co-fondateur AJF Gestion privée",
+            role: "co-founder AJF Gestion privée",
             img: "/krypto-tour/speakers/ftrepo.webp",
             linkedin: "https://www.linkedin.com/in/trepoflorent/",
             twitter: "https://x.com/florenttrepo",
@@ -151,10 +165,17 @@ const KryptoTour = () => {
             twitter: "https://x.com/chainhera",
         },
         {
-            name: "Plus d'intervenants à venir",
-            role: ". . .",
-            img: "/krypto-tour/speakers/placeholder.webp",
-            linkedin: "",
+            name: "Saimi Barragan",
+            role: "Founder & CEO at Startmining",
+            img: "/krypto-tour/speakers/saimi.webp",
+            linkedin: "https://www.linkedin.com/in/saimi-barragan-45a7501a9/",
+            twitter: "https://x.com/PA6_Saimi",
+        },
+        {
+            name: "Ambroisie Helaine",
+            role: "Country Manager - Bybit",
+            img: "/krypto-tour/speakers/ambroisie.webp",
+            linkedin: "https://www.linkedin.com/in/3426b345/",
             twitter: "",
         },
     ];
@@ -336,8 +357,10 @@ const KryptoTour = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             {[
                                 { img: '/krypto-tour/sponsors/ajf.webp', url: 'https://ajf-gp.com/', name: 'AJF Gestion Privée' },
+                                { img: '/krypto-tour/sponsors/bybit.svg', url: 'https://www.bybit.eu/fr-EU/', name: 'Bybit' },
                                 { img: '/krypto-tour/sponsors/avalanche.webp', url: 'https://www.avax.network/', name: 'Avalanche' },
-                                { img: '/krypto-tour/sponsors/fc.webp', url: 'https://x.com/FranceCryptos', name: 'France Cryptos' }
+                                { img: '/krypto-tour/sponsors/fc.webp', url: 'https://x.com/FranceCryptos', name: 'France Cryptos' },
+                                { img: '/krypto-tour/sponsors/startmining.svg', url: 'https://startmining.io/', name: 'Startmining' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -369,7 +392,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/alyra.webp', url: 'https://www.alyra.fr/', name: 'ALYRA' },
                                 { img: '/krypto-tour/sponsors/tabo.webp', url: 'https://x.com/cryptotaboo_xyz', name: 'Crypto Taboo' },
                                 { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
-                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' }
+                                { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
+                                { img: '/krypto-tour/sponsors/poapStudio.webp', url: 'https://www.poap.studio/', name: 'POAP Studio' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -397,7 +421,10 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://x.com/SuperteamFRANCE', name: 'Superteam France' },
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
                                 { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'Venalabs' },
-                                { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' }
+                                { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
+                                { img: '/krypto-tour/sponsors/jse.svg', url: 'https://jse.capital/', name: 'JSE|Capital' },
+                                { img: '/krypto-tour/sponsors/ethereumFrance.webp', url: 'https://www.ethereum-france.com/', name: 'Ethereum France' },
+                                { img: '/krypto-tour/sponsors/nodi.svg', url: 'https://nod-i.com/fr/', name: 'Nod.i' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}

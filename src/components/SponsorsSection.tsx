@@ -14,6 +14,7 @@ const SponsorsSection = () => {
 
   const sponsors = [
     { name: 'BPI France', logo: '/lovable-uploads/bpifrance.webp' },
+    { name: 'Bybit', logo: '/lovable-uploads/bybit.svg' },
     { name: 'Ledger', logo: '/lovable-uploads/Ledger.svg' },
     { name: 'KPMG', logo: '/lovable-uploads/KPMG.webp' },
     { name: 'DELUBAC', logo: '/lovable-uploads/delubac.svg' },
