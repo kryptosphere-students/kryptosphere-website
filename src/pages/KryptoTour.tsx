@@ -332,19 +332,22 @@ const KryptoTour = () => {
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.sponsors.title') || 'Sponsors'}</h2>
 
-                    {/* Diamond Tier - Coming Soon */}
+                    {/* Diamond Tier */}
                     <div className="mb-12">
                         <h3 className="text-xl font-semibold text-center mb-6 text-cyan-400 flex items-center justify-center gap-2">
                             <Star className="w-5 h-5" />
                             {t('kryptotour.sponsors.diamond') || 'Diamond'}
                         </h3>
                         <div className="w-full">
-                            <div className="bg-gradient-to-br from-cyan-900/20 to-blue-600/10 rounded-2xl border-2 border-cyan-500/30 p-12 flex items-center justify-center">
-                                <div className="text-center">
-                                    <Star className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
-                                    <div className="text-cyan-400 font-semibold text-lg">{t('kryptotour.sponsors.comingSoon') || 'Coming Soon'}</div>
-                                </div>
-                            </div>
+                            <a
+                                href="https://x.com/FranceCryptos"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gradient-to-br from-cyan-900/20 to-blue-600/10 rounded-2xl border-2 border-cyan-500/30 p-12 flex items-center justify-center hover:border-cyan-400/50 transition-all duration-300 group"
+                                title="France Cryptos"
+                            >
+                                <img src="/krypto-tour/sponsors/fc.webp" alt="France Cryptos Logo" loading="lazy" className="max-h-24 object-contain group-hover:scale-105 transition-transform duration-300" />
+                            </a>
                         </div>
                     </div>
 
@@ -359,8 +362,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/ajf.webp', url: 'https://ajf-gp.com/', name: 'AJF Gestion Privée' },
                                 { img: '/krypto-tour/sponsors/bybit.svg', url: 'https://www.bybit.eu/fr-EU/', name: 'Bybit' },
                                 { img: '/krypto-tour/sponsors/avalanche.webp', url: 'https://www.avax.network/', name: 'Avalanche' },
-                                { img: '/krypto-tour/sponsors/fc.webp', url: 'https://x.com/FranceCryptos', name: 'France Cryptos' },
-                                { img: '/krypto-tour/sponsors/startmining.svg', url: 'https://startmining.io/', name: 'Startmining' }
+                                { img: '/krypto-tour/sponsors/startmining.svg', url: 'https://startmining.io/', name: 'Startmining' },
+                                { img: '/krypto-tour/sponsors/mexc.webp', url: '', name: 'MEXC' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -417,13 +420,13 @@ const KryptoTour = () => {
                         </h3>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                             {[
+                                { img: '/krypto-tour/sponsors/ethereumFrance.webp', url: 'https://www.ethereum-france.com/', name: 'Ethereum France' },
                                 { img: '/krypto-tour/sponsors/borgpad.webp', url: 'https://borgpad.com/', name: 'Borgpad' },
                                 { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://x.com/SuperteamFRANCE', name: 'Superteam France' },
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
                                 { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'Venalabs' },
                                 { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
                                 { img: '/krypto-tour/sponsors/jse.svg', url: 'https://jse.capital/', name: 'JSE|Capital' },
-                                { img: '/krypto-tour/sponsors/ethereumFrance.webp', url: 'https://www.ethereum-france.com/', name: 'Ethereum France' },
                                 { img: '/krypto-tour/sponsors/nodi.svg', url: 'https://nod-i.com/fr/', name: 'Nod.i' }
                             ].map((sponsor, i) => (
                                 <a
