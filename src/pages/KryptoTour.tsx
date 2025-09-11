@@ -67,11 +67,11 @@ const KryptoTour = () => {
             twitter: "",
         },
         {
-            name: "Quentin Werle",
-            role: "Head of Portfolio Management at 6Monks",
-            img: "/krypto-tour/speakers/qwerle.webp",
-            linkedin: "https://www.linkedin.com/in/quentin-werle/",
-            twitter: "https://x.com/quentin_werle",
+            name: "Faustine Fleuret",
+            role: "Head of Public Affairs at Morpho",
+            img: "/krypto-tour/speakers/faustine.webp",
+            linkedin: "https://www.linkedin.com/in/faustine-fleuret-640b67a4",
+            twitter: "https://x.com/faufleuret",
         },
         {
             name: "David Bchiri",
@@ -88,11 +88,11 @@ const KryptoTour = () => {
             twitter: "https://x.com/pudgypenguins",
         },
         {
-            name: "Figue",
-            role: "Trevee Co-Founder",
-            img: "/krypto-tour/speakers/figue.webp",
-            linkedin: "",
-            twitter: "https://x.com/Figue_me",
+            name: "Saimi Barragan",
+            role: "Founder & CEO at Startmining",
+            img: "/krypto-tour/speakers/saimi.webp",
+            linkedin: "https://www.linkedin.com/in/saimi-barragan-45a7501a9/",
+            twitter: "https://x.com/PA6_Saimi",
         },
         {
             name: "Chiara Operto",
@@ -114,6 +114,13 @@ const KryptoTour = () => {
             img: "/krypto-tour/speakers/cbalva.webp",
             linkedin: "https://www.linkedin.com/in/clairebalva/",
             twitter: "https://x.com/clairebalva",
+        },
+        {
+            name: "Quentin Werle",
+            role: "Head of Portfolio Management at 6Monks",
+            img: "/krypto-tour/speakers/qwerle.webp",
+            linkedin: "https://www.linkedin.com/in/quentin-werle/",
+            twitter: "https://x.com/quentin_werle",
         },
         {
             name: "Maxime Chery",
@@ -165,11 +172,11 @@ const KryptoTour = () => {
             twitter: "https://x.com/chainhera",
         },
         {
-            name: "Saimi Barragan",
-            role: "Founder & CEO at Startmining",
-            img: "/krypto-tour/speakers/saimi.webp",
-            linkedin: "https://www.linkedin.com/in/saimi-barragan-45a7501a9/",
-            twitter: "https://x.com/PA6_Saimi",
+            name: "Figue",
+            role: "Trevee Co-Founder",
+            img: "/krypto-tour/speakers/figue.webp",
+            linkedin: "",
+            twitter: "https://x.com/Figue_me",
         },
         {
             name: "Ambroisie Helaine",
@@ -396,7 +403,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/tabo.webp', url: 'https://x.com/cryptotaboo_xyz', name: 'Crypto Taboo' },
                                 { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
                                 { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
-                                { img: '/krypto-tour/sponsors/poapStudio.webp', url: 'https://www.poap.studio/', name: 'POAP Studio' }
+                                { img: '/krypto-tour/sponsors/poapStudio.webp', url: 'https://www.poap.studio/', name: 'POAP Studio' },
+                                { img: '/krypto-tour/sponsors/realsmart.webp', url: 'https://www.realsmart.fr/', name: 'RealSmart' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
