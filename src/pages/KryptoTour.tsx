@@ -179,6 +179,13 @@ const KryptoTour = () => {
             twitter: "https://x.com/Figue_me",
         },
         {
+            name: "Robin Ledoux",
+            role: "Head of Fund Administration & Valuation - Conducting Officer - 6M Luxembourg",
+            img: "/krypto-tour/speakers/robin.webp",
+            linkedin: "https://www.linkedin.com/in/robin-ledoux-43ab2636/",
+            twitter: "",
+        },
+        {
             name: "Ambroisie Helaine",
             role: "Country Manager - Bybit",
             img: "/krypto-tour/speakers/ambroisie.webp",
@@ -404,7 +411,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/6monks.webp', url: 'https://6m.lu/', name: '6Monks' },
                                 { img: '/krypto-tour/sponsors/veiga.webp', url: 'https://www.veiga-management.com/', name: 'Veiga Management' },
                                 { img: '/krypto-tour/sponsors/poapStudio.webp', url: 'https://www.poap.studio/', name: 'POAP Studio' },
-                                { img: '/krypto-tour/sponsors/realsmart.webp', url: 'https://www.realsmart.fr/', name: 'RealSmart' }
+                                { img: '/krypto-tour/sponsors/realsmart.webp', url: 'https://www.realsmart.fr/', name: 'RealSmart' },
+                                { img: '/krypto-tour/sponsors/openLedger.webp', url: 'https://www.openledger.xyz/', name: 'OpenLedger' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
@@ -435,7 +443,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/venalabs.webp', url: 'https://www.venalabs.com/fr', name: 'Venalabs' },
                                 { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
                                 { img: '/krypto-tour/sponsors/jse.svg', url: 'https://jse.capital/', name: 'JSE|Capital' },
-                                { img: '/krypto-tour/sponsors/nodi.svg', url: 'https://nod-i.com/fr/', name: 'Nod.i' }
+                                { img: '/krypto-tour/sponsors/nodi.svg', url: 'https://nod-i.com/fr/', name: 'Nod.i' },
+                                { img: '/krypto-tour/sponsors/supernova.webp', url: '', name: 'Supernova' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
