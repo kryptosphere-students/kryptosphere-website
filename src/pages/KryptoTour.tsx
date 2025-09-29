@@ -192,6 +192,20 @@ const KryptoTour = () => {
             linkedin: "https://www.linkedin.com/in/3426b345/",
             twitter: "",
         },
+        {
+            name: "Julien Szulewski",
+            role: "Founder SUPERNOVA",
+            img: "/krypto-tour/speakers/julienS.webp",
+            linkedin: "https://www.linkedin.com/in/julien-szulewski-61922458/",
+            twitter: "",
+        },
+        {
+            name: "Valéria Faure-Muntian",
+            role: "Déléguée Générale ANACOFI | Présidente de Women4Cyber France",
+            img: "/krypto-tour/speakers/valeria.webp",
+            linkedin: "https://www.linkedin.com/in/vfaure-muntian/",
+            twitter: "",
+        }
     ];
     const sponsors = Array(8).fill({ name: 'Sponsor', img: '/images/placeholder.webp' });
     const mediaPartners = [
