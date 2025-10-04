@@ -193,6 +193,13 @@ const KryptoTour = () => {
             twitter: "",
         },
         {
+            name: "Gilles Fedak",
+            role: "President & Co-Founder - iExec",
+            img: "/krypto-tour/speakers/gilles.webp",
+            linkedin: "https://www.linkedin.com/in/gilles-fedak-4a303a5b/",
+            twitter: "",
+        },
+        {
             name: "Julien Szulewski",
             role: "Founder SUPERNOVA",
             img: "/krypto-tour/speakers/julienS.webp",
@@ -305,6 +312,50 @@ const KryptoTour = () => {
                     <p className="text-slate-400 text-center max-w-4xl mx-auto mb-8 text-lg">
                         {t('kryptotour.format.description2') || 'Conférences, tables rondes, keynotes et stands : une journée pour connecter les mondes de la finance traditionnelle et du Web3, créer des synergies concrètes et comprendre les enjeux d\'un secteur en pleine transformation. Ne ratez pas l\'événement où l\'écosystème français se rencontre, débat et construit l\'avenir de la blockchain.'}
                     </p>
+                </div>
+            </section>
+
+            {/* Schedule Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.schedule.title') || 'Planning'}</h2>
+                    <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40">
+                        <div className="flex justify-center">
+                            <img 
+                                src="/krypto-tour/timetable.webp" 
+                                alt="KRYPTO-TOUR LYON 2025 Planning" 
+                                className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
+                                loading="lazy"
+                                onClick={(e) => {
+                                    if (window.innerWidth < 768) {
+                                        e.preventDefault();
+                                        const img = e.target as HTMLImageElement;
+                                        const overlay = document.createElement('div');
+                                        overlay.className = 'fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50';
+                                        
+                                        const zoomedImg = document.createElement('img');
+                                        zoomedImg.src = img.src;
+                                        zoomedImg.alt = img.alt;
+                                        zoomedImg.className = 'max-w-[95vw] max-h-[95vh] object-contain';
+                                        
+                                        overlay.appendChild(zoomedImg);
+                                        document.body.appendChild(overlay);
+                                        
+                                        const closeZoom = () => {
+                                            document.body.removeChild(overlay);
+                                        };
+                                        
+                                        overlay.addEventListener('click', closeZoom);
+                                        overlay.addEventListener('touchstart', closeZoom);
+                                    }
+                                }}
+                                style={{ touchAction: 'manipulation' }}
+                            />
+                        </div>
+                        <div className="text-center mt-2 text-sm text-slate-400 md:hidden">
+                            Tap image to zoom
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -451,6 +502,7 @@ const KryptoTour = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                             {[
                                 { img: '/krypto-tour/sponsors/ethereumFrance.webp', url: 'https://www.ethereum-france.com/', name: 'Ethereum France' },
+                                { img: '/krypto-tour/sponsors/bpifrance.webp', url: 'https://www.bpifrance.fr/', name: 'BPI France' },
                                 { img: '/krypto-tour/sponsors/borgpad.webp', url: 'https://borgpad.com/', name: 'Borgpad' },
                                 { img: '/krypto-tour/sponsors/superteam.webp', url: 'https://x.com/SuperteamFRANCE', name: 'Superteam France' },
                                 { img: '/krypto-tour/sponsors/shelters.svg', url: 'https://www.shelters.finance/fr/', name: 'Shelters' },
