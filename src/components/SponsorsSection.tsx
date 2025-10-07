@@ -69,7 +69,7 @@ const SponsorsSection = () => {
     items: { name: string; logo: string }[],
     autoScrollSpeed: number
   ) => (
-    <section className="py-12">
+    <section className="py-12" style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-white text-2xl md:text-3xl font-bold text-center mb-8">{title}</h3>
         <div className="relative">
@@ -82,6 +82,9 @@ const SponsorsSection = () => {
                       src={item.logo}
                       alt={item.name}
                       loading="lazy"
+                      decoding="async"
+                      width={256}
+                      height={64}
                       className="h-16 w-auto max-w-full object-contain"
                     />
                   </div>
@@ -96,7 +99,7 @@ const SponsorsSection = () => {
 
   // Media carousel (autoplay)
   const renderMediaCarousel = (title: string, items: { name: string; logo: string }[], autoScrollSpeed: number) => (
-    <section className="py-16 border-t border-slate-800">
+    <section className="py-16 border-t border-slate-800" style={{ contentVisibility: 'auto', containIntrinsicSize: '700px' }}>
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-white text-3xl font-bold text-center mb-12">{title}</h3>
         <div className="relative">
@@ -109,6 +112,9 @@ const SponsorsSection = () => {
                       src={outlet.logo}
                       alt={outlet.name}
                       loading="lazy"
+                      decoding="async"
+                      width={256}
+                      height={64}
                       className="h-16 w-auto max-w-full object-contain"
                     />
                   </div>

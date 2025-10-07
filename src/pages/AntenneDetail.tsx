@@ -494,6 +494,9 @@ const AntenneDetail = () => {
                   src={antenne.schoolLogo}
                   alt={antenne.school}
                   loading="lazy"
+                  decoding="async"
+                  width={112}
+                  height={112}
                   className="max-w-28 max-h-28 bg-white rounded-lg p-2 object-contain"
                 />
                 <div>
@@ -516,7 +519,7 @@ const AntenneDetail = () => {
         </div>
       </section>
       {/* Bureau Section */}
-      <section className="py-20">
+      <section className="py-20" style={{ contentVisibility: 'auto', containIntrinsicSize: '1200px' }}>
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-white text-center mb-16">
             {t('branches.bureauYear').replace('{city}', antenne.name)}
@@ -526,7 +529,8 @@ const AntenneDetail = () => {
             {antenne.bureau.map((member, index) => (
               <div
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
+                className="bg-slate-800/50 md:backdrop-blur-lg rounded-2xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden"
+                style={{ contain: 'paint' }}
               >
                 <div className="p-8 text-center">
                   <div className="w-32 h-32 rounded-xl overflow-hidden mx-auto mb-6 border-2 border-blue-500/30 group-hover:border-blue-400 transition-all duration-300">
@@ -534,7 +538,10 @@ const AntenneDetail = () => {
                       src={member.photo}
                       alt={member.name}
                       loading="lazy"
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      decoding="async"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover md:transform-gpu md:group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-300 transition-colors">
@@ -551,7 +558,7 @@ const AntenneDetail = () => {
       </section>
 
       {/* Contact & Map Section */}
-      <section className="py-20 bg-slate-800/30">
+      <section className="py-20 bg-slate-800/30" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -601,17 +608,20 @@ const AntenneDetail = () => {
 
       {/* Gallery Section */}
       {antenne.gallery && antenne.gallery.length > 0 && (
-      <section className="py-20">
+      <section className="py-20" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white text-center mb-16">{t('branches.gallery')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {antenne.gallery.map((image, index) => (
-              <div key={index} className="aspect-video rounded-xl overflow-hidden bg-slate-800">
+              <div key={index} className="aspect-video rounded-xl overflow-hidden bg-slate-800" style={{ contain: 'paint' }}>
                 <img
                   src={image}
                   alt={`${t('branches.gallery')} ${index + 1}`}
                   loading="lazy"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  decoding="async"
+                  width={1280}
+                  height={720}
+                  className="w-full h-full object-cover md:transform-gpu md:hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}

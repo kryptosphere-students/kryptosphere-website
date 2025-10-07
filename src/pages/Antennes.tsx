@@ -122,7 +122,7 @@ const Antennes = () => {
       coordinates: { lat: 49.238939, lng: 4.002990 },
       school: 'NEOMA',
       description: t('antennes.neoma.littleDescription'),
-      image: 'https://www.fondation-neoma.fr/sites/fondation/files/styles/w2000/public/2023-11/NEOMA_Front.png?h=fb205de0&itok=sDaXH5eq',
+      image: 'https://neoma-bs.fr/sites/default/files/styles/press_release_content_md/public/img/HenningLarsen_ReimsSchool_LobbyView_Final_Sora-1-scaled.jpg?itok=-STT0oRW',
     },
     {
       id: 'aes',
