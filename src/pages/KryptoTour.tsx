@@ -29,6 +29,27 @@ const KryptoTour = () => {
         };
     }, []);
 
+    // Progressive reveal for heavy grids (speakers, sponsors)
+    useEffect(() => {
+        const elements = Array.from(document.querySelectorAll('.reveal-on-scroll')) as HTMLElement[];
+        if (elements.length === 0) return;
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target as HTMLElement;
+                        el.classList.remove('opacity-0', 'translate-y-2');
+                        el.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(el);
+                    }
+                });
+            },
+            { rootMargin: '100px 0px', threshold: 0.05 }
+        );
+        elements.forEach((el) => observer.observe(el));
+        return () => observer.disconnect();
+    }, []);
+
     // Placeholder data
     const stats = [
         { label: t('kryptotour.stats.participants') || 'Participants', value: '1000+' },
@@ -186,7 +207,7 @@ const KryptoTour = () => {
             twitter: "",
         },
         {
-            name: "Ambroisie Helaine",
+            name: "Ambroise Helaine",
             role: "Country Manager - Bybit",
             img: "/krypto-tour/speakers/ambroisie.webp",
             linkedin: "https://www.linkedin.com/in/3426b345/",
@@ -211,6 +232,13 @@ const KryptoTour = () => {
             role: "Déléguée Générale ANACOFI | Présidente de Women4Cyber France",
             img: "/krypto-tour/speakers/valeria.webp",
             linkedin: "https://www.linkedin.com/in/vfaure-muntian/",
+            twitter: "",
+        },
+        {
+            name: "Tomas Mulder",
+            role: "Co-Founder & Director @POAP Studio",
+            img: "/krypto-tour/speakers/tomas.webp",
+            linkedin: "https://www.linkedin.com/in/tomas-mulder",
             twitter: "",
         }
     ];
@@ -243,7 +271,7 @@ const KryptoTour = () => {
             {/* Hero Section */}
             <section className="pt-32 pb-8 px-6">
                 <div className="max-w-7xl mx-auto text-center">
-                    <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
+                    <div className="inline-flex items-center gap-2 bg-blue-900/50 md:backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
                         <Calendar className="w-4 h-4" />
                         {t('kryptotour.date') || '11 octobre 2025 · Lyon'}
                     </div>
@@ -289,7 +317,7 @@ const KryptoTour = () => {
                         {t('kryptotour.format.description') || 'Rejoignez la communauté blockchain française au KRYPTO-TOUR, l\'événement phare de KRYPTOSPHERE®, qui depuis 2022 a démocratisé les technologies Web3 au-delà de Paris. Après deux éditions à Marseille et une première lyonnaise ayant réuni plus de 500 participants, le KRYPTO-TOUR revient à Lyon le 11 octobre 2025 pour une 4ᵉ édition encore plus ambitieuse.'}
                     </p>
                     {/* Lyon Gallery Section */}
-                    <section className="py-8 px-6">
+                    <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
                         <div className="max-w-5xl mx-auto">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 {[
@@ -297,12 +325,16 @@ const KryptoTour = () => {
                                     '/antennes/lyon/iaelyonGallery6.webp',
                                     'https://www.univ-lyon3.fr/medias/photo/kryptotour_1732016056202-jpg',
                                 ].map((img, i) => (
-                                    <div key={i} className="rounded-2xl overflow-hidden shadow-lg">
+                                    <div key={i} className="rounded-2xl overflow-hidden md:shadow-lg border border-slate-700/40 bg-slate-700/30" style={{ contain: 'paint' }}>
                                         <img
                                             src={img}
                                             alt={`Lyon gallery ${i + 1}`}
                                             className="w-full h-64 object-cover"
                                             loading="lazy"
+                                            decoding="async"
+                                            width="1200"
+                                            height="800"
+                                            sizes="(min-width: 768px) 33vw, 100vw"
                                         />
                                     </div>
                                 ))}
@@ -316,16 +348,20 @@ const KryptoTour = () => {
             </section>
 
             {/* Schedule Section */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '800px' }}>
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.schedule.title') || 'Planning'}</h2>
-                    <div className="bg-slate-800/80 backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40">
+                    <div className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40">
                         <div className="flex justify-center">
                             <img 
                                 src="/krypto-tour/timetable.webp" 
                                 alt="KRYPTO-TOUR LYON 2025 Planning" 
                                 className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
                                 loading="lazy"
+                                decoding="async"
+                                width="1920"
+                                height="1080"
+                                sizes="100vw"
                                 onClick={(e) => {
                                     if (window.innerWidth < 768) {
                                         e.preventDefault();
@@ -360,17 +396,20 @@ const KryptoTour = () => {
             </section>
 
             {/* Speakers/Guests Grid */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1400px' }}>
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.speakers.title') || 'Speakers'}</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                         {speakers.map((sp, i) => (
-                            <div key={i} className="bg-slate-800/50 rounded-xl border border-slate-700/50 p-4 flex flex-col items-center h-full">
+                            <div key={i} className="bg-slate-800/50 rounded-xl border border-slate-700/50 p-4 flex flex-col items-center h-full reveal-on-scroll opacity-0 translate-y-2 transition-all duration-500 will-change-transform" style={{ contain: 'paint' }}>
                                 <div className="w-24 h-24 rounded-full overflow-hidden bg-slate-700 mb-3 flex items-center justify-center">
                                     <img
                                         src={sp.img}
                                         alt={sp.name}
                                         loading="lazy"
+                                        decoding="async"
+                                        width="96"
+                                        height="96"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -407,7 +446,7 @@ const KryptoTour = () => {
             </section>
 
             {/* Sponsors Section */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1600px' }}>
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.sponsors.title') || 'Sponsors'}</h2>
 
@@ -425,7 +464,7 @@ const KryptoTour = () => {
                                 className="bg-gradient-to-br from-cyan-900/20 to-blue-600/10 rounded-2xl border-2 border-cyan-500/30 p-12 flex items-center justify-center hover:border-cyan-400/50 transition-all duration-300 group"
                                 title="France Cryptos"
                             >
-                                <img src="/krypto-tour/sponsors/fc.webp" alt="France Cryptos Logo" loading="lazy" className="max-h-24 object-contain group-hover:scale-105 transition-transform duration-300" />
+                                <img src="/krypto-tour/sponsors/fc.webp" alt="France Cryptos Logo" loading="lazy" decoding="async" width="600" height="200" sizes="(min-width: 768px) 600px, 90vw" className="max-h-24 object-contain md:group-hover:scale-105 md:transform-gpu transition-transform duration-300" />
                             </a>
                         </div>
                     </div>
@@ -449,10 +488,11 @@ const KryptoTour = () => {
                                     href={sponsor.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-6 md:p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300 h-32 md:h-40 lg:h-48 group"
+                                    className="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-2xl border-2 border-yellow-500/30 p-6 md:p-8 flex items-center justify-center hover:border-yellow-400/50 transition-all duration-300 h-32 md:h-40 lg:h-48 group reveal-on-scroll opacity-0 translate-y-2 will-change-transform"
+                                    style={{ contain: 'paint' }}
                                     title={sponsor.name}
                                 >
-                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" className="w-full h-full max-h-20 md:max-h-24 lg:max-h-28 object-contain group-hover:scale-105 transition-transform duration-300" />
+                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" decoding="async" width="512" height="256" sizes="(min-width: 768px) 33vw, 100vw" className="w-full h-full max-h-20 md:max-h-24 lg:max-h-28 object-contain md:group-hover:scale-105 md:transform-gpu transition-transform duration-300" />
                                 </a>
                             ))}
                         </div>
@@ -484,10 +524,11 @@ const KryptoTour = () => {
                                     href={sponsor.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gradient-to-br from-gray-800/20 to-gray-600/10 rounded-xl border-2 border-gray-500/30 p-6 flex items-center justify-center hover:border-gray-400/50 transition-all duration-300 h-32 md:h-36 group"
+                                    className="bg-gradient-to-br from-gray-800/20 to-gray-600/10 rounded-xl border-2 border-gray-500/30 p-6 flex items-center justify-center hover:border-gray-400/50 transition-all duration-300 h-32 md:h-36 group reveal-on-scroll opacity-0 translate-y-2 will-change-transform"
+                                    style={{ contain: 'paint' }}
                                     title={sponsor.name}
                                 >
-                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" className="w-full h-full max-h-20 md:max-h-24 object-contain group-hover:scale-105 transition-transform duration-300" />
+                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" decoding="async" width="512" height="256" sizes="(min-width: 768px) 33vw, 100vw" className="w-full h-full max-h-20 md:max-h-24 object-contain md:group-hover:scale-105 md:transform-gpu transition-transform duration-300" />
                                 </a>
                             ))}
                         </div>
@@ -517,10 +558,11 @@ const KryptoTour = () => {
                                     href={sponsor.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gradient-to-br from-orange-900/20 to-orange-600/10 rounded-xl border-2 border-orange-500/30 p-4 flex items-center justify-center hover:border-orange-400/50 transition-all duration-300 h-28 md:h-32 group"
+                                    className="bg-gradient-to-br from-orange-900/20 to-orange-600/10 rounded-xl border-2 border-orange-500/30 p-4 flex items-center justify-center hover:border-orange-400/50 transition-all duration-300 h-28 md:h-32 group reveal-on-scroll opacity-0 translate-y-2 will-change-transform"
+                                    style={{ contain: 'paint' }}
                                     title={sponsor.name}
                                 >
-                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" className="w-full h-full max-h-16 md:max-h-20 object-contain group-hover:scale-105 transition-transform duration-300" />
+                                    <img src={sponsor.img} alt={`${sponsor.name} Logo`} loading="lazy" decoding="async" width="400" height="200" sizes="(min-width: 768px) 33vw, 50vw" className="w-full h-full max-h-16 md:max-h-20 object-contain md:group-hover:scale-105 md:transform-gpu transition-transform duration-300" />
                                 </a>
                             ))}
                         </div>
@@ -549,10 +591,10 @@ const KryptoTour = () => {
             </section>
 
             {/* Community Partners */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl font-bold text-center mb-6 text-red-400">{t('kryptotour.communityPartners.title') || 'Partenaires communautaires'}</h2>
-                    <div className="bg-slate-700/80 backdrop-blur-lg rounded-2xl p-4 mb-8 border border-slate-600/40">
+                    <div className="bg-slate-700/80 md:backdrop-blur-lg rounded-2xl p-4 mb-8 border border-slate-600/40">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {[
                                 { img: '/krypto-tour/community-partner/b@b.webp', url: 'https://blockchain.studentorg.berkeley.edu/', name: 'Blockchain at Berkeley' },
@@ -574,6 +616,10 @@ const KryptoTour = () => {
                                         src={partner.img}
                                         alt={`${partner.name} Logo`}
                                         loading="lazy"
+                                        decoding="async"
+                                        width="200"
+                                        height="100"
+                                        sizes="(min-width: 768px) 25vw, 45vw"
                                         className="max-h-20 w-auto object-contain mx-auto"
                                     />
                                 </a>
@@ -584,10 +630,10 @@ const KryptoTour = () => {
             </section>
 
             {/* Media Partners */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl font-bold text-center mb-6 text-red-400">{t('kryptotour.mediaPartners.title') || 'Partenaire média'}</h2>
-                    <div className="bg-slate-700/80 backdrop-blur-lg rounded-2xl p-4 mb-8 border border-slate-600/40">
+                    <div className="bg-slate-700/80 md:backdrop-blur-lg rounded-2xl p-4 mb-8 border border-slate-600/40">
                         <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
                             {mediaPartners.map((mp, i) => (
                                 <a
@@ -602,6 +648,10 @@ const KryptoTour = () => {
                                         src={mp.img}
                                         alt={mp.name}
                                         loading="lazy"
+                                        decoding="async"
+                                        width="240"
+                                        height="120"
+                                        sizes="(min-width: 768px) 20vw, 45vw"
                                         className="max-h-24 w-auto object-contain mx-auto"
                                     />
                                 </a>
