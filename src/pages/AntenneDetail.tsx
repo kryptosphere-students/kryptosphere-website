@@ -71,7 +71,7 @@ const AntenneDetail = () => {
     paris4: {
       name: t('cities.paris'),
       city: t('cities.paris'),
-      coordinates: { lat: 48.858636, lng: 2.375139 },
+      coordinates: { lat: 48.8653, lng: 2.3785 },
       country: t('countries.france'),
       school: 'ESCP Business School',
       schoolLogo: 'https://www.cfa-sciences.fr/sites/default/files/inline-images/1200px-ESCP_LOGO_CMJN.png',
@@ -128,6 +128,29 @@ const AntenneDetail = () => {
       ],
       descriptionKey: 'antennes.london.description'
     },
+      lille: {
+      name: t('cities.lille'),
+      city: t('cities.lille'),
+      coordinates: { lat: 50.6320, lng: 3.0460 },
+      country: t('countries.france'),
+      school: 'IESEG School of Business',
+      schoolLogo: 'https://bourses-etudiants-s3.s3.amazonaws.com/wp-content/uploads/2025/08/26182138/IE%CC%81SEG-School-of-Management-bourses-etudiants.png',
+      description: t('branches.lilleDescription'),
+      descriptionEn: t('branches.lilleDescription'),
+      heroImage: 'https://cdn.pixabay.com/photo/2017/08/20/00/11/lille-2660294_1280.jpg',
+      contact: {
+        email: 'contact@kryptosphere.org',
+        phone: '',
+        address: '4 RUE MASSENA, 59800 LILLE'
+      },
+      bureau: [
+        { name: 'Guillaume Szonyi', role: t('roles.president'), photo: '/bureau/GuillaumeS.jpeg' },
+        { name: 'Paolo Serhal', role: t('roles.vicePresident'), photo: '/bureau/PaoloS.jpeg' },
+        { name: 'Louis Anglade', role: t('roles.treasurer'), photo: '/bureau/LouisD.jpeg' }
+      ],
+      gallery: [],
+      descriptionKey: 'antennes.lille.description'
+    },
     mons: {
       name: t('cities.mons'),
       city: t('cities.mons'),
@@ -181,9 +204,9 @@ const AntenneDetail = () => {
       },
     ieseg: {
       name: t('antennes.ieseg.name'),
-      city: t('cities.paris'),
+      city: t('cities.lille'),
       country: t('countries.france'),
-      coordinates: { lat: 48.892372131347656, lng: 2.235696315765381 },
+      coordinates: { lat: 50.6320, lng: 3.0460 },
       school: 'IESEG School of Management',
       schoolLogo: 'https://www.ieseg.fr/wp-content/uploads/IESEG-Logo-2012-rgb.jpg',
       descriptionKey: 'antennes.ieseg.description',
@@ -208,6 +231,28 @@ const AntenneDetail = () => {
         '/antennes/ieseg/ieseg2.webp',
         '/antennes/ieseg/ieseg3.webp',
       ]
+    },
+    esgi: {
+      name: t('antennes.esgi.name'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.8495, lng: 2.3854 },
+      school: 'ESGI Paris',
+      schoolLogo: 'https://esgi-lyon.fr/ESGI-3x3-1.jpg',
+      descriptionKey: 'antennes.esgi.description',
+      heroImage: 'https://i.hellowork.com/29RfXrKCLbW2m5QDE8m8oHZEuzA_uBo-sh6umUsFm5c/w:1200/h:675/rt:fit/g:sm/bG9jYWw6Ly8vZWR0ZWNoL2V0YWJsaXNzZW1lbnQvbWVkaWEvMTkzNS84YWE3YTM3OC1iNjA3LTRjMDAtYjhhMC0zOTIwN2ZkODA5ZTkuanBn.jpg',
+      contact: {
+        email: t('antennes.esgi.email'),
+        phone: t('antennes.esgi.phone'),
+        address: t('antennes.esgi.address')
+      },
+      bureau: [
+        { name: t('antennes.esgi.bureau.1.name'), role: t('antennes.esgi.bureau.1.role'), photo: '/antennes/esgi/YohanG.jpeg' },
+        { name: t('antennes.esgi.bureau.2.name'), role: t('antennes.esgi.bureau.2.role'), photo: '/antennes/esgi/Neven.jpeg' },
+        { name: t('antennes.esgi.bureau.3.name'), role: t('antennes.esgi.bureau.3.role'), photo: '/antennes/esgi/LouisV.jpeg' },
+        { name: t('antennes.esgi.bureau.4.name'), role: t('antennes.esgi.bureau.4.role'), photo: '/antennes/esgi/Vanande.jpeg' },
+      ],
+      gallery: []
     },
     lyon: {
       name: t('antennes.lyon.name'),

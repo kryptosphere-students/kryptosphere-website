@@ -40,7 +40,7 @@ const PublicationsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             {t('publications.title')}
           </h2>
-          <Link to="/publications" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
+          <Link to="https://www.kryptosphere.org/fr/publications" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2">
             {t('publications.viewAll')}
            <ArrowRight className="w-4 h-4" />
           </Link>
@@ -52,7 +52,7 @@ const PublicationsSection = () => {
       <div className="bg-slate-800 rounded-lg overflow-hidden hover:bg-slate-700 transition-colors duration-300">
         
         {/* IMAGE CLIQUABLE renvoi vers la page "Publication"*/}
-        <Link to="/publications">
+        <Link to="https://www.kryptosphere.org/fr/publications">
           <div className="aspect-video bg-slate-700 relative overflow-hidden">
             <img 
               src={publication.image} 
@@ -71,7 +71,7 @@ const PublicationsSection = () => {
 
         <div className="p-6">
           {/* TITRE CLIQUABLE renvoi vers la page "Publication" */}
-          <Link to="/publications">
+          <Link to="https://www.kryptosphere.org/fr/publications">
             <h3 className="text-white font-semibold text-lg group-hover:text-blue-400 transition-colors">
               {publication.title}
             </h3>

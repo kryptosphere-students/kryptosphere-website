@@ -19,7 +19,7 @@ export const translations = {
     'hero.branches': 'Voir nos antennes',
 
     // Stats
-    'stats.title': 'KRYPTOSPHERE® EN QUELQUES CHIFFRES',
+    'stats.title': 'EN QUELQUES CHIFFRES',
     'stats.subtitle': "Le réseau étudiant de référence sur les cryptomonnaies et sur la Tech depuis 2017",
     'stats.students': 'Étudiants',
     'stats.universities': 'Universités',
@@ -30,7 +30,7 @@ export const translations = {
     'sponsors.title': 'Ils nous soutiennent',
     'sponsors.sponsors': 'Sponsors',
     'sponsors.partners': 'Partenaires',
-    'sponsors.universities': 'Universités',
+    'sponsors.universities': 'Écoles & Universités',
     'sponsors.media': 'Ils parlent de nous',
 
     // Publications
@@ -354,6 +354,7 @@ export const translations = {
     'branches.nantesDescription': 'L\'antenne nantaise, dynamique et innovante dans l\'ouest de la France.',
     'branches.parisDescription4': "L\'antenne de l'ESCP créée en avril 2022, aussi prestigieuse que compétente depuis lors. Spécialisation : crypto, IA.",
     'branches.londonDescription': 'Notre première antenne internationale, au cœur de la City londonienne.',
+    'branches.lilleDescription': 'Active depuis 2022, KRYPTOSPHERE® IESEG traite des NFTs et de la combinaison entre les crypto-actifs et la finance traditionnelle.',
     'branches.lyon': "Créée en février 2024, KS IAE LYON rayonne par l'organisation annuelle de notre évènement phare : le KryptoTour !",
     'branches.lyonDescription': "Créée en février 2024, KS IAE LYON rayonne par l'organisation annuelle de notre évènement phare : le KryptoTour !",
     'branches.monsDescription': 'L\'antenne de Mons, au plus près des institutions européennes de Bruxelles.',
@@ -443,6 +444,7 @@ export const translations = {
     'cities.nantes': 'Nantes',
     'cities.lyon': 'Lyon',
     'cities.london': 'London',
+    'cities.lille': 'Lille',
     'cities.mons': 'Mons',
     'cities.reims': 'Reims',
 
@@ -463,7 +465,7 @@ export const translations = {
     'footer.legal.legal': 'Mentions légales',
     'footer.description': 'L\'association étudiante de référence dans la Tech. Rejoignez-nous pour explorer les technologies de demain.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025 | KRYPTOSPHERE® FRANCE | Tous droits réservés.',
+    'footer.copyright': '2017 — 2026 | KRYPTOSPHERE® FRANCE | Tous droits réservés.',
 
     // Contact
     'contact.email': 'Email',
@@ -540,6 +542,33 @@ export const translations = {
 
     // General
     'language': 'fr',
+
+// Antenne IESEG Lille
+    'antennes.lille.name': 'IESEG Lille',
+    'antennes.lille.description': "KRYPTOSPHERE® IESEG explore les crypto-actifs depuis sa création en 2022.",
+    'antennes.lille.bureau.1.name': 'Guillaume Szonyi',
+    'antennes.lille.bureau.1.role': 'Président',
+    'antennes.lille.bureau.3.name': 'Louis d’Anglade',
+    'antennes.lille.bureau.3.role': 'Trésorier',
+    'antennes.lille.bureau.4.name': 'Paolo Serhal',
+    'antennes.lille.bureau.4.role': 'Secrétaire général',
+
+// Antenne ESGI Paris
+'antennes.esgi.name': 'ESGI Paris',
+'antennes.esgi.description': "KRYPTOSPHERE® ESGI est une antenne récente lancée en 2025 et axée sur la cybersécurité des crypto-actifs.",
+    'antennes.esgi.bureau.1.name': 'Yohan GEORGELIN',
+    'antennes.esgi.bureau.1.role': 'Président',
+    'antennes.esgi.bureau.2.name': 'Neven LEGALL',
+    'antennes.esgi.bureau.2.role': 'Vice-Président',
+    'antennes.esgi.bureau.3.name': 'Louis VANNOBEL',
+    'antennes.esgi.bureau.3.role': 'Trésorier',
+    'antennes.esgi.bureau.4.name': 'Vanande KHATCHATRIAN',
+    'antennes.esgi.bureau.4.role': 'Secrétaire général',
+    'antennes.esgi.email': 'contact@kryptosphere.org',
+    'antennes.esgi.phone': '',
+    'antennes.esgi.address': '242 Rue du Faubourg Saint-Antoine, 75012 Paris',
+    'antennes.esgi.littleDescription': "KRYPTOSPHERE® ESGI réunit des étudiants passionnés par la blockchain et la finance numérique à Paris.",
+
 
 // Antenne Hult Business School (London)
     'antennes.london.name': 'Hult',
@@ -801,6 +830,7 @@ export const translations = {
     'antennes.mons.littleDescription': "À Mons, KRYPTOSPHERE® favorise l'innovation technologique et la finance, créant un hub étudiant dynamique au cœur de la Belgique.",
     'antennes.hult.littleDescription': "À Hult Business School London, KRYPTOSPHERE® connecte des étudiants internationaux autour de la finance traditionnelle, des crypto, de l'innovation et de l'entrepreneuriat.",
     'antennes.escp.littleDescription': "À l'ESCP, KRYPTOSPHERE® se distingue par ses projets innovants en crypto, IA et finance, dans un environnement académique cosmopolite et dynamique.",
+    'antennes.lille.littleDescription': "À IESEG Lille, KRYPTOSPHERE® pérennise les crypto-actifs auprès des étudiants orienté en finance traditionnelle et vers l'entreprenariat.",
 
     
     'donation.btcModal.title': 'Donner en Bitcoin via Tor',
@@ -864,7 +894,7 @@ export const translations = {
     'sponsors.title': 'They support us',
     'sponsors.sponsors': 'Sponsors',
     'sponsors.partners': 'Partners',
-    'sponsors.universities': 'Universities',
+    'sponsors.universities': 'Schools & Universities',
     'sponsors.media': 'They talk about us',
 
     // Publications
@@ -1296,7 +1326,7 @@ export const translations = {
     'footer.legal.legal': 'Legal Notice',
     'footer.description': 'The reference student association in the Tech universe. Join us to explore the technologies of tomorrow.',
     'footer.navigation': 'Navigation',
-    'footer.copyright': '2017 — 2025 | KRYPTOSPHERE FRANCE | All rights reserved.',
+    'footer.copyright': '2017 — 2026 | KRYPTOSPHERE FRANCE | All rights reserved.',
 
     // Contact
     'contact.email': 'Email',
@@ -1611,10 +1641,15 @@ export const translations = {
     'antennes.mons.littleDescription': "In Mons, KRYPTOSPHERE fosters tech innovation and finance, creating a dynamic student hub in the heart of Belgium.",
     'antennes.hult.littleDescription': "At Hult Business School London, KRYPTOSPHERE connects international students around traditional finance, crypto, innovation, and global entrepreneurship.",
     'antennes.escp.littleDescription': "At ESCP, KRYPTOSPHERE stands out for innovative projects in crypto, AI, and finance, within a dynamic and cosmopolitan academic environment.",
+    'antennes.lille.littleDescription': "At IESEG Lille, KRYPTOSPHERE® promotes the long-term adoption of crypto assets among students with a focus on traditional finance and entrepreneurship.",
 
     // Antenne Hult (London)
     'antennes.london.name': 'Hult Business School',
     'antennes.london.description': "KRYPTOSPHERE® LONDON embodies our European expansion, connecting traditional finance and the crypto universe.",
+
+    // Antenne IESEG (Lille)
+    'antennes.lille.name': 'IÉSEG School of Management Grande école',
+    'antennes.lille.description': "KRYPTOSPHERE® IESEG brings together students in northern France who are eager to democratize crypto assets with traditional finance.",
 
 
         // KryptoTour
