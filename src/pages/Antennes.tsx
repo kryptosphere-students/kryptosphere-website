@@ -89,7 +89,7 @@ const Antennes = () => {
       name: t('cities.paris'),
       city: t('cities.paris'),
       country: t('countries.france'),
-      coordinates: { lat: 50.6292, lng: 3.0573 },
+      coordinates: { lat: 48.8653, lng: 2.3785 },
       school: 'ESCP Business School',
       description: t('antennes.escp.littleDescription'),
       image: 'https://escp.eu/sites/default/files/inline-images/Paris/real-estate-project/ESCP-Paris-Campus-Real-Estate-Project-002.jpg',
@@ -103,6 +103,16 @@ const Antennes = () => {
       school: 'Hult Business School',
       description: t('antennes.hult.littleDescription'),
       image: 'https://img2.storyblok.com/f/45434/1200x800/4c78f7cd11/hult-london-postgraduate-virtual-tour.jpg',
+    },
+        {
+      id: 'lille',
+      name: t('cities.lille'),
+      city: t('cities.lille'),
+      country: t('countries.france'),
+      coordinates: { lat: 50.6320, lng: 3.0460 },
+      school: 'IESEG School of Business',
+      description: t('antennes.lille.littleDescription'),
+      image: 'https://www.ieseg.fr/wp-content/uploads/2021/04/IESEG-Illu_Lille_Grand_Place-168748-1.jpg',
     },
     {
       id: 'mons',
@@ -163,6 +173,16 @@ const Antennes = () => {
       school: 'EPITA',
       description: t('antennes.epita.littleDescription'),
       image: '/antennes/epita/epita.webp', 
+    },
+    {
+      id: 'esgi',
+      name: t('cities.paris'),
+      city: t('cities.paris'),
+      country: t('countries.france'),
+      coordinates: { lat: 48.8495, lng: 2.3854 },
+      school: 'ESGI',
+      description: t('antennes.esgi.littleDescription'),
+      image: 'https://cdn.pixabay.com/photo/2021/03/29/10/45/architecture-6133656_1280.jpg', 
     }
   ];
 
