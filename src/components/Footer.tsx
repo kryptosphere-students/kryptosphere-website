@@ -93,22 +93,31 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-6 text-lg text-white">{t('antenne.contact')}</h4>
-            <ul className="space-y-3 text-slate-400">
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-400" />
-                <span>contact@kryptosphere.org</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-blue-400" />
-                <span>France, UK & Belgium</span>
-              </li>
-              {/* <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-blue-400" />
-                <span>+33 (0)X XX XX XX XX</span>
-              </li> */}
-            </ul>
-          </div>
+  <h4 className="font-semibold mb-6 text-lg text-white">
+    {t('antenne.contact')}
+  </h4>
+  <ul className="space-y-3 text-slate-400">
+    <li className="flex items-center gap-2">
+      <Mail className="w-4 h-4 text-blue-400" />
+      <a
+        href="mailto:contact@kryptosphere.org"
+        className="hover:text-blue-300 transition-colors"
+      >
+        contact@kryptosphere.org
+      </a>
+    </li>
+    <li className="flex items-center gap-2">
+      <MapPin className="w-4 h-4 text-blue-400" />
+      <span>France, UK &amp; Belgium</span>
+    </li>
+    {/* 
+    <li className="flex items-center gap-2">
+      <Phone className="w-4 h-4 text-blue-400" />
+      <span>+33 (0)X XX XX XX XX</span>
+    </li> 
+    */}
+  </ul>
+</div>
         </div>
         
         <div className="border-t border-slate-800 pt-8 mb-8">
