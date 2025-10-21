@@ -34,6 +34,7 @@ const SponsorsSection = () => {
     { name: 'Ledger',              logo: '/lovable-uploads/Ledger.svg',         url: 'https://www.linkedin.com/posts/kryptosphere_kryptosphere-x-ledger-nft-paris-side-activity-7294664424424960000-KD2-/?originalSubdomain=fr' },
     { name: 'VIVA TECH',           logo: '/lovable-uploads/viva.webp',          url: 'https://www.esilv.fr/viva-technology-2025-lesilv-au-coeur-des-grands-enjeux-technologiques/' },
     { name: 'Le Cercle du Coin',   logo: '/lovable-uploads/CDC.png',            url: 'https://lecercleducoin.fr/' },
+    { name: 'BC Diploma',   logo: '/lovable-uploads/BCdiploma.png',            url: 'https://medium.com/bcdiploma/kryptosphere-bcdiploma-team-up-and-invite-you-to-meetups-c72624780c01' },
   ];
 
   const universities: LogoItem[] = [
