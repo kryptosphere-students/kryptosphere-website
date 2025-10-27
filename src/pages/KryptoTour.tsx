@@ -481,7 +481,7 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/bybit.svg', url: 'https://www.bybit.eu/fr-EU/', name: 'Bybit' },
                                 { img: '/krypto-tour/sponsors/avalanche.webp', url: 'https://www.avax.network/', name: 'Avalanche' },
                                 { img: '/krypto-tour/sponsors/startmining.svg', url: 'https://startmining.io/', name: 'Startmining' },
-                                { img: '/krypto-tour/sponsors/mexc.webp', url: '', name: 'MEXC' }
+                                
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
