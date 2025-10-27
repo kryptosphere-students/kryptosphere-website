@@ -42,6 +42,7 @@ const SponsorsSection = () => {
     { name: 'KRYPTOSPHERE Polytechnique',   logo: '/lovable-uploads/TSP.webp',      url: 'https://www.telecom-sudparis.eu/evenement/seminaire-blockchain-pragma/' },
     { name: 'KRYPTOSPHERE ESCP',            logo: '/lovable-uploads/ESCP.webp',     url: 'https://campuslife.escp.eu/club_signup?group_type=&search=kryptosphere&category_tags=&order=name_asc' },
     { name: 'KRYPTOSPHERE Sorbonne',        logo: '/lovable-uploads/Sorbonne.png',     url: 'https://sciences.sorbonne-universite.fr/associations/kryptosphere-jussieu' },
+    { name: 'KRYPTOSPHERE IAE Lyon',        logo: '/lovable-uploads/IAE.png',      url: 'https://iae.univ-lyon3.fr/kryptosphere-iaelyon' },
     { name: 'KRYPTOSPHERE HEH',             logo: '/lovable-uploads/HEH.webp',      url: 'https://www.instagram.com/ks_belgium/' },
     { name: 'KRYPTOSPHERE EMLV',            logo: '/lovable-uploads/emlv.webp',     url: 'https://www.emlv.fr/' },
     { name: 'KRYPTOSPHERE HULT London',     logo: '/lovable-uploads/hult.webp',     url: 'https://www.instagram.com/kryptospherelondon/' },
@@ -63,7 +64,7 @@ const SponsorsSection = () => {
   ];
 
   const media: LogoItem[] = [
-    { name: 'Le Monde',          logo: '/lovable-uploads/lemonde.svg',        url: 'https://www.lemonde.fr/' },
+    { name: 'Le Monde',          logo: '/lovable-uploads/lemonde.svg',        url: 'https://www.lemonde.fr/campus/article/2022/12/08/blockchain-crypto-nft-le-web3-debarque-dans-les-ecoles-de-commerce_6153467_4401467.html' },
     { name: 'RTL',               logo: '/lovable-uploads/rtl.webp',           url: 'https://www.dailymotion.com/video/x80m1r5?start=615' },
     { name: 'Figaro',            logo: '/lovable-uploads/figaro.webp',        url: 'https://www.facebook.com/KryptosphereOfficial/posts/kryptosphere-dans-le-figaro-sur-le-myst%C3%A8re-de-satoshi-/930906535739344/' },
     { name: 'Journal Du Net',    logo: '/lovable-uploads/JDN.webp',           url: 'https://www.journaldunet.com/web3/crypto/1539797-donald-trump-et-les-cryptos-une-reserve-strategique-qui-souleve-des-soupcons/' },
