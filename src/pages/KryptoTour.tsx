@@ -551,7 +551,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/sponsors/lima.webp', url: 'https://limaprotection.com/fr', name: 'Lima Protection' },
                                 { img: '/krypto-tour/sponsors/jse.svg', url: 'https://jse.capital/', name: 'JSE|Capital' },
                                 { img: '/krypto-tour/sponsors/nodi.svg', url: 'https://nod-i.com/fr/', name: 'Nod.i' },
-                                { img: '/krypto-tour/sponsors/supernova.webp', url: '', name: 'Supernova' }
+                                { img: '/krypto-tour/sponsors/supernova.webp', url: '', name: 'Supernova' },
+                                { img: '/krypto-tour/community-partner/iaelyon.webp', url: 'https://iae.univ-lyon3.fr/kryptosphere-iaelyon', name: 'IAE Lyon 3' }
                             ].map((sponsor, i) => (
                                 <a
                                     key={i}
