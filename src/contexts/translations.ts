@@ -564,8 +564,8 @@ export const translations = {
     'antennes.esgi.bureau.3.role': 'Trésorier',
     'antennes.esgi.bureau.4.name': 'Vanande KHATCHATRIAN',
     'antennes.esgi.bureau.4.role': 'Secrétaire général',
-    'antennes.esgi.email': 'contact@kryptosphere.org',
-    'antennes.esgi.phone': '',
+    'antennes.esgi.email': 'kryptosphere.esgi@gmail.com',
+    'antennes.esgi.phone': '06.67.56.99.26',
     'antennes.esgi.address': '242 Rue du Faubourg Saint-Antoine, 75012 Paris',
     'antennes.esgi.littleDescription': "KRYPTOSPHERE® ESGI réunit des étudiants passionnés par la blockchain et la finance numérique à Paris.",
 
@@ -1543,6 +1543,22 @@ export const translations = {
     'antennes.ensiie.address': '1 place de la Résistance, 91000 Évry-Courcouronnes',
     'antennes.ensiie.littleDescription': "At ensIIE, KRYPTOSPHERE trains engineers in blockchain, AI, and applied finance, fostering a culture of technical innovation.",
 
+    // Antenne ESGI Paris
+    'antennes.esgi.name': 'ESGI Paris',
+    'antennes.esgi.description': "KRYPTOSPHERE® ESGI is a recent branch launched in 2025, focused on crypto-asset cybersecurity.",
+    'antennes.esgi.bureau.1.name': 'Yohan GEORGELIN',
+    'antennes.esgi.bureau.1.role': 'President',
+    'antennes.esgi.bureau.2.name': 'Neven LEGALL',
+    'antennes.esgi.bureau.2.role': 'Vice President',
+    'antennes.esgi.bureau.3.name': 'Louis VANNOBEL',
+    'antennes.esgi.bureau.3.role': 'Treasurer',
+    'antennes.esgi.bureau.4.name': 'Vanande KHATCHATRIAN',
+    'antennes.esgi.bureau.4.role': 'General Secretary',
+    'antennes.esgi.email': 'kryptosphere.esgi@gmail.com',
+    'antennes.esgi.phone': '06.67.56.99.26',
+    'antennes.esgi.address': '242 Rue du Faubourg Saint-Antoine, 75012 Paris',
+    'antennes.esgi.littleDescription': "KRYPTOSPHERE® ESGI brings together students passionate about blockchain and digital finance in Paris.",
+
     // Antenne NEOMA (Reims, Paris)
     'antennes.neoma.name': 'NEOMA',
     'antennes.neoma.description': "The KRYPTOSPHERE NEOMA branch brings together business school students wishing to learn about and get involved in the technologies of our future and present. Our goal: to democratize web3, blockchain, and fintech to as many people as possible through impactful projects.",
@@ -1646,10 +1662,25 @@ export const translations = {
     // Antenne Hult (London)
     'antennes.london.name': 'Hult Business School',
     'antennes.london.description': "KRYPTOSPHERE® LONDON embodies our European expansion, connecting traditional finance and the crypto universe.",
+    'antennes.london.bureau.1.name': 'Ray MOUAWAD',
+    'antennes.london.bureau.1.role': 'President',
+    'antennes.london.bureau.2.name': 'Yanis BOUKHARI',
+    'antennes.london.bureau.2.role': 'Vice President',
+    'antennes.london.bureau.3.name': 'Emiel VAN RENTERGHEM',
+    'antennes.london.bureau.3.role': 'Treasurer',
+    'antennes.london.bureau.4.name': 'Amine MELLITI',
+    'antennes.london.bureau.4.role': 'General Secretary',
+    'antennes.london.littleDescription': "At Hult Business School London, KRYPTOSPHERE connects international students around traditional finance, crypto, innovation, and global entrepreneurship.",
 
     // Antenne IESEG (Lille)
     'antennes.lille.name': 'IÉSEG School of Management Grande école',
     'antennes.lille.description': "KRYPTOSPHERE® IESEG brings together students in northern France who are eager to democratize crypto assets with traditional finance.",
+    'antennes.lille.bureau.1.name': 'Guillaume Szonyi',
+    'antennes.lille.bureau.1.role': 'President',
+    'antennes.lille.bureau.3.name': "Louis d'Anglade",
+    'antennes.lille.bureau.3.role': 'Treasurer',
+    'antennes.lille.bureau.4.name': 'Paolo Serhal',
+    'antennes.lille.bureau.4.role': 'General Secretary',
 
 
         // KryptoTour

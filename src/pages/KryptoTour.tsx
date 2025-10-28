@@ -602,7 +602,8 @@ const KryptoTour = () => {
                                 { img: '/krypto-tour/community-partner/bsa.webp', url: 'https://www.epfl.ch/fr/', name: 'BSA' },
                                 { img: '/krypto-tour/community-partner/poc.webp', url: 'https://www.linkedin.com/company/pocinnovation/posts/?feedView=all', name: 'POC Innovation' },
                                 { img: '/krypto-tour/community-partner/dev3pack.webp', url: 'https://dev3pack.xyz/', name: 'DEV3Pack' },
-                                { img: '/krypto-tour/community-partner/tum.webp', url: 'https://www.tum-blockchain.com/', name: 'TUM Blockchain' }
+                                { img: '/krypto-tour/community-partner/tum.webp', url: 'https://www.tum-blockchain.com/', name: 'TUM Blockchain' },
+                                { img: '/krypto-tour/community-partner/iaelyon.webp', url: 'https://www.kryptosphere.org', name: 'IAE Lyon - KRYPTOSPHERE' }
                             ].map((partner, i) => (
                                 <a
                                     key={i}
