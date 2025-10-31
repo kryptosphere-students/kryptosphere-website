@@ -63,7 +63,7 @@ const SponsorsSection = () => {
   ];
 
   const media: LogoItem[] = [
-    { name: 'Le Monde',          logo: '/lovable-uploads/lemonde.svg',        url: 'https://www.lemonde.fr/campus/article/2022/12/08/blockchain-crypto-nft-le-web3-debarque-dans-les-ecoles-de-commerce_6153467_4401467.html' },
+    { name: 'Le Monde',          logo: '/lovable-uploads/lemonde.svg',        url: 'https://www.lemonde.fr/campus/article/2025/10/30/dans-les-ecoles-de-commerce-la-montee-des-crypto-bros-et-d-une-pensee-libertarienne_6650239_4401467.html' },
     { name: 'RTL',               logo: '/lovable-uploads/rtl.webp',           url: 'https://www.dailymotion.com/video/x80m1r5?start=615' },
     { name: 'Figaro',            logo: '/lovable-uploads/figaro.webp',        url: 'https://www.facebook.com/KryptosphereOfficial/posts/kryptosphere-dans-le-figaro-sur-le-myst%C3%A8re-de-satoshi-/930906535739344/' },
     { name: 'Journal Du Net',    logo: '/lovable-uploads/JDN.webp',           url: 'https://www.journaldunet.com/web3/crypto/1539797-donald-trump-et-les-cryptos-une-reserve-strategique-qui-souleve-des-soupcons/' },
