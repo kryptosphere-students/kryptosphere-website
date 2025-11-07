@@ -52,7 +52,7 @@ const Bureau = () => {
         description: t('board.member27.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member27.school'),
-        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
         twitter: "https://twitter.com/docteurbtc" // ajout lien X
       },
     ],
@@ -162,7 +162,7 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
       },
       {
         name: t('board.member33.name'),
@@ -252,7 +252,7 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
       },
       {
         name: t('board.member41.name'),
@@ -326,7 +326,7 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
       }
       ,
             {
@@ -410,7 +410,7 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=kryptosphere", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
       },
                   {
         name: t('board.member8.name'),

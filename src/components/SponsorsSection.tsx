@@ -26,7 +26,7 @@ const SponsorsSection = () => {
 
   const partners: LogoItem[] = [
     { name: 'Coinbase',            logo: '/lovable-uploads/Coinbase.svg.webp', url: 'https://www.coinbase.com/' },
-    { name: 'Blockchain Addict',   logo: '/lovable-uploads/ba.webp',            url: 'https://blockchainaddict.fr/krypto-tour-lyon-2025/' },
+    { name: 'KRYPTOSPHERE AVOCAT', logo: '/lovable-uploads/kryptosphere-avocat.webp', url: 'https://kryptosphere-avocat.com' },
     { name: 'BFG',                 logo: '/lovable-uploads/BFG.webp',           url: 'https://www.linkedin.com/posts/blockchain-for-good-fr_table-ronde-lidentit%C3%A9-d%C3%A9centralis%C3%A9e-activity-7022858702210674688-GrcY/' },
     { name: 'KPMG',                logo: '/lovable-uploads/KPMG.webp',          url: 'https://x.com/BlockchainPartn/status/1602257588934041603' },
     { name: 'ADAN',                logo: '/lovable-uploads/adan.svg',           url: 'https://bitcoin.fr/kryptosphere-stablecoins-et-bitcoin/' },
