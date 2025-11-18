@@ -47,7 +47,7 @@ const SponsorsSection = () => {
     { name: 'KRYPTOSPHERE EMLV',            logo: '/lovable-uploads/emlv.webp',     url: 'https://www.emlv.fr/' },
     { name: 'KRYPTOSPHERE HULT London',     logo: '/lovable-uploads/hult.webp',     url: 'https://www.instagram.com/kryptospherelondon/' },
     { name: 'KRYPTOSPHERE NEOMA',           logo: '/lovable-uploads/NEOMA.webp',    url: 'https://www.instagram.com/kryptosphereneoma/' },
-    { name: 'KRYPTOSPHERE ESILV',           logo: '/lovable-uploads/ESILV.webp',    url: 'https://www.devinci.fr/vie-etudiante/associations-etudiantes/kryptosphere-devinci/' },
+    // { name: 'KRYPTOSPHERE ESILV',           logo: '/lovable-uploads/ESILV.webp',    url: 'https://www.devinci.fr/vie-etudiante/associations-etudiantes/kryptosphere-devinci/' },
     { name: 'KRYPTOSPHERE ESTIA',           logo: '/lovable-uploads/estia.webp',    url: 'https://www.estia.fr/en/campus-estia/estia-campus-associations/' },
     { name: 'KRYPTOSPHERE Albert School',   logo: '/lovable-uploads/albert.png',    url: 'https://www.linkedin.com/posts/kryptosphere_kryptosphere-d%C3%A9barque-%C3%A0-albert-school-et-activity-7371527985356492800-GfNU/?originalSubdomain=fr' },
     { name: 'KRYPTOSPHERE Paris Dauphine',  logo: '/lovable-uploads/dauphine.webp', url: 'https://dauphine.psl.eu/dauphine/media-et-communication/article/hackindau-hackathon-blockchain-2024-de-la-chaire-fintech-et-kryptosphere' },
