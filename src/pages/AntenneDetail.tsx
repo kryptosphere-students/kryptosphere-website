@@ -423,39 +423,39 @@ const AntenneDetail = () => {
         '/antennes/epita/events/gallery2.webp',
       ]
     },
-    devinci: {
-      name: t('antennes.devinci.name'),
-      city: t('cities.paris'),
-      country: t('countries.france'),
-      coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
-      school: 'Léonard De Vinci',
-      schoolLogo: '/lovable-uploads/devinci.webp',
-      heroImage: 'https://images.pexels.com/photos/2389273/pexels-photo-2389273.jpeg?_gl=1*1trpnet*_ga*MTgxNTM4ODkzNi4xNzQ5OTMwMzY2*_ga_8JE65Q40S6*czE3NDk5MzAzNjYkbzEkZzEkdDE3NDk5MzAzODYkajQwJGwwJGgw',
-      contact: {
-        email: t('antennes.devinci.email'),
-        phone: t('antennes.devinci.phone'),
-        address: t('antennes.devinci.address')
-      },
-      bureau: [
-        { name: t('antennes.devinci.bureau.1.name'), role: t('antennes.devinci.bureau.1.role'), photo: '/antennes/devinci/eden.webp' },
-        { name: t('antennes.devinci.bureau.2.name'), role: t('antennes.devinci.bureau.2.role'), photo: '/antennes/devinci/fawzi.webp' },
-        { name: t('antennes.devinci.bureau.3.name'), role: t('antennes.devinci.bureau.3.role'), photo: '/antennes/devinci/romain.webp' },
-        { name: t('antennes.devinci.bureau.4.name'), role: t('antennes.devinci.bureau.4.role'), photo: '/antennes/devinci/kylie.webp' },
-        { name: t('antennes.devinci.bureau.5.name'), role: t('antennes.devinci.bureau.5.role'), photo: '/antennes/devinci/johann.webp' },
-        { name: t('antennes.devinci.bureau.6.name'), role: t('antennes.devinci.bureau.6.role'), photo: '/antennes/devinci/alban.webp' }
-      ],
-      gallery: [
-        '/antennes/devinci/gallery1.webp',
-        '/antennes/devinci/gallery2.webp',
-        '/antennes/devinci/gallery3.webp',
-        '/antennes/devinci/gallery4.webp',
-        '/antennes/devinci/gallery5.webp',
-        '/antennes/devinci/gallery6.webp',
-        '/antennes/devinci/gallery7.webp',
-        '/antennes/devinci/gallery8.webp',
-        '/antennes/devinci/gallery9.webp',
-      ]
-    },
+    // devinci: {
+    //   name: t('antennes.devinci.name'),
+    //   city: t('cities.paris'),
+    //   country: t('countries.france'),
+    //   coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
+    //   school: 'Léonard De Vinci',
+    //   schoolLogo: '/lovable-uploads/devinci.webp',
+    //   heroImage: 'https://images.pexels.com/photos/2389273/pexels-photo-2389273.jpeg?_gl=1*1trpnet*_ga*MTgxNTM4ODkzNi4xNzQ5OTMwMzY2*_ga_8JE65Q40S6*czE3NDk5MzAzNjYkbzEkZzEkdDE3NDk5MzAzODYkajQwJGwwJGgw',
+    //   contact: {
+    //     email: t('antennes.devinci.email'),
+    //     phone: t('antennes.devinci.phone'),
+    //     address: t('antennes.devinci.address')
+    //   },
+    //   bureau: [
+    //     { name: t('antennes.devinci.bureau.1.name'), role: t('antennes.devinci.bureau.1.role'), photo: '/antennes/devinci/eden.webp' },
+    //     { name: t('antennes.devinci.bureau.2.name'), role: t('antennes.devinci.bureau.2.role'), photo: '/antennes/devinci/fawzi.webp' },
+    //     { name: t('antennes.devinci.bureau.3.name'), role: t('antennes.devinci.bureau.3.role'), photo: '/antennes/devinci/romain.webp' },
+    //     { name: t('antennes.devinci.bureau.4.name'), role: t('antennes.devinci.bureau.4.role'), photo: '/antennes/devinci/kylie.webp' },
+    //     { name: t('antennes.devinci.bureau.5.name'), role: t('antennes.devinci.bureau.5.role'), photo: '/antennes/devinci/johann.webp' },
+    //     { name: t('antennes.devinci.bureau.6.name'), role: t('antennes.devinci.bureau.6.role'), photo: '/antennes/devinci/alban.webp' }
+    //   ],
+    //   gallery: [
+    //     '/antennes/devinci/gallery1.webp',
+    //     '/antennes/devinci/gallery2.webp',
+    //     '/antennes/devinci/gallery3.webp',
+    //     '/antennes/devinci/gallery4.webp',
+    //     '/antennes/devinci/gallery5.webp',
+    //     '/antennes/devinci/gallery6.webp',
+    //     '/antennes/devinci/gallery7.webp',
+    //     '/antennes/devinci/gallery8.webp',
+    //     '/antennes/devinci/gallery9.webp',
+    //   ]
+    // },
     imtatlantique: {
       name: t('antennes.imtatlantique.name'),
       city: t('cities.nantes'),

@@ -14,16 +14,16 @@ const Antennes = () => {
   const langPrefix = `/${lang}`;
 
   const antennes = [
-    {
-      id: 'devinci',
-      name: t('cities.paris'),
-      city: t('cities.paris'),
-      country: t('countries.france'),
-      coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
-      school: 'DeVinci',
-      description: t('antennes.devinci.littleDescription'),
-      image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
-    },
+    // {
+    //   id: 'devinci',
+    //   name: t('cities.paris'),
+    //   city: t('cities.paris'),
+    //   country: t('countries.france'),
+    //   coordinates: { lat: 48.89591598510742, lng: 2.2204883098602295 },
+    //   school: 'DeVinci',
+    //   description: t('antennes.devinci.littleDescription'),
+    //   image: 'https://www.devinci.fr/wordpress/wp-content/uploads/2019/07/campus-pole-leonard-de-vinci.jpg',
+    // },
     {
       id: 'essec',
       name: t('cities.paris'),
