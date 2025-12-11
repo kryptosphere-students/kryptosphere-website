@@ -44,7 +44,6 @@ const SponsorsSection = () => {
     { name: 'KRYPTOSPHERE Sorbonne',        logo: '/lovable-uploads/Sorbonne.png',     url: 'https://sciences.sorbonne-universite.fr/associations/kryptosphere-jussieu' },
     { name: 'KRYPTOSPHERE IAE Lyon 3',        logo: '/lovable-uploads/IAE.png',      url: 'https://iae.univ-lyon3.fr/kryptosphere-iaelyon' },
     { name: 'KRYPTOSPHERE HEH',             logo: '/lovable-uploads/HEH.webp',      url: 'https://www.instagram.com/ks_belgium/' },
-    { name: 'KRYPTOSPHERE EMLV',            logo: '/lovable-uploads/emlv.webp',     url: 'https://www.emlv.fr/' },
     { name: 'KRYPTOSPHERE HULT London',     logo: '/lovable-uploads/hult.webp',     url: 'https://www.instagram.com/kryptospherelondon/' },
     { name: 'KRYPTOSPHERE NEOMA',           logo: '/lovable-uploads/NEOMA.webp',    url: 'https://www.instagram.com/kryptosphereneoma/' },
     // { name: 'KRYPTOSPHERE ESILV',           logo: '/lovable-uploads/ESILV.webp',    url: 'https://www.devinci.fr/vie-etudiante/associations-etudiantes/kryptosphere-devinci/' },
