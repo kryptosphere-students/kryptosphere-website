@@ -52,42 +52,60 @@
   "@type": "Organization",
   "@id": "https://www.kryptosphere.org/#organization",
   "name": "KRYPTOSPHERE",
+  "alternateName": [
+    "Kryptosphere",
+    "Cryptosphere"
+  ],
   "url": "https://www.kryptosphere.org/",
   "logo": "https://www.kryptosphere.org/ksLogo.webp",
+  "description": "Premier réseau étudiant européen dédié aux crypto-actifs, à la blockchain, à l’intelligence artificielle et à la cybersécurité.",
+  "foundingDate": "2017",
+
+  "brand": {
+    "@id": "https://www.kryptosphere-avocat.com/#brand"
+  },
+
   "sameAs": [
     "https://twitter.com/kryptosphere",
     "https://www.linkedin.com/company/kryptosphere",
     "https://www.instagram.com/kryptosphereparis"
   ],
-  "description": "Premier réseau étudiant européen sur les crypto-actifs, la blockchain, l'intelligence artificielle et de la cybersécurité.",
-  "foundingDate": "2017",
+
   "founder": {
     "@type": "Person",
+    "@id": "https://thibaultlangloisberthelot.github.io/#person",
     "name": "Thibault Langlois-Berthelot",
-    "description": "Avocat passionné par les crypto-actifs. Président Fondateur de KRYPTOSPHERE.",
     "jobTitle": "Président Fondateur",
+    "description": "Avocat et docteur en droit, fondateur du réseau KRYPTOSPHERE et du cabinet KRYPTOSPHERE AVOCAT.",
     "image": "https://thibaultlangloisberthelot.github.io/images/pic02.jpg",
-    "url": "https://www.linkedin.com/in/kryptosphere",
+    "url": "https://thibaultlangloisberthelot.github.io/",
     "sameAs": [
+      "https://www.linkedin.com/in/kryptosphere/",
       "https://www.instagram.com/docteurbtc",
       "https://x.com/docteurbtc"
     ],
-    "affiliation": {
-      "@type": "Organization",
-      "name": "KRYPTOSPHERE"
-    },
+    "affiliation": [
+      {
+        "@id": "https://www.kryptosphere.org/#organization"
+      },
+      {
+        "@id": "https://www.kryptosphere-avocat.com/#brand"
+      }
+    ],
     "nationality": {
       "@type": "Country",
       "name": "France"
     }
   },
+
   "contactPoint": {
     "@type": "ContactPoint",
     "email": "contact@kryptosphere.org",
-    "contactType": "customer service",
+    "contactType": "general inquiries",
     "areaServed": ["FR", "BE", "GB"],
     "availableLanguage": ["French", "English"]
   },
+
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "59 Avenue de l'Observatoire",
