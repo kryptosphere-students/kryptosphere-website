@@ -23,9 +23,37 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: undefined,
+        manualChunks: (id) => {
+          // Separate heavy dependencies into dedicated chunks
+          if (id.includes('node_modules')) {
+            // React and React DOM together
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'react-vendor';
+            }
+            // React Router
+            if (id.includes('react-router')) {
+              return 'router-vendor';
+            }
+            // Leaflet (used only by KryptoTour)
+            if (id.includes('leaflet')) {
+              return 'leaflet-vendor';
+            }
+            // TanStack Query
+            if (id.includes('@tanstack')) {
+              return 'query-vendor';
+            }
+            // Other node_modules dependencies
+            return 'vendor';
+          }
+          // Separate KryptoTour into its own chunk (heaviest page)
+          if (id.includes('KryptoTour')) {
+            return 'kryptotour';
+          }
+        },
       },
     },
+    // Increase chunk size warning limit (optional)
+    chunkSizeWarningLimit: 600,
   },
   preview: {
     port: 8080,
