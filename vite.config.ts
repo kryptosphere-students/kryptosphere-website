@@ -26,9 +26,10 @@ export default defineConfig(({ mode }) => ({
         manualChunks: (id) => {
           // Only split node_modules, keep React core together
           if (id.includes('node_modules')) {
-            // Leaflet is heavy and only used by KryptoTour - separate it
-            if (id.includes('leaflet')) {
-              return 'leaflet-vendor';
+            // CRITICAL: Keep React, React DOM, React Router, and React-dependent libs together
+            // This prevents createContext errors when chunks load out of order
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router') || id.includes('react-leaflet') || id.includes('leaflet')) {
+              return 'vendor';
             }
             // TanStack Query - separate heavy dependency
             if (id.includes('@tanstack')) {
@@ -42,8 +43,7 @@ export default defineConfig(({ mode }) => ({
             if (id.includes('lucide-react') || id.includes('recharts') || id.includes('sonner')) {
               return 'ui-vendor';
             }
-            // Keep React, React DOM, React Router together in main vendor chunk
-            // This prevents the createContext error
+            // All other dependencies go to vendor
             return 'vendor';
           }
         },
