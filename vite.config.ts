@@ -24,35 +24,31 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          // Separate heavy dependencies into dedicated chunks
+          // Only split node_modules, keep React core together
           if (id.includes('node_modules')) {
-            // React and React DOM together
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'react-vendor';
-            }
-            // React Router
-            if (id.includes('react-router')) {
-              return 'router-vendor';
-            }
-            // Leaflet (used only by KryptoTour)
+            // Leaflet is heavy and only used by KryptoTour - separate it
             if (id.includes('leaflet')) {
               return 'leaflet-vendor';
             }
-            // TanStack Query
+            // TanStack Query - separate heavy dependency
             if (id.includes('@tanstack')) {
               return 'query-vendor';
             }
-            // Other node_modules dependencies
+            // Radix UI components - separate UI library
+            if (id.includes('@radix-ui')) {
+              return 'radix-vendor';
+            }
+            // Other heavy libraries
+            if (id.includes('lucide-react') || id.includes('recharts') || id.includes('sonner')) {
+              return 'ui-vendor';
+            }
+            // Keep React, React DOM, React Router together in main vendor chunk
+            // This prevents the createContext error
             return 'vendor';
-          }
-          // Separate KryptoTour into its own chunk (heaviest page)
-          if (id.includes('KryptoTour')) {
-            return 'kryptotour';
           }
         },
       },
     },
-    // Increase chunk size warning limit (optional)
     chunkSizeWarningLimit: 600,
   },
   preview: {
