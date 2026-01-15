@@ -44,7 +44,6 @@
     "@types/leaflet": "^1.9.18",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "caniuse-lite": "^1.0.30001727",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -77,6 +76,8 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
+    "browserslist": "^4.28.1",
+    "caniuse-lite": "^1.0.30001764",
     "embla-carousel-auto-scroll": "^8.6.0",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -97,5 +98,8 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.21"
+  },
+  "resolutions": {
+    "caniuse-lite": "^1.0.30001764"
   }
 }
