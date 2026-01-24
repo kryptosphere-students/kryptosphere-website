@@ -336,6 +336,36 @@ export const translations = {
         //Board Poles
         'board.polesTitle': 'Pôles',
         //2025
+        'board.2025.poles.aidefi.title': 'Pôle AI, DeFI et Ingénierie Financière',
+        'board.2025.poles.aidefi.description': "Ce pôle a pour mission de créer des partenariats, conférences, workshops et formations à destination des membres désireux de s’investir dans des projets à forte valeur ajoutée. Il anime une communauté d’étudiants ambitieux, désireux de développer une expertise à la fois créative et technique pour concevoir les solutions de demain. En croisant le Web3 avec les technologies et secteurs émergents, il vise des applications concrètes et innovantes.",
+        'board.2025.poles.aidefi.team.member1.name': 'Louis PIALLAT',
+        'board.2025.poles.aidefi.team.member1.role': 'Co-responsable',
+        'board.2025.poles.aidefi.team.member2.name': 'Mark-Killian ZINENBERG',
+        'board.2025.poles.aidefi.team.member2.role': 'Co-responsable',
+
+        'board.2025.poles.partnership.title': 'Pôle Partenariat',
+        'board.2025.poles.partnership.description': 'Le pôle partenariat a pour rôle l\'acquisition et l\'entretien de relations externes à l\'association avec ses partenaires et sponsors. Ses responsables sont les porte-paroles de l\'association et contribuent à sa visibilité dans l\'espace public.',
+        'board.2025.poles.partnership.team.member1.name': 'Jules-Grégoire Lafond',
+        'board.2025.poles.partnership.team.member1.role': 'Responsable',
+        'board.2025.poles.partnership.team.member1.description': 'Co-Fondateur & Ex-Président de l\'antenne KRYPTOSPHERE® NEOMA. Sales at HSBC',
+        'board.2025.poles.partnership.team.member2.name': 'Tevfik Erdal',
+        'board.2025.poles.partnership.team.member2.role': 'Co-responsable',
+        'board.2025.poles.partnership.team.member2.description': 'Ex-Vice Président de l\'antenne KRYPTOSPHERE® NEOMA. Customer Relationship at UBS',
+        'board.2025.poles.partnership.team.member3.name': 'Rayan Kaabache',
+        'board.2025.poles.partnership.team.member3.role': 'Co-Responsable',
+        'board.2025.poles.partnership.team.member3.description': "Co-Fondateur & Ex-Président de l'antenne KRYPTOSPHERE® Jussieu. Étudiant en cybersécurité à Sorbonne Université.",
+        
+        'board.2025.poles.communication.title': 'Pôle Communication & Marketing',
+        'board.2025.poles.communication.description': [
+            'Le pôle Communication & Marketing incarne l’image de KRYPTOSPHERE® et assure sa visibilité auprès du grand public comme acteur clé du Web3. À travers des stratégies créatives et maîtrisées — réseaux sociaux, branding, création de contenu, visuels, campagnes digitales ou partenariats médias — il valorise nos événements, nos initiatives et l’engagement de nos membres pour faire rayonner l’identité de KRYPTOSPHERE® dans l’écosystème Tech européen.',
+        ],
+        'board.2025.poles.communication.team.member1.name': 'Alexandre MANGIN',
+        'board.2025.poles.communication.team.member1.role': 'Responsable',
+        'board.2025.poles.communication.team.member1.description': 'VP KRYPTOSPHERE® iaelyon, Marketing manager at iExec, Community Manager at The Big Whale',
+        'board.2025.poles.communication.team.member2.name': 'Alexandra AH-SOUNE',
+        'board.2025.poles.communication.team.member2.role': 'Co-responsable',
+        'board.2025.poles.communication.team.member2.description': 'Ex-Responsable Communication de l\'antenne KRYPTOSPHERE® ESSEC. Private Banking at Société Générale, student in Finance',
+        //2026
         'board.2026.poles.academy.title': 'Pôle KS Academy',
         'board.2026.poles.academy.description': [
             'Concevoir et structurer des programmes de formation fondamentaux de 8 semaines (Web3, IA, Cybersécurité, Finance) déployés dans toutes les antennes.',
@@ -402,7 +432,6 @@ export const translations = {
         'board.2026.poles.partnership.team.member2.name': 'Guillaume Szonyi',
         'board.2026.poles.partnership.team.member2.role': 'Co-responsable',
         'board.2026.poles.partnership.team.member2.description': 'Président de KRYPTOSPHERE® IESEG | Master Finance — gestion d\'actifs & gestion des risques',
-
 
         'association.title': 'L\'Association',
         'association.subtitle': 'Depuis septembre 2017, KRYPTOSPHERE® s\'est imposé comme une référence européenne de l\'écosystème crypto étudiant. Découvrez notre histoire, nos valeurs et notre vision pour l\'avenir.',
@@ -620,7 +649,7 @@ export const translations = {
         'antennes.lille.description': "KRYPTOSPHERE® IESEG explore les crypto-actifs depuis sa création en 2022.",
         'antennes.lille.bureau.1.name': 'Guillaume Szonyi',
         'antennes.lille.bureau.1.role': 'Président',
-        'antennes.lille.bureau.3.name': 'Louis d\'Anglade',
+        'antennes.lille.bureau.3.name': 'Louis d’Anglade',
         'antennes.lille.bureau.3.role': 'Trésorier',
         'antennes.lille.bureau.4.name': 'Paolo Serhal',
         'antennes.lille.bureau.4.role': 'Secrétaire général',
@@ -743,14 +772,6 @@ export const translations = {
         'antennes.ieseg.phone': '+33 7 82 76 87 83',
         'antennes.ieseg.address': '1 parvis de. La Défense - 92044. Paris - La Défense',
         'antennes.ieseg.littleDescription': "À l'IESEG, KRYPTOSPHERE® accueille tous les curieux sur le parvis de La Défense pour discuter Web3, innovation et entreprendre des initiatives étudiantes.",
-
-        // Pôle AI, DEFI and Financial Engineering
-        'board.2025.poles.aidefi.title': 'Pôle AI, DeFI et Ingénierie Financière',
-        'board.2025.poles.aidefi.description': "Ce pôle a pour mission de créer des partenariats, conférences, workshops et formations à destination des membres désireux de s\'investir dans des projets à forte valeur ajoutée. Il anime une communauté d\'étudiants ambitieux, désireux de développer une expertise à la fois créative et technique pour concevoir les solutions de demain. En croisant le Web3 avec les technologies et secteurs émergents, il vise des applications concrètes et innovantes.",
-        'board.2025.poles.aidefi.team.member1.name': 'Louis PIALLAT',
-        'board.2025.poles.aidefi.team.member1.role': 'Co-responsable',
-        'board.2025.poles.aidefi.team.member2.name': 'Mark-Killian ZINENBERG',
-        'board.2025.poles.aidefi.team.member2.role': 'Co-responsable',
 
         // Antenne AES (Paris)
         'antennes.aes.name': 'Albert Eugenia School',
