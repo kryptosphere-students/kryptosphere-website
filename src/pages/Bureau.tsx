@@ -58,7 +58,16 @@ const Bureau = () => {
         image: "/bureau/2026/amangin_2026.webp",
         school: t('board.member71.school'),
         linkedin: "https://www.linkedin.com/in/alexandre-mangin-a786ba1b2/fr", // ajout lien Linkedin
-      }
+      },
+      {
+        name: t('board.member27.name'),
+        role: t('board.member27.role'),
+        description: t('board.member27.description'),
+        image: "/bureau/thibaultlanglois.webp",
+        school: t('board.member27.school'),
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
+        twitter: "https://twitter.com/docteurbtc" // ajout lien X
+      },
     ],
     '2025': [
       {
