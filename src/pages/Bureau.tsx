@@ -6,10 +6,69 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Linkedin, Twitter } from 'lucide-react';
 
 const Bureau = () => {
-  const [selectedYear, setSelectedYear] = useState('2025');
+  const [selectedYear, setSelectedYear] = useState('2026');
   const { t, tRaw } = useLanguage();
 
   const bureauData = {
+    '2026': [
+      {
+        name: t('board.member66.name'),
+        role: t('board.member66.role'),
+        description: t('board.member66.description'),
+        image: "/bureau/2026/lpiallat.webp",
+        school: t('board.member66.school'),
+        linkedin: "https://fr.linkedin.com/in/louispiallat/fr", // ajout lien X
+      },
+      {
+        name: t('board.member67.name'),
+        role: t('board.member67.role'),
+        description: t('board.member67.description'),
+        image: "/bureau/2026/mk.webp",
+        school: t('board.member67.school'),
+        linkedin: "https://www.linkedin.com/in/mark-killianzinenberg/fr", // ajout lien Linkedin
+      },
+      {
+        name: t('board.member68.name'),
+        role: t('board.member68.role'),
+        description: t('board.member68.description'),
+        image: "/bureau/2026/louise.webp",
+        school: t('board.member68.school'),
+        linkedin: "https://www.linkedin.com/in/louise-grosdhomme-540a3921b/fr", // ajout lien Linkedin
+      },
+      {
+        name: t('board.member69.name'),
+        role: t('board.member69.role'),
+        description: t('board.member69.description'),
+        image: "/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp",
+        school: t('board.member69.school'),
+        linkedin: "https://www.linkedin.com/in/ryan-chakache-785679241/fr", // ajout lien Linkedin
+      },
+      {
+        name: t('board.member70.name'),
+        role: t('board.member70.role'),
+        description: t('board.member70.description'),
+        image: "/bureau/2026/nicolas-neble.webp",
+        school: t('board.member70.school'),
+        linkedin: "https://www.linkedin.com/in/nicolas-nbl/fr", // ajout lien Linkedin
+      },
+      {
+        name: t('board.member71.name'),
+        role: t('board.member71.role'),
+        description: t('board.member71.description'),
+        image: "/bureau/2026/amangin_2026.webp",
+        school: t('board.member71.school'),
+        linkedin: "https://www.linkedin.com/in/alexandre-mangin-a786ba1b2/fr", // ajout lien Linkedin
+      },
+      {
+        name: t('board.member27.name'),
+        role: t('board.member27.role'),
+        description: t('board.member27.description'),
+        image: "/bureau/thibaultlanglois.webp",
+        school: t('board.member27.school'),
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
+        twitter: "https://twitter.com/docteurbtc" // ajout lien X
+      },
+    ],
     '2025': [
       {
         name: t('board.member1.name'),
@@ -576,62 +635,158 @@ const Bureau = () => {
   };
 
   const polesData = {
-    '2025': [
+    '2026': [
       {
-        title: t('board.poles.partnership.title'),
-        description: t('board.poles.partnership.description'),
+        title: t('board.2026.poles.academy.title'),
+        description: tRaw('board.2026.poles.academy.description'),
         team: [
           {
-            name: t('board.poles.partnership.team.member1.name'),
-            role: t('board.poles.partnership.team.member1.role'),
-            description: t('board.poles.partnership.team.member1.description'),
+            name: t('board.2026.poles.academy.team.member1.name'),
+            role: t('board.2026.poles.academy.team.member1.role'),
+            description: t('board.2026.poles.academy.team.member1.description'),
+            image: '/bureau/2026/esteban-hernandez.webp',
+          },
+          {
+            name: t('board.2026.poles.academy.team.member2.name'),
+            role: t('board.2026.poles.academy.team.member2.role'),
+            description: t('board.2026.poles.academy.team.member2.description'),
+            image: '/bureau/2026/lothaire_2026.webp',
+          },
+        ],
+      },
+
+      {
+        title: t('board.2026.poles.projects.title'),
+        description: tRaw('board.2026.poles.projects.description'),
+        team: [
+          {
+            name: t('board.2026.poles.projects.team.member1.name'),
+            role: t('board.2026.poles.projects.team.member1.role'),
+            description: t('board.2026.poles.projects.team.member1.description'),
+            image: '/bureau/2026/oscar-dessein.webp',
+          },
+          {
+            name: t('board.2026.poles.projects.team.member2.name'),
+            role: t('board.2026.poles.projects.team.member2.role'),
+            description: t('board.2026.poles.projects.team.member2.description'),
+            image: '/bureau/2026/mathias-russo.webp',
+          },
+        ],
+      },
+
+      {
+        title: t('board.2026.poles.events.title'),
+        description: tRaw('board.2026.poles.events.description'),
+        team: [
+          {
+            name: t('board.2026.poles.events.team.member1.name'),
+            role: t('board.2026.poles.events.team.member1.role'),
+            description: t('board.2026.poles.events.team.member1.description'),
+            image: '/bureau/2026/nicolas-neble.webp',
+          },
+          {
+            name: t('board.2026.poles.events.team.member2.name'),
+            role: t('board.2026.poles.events.team.member2.role'),
+            description: t('board.2026.poles.events.team.member2.description'),
+            image: '/bureau/2026/yohan-georgelin.webp',
+          },
+        ],
+      },
+
+      {
+        title: t('board.2026.poles.communication.title'),
+        description: tRaw('board.2026.poles.communication.description'),
+        team: [
+          {
+            name: t('board.2026.poles.communication.team.member1.name'),
+            role: t('board.2026.poles.communication.team.member1.role'),
+            description: t('board.2026.poles.communication.team.member1.description'),
+            image: '/bureau/2026/kylian-perrault.webp',
+          },
+          {
+            name: t('board.2026.poles.communication.team.member2.name'),
+            role: t('board.2026.poles.communication.team.member2.role'),
+            description: t('board.2026.poles.communication.team.member2.description'),
+            image: '/bureau/2026/lubsana-badmaeva.webp',
+          },
+        ],
+      },
+
+      {
+        title: t('board.2026.poles.partnership.title'),
+        description: tRaw('board.2026.poles.partnership.description'),
+        team: [
+          {
+            name: t('board.2026.poles.partnership.team.member1.name'),
+            role: t('board.2026.poles.partnership.team.member1.role'),
+            description: t('board.2026.poles.partnership.team.member1.description'),
+            image: '/bureau/2026/leandro-duncan.webp',
+          },
+          {
+            name: t('board.2026.poles.partnership.team.member2.name'),
+            role: t('board.2026.poles.partnership.team.member2.role'),
+            description: t('board.2026.poles.partnership.team.member2.description'),
+            image: '/bureau/2026/guillaume-s.webp',
+          },
+        ],
+      },
+    ],
+    '2025': [
+      {
+        title: t('board.2025.poles.partnership.title'),
+        description: t('board.2025.poles.partnership.description'),
+        team: [
+          {
+            name: t('board.2025.poles.partnership.team.member1.name'),
+            role: t('board.2025.poles.partnership.team.member1.role'),
+            description: t('board.2025.poles.partnership.team.member1.description'),
             image: '/bureau/jg.webp',
           },
           {
-            name: t('board.poles.partnership.team.member2.name'),
-            role: t('board.poles.partnership.team.member2.role'),
-            description: t('board.poles.partnership.team.member2.description'),
+            name: t('board.2025.poles.partnership.team.member2.name'),
+            role: t('board.2025.poles.partnership.team.member2.role'),
+            description: t('board.2025.poles.partnership.team.member2.description'),
             image: '/bureau/tevfik.webp',
           },
           {
-            name: t('board.poles.partnership.team.member3.name'),
-            role: t('board.poles.partnership.team.member3.role'),
-            description: t('board.poles.partnership.team.member3.description'),
+            name: t('board.2025.poles.partnership.team.member3.name'),
+            role: t('board.2025.poles.partnership.team.member3.role'),
+            description: t('board.2025.poles.partnership.team.member3.description'),
             image: '/lovable-uploads/09ad2ee0-d2c3-4ce2-846e-f48afe38a9d3.webp',
           },
         ],
       },
       {
-        title: t('board.poles.communication.title'),
-        description: tRaw('board.poles.communication.description'),
+        title: t('board.2025.poles.communication.title'),
+        description: t('board.2025.poles.communication.description'),
         team: [
           {
-            name: t('board.poles.communication.team.member1.name'),
-            role: t('board.poles.communication.team.member1.role'),
-            description: t('board.poles.communication.team.member1.description'),
+            name: t('board.2025.poles.communication.team.member1.name'),
+            role: t('board.2025.poles.communication.team.member1.role'),
+            description: t('board.2025.poles.communication.team.member1.description'),
             image: '/bureau/amangin.webp',
           },
           {
-            name: t('board.poles.communication.team.member2.name'),
-            role: t('board.poles.communication.team.member2.role'),
-            description: t('board.poles.communication.team.member2.description'),
+            name: t('board.2025.poles.communication.team.member2.name'),
+            role: t('board.2025.poles.communication.team.member2.role'),
+            description: t('board.2025.poles.communication.team.member2.description'),
             image: '/bureau/alexandra.webp',
           },
         ],
       },
       {
-        title: t('board.poles.aidefi.title'),
-        description: t('board.poles.aidefi.description'),
+        title: t('board.2025.poles.aidefi.title'),
+        description: t('board.2025.poles.aidefi.description'),
         team: [
           {
-            name: t('board.poles.aidefi.team.member1.name'),
-            role: t('board.poles.aidefi.team.member1.role'),
+            name: t('board.2025.poles.aidefi.team.member1.name'),
+            role: t('board.2025.poles.aidefi.team.member1.role'),
             description: '',
             image: '/bureau/lpiallat.webp',
           },
           {
-            name: t('board.poles.aidefi.team.member2.name'),
-            role: t('board.poles.aidefi.team.member2.role'),
+            name: t('board.2025.poles.aidefi.team.member2.name'),
+            role: t('board.2025.poles.aidefi.team.member2.role'),
             description: '',
             image: '/bureau/mk.webp',
           },
@@ -640,7 +795,7 @@ const Bureau = () => {
     ],
   };
 
-  const years = ['2025', '2024', '2023', '2022', '2021', '2020 - 2017'];
+  const years = ['2026', '2025', '2024', '2023', '2022', '2021', '2020 - 2017'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
@@ -744,7 +899,7 @@ const Bureau = () => {
         </div>
       </section>
 
-      {selectedYear === '2025' && (
+      {polesData[selectedYear] && (
         <section className="py-16 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
