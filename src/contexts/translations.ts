@@ -409,7 +409,7 @@ export const translations = {
         ],
         'board.2026.poles.communication.team.member1.name': 'Kylian Perrault',
         'board.2026.poles.communication.team.member1.role': 'Responsable',
-        'board.2026.poles.communication.team.member1.description': 'Co-fondateur de KRYPTOSPHERE® INSEEC Paris | Stage en Communication & Marketing chez Paymium | Master Startup & Transition Digitale — INSEEC Paris',
+        'board.2026.poles.communication.team.member1.description': 'Co-fondateur de KRYPTOSPHERE® INSEEC Paris | Alternant en Communication & Marketing chez Paymium | Master Startup & Transition Digitale — INSEEC Paris',
         'board.2026.poles.communication.team.member2.name': 'Lubsana Badmaeva',
         'board.2026.poles.communication.team.member2.role': 'Co-responsable',
         'board.2026.poles.communication.team.member2.description': 'Étudiante MiM à ESCP Business School',
