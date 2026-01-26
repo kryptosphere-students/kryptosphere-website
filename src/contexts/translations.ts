@@ -1308,7 +1308,7 @@ export const translations = {
         'board.2026.poles.academy.title': 'KS Academy',
         'board.2026.poles.academy.description': 'The KS Academy division is structured around two complementary sub-units: a Research sub-unit and a Training sub-unit. The Research sub-unit structures and supports the production of research papers, technical notes, and in-depth written materials in market finance, blockchain, Web3, data, AI, and applied mathematics, in order to rigorously document key topics and foster a strong academic culture across the network. The Training sub-unit designs demanding and progressive learning pathways, developed with the support of industry professionals and intended for all KRYPTOSPHERE® chapters, with content directly applicable to interviews, internships, and entry-level roles.',
         'board.2026.poles.academy.team.member1.name': 'Esteban Hernandez',
-        'board.2026.poles.academy.team.member1.role': 'Head',
+        'board.2026.poles.academy.team.member1.role': 'Co-head',
         'board.2026.poles.academy.team.member1.description': 'Student at Neoma and Hanyang University | Founder and past Chairman of KRYPTOSPHERE® NEOMA Paris',
         'board.2026.poles.academy.team.member2.name': 'Lothaire Chacornac',
         'board.2026.poles.academy.team.member2.role': 'Co-head',
@@ -1323,6 +1323,7 @@ export const translations = {
         'board.2026.poles.projects.team.member1.name': 'Oscar Dessein',
         'board.2026.poles.projects.team.member1.role': 'Head',
         'board.2026.poles.projects.team.member1.description': 'Student at ESCP Business School | Head of the Consulting Pole KRYPTOSPHERE® ESCP',
+        'board.2026.poles.projects.team.member2.name': 'Mathias Russo',
         'board.2026.poles.projects.team.member2.role': 'Co-head',
         'board.2026.poles.projects.team.member2.description': 'Student at ESCP Business School | Co-Head of the Consulting Pole KRYPTOSPHERE® ESCP',
 
