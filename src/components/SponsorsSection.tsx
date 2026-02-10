@@ -26,7 +26,6 @@ const SponsorsSection = () => {
 
   const partners: LogoItem[] = [
     { name: 'Coinbase',            logo: '/lovable-uploads/Coinbase.svg.webp', url: 'https://www.coinbase.com/' },
-    { name: 'LANGLOIS BERTHELOT AVOCAT', logo: '/lovable-uploads/kryptosphere-avocat.webp', url: 'http://kryptosphere-avocat.com' },
     { name: 'BFG',                 logo: '/lovable-uploads/BFG.webp',           url: 'https://www.linkedin.com/posts/blockchain-for-good-fr_table-ronde-lidentit%C3%A9-d%C3%A9centralis%C3%A9e-activity-7022858702210674688-GrcY/' },
     { name: 'KPMG',                logo: '/lovable-uploads/KPMG.webp',          url: 'https://x.com/BlockchainPartn/status/1602257588934041603' },
     { name: 'ADAN',                logo: '/lovable-uploads/adan.svg',           url: 'https://bitcoin.fr/kryptosphere-stablecoins-et-bitcoin/' },
@@ -46,7 +45,7 @@ const SponsorsSection = () => {
     { name: 'KRYPTOSPHERE HEH',             logo: '/lovable-uploads/HEH.webp',      url: 'https://www.instagram.com/ks_belgium/' },
     { name: 'KRYPTOSPHERE HULT London',     logo: '/lovable-uploads/hult.webp',     url: 'https://www.instagram.com/kryptospherelondon/' },
     { name: 'KRYPTOSPHERE NEOMA',           logo: '/lovable-uploads/NEOMA.webp',    url: 'https://www.instagram.com/kryptosphereneoma/' },
-    // { name: 'KRYPTOSPHERE ESILV',           logo: '/lovable-uploads/ESILV.webp',    url: 'https://www.devinci.fr/vie-etudiante/associations-etudiantes/kryptosphere-devinci/' },
+    
     { name: 'KRYPTOSPHERE ESTIA',           logo: '/lovable-uploads/estia.webp',    url: 'https://www.estia.fr/en/campus-estia/estia-campus-associations/' },
     { name: 'KRYPTOSPHERE Albert School',   logo: '/lovable-uploads/albert.png',    url: 'https://www.linkedin.com/posts/kryptosphere_kryptosphere-d%C3%A9barque-%C3%A0-albert-school-et-activity-7371527985356492800-GfNU/?originalSubdomain=fr' },
     { name: 'KRYPTOSPHERE Paris Dauphine',  logo: '/lovable-uploads/dauphine.webp', url: 'https://dauphine.psl.eu/dauphine/media-et-communication/article/hackindau-hackathon-blockchain-2024-de-la-chaire-fintech-et-kryptosphere' },
