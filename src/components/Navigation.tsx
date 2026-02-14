@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
+import { KbsButton } from './ui/kbsButton';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -98,12 +99,17 @@ const Navigation = () => {
                 </Link>
               )
             ))}
-            <Link
+            {/*<Link
               to={`${langPrefix}/krypto-tour`}
               className="ml-2 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
             >
               KRYPTO-TOUR
-            </Link>
+            </Link>*/}
+            <KbsButton
+              langPrefix={langPrefix}
+              setIsOpen={setIsOpen}
+            />
+
             
             {/* Language Switcher */}
             {/* <button
@@ -154,13 +160,17 @@ const Navigation = () => {
                 )}
               </React.Fragment>
             ))}
-            <Link
+            { /*<Link
               to={`${langPrefix}/krypto-tour`}
               className="block mt-2 mb-4 px-3 py-1.5 rounded-full font-bold text-sm bg-gradient-to-r from-red-500 via-red-600 to-yellow-400 text-white shadow-2xl text-center transition-transform duration-200 hover:scale-105 hover:brightness-125 hover:ring-4 hover:ring-red-300/60"
               onClick={() => setIsOpen(false)}
             >
               KRYPTO-TOUR
-            </Link>
+            </Link> */}
+            <KbsButton
+              langPrefix={langPrefix}
+              setIsOpen={setIsOpen}
+            />
             {/* <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium"

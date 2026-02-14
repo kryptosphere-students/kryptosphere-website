@@ -949,7 +949,22 @@ export const translations = {
         'kryptotour.communityPartners.title': 'Partenaires communautaires',
         'kryptotour.mediaPartners.title': 'Partenaire média',
         'kryptotour.address.title': 'Adresse',
-        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France'
+        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'kbs.date': '2 Avril 2026',
+        'kbs.location': 'Cannes, France',
+        'kbs.title': 'KBS x ETHCC : Tomorrow is on-chain',
+        'kbs.subtitle': [
+            'Pour son grand retour en 2026, le plus grand Blockchain Club européen a vu les choses en grand.' ,
+            'Au programme : conférences, panels, activités inédites, networking...', 
+            'Rejoignez-nous le 2 avril 2026 au Palais des Congrès de Cannes, en plein cœur d\'ETHCC, pour une journée exceptionnelle.'
+        ],
+        'kbs.speakers.title': 'Speakers',
+        'kbs.schedule.title': 'Programme',
+        'kbs.sponsors.title': 'Sponsors',
+        'kbs.ticketing.title': 'Billetterie',
+
     },
     en: {
         // Navigation
@@ -1884,6 +1899,20 @@ export const translations = {
         'kryptotour.mediaPartners.title': 'Media Partner',
         'kryptotour.address.title': 'Address',
         'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'kbs.date': 'April 2 2026',
+        'kbs.location': 'Cannes, France',
+        'kbs.title': 'KBS x ETHCC : Tomorrow is on-chain',
+        'kbs.subtitle': [
+            'For its highly anticipated return in 2026, Europe\'s largest blockchain club is raising the bar.',
+            'On the agenda: keynote talks, panel discussions, exclusive activities, and networking opportunities.',
+            'Join us on April 2, 2026, at the Palais des Congrès in Cannes, in the heart of EthCC, for an exceptional day.'
+        ],
+        'kbs.speakers.title': 'Speakers',
+        'kbs.schedule.title': 'Program',
+        'kbs.sponsors.title': 'Sponsors',
+        'kbs.ticketing.title': 'Ticketing',
 
         'donation.btcModal.title': 'Donate in Bitcoin via Tor',
         'donation.btcModal.body': "💡 For a BTC donation, the following link (.onion) must be opened with the Tor Browser (donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nIf you do, copy this link and open it with Tor Browser:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",

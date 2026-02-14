@@ -20,7 +20,7 @@ const Events = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
+      <section className="py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-blue-900/50 backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-8">
             <Calendar1 className="w-4 h-4 text-blue-400" />
@@ -36,7 +36,7 @@ const Events = () => {
           </p>
 
           {/* Button Lu.ma */}
-          <div className="mb-16">
+          <div className="mb-6">
             <a
               href="https://lu.ma/user/KRYPTOSPHERE"
               target="_blank"
@@ -52,26 +52,34 @@ const Events = () => {
       </section>
 
       {/* Events à venir */}
-      <section className="py-16 px-6">
+      <section className="py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">{t('events.upcoming')}</h2>
 
-          <div className="w-full h-[1000px] rounded-2xl overflow-hidden border border-slate-700">
+          <div className="w-full h-[700px] rounded-2xl overflow-hidden border border-slate-700 bg-[#212325]">
             <iframe
-              src="https://lu.ma/embed/calendar/cal-098AwKOPKgqH6Mw/events"
+              src="https://lu.ma/embed/calendar/cal-098AwKOPKgqH6Mw/events?lt=dark"
               width="100%"
               height="100%"
               loading="lazy"
               style={{
                 border: 'none',
-                borderRadius: '1rem'
+                borderRadius: '1rem',
+
               }}
               title="Événements à venir Kryptosphere"
             ></iframe>
           </div>
         </div>
       </section>
-
+      {/* Events passés */}
+      <section className="py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 text-white">
+            {t('events.past')}
+          </h2>
+        </div>
+      </section>
       {/* Événements passés
       <section className="py-16 px-6 border-t border-slate-700/50">
         <div className="max-w-7xl mx-auto">

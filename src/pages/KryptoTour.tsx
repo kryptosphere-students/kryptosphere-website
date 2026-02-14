@@ -297,8 +297,8 @@ const KryptoTour = () => {
                 <div className="max-w-5xl mx-auto">
                     <div className="border-2 border-slate-400/30 bg-slate-800/40 aspect-video overflow-hidden w-full">
                         <iframe
-                            src="https://www.youtube.com/embed/Ai1VoWrEqrM?autoplay=1&loop=1&playlist=Ai1VoWrEqrM&mute=1"
-                            title="KRYPTO-TOUR Lyon Aftermovie"
+                            src="https://www.youtube.com/embed/wJUsu73WCYo?autoplay=1&loop=1&playlist=wJUsu73WCYo&mute=1"
+                            title="KRYPTO-TOUR Lyon 2025 Aftermovie"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
