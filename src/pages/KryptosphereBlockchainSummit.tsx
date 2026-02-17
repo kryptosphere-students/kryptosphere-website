@@ -112,6 +112,11 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                         {t('kbs.ticketing.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <iframe
+                        src="https://se.ro/events/kryptosphere-blockchain-summit-2026-cannes-france-1pqusn"
+                        style={{ width: "100%", height: "600px", border: "0", borderRadius: "16px" }}
+                    >
+                    </iframe>
                 </div>
             </section>
             {/* Address & Map Section*/}
