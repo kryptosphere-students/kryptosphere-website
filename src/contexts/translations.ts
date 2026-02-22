@@ -976,7 +976,7 @@ export const translations = {
         'kbs.whyJoin.point1.title': 'Networking d\'Élite',
         'kbs.whyJoin.point1.content': 'Échangez avec les décideurs de la TradFi et de la DeFi dans un cadre prestigieux au Palais des Festivals et des Congrès, Cannes.',
         'kbs.whyJoin.point2.title': 'Talent Hub',
-        'kbs.whyJoin.point2.content': 'Accédez au point de rencontre exclusif entre recruteurs et profils de haut niveau des meilleures universités européennes (TUM Munich, EPFL, 42 Blockchain, et plus encore).',
+        'kbs.whyJoin.point2.content': 'Accédez au point de rencontre exclusif entre recruteurs et profils de haut niveau des meilleures universités européennes (KRYPTOSPHERE®, TUM Munich, EPFL, et plus encore).',
 
     },
     en: {
@@ -1938,7 +1938,7 @@ export const translations = {
         'kbs.whyJoin.point1.title': 'Elite Networking',
         'kbs.whyJoin.point1.content': 'Exchange with TradFi and DeFi decision-makers in a prestigious setting on the Croisette.',
         'kbs.whyJoin.point2.title': 'Talent Hub',
-        'kbs.whyJoin.point2.content': 'Access the exclusive meeting point between recruiters and top-tier profiles from Europe\'s leading universities (TUM Munich, EPFL, 42 Blockchain, and more).',
+        'kbs.whyJoin.point2.content': 'Access the exclusive meeting point between recruiters and top-tier profiles from Europe\'s leading universities (KRYPTOSPHERE®, TUM Munich, EPFL, and more).',
 
         'donation.btcModal.title': 'Donate in Bitcoin via Tor',
         'donation.btcModal.body': "💡 For a BTC donation, the following link (.onion) must be opened with the Tor Browser (donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nIf you do, copy this link and open it with Tor Browser:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
