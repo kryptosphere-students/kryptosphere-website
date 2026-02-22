@@ -926,6 +926,9 @@ export const translations = {
         'donation.btcModal.button': 'Ouvrir le lien dans Tor',
         'donation.btcModal.close': 'Fermer',
 
+        //Events: 
+        'events.discover': 'Découvrir l\'évènement',
+
         // KryptoTour
         'kryptotour.date': '11 octobre 2025 · Lyon',
         'kryptotour.title': 'KRYPTO-TOUR LYON',
@@ -949,7 +952,32 @@ export const translations = {
         'kryptotour.communityPartners.title': 'Partenaires communautaires',
         'kryptotour.mediaPartners.title': 'Partenaire média',
         'kryptotour.address.title': 'Adresse',
-        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France'
+        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'kbs.date': '2 Avril 2026',
+        'kbs.location': 'Cannes, France',
+        'kbs.title': 'KBS x EthCC[9] : Tomorrow is on-chain',
+        'kbs.tagline': 'L\'excellence technique au service de l\'exécution institutionnelle.',
+        'kbs.subtitle': [
+            'Le KRYPTOSPHERE Blockchain Summit (KBS) revient pour une édition spéciale au cœur de l\'EthCC[9] à Cannes. Accueilli dans le prestigieux Palais des Festivals, nous réunissons l\'élite académique européenne et les leaders de l\'industrie pour combler le « Execution Gap ».' ,
+            'En 2026, l\'industrie n\'est plus en mode exploration ; la question centrale est de savoir comment gérer les marchés, la conformité et la distribution à un niveau institutionnel tout en maintenant la vitesse d\'innovation.', 
+        ],
+        'kbs.speakers.title': 'Speakers',
+        'kbs.schedule.title': 'Programme',
+        'kbs.sponsors.title': 'Sponsors',
+        'kbs.partners.title': 'Partenaires',
+        'kbs.ticketing.title': 'Billetterie',
+        'kbs.ticketing.btnOfficial': 'Billetterie officielle',
+        'kbs.ticketing.warning': 'Pour découvrir notre évènement, il est nécessaire d\'avoir un ticket pour l\'EthCC[9]. Si ce n\'est pas le cas, vous pouvez en acheter un sur la billeterie officielle de l\'EthCC[9].',
+        'kbs.ticketing.seroWarning': 'Une fois votre billet EthCC[9] obtenu, pour vous authentifier rendez-vous sur se.ro !',
+        'kbs.ticketing.seroBtn': 'Voir sur se.ro',
+        'kbs.whyJoin.title': 'Pourquoi nous rejoindre ?',
+        'kbs.whyJoin.point1.title': 'Networking d\'Élite',
+        'kbs.whyJoin.point1.content': 'Échangez avec les décideurs de la TradFi et de la DeFi dans un cadre prestigieux au Palais des Festivals et des Congrès, Cannes.',
+        'kbs.whyJoin.point2.title': 'Talent Hub',
+        'kbs.whyJoin.point2.content': 'Accédez au point de rencontre exclusif entre recruteurs et profils de haut niveau des meilleures universités européennes (KRYPTOSPHERE®, TUM Munich, EPFL, et plus encore).',
+
     },
     en: {
         // Navigation
@@ -1859,6 +1887,9 @@ export const translations = {
         'antennes.lille.bureau.4.name': 'Paolo Serhal',
         'antennes.lille.bureau.4.role': 'General Secretary',
 
+        //Events: 
+        'events.discover': 'Discover the event',
+
 
         // KryptoTour
         'kryptotour.date': 'October 11, 2025 · Lyon',
@@ -1884,6 +1915,30 @@ export const translations = {
         'kryptotour.mediaPartners.title': 'Media Partner',
         'kryptotour.address.title': 'Address',
         'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'kbs.date': 'April 2 2026',
+        'kbs.location': 'Cannes, France',
+        'kbs.title': 'KBS x EthCC[9] : Tomorrow is on-chain',
+        'kbs.tagline': 'Technical excellence serving institutional-grade execution.',
+        'kbs.subtitle': [
+            'The KRYPTOSPHERE Blockchain Summit (KBS) returns for a special edition at the heart of EthCC[9] in Cannes. Hosted at the prestigious Palais des Festivals, we bring together the European academic elite and industry leaders to bridge the "Execution Gap"',
+            'In 2026, the industry is no longer in exploration mode; the key question is how to execute markets, compliance, and distribution at an institutional level while maintaining innovation speed.',
+        ],
+        'kbs.speakers.title': 'Speakers',
+        'kbs.schedule.title': 'Program',
+        'kbs.sponsors.title': 'Sponsors',
+        'kbs.partners.title': 'Partners',
+        'kbs.ticketing.title': 'Ticketing',
+        'kbs.ticketing.btnOfficial': 'Official Ticketing',
+        'kbs.ticketing.warning': 'To discover our event please be sure to have a ticket for EthCC[9] as well. If it is not the case, you can get one on the official ticketing platform of EthCC[9].',
+        'kbs.ticketing.seroWarning': 'Once you have your EthCC[9] ticket, to authenticate, please visit se.ro!',
+        'kbs.ticketing.seroBtn': 'See on se.ro',
+        'kbs.whyJoin.title': 'Why join us ?',
+        'kbs.whyJoin.point1.title': 'Elite Networking',
+        'kbs.whyJoin.point1.content': 'Exchange with TradFi and DeFi decision-makers in a prestigious setting on the Croisette.',
+        'kbs.whyJoin.point2.title': 'Talent Hub',
+        'kbs.whyJoin.point2.content': 'Access the exclusive meeting point between recruiters and top-tier profiles from Europe\'s leading universities (KRYPTOSPHERE®, TUM Munich, EPFL, and more).',
 
         'donation.btcModal.title': 'Donate in Bitcoin via Tor',
         'donation.btcModal.body': "💡 For a BTC donation, the following link (.onion) must be opened with the Tor Browser (donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nIf you do, copy this link and open it with Tor Browser:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
