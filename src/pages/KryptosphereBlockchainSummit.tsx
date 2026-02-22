@@ -1,14 +1,21 @@
 import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { MapPin, Users, Video, Calendar, Star, Ticket, Image, Globe, Linkedin, Twitter } from 'lucide-react';
+import { Calendar, Star, Linkedin, Twitter, AlertTriangle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+import { SpeakerCard } from "../components/kbs/SpeakerCard";
+import { SponsorCard } from "../components/kbs/SponsorCard";
+import  sponsorData  from "@/mocks/kbs/SponsorsData";
+import { speakersData } from '@/mocks/kbs/speakersData';
+import  partnersData  from '@/mocks/kbs/partnersData';
+import { PartnerCard } from '@/components/kbs/PartnerCard';
+import Carousel3D from '@/components/kbs/carouselTeasing';
+import { carouselSlides } from '@/mocks/kbs/slidesCarouselDatas';
 
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: markerIcon2x,
@@ -18,18 +25,49 @@ L.Icon.Default.mergeOptions({
 
 const KryptosphereBlockchainSummit: React.FC = () => {
     const { t, tRaw } = useLanguage();
+    const whyJoinList = [
+        { title: t('kbs.whyJoin.point1.title'), content: t('kbs.whyJoin.point1.content') },
+        { title: t('kbs.whyJoin.point2.title'), content: t('kbs.whyJoin.point2.content') }
+    ];
+    const speakers = speakersData;
+    const sponsorsGold = sponsorData.filter(s => s.tier === 'gold');
+    const sponsorsSilver = sponsorData.filter(s => s.tier === 'silver');
+    const sponsorsBronze = sponsorData.filter(s => s.tier === 'bronze');
+    const partners = partnersData;
+    const slides = carouselSlides;
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    // Progressive reveal for heavy grids (speakers, sponsors)
+        useEffect(() => {
+            const elements = Array.from(document.querySelectorAll('.reveal-on-scroll')) as HTMLElement[];
+            if (elements.length === 0) return;
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target as HTMLElement;
+                            el.classList.remove('opacity-0', 'translate-y-2');
+                            el.classList.add('opacity-100', 'translate-y-0');
+                            observer.unobserve(el);
+                        }
+                    });
+                },
+                { rootMargin: '100px 0px', threshold: 0.05 }
+            );
+            elements.forEach((el) => observer.observe(el));
+            return () => observer.disconnect();
+        }, []);
+
     const dataSubtitle = tRaw('kbs.subtitle');
 
     return (
-        <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white">
+        <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white w-full" onContextMenu={(e) => e.preventDefault()}>
             <Navigation />
             {/* Hero Section */}
-            <section className="pt-32 pb-8 px-6">
+            <section className="pt-32 pb-4 px-6">
                 <div className="max-w-7xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 bg-blue-900/50 md:backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
                         <Calendar className="w-4 h-4" />
@@ -47,7 +85,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                 blur-2xl opacity-100
                                 "
                             >
-                                {t("kbs.title") || "KRYPTOSPHERE BLOCKCHAIN SUMMIT"}
+                                {t("kbs.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
                             </span>
 
                             {/* Texte principal */}
@@ -58,12 +96,32 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                 bg-clip-text text-transparent
                                 "
                             >
-                                {t("kbs.title") || "KRYPTOSPHERE BLOCKCHAIN SUMMIT"}
+                                {t("kbs.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
                             </span>
                         </h1>
                     </div>
                     <div className="w-2/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-6">
+                    <div className="flex justify-center items-center">
+                        <img
+                            src="/kbs/ksLogo.png"
+                            alt="Kryptosphere logo"
+                            className="h-[160px] md:h-[240px] w-auto mx-6 md:mx-14"
+                        />
+                        <div className="flex flex-col items-center mx-6 md:mx-14">
+                            <img
+                                src="/kbs/ethereum_logo_transparent_notrail_160w_15fps.apng"
+                                alt="Ethereum logo"
+                                className="h-[120px] md:h-[180px] w-auto "
+                            />
+                            <p className="text-4xl font-bold my-4 bg-gradient-to-r from-blue-500 via-blue-300 to-red-500 bg-clip-text text-transparent">
+                                EthCC[9]
+                            </p>
+                        </div>
+                    </div>
+                    <p className="text-xl md:text-2xl font-bold my-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('kbs.tagline')}
+                    </p>
+                    <p className="text-lg text-slate-300 mx-auto w-full max-w-5xl leading-relaxed my-6">
                         {Array.isArray(dataSubtitle) ? dataSubtitle.map((line, index) => (
                             <span key={index} className="block mb-2">
                                 {line}
@@ -73,11 +131,28 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                 </div>
             </section>
             {/* Teasing Section */}
-            {/*<section className="py-8 px-6">
-            </section>*/}
-            {/* Format Section */}
-            {/*<section className="py-8 px-6">
-            </section>*/}
+            <section className="py-3 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                     <Carousel3D items={slides} />
+                </div>
+            </section>
+            {/* Why Join Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('kbs.whyJoin.title')}
+                    </p>
+                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {whyJoinList.map((item, index) => (
+                            <div key={index} className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 border border-slate-600/40">
+                                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                                <p className="text-slate-400">{item.content}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
             {/* Schedule Section */}
             <section className="py-8 px-6">
                 <div className="max-w-7xl mx-auto text-center">
@@ -85,24 +160,128 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                         {t('kbs.schedule.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
+                        <div className="flex justify-center">
+                            <img 
+                                src="/kbs/programme.png" 
+                                alt="KRYPTOSPHERE BLOCKCHAIN SUMMIT Planning" 
+                                className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
+                                loading="lazy"
+                                decoding="async"
+                                width="1920"
+                                height="1080"
+                                sizes="100vw"
+                                onClick={(e) => {
+                                    if (window.innerWidth < 768) {
+                                        e.preventDefault();
+                                        const img = e.target as HTMLImageElement;
+                                        const overlay = document.createElement('div');
+                                        overlay.className = 'fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50';
+                                        
+                                        const zoomedImg = document.createElement('img');
+                                        zoomedImg.src = img.src;
+                                        zoomedImg.alt = img.alt;
+                                        zoomedImg.className = 'max-w-[95vw] max-h-[95vh] object-contain';
+                                        
+                                        overlay.appendChild(zoomedImg);
+                                        document.body.appendChild(overlay);
+                                        
+                                        const closeZoom = () => {
+                                            document.body.removeChild(overlay);
+                                        };
+                                        
+                                        overlay.addEventListener('click', closeZoom);
+                                        overlay.addEventListener('touchstart', closeZoom);
+                                    }
+                                }}
+                                style={{ touchAction: 'manipulation' }}
+                            />
+                        </div>
+                        <div className="text-center mt-2 text-sm text-slate-400 md:hidden">
+                            Tap image to zoom
+                        </div>
+                    </div>
                 </div>
             </section>
             {/* Speakers/Guests Section */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1400px' }}>
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
                         {t('kbs.speakers.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8 max-w-max mx-auto">
+                        {speakers.map((sp, i) => (
+                            <SpeakerCard
+                                key={i}
+                                photo={sp.img}
+                                firstName={sp.name.split(' ')[0]}
+                                lastName={sp.name.split(' ').slice(1).join(' ')}
+                                role={sp.role}
+                                linkedinUrl={sp.linkedin}
+                                xUrl={sp.twitter}
+                            />
+                        ))}
+                    </div>
                 </div>
             </section>
             {/* Sponsors Section */}
-            <section className="py-8 px-6">
+            <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1200px' }}>
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
                         {t('kbs.sponsors.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                </div>
+                {/* Gold Tier */}
+                <div className="max-w-7xl mb-12 mx-auto">
+                    <h3 className="text-xl font-semibold text-center mb-6 text-yellow-400 flex items-center justify-center gap-2">
+                        <Star className="w-5 h-5" />
+                        {t('kryptotour.sponsors.gold') || 'Gold'}
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                        {sponsorsGold.map((sponsor, i) => (
+                            <SponsorCard key={i} {...sponsor}/>
+                        ))}
+                    </div>
+                </div>
+                {/* Silver Tier */}
+                <div className="max-w-7xl mb-12 mx-auto">
+                    <h3 className="text-xl font-semibold text-center mb-6 text-slate-400 flex items-center justify-center gap-2">
+                        <Star className="w-5 h-5" />
+                        {t('kryptotour.sponsors.silver') || 'Silver'}
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                        {sponsorsSilver.map((sponsor, i) => (
+                            <SponsorCard key={i} {...sponsor}/>
+                        ))}
+                    </div>
+                </div>
+                {/* Bronze Tier */}
+                <div className="max-w-7xl mb-12 mx-auto">
+                    <h3 className="text-xl font-semibold text-center mb-6 text-orange-400 flex items-center justify-center gap-2">
+                        <Star className="w-5 h-5" />
+                        {t('kryptotour.sponsors.bronze') || 'Bronze'}
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                        {sponsorsBronze.map((sponsor, i) => (
+                            <SponsorCard key={i} {...sponsor}/>
+                        ))}
+                    </div>
+                </div>
+            </section>
+             {/* Ticketing Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('kbs.partners.title')}
+                    </p>
+                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max mx-auto">
+                        {partners.map((partner, i) => (
+                            <PartnerCard key={i} {...partner} />
+                        ))}
+                    </div>
                 </div>
             </section>
             {/* Ticketing Section */}
@@ -112,9 +291,51 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                         {t('kbs.ticketing.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="mt-4 flex items-start text-lg md:text-xl font-bold text-red-400">
+                        <div
+                            className="
+                            mt-[1px] shrink-0
+                            w-10 aspect-square rounded-full
+                            bg-red-400/15 ring-1 ring-red-400/75
+                            grid place-items-center
+                            animate-pulse
+                            "
+                            aria-hidden="true"
+                        >
+                            <AlertTriangle className="w-5 h-5 text-red-400" strokeWidth={2.2} />
+                        </div>
+                        <p className='mr-3'>{t('kbs.ticketing.warning')}</p>
+                    </div>
+                    <a
+                        href="https://ethcc.io/tickets"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="
+                            inline-flex items-center gap-3
+                            rounded-xl bg-white px-4 py-2.5
+                            my-5
+                            font-semibold text-slate-900
+                            ring-1 ring-black/10 shadow-sm
+                            transition
+                            hover:shadow-md hover:ring-black/20
+                            active:scale-[0.98]
+                            focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/70
+                        "
+                        aria-label="Billetterie officielle EthCC[9]"
+                        >
+                        <img
+                            src={"/kbs/ethcc9.png"}
+                            alt="EthCC[9]"
+                            className="h-6 w-6 object-contain"
+                            draggable={false}
+                        />
+                        <span>Billeterie officielle</span>
+                        </a>
                     <iframe
+                    className='reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform'
                         src="https://se.ro/events/kryptosphere-blockchain-summit-2026-cannes-france-1pqusn"
-                        style={{ width: "100%", height: "600px", border: "0", borderRadius: "16px" }}
+                        style={{ width: "100%", height: "90vh", border: "0", borderRadius: "16px", overflow: "hidden", contain: 'paint' }}
+                        loading="lazy"
                     >
                     </iframe>
                 </div>

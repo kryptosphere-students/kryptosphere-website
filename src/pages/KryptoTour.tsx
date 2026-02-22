@@ -571,8 +571,8 @@ const KryptoTour = () => {
                 </div>
             </section>
 
-            {/* Ticketing Widget */}
-            <section className="py-8 px-6">
+            {/* Ticketing Widget - desactivated*/}
+            { /*<section className="py-8 px-6">
                 <div className="max-w-5xl mx-auto w-full">
                     <h2 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-red-500 via-red-400 to-yellow-400 bg-clip-text text-transparent">{t('kryptotour.ticketing.title') || 'Billetterie'}</h2>
                     <div className="flex justify-center">
@@ -589,7 +589,7 @@ const KryptoTour = () => {
                         />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Community Partners */}
             <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '900px' }}>
