@@ -10,12 +10,13 @@ import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import { SpeakerCard } from "../components/kbs/SpeakerCard";
 import { SponsorCard } from "../components/kbs/SponsorCard";
-import  sponsorData  from "@/mocks/kbs/SponsorsData";
+import  sponsorData  from "@/mocks/kbs/sponsorsData";
 import { speakersData } from '@/mocks/kbs/speakersData';
 import  partnersData  from '@/mocks/kbs/partnersData';
 import { PartnerCard } from '@/components/kbs/PartnerCard';
 import Carousel3D from '@/components/kbs/carouselTeasing';
 import { carouselSlides } from '@/mocks/kbs/slidesCarouselDatas';
+import { SeroEmbed } from '@/components/kbs/seroEmbed';
 
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: markerIcon2x,
@@ -331,13 +332,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                         />
                         <span>Billeterie officielle</span>
                         </a>
-                    <iframe
-                    className='reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform'
-                        src="https://se.ro/events/kryptosphere-blockchain-summit-2026-cannes-france-1pqusn"
-                        style={{ width: "100%", height: "90vh", border: "0", borderRadius: "16px", overflow: "hidden", contain: 'paint' }}
-                        loading="lazy"
-                    >
-                    </iframe>
+                    <SeroEmbed />
                 </div>
             </section>
             {/* Address & Map Section*/}
