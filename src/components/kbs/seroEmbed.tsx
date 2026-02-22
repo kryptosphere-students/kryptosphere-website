@@ -1,11 +1,11 @@
-export function SeroEmbed() {
+export function SeroEmbed({ content }: { content?: { warning: string; btn: string } }) {
   const url = "https://se.ro/events/kryptosphere-blockchain-summit-2026-cannes-france-1pqusn";
   const CROP = 64;
   return (
     <div className="w-full">
       <div className="my-3 flex flex-col items-center gap-3">
         <div className="text-lg font-bold text-red-400">
-          Une fois votre billet EthCC[9] obtenu, pour vous authentifier rendez-vous sur se.ro !
+          {content?.warning || "Une fois votre billet EthCC[9] obtenu, pour vous authentifier rendez-vous sur se.ro !"}
         </div>
           <a
             href={url}
@@ -13,7 +13,7 @@ export function SeroEmbed() {
             rel="noreferrer"
             className="rounded-xl font-bold border border-white/15 px-4 py-2 text-white/90 hover:bg-white/10 transition mx-auto"
           >
-            Voir sur se.ro
+            {content?.btn || "Voir sur se.ro"}
           </a>
       </div>
       <div className="relative h-[90vh] overflow-hidden rounded-2xl bg-[rgba(17,17,17,1)] w-full max-w-[700px] mx-auto">

@@ -17,6 +17,7 @@ import { PartnerCard } from '@/components/kbs/PartnerCard';
 import Carousel3D from '@/components/kbs/carouselTeasing';
 import { carouselSlides } from '@/mocks/kbs/slidesCarouselDatas';
 import { SeroEmbed } from '@/components/kbs/seroEmbed';
+import { warn } from 'console';
 
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: markerIcon2x,
@@ -36,6 +37,10 @@ const KryptosphereBlockchainSummit: React.FC = () => {
     const sponsorsBronze = sponsorData.filter(s => s.tier === 'bronze');
     const partners = partnersData;
     const slides = carouselSlides;
+    const seroContent = {
+        warning: t('kbs.ticketing.seroWarning'),
+        btn: t('kbs.ticketing.seroBtn'),
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -322,7 +327,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                             active:scale-[0.98]
                             focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/70
                         "
-                        aria-label="Billetterie officielle EthCC[9]"
+                        aria-label={t('kbs.ticketing.btnOfficial')}
                         >
                         <img
                             src={"/kbs/ethcc9.png"}
@@ -330,9 +335,9 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                             className="h-6 w-6 object-contain"
                             draggable={false}
                         />
-                        <span>Billeterie officielle</span>
+                        <span>{t('kbs.ticketing.btnOfficial')}</span>
                         </a>
-                    <SeroEmbed />
+                    <SeroEmbed content={seroContent} />
                 </div>
             </section>
             {/* Address & Map Section*/}
