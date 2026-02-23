@@ -137,7 +137,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                 </div>
             </section>
             {/* Teasing Section */}
-            <section className="py-3 px-6">
+            <section className="py-3 px-6 md:block hidden" style={{ contentVisibility: 'auto', containIntrinsicSize: '600px' }}>
                 <div className="max-w-7xl mx-auto text-center">
                      <Carousel3D items={slides} />
                 </div>
