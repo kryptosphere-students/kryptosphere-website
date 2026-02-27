@@ -17,7 +17,6 @@ import { PartnerCard } from '@/components/kbs/PartnerCard';
 import Carousel3D from '@/components/kbs/carouselTeasing';
 import { carouselSlides } from '@/mocks/kbs/slidesCarouselDatas';
 import { SeroEmbed } from '@/components/kbs/seroEmbed';
-import { warn } from 'console';
 
 L.Icon.Default.mergeOptions({
     iconRetinaUrl: markerIcon2x,
@@ -27,6 +26,7 @@ L.Icon.Default.mergeOptions({
 
 const KryptosphereBlockchainSummit: React.FC = () => {
     const { t, tRaw } = useLanguage();
+    const programPath = t('kbs.pathProgram');
     const whyJoinList = [
         { title: t('kbs.whyJoin.point1.title'), content: t('kbs.whyJoin.point1.content') },
         { title: t('kbs.whyJoin.point2.title'), content: t('kbs.whyJoin.point2.content') }
@@ -169,7 +169,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                     <div className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
                         <div className="flex justify-center">
                             <img 
-                                src="/kbs/programme.png" 
+                                src={programPath} 
                                 alt="KRYPTOSPHERE BLOCKCHAIN SUMMIT Planning" 
                                 className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
                                 loading="lazy"
