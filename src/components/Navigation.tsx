@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
-import { KbsButton } from './ui/kbsButton';
+import { PitchathonButton } from './ui/pitchathonButton';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +105,7 @@ const Navigation = () => {
             >
               KRYPTO-TOUR
             </Link>*/}
-            <KbsButton
+            <PitchathonButton
               langPrefix={langPrefix}
               setIsOpen={setIsOpen}
             />
@@ -167,7 +167,7 @@ const Navigation = () => {
             >
               KRYPTO-TOUR
             </Link> */}
-            <KbsButton
+            <PitchathonButton
               langPrefix={langPrefix}
               setIsOpen={setIsOpen}
             />

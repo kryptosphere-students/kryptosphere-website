@@ -1,5 +1,5 @@
 export function SeroEmbed({ content }: { content?: { warning: string; btn: string } }) {
-  const url = "https://se.ro/events/kryptosphere-blockchain-summit-2026-cannes-france-1pqusn";
+  const url = "https://se.ro/events/kryptosphere-pitchathon-cannes";
   const CROP = 64;
   return (
     <div className="w-full">
