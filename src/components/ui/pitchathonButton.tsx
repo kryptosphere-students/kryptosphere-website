@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-type KbsNavButtonProps = {
+type PitchathonNavButtonProps = {
   langPrefix: string;
   setIsOpen?: (open: boolean) => void;
   className?: string;
@@ -13,16 +13,16 @@ type KbsNavButtonProps = {
   gapPx?: number;
 };
 
-export function KbsButton({
+export function PitchathonButton({
   langPrefix,
   setIsOpen,
   className = "",
   widthClassName = "w-[100px] sm:w-[130px] md:w-[150px]",
-  label = "KRYPTOSPHERE Blockchain Summit",
+  label = "KRYPTOSPHERE X ETHCC Pitchathon",
   seconds = 10,
   gapPx = 24,
-}: KbsNavButtonProps) {
-  const to = `${langPrefix}/kryptosphere-blockchain-summit`;
+}: PitchathonNavButtonProps) {
+  const to = `${langPrefix}/pitchathon-ethcc`;
 
   return (
     <Link

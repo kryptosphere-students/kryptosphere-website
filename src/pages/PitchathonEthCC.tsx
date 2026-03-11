@@ -24,12 +24,12 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow,
 });
 
-const KryptosphereBlockchainSummit: React.FC = () => {
+const PitchathonEthCC: React.FC = () => {
     const { t, tRaw } = useLanguage();
-    const programPath = t('kbs.pathProgram');
+    const programPath = t('pitchathon.pathProgram');
     const whyJoinList = [
-        { title: t('kbs.whyJoin.point1.title'), content: t('kbs.whyJoin.point1.content') },
-        { title: t('kbs.whyJoin.point2.title'), content: t('kbs.whyJoin.point2.content') }
+        { title: t('pitchathon.whyJoin.point1.title'), content: t('pitchathon.whyJoin.point1.content') },
+        { title: t('pitchathon.whyJoin.point2.title'), content: t('pitchathon.whyJoin.point2.content') }
     ];
     const speakers = speakersData;
     const sponsorsGold = sponsorData.filter(s => s.tier === 'gold');
@@ -38,8 +38,8 @@ const KryptosphereBlockchainSummit: React.FC = () => {
     const partners = partnersData;
     const slides = carouselSlides;
     const seroContent = {
-        warning: t('kbs.ticketing.seroWarning'),
-        btn: t('kbs.ticketing.seroBtn'),
+        warning: t('pitchathon.ticketing.seroWarning'),
+        btn: t('pitchathon.ticketing.seroBtn'),
     };
 
     useEffect(() => {
@@ -67,7 +67,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
             return () => observer.disconnect();
         }, []);
 
-    const dataSubtitle = tRaw('kbs.subtitle');
+    const dataSubtitle = tRaw('pitchathon.subtitle');
 
     return (
         <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white w-full" onContextMenu={(e) => e.preventDefault()}>
@@ -77,7 +77,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                 <div className="max-w-7xl mx-auto text-center">
                     <div className="inline-flex items-center gap-2 bg-blue-900/50 md:backdrop-blur-lg border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm mb-6">
                         <Calendar className="w-4 h-4" />
-                        {t('kbs.date') + ' · ' + t('kbs.location') || '2 avril 2026 · Cannes'}
+                        {t('pitchathon.date') + ' · ' + t('pitchathon.location') || '2 avril 2026 · Cannes'}
                     </div>
                     <div className='my-3'>
                         <h1 className="relative inline-block text-3xl md:text-5xl font-bold mb-4">
@@ -91,7 +91,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                 blur-2xl opacity-100
                                 "
                             >
-                                {t("kbs.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
+                                {t("pitchathon.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
                             </span>
 
                             {/* Texte principal */}
@@ -102,7 +102,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                 bg-clip-text text-transparent
                                 "
                             >
-                                {t("kbs.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
+                                {t("pitchathon.title") || "'KBS x EthCC[9] : Tomorrow is on-chain'"}
                             </span>
                         </h1>
                     </div>
@@ -125,7 +125,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                         </div>
                     </div>
                     <p className="text-xl md:text-2xl font-bold my-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.tagline')}
+                        {t('pitchathon.tagline')}
                     </p>
                     <p className="text-lg text-slate-300 mx-auto w-full max-w-5xl leading-relaxed my-6">
                         {Array.isArray(dataSubtitle) ? dataSubtitle.map((line, index) => (
@@ -142,31 +142,14 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                      <Carousel3D items={slides} />
                 </div>
             </section>
-            {/* Why Join Section */}
-            <section className="py-8 px-6">
-                <div className="max-w-7xl mx-auto text-center">
-                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.whyJoin.title')}
-                    </p>
-                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {whyJoinList.map((item, index) => (
-                            <div key={index} className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 border border-slate-600/40">
-                                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                                <p className="text-slate-400">{item.content}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
             {/* Schedule Section */}
             <section className="py-8 px-6">
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.schedule.title')}
+                        {t('pitchathon.schedule.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
+                    <div className="mx-auto max-w-[720px] bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
                         <div className="flex justify-center">
                             <img 
                                 src={programPath} 
@@ -174,8 +157,8 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                 className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
                                 loading="lazy"
                                 decoding="async"
-                                width="1920"
-                                height="1080"
+                                width="700"
+                                height="700"
                                 sizes="100vw"
                                 onClick={(e) => {
                                     if (window.innerWidth < 768) {
@@ -187,7 +170,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                                         const zoomedImg = document.createElement('img');
                                         zoomedImg.src = img.src;
                                         zoomedImg.alt = img.alt;
-                                        zoomedImg.className = 'max-w-[95vw] max-h-[95vh] object-contain';
+                                        zoomedImg.className = 'max-w-[95vw] max-h-[700px] object-contain';
                                         
                                         overlay.appendChild(zoomedImg);
                                         document.body.appendChild(overlay);
@@ -209,11 +192,83 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                     </div>
                 </div>
             </section>
+            {/* Ticketing Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('pitchathon.ticketing.title')}
+                    </p>
+                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="mt-4 flex items-start text-lg md:text-xl font-bold text-red-400">
+                        <div
+                            className="
+                            mt-[1px] shrink-0
+                            w-10 aspect-square rounded-full
+                            bg-red-400/15 ring-1 ring-red-400/75
+                            grid place-items-center
+                            animate-pulse
+                            "
+                            aria-hidden="true"
+                        >
+                            <AlertTriangle className="w-5 h-5 text-red-400" strokeWidth={2.2} />
+                        </div>
+                        <p className='mr-3'>{t('pitchathon.ticketing.warning')}</p>
+                    </div>
+                    <a
+                        href="https://ethcc.io/tickets"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="
+                            inline-flex items-center gap-3
+                            rounded-xl bg-white px-4 py-2.5
+                            my-5
+                            font-semibold text-slate-900
+                            ring-1 ring-black/10 shadow-sm
+                            transition
+                            hover:shadow-md hover:ring-black/20
+                            active:scale-[0.98]
+                            focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/70
+                        "
+                        aria-label={t('pitchathon.ticketing.btnOfficial')}
+                        >
+                        <img
+                            src={"/kbs/ethcc9.png"}
+                            alt="EthCC[9]"
+                            className="h-6 w-6 object-contain"
+                            draggable={false}
+                        />
+                        <span>{t('pitchathon.ticketing.btnOfficial')}</span>
+                        </a>
+                    <SeroEmbed content={seroContent} />
+                </div>
+            </section>
+            {/* Pitchathon Registration Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('pitchathon.registration.title')}
+                    </p>
+                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="flex justify-center">
+                        <iframe
+                            src="https://luma.com/embed/event/evt-75ByfVzjHfe44c1/simple"
+                            width="600"
+                            height="820"
+                            frameBorder="0"
+                            style={{ borderRadius: '4px', width: '100%', maxWidth: '600px', minHeight: '600px' }}
+                            allowFullScreen
+                            aria-hidden="false"
+                            tabIndex={0}
+                            title="Billetterie Luma"
+                        />
+                    </div> 
+                </div>
+            </section>
             {/* Speakers/Guests Section */}
             <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1400px' }}>
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.speakers.title')}
+                        {t('pitchathon.speakers.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8 max-w-max mx-auto">
@@ -235,7 +290,7 @@ const KryptosphereBlockchainSummit: React.FC = () => {
             <section className="py-8 px-6" style={{ contentVisibility: 'auto', containIntrinsicSize: '1200px' }}>
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.sponsors.title')}
+                        {t('pitchathon.sponsors.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
                 </div>
@@ -276,11 +331,11 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                     </div>
                 </div>
             </section>
-             {/* Ticketing Section */}
+             {/* Partners Section */}
             <section className="py-8 px-6">
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.partners.title')}
+                        {t('pitchathon.partners.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max mx-auto">
@@ -290,60 +345,10 @@ const KryptosphereBlockchainSummit: React.FC = () => {
                     </div>
                 </div>
             </section>
-            {/* Ticketing Section */}
-            <section className="py-8 px-6">
-                <div className="max-w-7xl mx-auto text-center">
-                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
-                        {t('kbs.ticketing.title')}
-                    </p>
-                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="mt-4 flex items-start text-lg md:text-xl font-bold text-red-400">
-                        <div
-                            className="
-                            mt-[1px] shrink-0
-                            w-10 aspect-square rounded-full
-                            bg-red-400/15 ring-1 ring-red-400/75
-                            grid place-items-center
-                            animate-pulse
-                            "
-                            aria-hidden="true"
-                        >
-                            <AlertTriangle className="w-5 h-5 text-red-400" strokeWidth={2.2} />
-                        </div>
-                        <p className='mr-3'>{t('kbs.ticketing.warning')}</p>
-                    </div>
-                    <a
-                        href="https://ethcc.io/tickets"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="
-                            inline-flex items-center gap-3
-                            rounded-xl bg-white px-4 py-2.5
-                            my-5
-                            font-semibold text-slate-900
-                            ring-1 ring-black/10 shadow-sm
-                            transition
-                            hover:shadow-md hover:ring-black/20
-                            active:scale-[0.98]
-                            focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/70
-                        "
-                        aria-label={t('kbs.ticketing.btnOfficial')}
-                        >
-                        <img
-                            src={"/kbs/ethcc9.png"}
-                            alt="EthCC[9]"
-                            className="h-6 w-6 object-contain"
-                            draggable={false}
-                        />
-                        <span>{t('kbs.ticketing.btnOfficial')}</span>
-                        </a>
-                    <SeroEmbed content={seroContent} />
-                </div>
-            </section>
             {/* Address & Map Section*/}
             <Footer />
         </div>
     );
 }
 
-export default KryptosphereBlockchainSummit;
+export default PitchathonEthCC;
