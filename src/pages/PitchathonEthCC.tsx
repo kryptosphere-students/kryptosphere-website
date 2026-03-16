@@ -149,7 +149,7 @@ const PitchathonEthCC: React.FC = () => {
                         {t('pitchathon.schedule.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="mx-auto max-w-[720px] bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
+                    <div className="bg-slate-800/80 md:backdrop-blur-lg rounded-2xl p-6 mb-8 border border-slate-600/40 reveal-on-scroll opacity-0 translate-y-2 transition-all duration-1000 will-change-transform" style={{ contain: 'paint' }}>
                         <div className="flex justify-center">
                             <img 
                                 src={programPath} 
@@ -157,8 +157,8 @@ const PitchathonEthCC: React.FC = () => {
                                 className="max-w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300 md:cursor-default md:hover:scale-100"
                                 loading="lazy"
                                 decoding="async"
-                                width="700"
-                                height="700"
+                                width="1920"
+                                height="1080"
                                 sizes="100vw"
                                 onClick={(e) => {
                                     if (window.innerWidth < 768) {
@@ -170,7 +170,7 @@ const PitchathonEthCC: React.FC = () => {
                                         const zoomedImg = document.createElement('img');
                                         zoomedImg.src = img.src;
                                         zoomedImg.alt = img.alt;
-                                        zoomedImg.className = 'max-w-[95vw] max-h-[700px] object-contain';
+                                        zoomedImg.className = 'max-w-[95vw] max-h-[95vh] object-contain';
                                         
                                         overlay.appendChild(zoomedImg);
                                         document.body.appendChild(overlay);
