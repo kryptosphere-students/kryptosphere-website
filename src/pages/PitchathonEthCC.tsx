@@ -12,7 +12,7 @@ import { SpeakerCard } from "../components/kbs/SpeakerCard";
 import { SponsorCard } from "../components/kbs/SponsorCard";
 import  sponsorData  from "@/mocks/kbs/sponsorsData";
 import { speakersData } from '@/mocks/kbs/speakersData';
-import  partnersData  from '@/mocks/kbs/partnersData';
+import  {partnersData, communityPartnersData}  from '@/mocks/kbs/partnersData';
 import { PartnerCard } from '@/components/kbs/PartnerCard';
 import Carousel3D from '@/components/kbs/carouselTeasing';
 import { carouselSlides } from '@/mocks/kbs/slidesCarouselDatas';
@@ -35,6 +35,7 @@ const PitchathonEthCC: React.FC = () => {
     const sponsorsGold = sponsorData.filter(s => s.tier === 'gold');
     const sponsorsSilver = sponsorData.filter(s => s.tier === 'silver');
     const sponsorsBronze = sponsorData.filter(s => s.tier === 'bronze');
+    const communityPartners = communityPartnersData;
     const partners = partnersData;
     const slides = carouselSlides;
     const seroContent = {
@@ -296,42 +297,14 @@ const PitchathonEthCC: React.FC = () => {
                 </div>
                 {/* Gold Tier */}
                 <div className="max-w-7xl mb-12 mx-auto">
-                    <h3 className="text-xl font-semibold text-center mb-6 text-yellow-400 flex items-center justify-center gap-2">
-                        <Star className="w-5 h-5" />
-                        {t('kryptotour.sponsors.gold') || 'Gold'}
-                    </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
                         {sponsorsGold.map((sponsor, i) => (
                             <SponsorCard key={i} {...sponsor}/>
                         ))}
                     </div>
                 </div>
-                {/* Silver Tier */}
-                <div className="max-w-7xl mb-12 mx-auto">
-                    <h3 className="text-xl font-semibold text-center mb-6 text-slate-400 flex items-center justify-center gap-2">
-                        <Star className="w-5 h-5" />
-                        {t('kryptotour.sponsors.silver') || 'Silver'}
-                    </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-                        {sponsorsSilver.map((sponsor, i) => (
-                            <SponsorCard key={i} {...sponsor}/>
-                        ))}
-                    </div>
-                </div>
-                {/* Bronze Tier */}
-                <div className="max-w-7xl mb-12 mx-auto">
-                    <h3 className="text-xl font-semibold text-center mb-6 text-orange-400 flex items-center justify-center gap-2">
-                        <Star className="w-5 h-5" />
-                        {t('kryptotour.sponsors.bronze') || 'Bronze'}
-                    </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-                        {sponsorsBronze.map((sponsor, i) => (
-                            <SponsorCard key={i} {...sponsor}/>
-                        ))}
-                    </div>
-                </div>
             </section>
-             {/* Partners Section */}
+            {/* Partners Section */}
             <section className="py-8 px-6">
                 <div className="max-w-7xl mx-auto text-center">
                     <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
@@ -340,6 +313,20 @@ const PitchathonEthCC: React.FC = () => {
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max mx-auto">
                         {partners.map((partner, i) => (
+                            <PartnerCard key={i} {...partner} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+             {/* Community Partners Section */}
+            <section className="py-8 px-6">
+                <div className="max-w-7xl mx-auto text-center">
+                    <p className="text-2xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-300 via-yellow-200 to-teal-200 bg-clip-text text-transparent">
+                        {t('pitchathon.communityPartners.title')}
+                    </p>
+                    <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max mx-auto">
+                        {communityPartners.map((partner, i) => (
                             <PartnerCard key={i} {...partner} />
                         ))}
                     </div>
