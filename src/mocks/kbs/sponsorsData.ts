@@ -13,10 +13,10 @@ const sponsorsData: { name: string; tier: SponsorTier; websiteUrl: string; logo:
         logo: "/kbs/sponsors/XRPL_Master_WHT.svg",
     },
     {
-        name: "Comming soon",
+        name: "IExec",
         tier: "gold",
-        websiteUrl: "https://ethcc.io/",
-        logo: "/kbs/sponsors/coming-soon.png",
+        websiteUrl: "https://iex.ec/",
+        logo: "https://cdn.prod.website-files.com/6646148828eddb19c172bf2a/68b59948f3faf1bcad649ae9_Logo-iExec-YW.svg",
     },
     {
         name: "Comming soon",
