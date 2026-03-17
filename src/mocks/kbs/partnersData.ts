@@ -1,4 +1,4 @@
-const partnersData: { name: string; websiteUrl: string; logo: string }[] = [
+export const communityPartnersData: { name: string; websiteUrl: string; logo: string }[] = [
     {
         name: "TUM Blockchain Club",
         websiteUrl: "https://www.tum-blockchain.com/",
@@ -16,4 +16,20 @@ const partnersData: { name: string; websiteUrl: string; logo: string }[] = [
     }
 ]
 
-export default partnersData
+export const partnersData = [ 
+    {
+        name: "Comming soon",
+        websiteUrl: "https://ethcc.io/",
+        logo: "/kbs/sponsors/coming-soon.png",
+    },
+    {
+        name: "Comming soon",
+        websiteUrl: "https://ethcc.io/",
+        logo: "/kbs/sponsors/coming-soon.png",
+    },
+    {
+        name: "Comming soon",
+        websiteUrl: "https://ethcc.io/",
+        logo: "/kbs/sponsors/coming-soon.png",
+    }
+]
