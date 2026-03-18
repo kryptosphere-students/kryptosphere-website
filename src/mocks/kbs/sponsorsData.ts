@@ -4,7 +4,7 @@ const sponsorsData: { name: string; tier: SponsorTier; websiteUrl: string; logo:
         name: "Team1 Avalanche",
         tier: "gold",
         websiteUrl: "https://www.team1.network/",
-        logo: "/kbs/sponsors/Team1.png",
+        logo: "/kbs/sponsors/Team1_Text_Main.svg",
     },
     {
         name: "XRPL",

@@ -7,11 +7,10 @@ export const speakersData = [
         twitter: "https://x.com/Nutymoon",
     },
     {
-        name: "Coming Soon",
-        role: "Stay tuned for our speaker announcements!",
-        img: "/kbs/sponsors/coming-soon.png",
-        linkedin: "https://www.linkedin.com/company/kryptosphere/",
-        twitter: "https://x.com/KRYPTOSPHERE_",
+        name: "Florian Alonso",
+        role: "XRP Ledger",
+        img: "/kbs/speakers/Florian-Alonso.png",
+        twitter: "https://x.com/flphth",
     },
     {
         name: "Coming Soon",
