@@ -280,8 +280,8 @@ const PitchathonEthCC: React.FC = () => {
                                 firstName={sp.name.split(' ')[0]}
                                 lastName={sp.name.split(' ').slice(1).join(' ')}
                                 role={sp.role}
-                                linkedinUrl={sp.linkedin}
-                                xUrl={sp.twitter}
+                                linkedinUrl={sp.linkedin ? sp.linkedin : undefined}
+                                xUrl={sp.twitter ? sp.twitter : undefined}
                             />
                         ))}
                     </div>
