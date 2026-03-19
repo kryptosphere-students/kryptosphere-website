@@ -13,11 +13,11 @@ export const speakersData = [
         twitter: "https://x.com/flphth",
     },
     {
-        name: "Coming Soon",
-        role: "Stay tuned for our speaker announcements!",
-        img: "/kbs/sponsors/coming-soon.png",
-        linkedin: "https://www.linkedin.com/company/kryptosphere/",
-        twitter: "https://x.com/KRYPTOSPHERE_",
+        name: "Martin Leclercq",
+        role: "iExec",
+        img: "/kbs/speakers/martin-leclercq.jpg",
+        linkedin: "https://www.linkedin.com/in/leclercqmartin/",
+        twitter: "https://x.com/martinlecl",
     },
     {
         name: "Coming Soon",
