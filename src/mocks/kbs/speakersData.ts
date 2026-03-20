@@ -1,7 +1,7 @@
 export const speakersData = [
     {
         name: "Gauthier Leonard",
-        role: "Team1",
+        role: "Team1 | Suzaku",
         img: "/kbs/speakers/gauthier-leonard-headshot.jpg",
         linkedin: "https://linkedin.com/in/gauthier-leonard",
         twitter: "https://x.com/Nutymoon",
