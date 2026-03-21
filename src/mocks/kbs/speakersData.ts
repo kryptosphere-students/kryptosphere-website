@@ -20,10 +20,10 @@ export const speakersData = [
         twitter: "https://x.com/martinlecl",
     },
     {
-        name: "Coming Soon",
-        role: "Stay tuned for our speaker announcements!",
-        img: "/kbs/sponsors/coming-soon.png",
-        linkedin: "https://www.linkedin.com/company/kryptosphere/",
-        twitter: "https://x.com/KRYPTOSPHERE_",
+        name: "Richard Hamelin",
+        role: "50 Partners",
+        img: "/kbs/speakers/richard-hamelin.jpg",
+        linkedin: "https://www.linkedin.com/in/richard-hamelin-714958127/",
+        twitter: "https://x.com/HamelinRichard3",
     }
 ];
