@@ -18,18 +18,18 @@ export const communityPartnersData: { name: string; websiteUrl: string; logo: st
 
 export const partnersData = [ 
     {
-        name: "Comming soon",
-        websiteUrl: "https://ethcc.io/",
-        logo: "/kbs/sponsors/coming-soon.png",
+        name: "France Cryptos",
+        websiteUrl: "https://www.francecryptos.fr/",
+        logo: "/kbs/partners/france_cryptos.png",
     },
     {
-        name: "Comming soon",
-        websiteUrl: "https://ethcc.io/",
-        logo: "/kbs/sponsors/coming-soon.png",
+        name: "50 Partners",
+        websiteUrl: "https://www.50partners.fr/",
+        logo: "/kbs/partners/50partnerWeb3.png",
     },
     {
-        name: "Comming soon",
-        websiteUrl: "https://ethcc.io/",
-        logo: "/kbs/sponsors/coming-soon.png",
+        name: "BPI France",
+        websiteUrl: "https://www.bpifrance.fr/",
+        logo: "/kbs/partners/bpi.png",
     }
 ]

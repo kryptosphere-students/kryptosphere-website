@@ -108,7 +108,7 @@ const PitchathonEthCC: React.FC = () => {
                         </h1>
                     </div>
                     <div className="w-2/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center flex-col md:flex-row gap-4">
                         <img
                             src="/kbs/ksLogo.png"
                             alt="Kryptosphere logo"
