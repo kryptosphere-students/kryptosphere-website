@@ -926,6 +926,9 @@ export const translations = {
         'donation.btcModal.button': 'Ouvrir le lien dans Tor',
         'donation.btcModal.close': 'Fermer',
 
+        //Events: 
+        'events.discover': 'Découvrir l\'évènement',
+
         // KryptoTour
         'kryptotour.date': '11 octobre 2025 · Lyon',
         'kryptotour.title': 'KRYPTO-TOUR LYON',
@@ -949,7 +952,34 @@ export const translations = {
         'kryptotour.communityPartners.title': 'Partenaires communautaires',
         'kryptotour.mediaPartners.title': 'Partenaire média',
         'kryptotour.address.title': 'Adresse',
-        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France'
+        'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'pitchathon.date': '2 Avril 2026',
+        'pitchathon.location': 'Cannes, France',
+        'pitchathon.title': 'KRYPTOSPHERE x EthCC[9] : Pitchathon',
+        'pitchathon.tagline': 'Et si une idée devenait un projet blockchain concret en 30 jours ?',
+        'pitchathon.subtitle': [
+            'KRYPTOSPHERE® lance une initiative inédite pour les étudiants builders en partenariat avec EthCC[9], directement au Palais des Festivals de Cannes. Inspiré du format Qui veut être mon associé, ce hackathon privilégie la vision et la problématique : aucun code n\'est requis au départ.' ,
+            'Le Concept Les équipes sélectionnées pitcheront devant des fondations majeures pour transformer leur deck en produit réel.', 
+        ],
+        'pitchathon.speakers.title': 'Jurys',
+        'pitchathon.schedule.title': 'Programme',
+        'pitchathon.sponsors.title': 'Sponsors',
+        'pitchathon.partners.title': 'Partenaires',
+        'pitchathon.communityPartners.title': 'Partenaires communautaires',
+        'pitchathon.ticketing.title': 'Billetterie',
+        'pitchathon.pathProgram' : "/kbs/programme-fr.jpg",
+        'pitchathon.ticketing.btnOfficial': 'Billetterie officielle',
+        'pitchathon.ticketing.warning': 'Pour découvrir notre évènement, il est nécessaire d\'avoir un ticket pour l\'EthCC[9]. Si ce n\'est pas le cas, vous pouvez en acheter un sur la billeterie officielle de l\'EthCC[9].',
+        'pitchathon.ticketing.seroWarning': 'Une fois votre billet EthCC[9] obtenu, pour vous authentifier rendez-vous sur se.ro !',
+        'pitchathon.ticketing.seroBtn': 'Voir sur se.ro',
+        'pitchathon.registration.title': 'Participez au Pitchathon',
+        'pitchathon.whyJoin.point1.title': 'Networking d\'Élite',
+        'pitchathon.whyJoin.point1.content': 'Échangez avec les décideurs de la TradFi et de la DeFi dans un cadre prestigieux au Palais des Festivals et des Congrès, Cannes.',
+        'pitchathon.whyJoin.point2.title': 'Talent Hub',
+        'pitchathon.whyJoin.point2.content': 'Accédez au point de rencontre exclusif entre recruteurs et profils de haut niveau des meilleures universités européennes (KRYPTOSPHERE®, TUM Munich, EPFL, et plus encore).',
+
     },
     en: {
         // Navigation
@@ -1859,6 +1889,9 @@ export const translations = {
         'antennes.lille.bureau.4.name': 'Paolo Serhal',
         'antennes.lille.bureau.4.role': 'General Secretary',
 
+        //Events: 
+        'events.discover': 'Discover the event',
+
 
         // KryptoTour
         'kryptotour.date': 'October 11, 2025 · Lyon',
@@ -1884,6 +1917,32 @@ export const translations = {
         'kryptotour.mediaPartners.title': 'Media Partner',
         'kryptotour.address.title': 'Address',
         'kryptotour.address.location': '70 Quai Perrache, 69002 Lyon, France',
+
+        //Kryptosphere Blockchain Summit
+        'pitchathon.date': 'April 2 2026',
+        'pitchathon.location': 'Cannes, France',
+        'pitchathon.title': 'KRYPTOSPHERE x EthCC[9] : Pitchathon',
+        'pitchathon.tagline': 'Turn a simple idea into a real blockchain project in 30 days ?',
+        'pitchathon.subtitle': [
+            'KRYPTOSPHERE® is launching a unique initiative for student builders at the Palais des Festivals in Cannes, in partnership with EthCC[9]. Inspired by the Shark Tank format, this hackathon focuses on the solution: no initial code required.',
+            'The Concept Selected teams will pitch directly to leading blockchain foundations to turn their vision into a concrete project.',
+        ],
+        'pitchathon.speakers.title': 'Jurys',
+        'pitchathon.schedule.title': 'Program',
+        'pitchathon.sponsors.title': 'Sponsors',
+        'pitchathon.partners.title': 'Partners',
+        'pitchathon.communityPartners.title': 'Community Partners',
+        'pitchathon.ticketing.title': 'Ticketing',
+        'pitchathon.pathProgram' : "/kbs/programme-en.jpg",
+        'pitchathon.ticketing.btnOfficial': 'Official Ticketing',
+        'pitchathon.ticketing.warning': 'To discover our event please be sure to have a ticket for EthCC[9] as well. If it is not the case, you can get one on the official ticketing platform of EthCC[9].',
+        'pitchathon.ticketing.seroWarning': 'Once you have your EthCC[9] ticket, to authenticate, please visit se.ro!',
+        'pitchathon.ticketing.seroBtn': 'See on se.ro',
+        'pitchathon.registration.title': 'Register for the Pitchathon',
+        'pitchathon.whyJoin.point1.title': 'Elite Networking',
+        'pitchathon.whyJoin.point1.content': 'Exchange with TradFi and DeFi decision-makers in a prestigious setting on the Croisette.',
+        'pitchathon.whyJoin.point2.title': 'Talent Hub',
+        'pitchathon.whyJoin.point2.content': 'Access the exclusive meeting point between recruiters and top-tier profiles from Europe\'s leading universities (KRYPTOSPHERE®, TUM Munich, EPFL, and more).',
 
         'donation.btcModal.title': 'Donate in Bitcoin via Tor',
         'donation.btcModal.body': "💡 For a BTC donation, the following link (.onion) must be opened with the Tor Browser (donation without intermediaries, directly via our Bitcoin node).\n\nIf you don't have this browser (Tor Browser), you can download it here: https://www.torproject.org/\n\nIf you do, copy this link and open it with Tor Browser:\n2l4udju3groh7qbt2lvy7iy3x3rg2n5ajmikzqttdcomd2lyxjb3c6ad.onion/apps/2R7Z45MZWJUfxtVdF55Yz1eJx9Sn/pos",
