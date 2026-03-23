@@ -204,8 +204,6 @@ export function SponsorCard({
               loading="lazy"
               decoding="async"
               className="object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.06)] w-full h-full"
-              width="96"
-              height="96"
             />
           </div>
         </Wrapper>
