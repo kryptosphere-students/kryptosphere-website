@@ -16,7 +16,7 @@ const sponsorsData: { name: string; tier: SponsorTier; websiteUrl: string; logo:
         name: "IExec",
         tier: "gold",
         websiteUrl: "https://iex.ec/",
-        logo: "/kbs/sponsors/iExec.svg",
+        logo: "/kbs/sponsors/iExec.png",
     }
 ]
 
