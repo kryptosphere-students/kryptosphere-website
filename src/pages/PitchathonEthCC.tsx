@@ -297,7 +297,7 @@ const PitchathonEthCC: React.FC = () => {
                 </div>
                 {/* Gold Tier */}
                 <div className="max-w-7xl mb-12 mx-auto">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {sponsorsGold.map((sponsor, i) => (
                             <SponsorCard key={i} {...sponsor}/>
                         ))}
@@ -311,7 +311,7 @@ const PitchathonEthCC: React.FC = () => {
                         {t('pitchathon.partners.title')}
                     </p>
                     <div className="w-1/5 h-1 bg-gradient-to-r from-red-400 to-teal-500 mx-auto mb-8"></div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max mx-auto">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 max-w-max">
                         {partners.map((partner, i) => (
                             <PartnerCard key={i} {...partner} />
                         ))}
