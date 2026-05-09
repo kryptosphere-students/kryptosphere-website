@@ -30,10 +30,11 @@ const AntenneDetail = () => {
         address: t('antennes.essec.address')
       },
       bureau: [
-        { name: t('antennes.essec.bureau.1.name'), role: t('antennes.essec.bureau.1.role'), photo: '/antennes/essec/gabriel.webp' },
-        { name: t('antennes.essec.bureau.2.name'), role: t('antennes.essec.bureau.2.role'), photo: '/antennes/essec/arthur.webp' },
-        { name: t('antennes.essec.bureau.3.name'), role: t('antennes.essec.bureau.3.role'), photo: '/antennes/essec/edgar.webp' },
-        { name: t('antennes.essec.bureau.4.name'), role: t('antennes.essec.bureau.4.role'), photo: '/antennes/essec/paul.webp' }
+        { name: t('antennes.essec.bureau.1.name'), role: t('antennes.essec.bureau.1.role'), photo: '/antennes/essec/bureaux/2026/Paul-Noel.webp' },
+        { name: t('antennes.essec.bureau.2.name'), role: t('antennes.essec.bureau.2.role'), photo: '/antennes/essec/bureaux/2026/Margarita-Yashina.webp' },
+        { name: t('antennes.essec.bureau.3.name'), role: t('antennes.essec.bureau.3.role'), photo: '/antennes/essec/bureaux/2026/Louis-Leroux.webp' },
+        { name: t('antennes.essec.bureau.4.name'), role: t('antennes.essec.bureau.4.role'), photo: '/antennes/essec/bureaux/2026/Gabriel-Gervais.webp' },
+        { name: t('antennes.essec.bureau.5.name'), role: t('antennes.essec.bureau.5.role'), photo: '/antennes/essec/bureaux/2026/Sophie-Wiedemann-Goiran.webp' }
       ],
       gallery: [
         '/antennes/essec/essec1.webp',
@@ -269,11 +270,11 @@ const AntenneDetail = () => {
         address: t('antennes.lyon.address')
       },
       bureau: [
-        { name: t('antennes.lyon.bureau.1.name'), role: t('antennes.lyon.bureau.1.role'), photo: '/antennes/lyon/RaphaelPAUTARD.webp' },
-        { name: t('antennes.lyon.bureau.2.name'), role: t('antennes.lyon.bureau.2.role'), photo: '/antennes/lyon/alexandre.webp' },
-        { name: t('antennes.lyon.bureau.3.name'), role: t('antennes.lyon.bureau.3.role'), photo: '/antennes/lyon/JessicaDINOTA.webp' },
-        { name: t('antennes.lyon.bureau.4.name'), role: t('antennes.lyon.bureau.4.role'), photo: '/antennes/lyon/ClementCARVALHO.webp' },
-        { name: t('antennes.lyon.bureau.5.name'), role: t('antennes.lyon.bureau.5.role'), photo: '/antennes/lyon/CharlotteBECHON.webp' }
+        { name: t('antennes.lyon.bureau.1.name'), role: t('antennes.lyon.bureau.1.role'), photo: '/antennes/lyon/bureaux/2026/Antoine-Joulie.webp' },
+        { name: t('antennes.lyon.bureau.2.name'), role: t('antennes.lyon.bureau.2.role'), photo: '/antennes/lyon/bureaux/2026/Bastien-Berthet.webp' },
+        { name: t('antennes.lyon.bureau.3.name'), role: t('antennes.lyon.bureau.3.role'), photo: '/antennes/lyon/bureaux/2026/Thomas-Mercey.webp' },
+        { name: t('antennes.lyon.bureau.4.name'), role: t('antennes.lyon.bureau.4.role'), photo: '/antennes/lyon/bureaux/2026/Antoine-Aureal.webp' },
+        { name: t('antennes.lyon.bureau.5.name'), role: t('antennes.lyon.bureau.5.role'), photo: '/antennes/lyon/bureaux/2026/Robin-Degeorges.webp' }
       ],
       gallery: [
         '/antennes/lyon/iaelyonGallery1.webp',
