@@ -24,6 +24,7 @@ const AntenneDetail = lazy(() => import("./pages/AntenneDetail"));
 // KryptoTour is the heaviest page, loaded only when needed
 const KryptoTour = lazy(() => import('./pages/KryptoTour'));
 const PitchathonEthCC = lazy(() => import('./pages/PitchathonEthCC'));
+const MediaKit = lazy(() => import('./pages/MediaKit'));
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const AppWithLanguage = ({ lang }: { lang: 'fr' | 'en' }) => {
         <Route path="/events" element={<Events />} />
         <Route path="/krypto-tour" element={<KryptoTour />} />
         <Route path="/pitchathon-ethcc" element={<PitchathonEthCC />} />
+        <Route path="/media-kit" element={<MediaKit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
