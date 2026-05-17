@@ -9,12 +9,13 @@ const Footer = () => {
   const lang = getLangFromPath(location.pathname);
   const langPrefix = `/${lang}`;
 
-  const legalLinks = [
+  const legalLinks: Array<{ key: string; href?: string; to?: string }> = [
     { key: 'footer.legal.disclaimer', href: '/documents/avertissement.pdf' },
     { key: 'footer.legal.privacy', href: '/documents/politique-confidentialite.pdf' },
     { key: 'footer.legal.terms', href: '/documents/cgu.pdf' },
     { key: 'footer.legal.cookies', href: '/documents/politique-cookies.pdf' },
-    { key: 'footer.legal.legal', href: '/documents/mentions-legales.pdf' }
+    { key: 'footer.legal.legal', href: '/documents/mentions-legales.pdf' },
+    { key: 'footer.legal.mediaKit', to: `${langPrefix}/media-kit` }
   ];
 
   const toggleLanguage = () => {
@@ -124,14 +125,23 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
             {legalLinks.map((link, index) => (
               <React.Fragment key={link.key}>
-                <a 
-                  href={link.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition-colors duration-200"
-                >
-                  {t(link.key)}
-                </a>
+                {link.to ? (
+                  <Link
+                    to={link.to}
+                    className="hover:text-blue-400 transition-colors duration-200"
+                  >
+                    {t(link.key)}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors duration-200"
+                  >
+                    {t(link.key)}
+                  </a>
+                )}
                 {index < legalLinks.length - 1 && (
                   <span className="text-slate-600">|</span>
                 )}
