@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Users, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Twitter, Globe } from 'lucide-react';
 
 const Bureau = () => {
   const [selectedYear, setSelectedYear] = useState('2026');
@@ -65,8 +65,9 @@ const Bureau = () => {
         description: t('board.member27.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member27.school'),
-        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
-        twitter: "https://twitter.com/docteurbtc" // ajout lien X
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", 
+        twitter: "https://twitter.com/docteurbtc",  
+        website: "https://thibaultlangloisberthelot.com" // ajout lien site perso
       },
     ],
     '2025': [
@@ -111,8 +112,9 @@ const Bureau = () => {
         description: t('board.member27.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member27.school'),
-        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
-        twitter: "https://twitter.com/docteurbtc" // ajout lien X
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", 
+        twitter: "https://twitter.com/docteurbtc", 
+        website: "https://thibaultlangloisberthelot.com" // ajout lien site perso
       },
     ],
     '2024': [
@@ -221,7 +223,9 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", 
+        twitter: "https://twitter.com/docteurbtc", 
+        website: "https://thibaultlangloisberthelot.com" // ajout lien site perso
       },
       {
         name: t('board.member33.name'),
@@ -469,7 +473,9 @@ const Bureau = () => {
         description: t('board.member5.description'),
         image: "/bureau/thibaultlanglois.webp",
         school: t('board.member5.school'),
-        linkedin: "https://www.linkedin.com/in/kryptosphere/", // ajout lien Linkedin
+        linkedin: "https://www.linkedin.com/in/kryptosphere/", 
+        twitter: "https://twitter.com/docteurbtc", 
+        website: "https://thibaultlangloisberthelot.com" // ajout lien site perso
       },
                   {
         name: t('board.member8.name'),
@@ -891,6 +897,17 @@ const Bureau = () => {
       <Twitter className="w-5 h-5" />
     </a>
   )}
+  {member.website && (
+          
+            href={member.website}
+            target="_blank"
+            rel="noopener"
+            className="rounded-full bg-slate-600/80 hover:bg-slate-600 text-white p-2 transition-colors"
+            title="Site personnel"
+          >
+            <Globe className="w-5 h-5" />
+          </a>
+        )}
 </div>
                 </div>
               </div>
