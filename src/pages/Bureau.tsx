@@ -898,7 +898,7 @@ const Bureau = () => {
     </a>
   )}
   {member.website && (
-          
+          <a
             href={member.website}
             target="_blank"
             rel="noopener"
