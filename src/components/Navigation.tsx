@@ -41,7 +41,7 @@ const Navigation = () => {
     // },
     { name: t('nav.publications'), path: `${langPrefix}/publications` },
     { name: t('nav.donate'), path: `${langPrefix}/donation` },
-    { name: t('nav.academy'), href: 'https://academy.kryptosphere.org/fr' }
+    { name: t('nav.academy'), href: `https://academy.kryptosphere.org/${lang}` }
   ];
 
   const toggleLanguage = () => {
