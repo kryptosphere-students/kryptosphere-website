@@ -8,6 +8,7 @@ export const translations = {
         'nav.events': 'Événements',
         'nav.publications': 'Publications',
         'nav.donate': 'Nous soutenir',
+        'nav.academy': 'KS Academy',
 
         // Hero
         'hero.title': "Le premier réseau",
@@ -1022,6 +1023,7 @@ export const translations = {
         'nav.events': 'Events',
         'nav.publications': 'Publications',
         'nav.donate': 'Donate',
+        'nav.academy': 'KS Academy',
 
         // Hero
         'hero.title': 'The first student',

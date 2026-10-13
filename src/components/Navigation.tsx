@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, ExternalLink } from 'lucide-react';
 import { useLanguage, getLangFromPath } from '../contexts/LanguageContext';
 import { PitchathonButton } from './ui/pitchathonButton';
 
@@ -10,10 +10,10 @@ const Navigation = () => {
   const location = useLocation();
   const lang = getLangFromPath(location.pathname);
   const langPrefix = `/${lang}`;
-  
+
   // More robust home page detection
-  const isHomePage = location.pathname === `/${lang}` || 
-                    location.pathname === `/${lang}/` || 
+  const isHomePage = location.pathname === `/${lang}` ||
+                    location.pathname === `/${lang}/` ||
                     location.pathname === '/' ||
                     location.pathname === '/fr' ||
                     location.pathname === '/en';
@@ -21,6 +21,8 @@ const Navigation = () => {
   type NavItem = {
     name: string;
     path?: string;
+    /** Lien externe, ouvert dans un nouvel onglet */
+    href?: string;
     subItems?: { name: string; path: string }[];
   };
 
@@ -38,37 +40,41 @@ const Navigation = () => {
     //   ]
     // },
     { name: t('nav.publications'), path: `${langPrefix}/publications` },
-    { name: t('nav.donate'), path: `${langPrefix}/donation` }
+    { name: t('nav.donate'), path: `${langPrefix}/donation` },
+    { name: t('nav.academy'), href: 'https://academy.kryptosphere.org/fr' }
   ];
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
   };
 
-  const navClasses = isHomePage 
+  const navClasses = isHomePage
     ? "fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm"
     : "fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-lg border-b border-slate-700/50";
+
+  const desktopLinkClasses =
+    "text-slate-300 hover:text-white transition-colors duration-200 font-medium text-[15px] whitespace-nowrap relative group";
 
   return (
     <nav className={navClasses}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.webp" 
-              alt="Kryptosphere" 
+          <Link to="/" className="flex items-center shrink-0">
+            <img
+              src="/lovable-uploads/80080952-5c68-413c-a232-0e890c049b09.webp"
+              alt="Kryptosphere"
               loading="lazy"
               className="h-8 w-auto"
             />
           </Link>
-          
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+
+          {/* Desktop Menu : affiché à partir de xl, burger en dessous (8 liens + bouton ne tiennent pas avant) */}
+          <div className="hidden xl:flex items-center space-x-5">
             {navItems.map((item) => (
               item.subItems ? (
                 <div key={item.name} className="relative group flex items-center">
                   <span
-                    className="flex items-center text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group cursor-default select-none"
+                    className="flex items-center text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group cursor-default select-none whitespace-nowrap"
                   >
                     {item.name}
                     <ChevronDown className="ml-1 w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors duration-200" />
@@ -88,11 +94,26 @@ const Navigation = () => {
                     ))}
                   </div>
                 </div>
+              ) : item.href ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${desktopLinkClasses} inline-flex items-center gap-1`}
+                >
+                  {item.name}
+                  <ExternalLink
+                    className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-400 transition-colors duration-200"
+                    aria-hidden="true"
+                  />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
               ) : (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-slate-300 hover:text-white transition-colors duration-200 font-medium relative group"
+                  className={desktopLinkClasses}
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -110,7 +131,7 @@ const Navigation = () => {
               setIsOpen={setIsOpen}
             />
 
-            
+
             {/* Language Switcher */}
             {/* <button
               onClick={toggleLanguage}
@@ -123,8 +144,10 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-slate-700 transition-colors text-slate-300"
+            className="xl:hidden p-2 rounded-lg hover:bg-slate-700 transition-colors text-slate-300"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -132,13 +155,24 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-slate-700/50 py-4 px-4 bg-slate-900/95 backdrop-blur-lg">
+          <div className="xl:hidden border-t border-slate-700/50 py-4 px-4 bg-slate-900/95 backdrop-blur-lg">
             {navItems.map((item) => (
               <React.Fragment key={item.name || item.path}>
-                {!item.subItems ? (
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium whitespace-nowrap"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                    <ExternalLink className="w-4 h-4 text-slate-400" aria-hidden="true" />
+                  </a>
+                ) : !item.subItems ? (
                   <Link
                     to={item.path}
-                    className="block py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium"
+                    className="block py-3 text-slate-300 hover:text-white transition-colors duration-200 font-medium whitespace-nowrap"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
